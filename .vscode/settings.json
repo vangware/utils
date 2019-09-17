@@ -1,0 +1,11 @@
+{
+  "cSpell.words": [
+    "bigint",
+    "vangstyle",
+    "vangware"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true
+}

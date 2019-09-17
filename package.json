@@ -1,0 +1,85 @@
+{
+  "name": "@vangware/micro",
+  "description": "Vangware utils library",
+  "version": "1.0.0",
+  "author": {
+    "name": "Vangware",
+    "url": "https://vangware.com"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/vangware/micro/issues"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/prettier": "^1.18.2",
+    "@types/sinon": "^7.0.13",
+    "@vangware/vangstyle": "^1.4.1",
+    "ava": "^2.4.0",
+    "husky": "^3.0.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "sinon": "^7.4.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3"
+  },
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "homepage": "https://github.com/vangware/micro#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s clean pre-compile lint test"
+    }
+  },
+  "keywords": [
+    "array",
+    "esm",
+    "micro",
+    "object",
+    "string",
+    "types",
+    "typescript",
+    "utils",
+    "vangware"
+  ],
+  "license": "MIT",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vangware/micro.git"
+  },
+  "scripts": {
+    "clean": "rimraf ./{cjs,esm}",
+    "compile": "run-s compile:*",
+    "compile:cjs": "tsc --project tsconfig.json",
+    "compile:esm": "tsc --project tsconfig.esm.json",
+    "lint": "tslint -c ./tslint.json -p .",
+    "pre-compile": "run-s pre-compile:*",
+    "pre-compile:cjs": "tsc --noemit --project tsconfig.json",
+    "pre-compile:esm": "tsc --noemit --project tsconfig.esm.json",
+    "prepublishOnly": "run-s compile",
+    "prettify": "run-s prettify:*",
+    "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
+    "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "source": "./src/index.ts",
+  "types": "./esm/index.d.ts"
+}
