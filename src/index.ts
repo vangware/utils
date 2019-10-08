@@ -11,3 +11,4 @@ export { stringMapReplace } from "./stringMapReplace";
 export { tap } from "./tap";
 export { tryCatch } from "./tryCatch";
 export { typeOf } from "./typeOf";
+export { when } from "./when";

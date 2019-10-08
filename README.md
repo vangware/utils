@@ -2,6 +2,9 @@
 
 ![@vangware/micro logo](https://i.imgur.com/qAj2DYK.png)
 
+[![\[NPM Version\]](https://img.shields.io/npm/v/@vangware/micro.svg?style=flat-square)](https://npm.im/@vangware/micro)
+[![\[Build Status\]](https://img.shields.io/travis/vangware/micro.svg?style=flat-square)](https://travis-ci.org/vangware/micro)
+
 This library is a collection of utils made entirely in TypeScript. Is the successor of [@vangware/micron](https://github.com/vangware/micron), with less focus on small footprint and higher focus on utility and readability across all JS environments (Node and the browser).
 
 ## Installation
@@ -47,3 +50,4 @@ import { typeOf } from "https://cdn.pika.dev/@vangware/micro";
 - **tap** Let's you tap into a value (like logging it or tracking it).
 - **tryCatch** Wrapper of `try` / `catch`.
 - **typeOf** Takes a value and returns an object with several getters to check the type of the value.
+- **when** Wraps a ternary operator, sending truthy or falsy values to a truthyCallback and an optional falsyCallback.
