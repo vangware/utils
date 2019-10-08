@@ -1,14 +1,15 @@
 import test from "ava";
+import { randomString } from "../testUtils";
 import tryCatch from "./tryCatch";
 
 test("returns correct types", t => {
-	const ERROR_MESSAGE = "TEST";
+	const ERROR_MESSAGE = randomString();
 
-	const tryCatchOutput = tryCatch<string>(
+	const tryCatchOutput = tryCatch<string, Error>(
 		() => {
 			throw new Error(ERROR_MESSAGE);
 		},
-		error => (error as Error).message
+		error => (error ? error.message : "")
 	);
 	t.is(tryCatchOutput, ERROR_MESSAGE);
 });

@@ -12,6 +12,9 @@ test("maps values as expected", t => {
 });
 
 test("maps even with invalid values", t => {
-	const arrayMapOutput = arrayMap((undefined as unknown) as unknown[]);
+	const arrayMapOutput = arrayMap(
+		(undefined as unknown) as unknown[],
+		value => value
+	);
 	t.assert(Array.isArray(arrayMapOutput));
 });
