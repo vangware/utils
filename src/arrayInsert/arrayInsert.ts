@@ -1,12 +1,16 @@
+import ArrayInsertFunction from "./ArrayInsertFunction";
+
 /**
  * Insert value in array at given index.
  * @param array Target array.
- * @param callback Map callback (to be called for every array item).
+ * @param index Index to start inserting items.
+ * @param items Items to be inserted.
  */
-export const arrayInsert = <ItemType>(
-	array: ItemType[] = [],
-	index: number = array.length - 1,
-	...items: ItemType[]
-) => [...array.slice(0, index), ...items, ...array.slice(index)];
+export const arrayInsert: ArrayInsertFunction = (array, index, ...items) =>
+	(insertionPoint => [
+		...array.slice(0, insertionPoint),
+		...items,
+		...array.slice(insertionPoint)
+	])(index < 0 ? array.length + index : index);
 
 export default arrayInsert;

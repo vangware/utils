@@ -1,11 +1,13 @@
+import StringMapReplaceFunction from "./StringMapReplaceFunction";
+
 /**
  * Takes a string and an object and makes a regex map replace
  * @param target Target string.
  * @param replaceMap Map with format `{ "match": "replacing string" }`.
  */
-export const stringMapReplace = (
-	target: string,
-	replaceMap: { [match: string]: string | number } = {}
+export const stringMapReplace: StringMapReplaceFunction = (
+	target,
+	replaceMap
 ) => {
 	/** Array of replace matches (empty if none are given). */
 	const replaceMapArray = replaceMap ? Object.keys(replaceMap) : [];

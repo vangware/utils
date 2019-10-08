@@ -1,18 +1,17 @@
+import ArrayGroupFunction from "./ArrayGroupFunction";
+
 /**
- * Creates object with properties grouping by grouper function.
+ * Creates object with properties grouped by grouper function.
  * @param array Target array.
  * @param grouper Grouper function (returns the group name).
  */
-export const arrayGroup = <ItemType>(
-	array: ItemType[],
-	grouper: (item: ItemType) => string | number
-): { [group: string]: ItemType[] } =>
+export const arrayGroup: ArrayGroupFunction = (array, grouper) =>
 	array.reduce(
-		(output, namespace) =>
+		(output, item) =>
 			(group => ({
 				...output,
-				[group]: [...(output[group] || []), namespace]
-			}))(`${grouper(namespace)}`),
+				[group]: [...(output[group] || []), item]
+			}))(`${grouper(item)}`),
 		{}
 	);
 
