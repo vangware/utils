@@ -1,12 +1,16 @@
+import ArrayReplaceFunction from "./ArrayReplaceFunction";
+
 /**
  * Replace value in array at given index.
  * @param array Target array.
- * @param callback Map callback (to be called for every array item).
+ * @param index Index to start replacing items.
+ * @param items Items to be inserted.
  */
-export const arrayReplace = <ItemType>(
-	array: ItemType[] = [],
-	index: number = array.length - 1,
-	...items: ItemType[]
-) => [...array.slice(0, index), ...items, ...array.slice(index + items.length)];
+export const arrayReplace: ArrayReplaceFunction = (array, index, ...items) =>
+	(replacePoint => [
+		...array.slice(0, replacePoint),
+		...items,
+		...array.slice(replacePoint + items.length)
+	])(index < 0 ? array.length + index : index);
 
 export default arrayReplace;
