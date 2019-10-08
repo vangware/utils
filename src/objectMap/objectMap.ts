@@ -1,21 +1,13 @@
+import ObjectMapFunction from "./ObjectMapFunction";
+
 /**
  * Object mapping.
  * @param targetObject Target object.
- * @param callback Map callback (to be called for every object key).
+ * @param mapper Map callback (to be called for every object key).
  */
-export const objectMap = <
-	ObjectType,
-	OutputType = ObjectType[keyof ObjectType]
->(
-	targetObject: ObjectType,
-	callback: (
-		value: ObjectType[keyof ObjectType],
-		key: string,
-		targetObject: ObjectType
-	) => OutputType
-): OutputType[] =>
+export const objectMap: ObjectMapFunction = (targetObject, mapper) =>
 	Object.keys(targetObject).map(key =>
-		callback(targetObject[key], key, targetObject)
+		mapper(targetObject[key], key, targetObject)
 	);
 
 export default objectMap;

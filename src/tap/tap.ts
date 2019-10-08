@@ -1,10 +1,10 @@
+import TapFunction from "./TapFunction";
+
 /**
  * Tap into any value.
  * @param observer Observer function.
  */
-export const tap = <ValueType>(observer: (value: ValueType) => void) => (
-	value: ValueType
-): ValueType => {
+export const tap: TapFunction = observer => value => {
 	observer(value);
 
 	return value;

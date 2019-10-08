@@ -1,13 +1,13 @@
+import TryCatchFunction from "./TryCatchFunction";
+
 /**
  * Functional try/catch wrapper.
  * @param tryCallback Callback for try.
  * @param catchCallback Callback for catch.
  */
-export const tryCatch = <ReturnedValue>(
-	tryCallback: () => ReturnedValue,
-	catchCallback?: (error?: unknown) => ReturnedValue | undefined
-): ReturnedValue | undefined => {
-	let returnedValue: ReturnedValue | undefined;
+export const tryCatch: TryCatchFunction = (tryCallback, catchCallback?) => {
+	let returnedValue;
+
 	try {
 		returnedValue = tryCallback();
 	} catch (error) {
