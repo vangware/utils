@@ -1,3 +1,4 @@
+import typeOf from "../typeOf";
 import ArrayMapFunction from "./ArrayMapFunction";
 
 /**
@@ -6,6 +7,6 @@ import ArrayMapFunction from "./ArrayMapFunction";
  * @param mapper Map callback (to be called for every array item).
  */
 export const arrayMap: ArrayMapFunction = (array, mapper) =>
-	Array.isArray(array) ? array.map(mapper) : [];
+	typeOf(array).isArray ? array.map(mapper) : [];
 
 export default arrayMap;
