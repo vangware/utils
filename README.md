@@ -4,6 +4,10 @@
 
 [![\[NPM Version\]](https://img.shields.io/npm/v/@vangware/micro.svg?style=flat-square)](https://npm.im/@vangware/micro)
 [![\[Build Status\]](https://img.shields.io/travis/vangware/micro.svg?style=flat-square)](https://travis-ci.org/vangware/micro)
+[![\[Size\]](https://img.shields.io/bundlephobia/minzip/@vangware/micro?label=size&style=flat-square)](https://bundlephobia.com/result?p=@vangware/micro)
+[![\[License\]](https://img.shields.io/npm/l/@vangware/micro?style=flat-square)](https://github.com/vangware/micro/blob/master/LICENSE)
+[![\[Open Issues\]](https://img.shields.io/github/issues/vangware/micro?style=flat-square)](https://github.com/vangware/micro/issues)
+[![\[Coverage\]](https://img.shields.io/coveralls/github/vangware/micro?style=flat-square)](https://coveralls.io/github/vangware/micro)
 
 This library is a collection of utils made entirely in TypeScript. Is the successor of [@vangware/micron](https://github.com/vangware/micron), with less focus on small footprint and higher focus on utility and readability across all JS environments (Node and the browser).
 
