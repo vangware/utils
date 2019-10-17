@@ -28,7 +28,9 @@ import { typeOf } from "https://cdn.pika.dev/@vangware/micro";
 - **arrayGroup** Groups array elements by grouper function output.
 - **arrayInsert** Insert values in given index of array without mutating the target.
 - **arrayMap** Secure `Array.prototype.map` for scenarios in which the array could be invalid.
+- **arrayReduce** Secure `Array.prototype.reduce` for scenarios in which the array could be invalid.
 - **arrayReplace** Replaces values in given index of array without mutating the target.
+- **arraySplit** Splits array into an array of arrays of the given length. Can be split both vertically and horizontally.
 - **arraySplitFilter** Like `Array.prototype.filter`, but it returns an array of 2 elements `[matching, notMatching]`.
 
 ### JSON
