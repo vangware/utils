@@ -2,10 +2,10 @@ sudo: false
 language: node_js
 node_js: 12.0
 before_install: npm i -g pnpm rimraf
-install:
-    - npm i
+install: # Test install with NPM, PNPM and Yarn
+    - npm i # Test NPM install
     - rimraf ./node_modules
-    - pnpm i
+    - pnpm i # Test PNPM install
     - rimraf ./node_modules
-    - yarn
-after_success: npm run coverage
+    - yarn # Test Yarn install
+after_success: yarn run coverage # Send coverage to coveralls.io
