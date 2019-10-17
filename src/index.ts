@@ -1,7 +1,9 @@
 export { arrayGroup } from "./arrayGroup";
 export { arrayInsert } from "./arrayInsert";
 export { arrayMap } from "./arrayMap";
+export { arrayReduce } from "./arrayReduce";
 export { arrayReplace } from "./arrayReplace";
+export { arraySplit } from "./arraySplit";
 export { arraySplitFilter } from "./arraySplitFilter";
 export { jsonParse } from "./jsonParse";
 export { jsonParsePromise } from "./jsonParsePromise";
