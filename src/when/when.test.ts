@@ -1,5 +1,6 @@
 import test from "ava";
 import { spy } from "sinon";
+import noop from "../noop";
 import { randomRoundNumber, randomString } from "../testUtils";
 import when from "./when";
 
@@ -57,4 +58,12 @@ test("works with falsy values", t => {
 		FALSY_STRING
 	);
 	t.assert(SPY.notCalled);
+});
+
+test("works with undefined falsy callback", t => {
+	const FALSY_NUMBER = 0;
+	const FALSY_STRING = "";
+
+	t.is(when(FALSY_NUMBER, noop), undefined);
+	t.is(when(FALSY_STRING, noop), undefined);
 });

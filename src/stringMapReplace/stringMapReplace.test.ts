@@ -1,6 +1,7 @@
 import test from "ava";
 import { randomString } from "../testUtils";
 import stringMapReplace from "./stringMapReplace";
+import StringMapReplaceMap from "./StringMapReplaceMap";
 
 test("replaces strings correctly", t => {
 	const STRING_1 = randomString();
@@ -12,4 +13,21 @@ test("replaces strings correctly", t => {
 		[STRING_2]: STRING_3
 	});
 	t.is(stringMapReplaceOutput, STRING_3.repeat(2));
+});
+
+test("returns the same string if the replace map is empty", t => {
+	const STRING = randomString();
+
+	const stringMapReplaceOutput = stringMapReplace(STRING, {});
+	t.is(stringMapReplaceOutput, STRING);
+});
+
+test("returns the same string if the replace map is invalid", t => {
+	const STRING = randomString();
+
+	const stringMapReplaceOutput = stringMapReplace(
+		STRING,
+		(undefined as unknown) as StringMapReplaceMap
+	);
+	t.is(stringMapReplaceOutput, STRING);
 });
