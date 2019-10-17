@@ -4,6 +4,7 @@ import typeOf from "./typeOf";
 test("returns correct types", t => {
 	t.assert(typeOf([]).isArray);
 	t.assert(typeOf(new Array()).isArray);
+	t.assert(typeOf(1n).isBigInt);
 	t.assert(typeOf(true).isBoolean);
 	t.assert(typeOf(false).isBoolean);
 	t.assert(typeOf(new Date()).isDate);

@@ -8,3 +8,4 @@ install:
     - pnpm i
     - rimraf ./node_modules
     - yarn
+after_success: npm run coverage

@@ -14,13 +14,9 @@
     "preserveConstEnums": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es2015"
+    "target": "ESNext"
   },
   "include": [
     "src/**/*.ts"
-  ],
-  "exclude": [
-    "src/**/*.test.ts",
-    "src/testUtils.ts"
   ]
 }

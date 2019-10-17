@@ -22,6 +22,20 @@ test("adds one item correctly", t => {
 	t.notDeepEqual(arrayInsertOutput, NUMBER_ARRAY);
 });
 
+test("adds one from the end item when value is negative", t => {
+	const NUMBER_ARRAY = randomLengthNumberArray(10, 5);
+	const INSERT_STRING = randomString();
+
+	const arrayInsertOutput = arrayInsert<string | number>(
+		NUMBER_ARRAY,
+		-1,
+		INSERT_STRING
+	);
+	t.is(arrayInsertOutput[arrayInsertOutput.length - 2], INSERT_STRING);
+	t.is(arrayInsertOutput.length, NUMBER_ARRAY.length + 1);
+	t.notDeepEqual(arrayInsertOutput, NUMBER_ARRAY);
+});
+
 test("adds multiple items correctly", t => {
 	const NUMBER_ARRAY = randomLengthNumberArray();
 	const INSERT_POSITION = randomRoundNumber(NUMBER_ARRAY.length - 1);
