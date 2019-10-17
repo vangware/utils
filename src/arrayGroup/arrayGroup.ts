@@ -1,3 +1,5 @@
+import arrayReduce from "../arrayReduce";
+import typeOf from "../typeOf";
 import ArrayGroupFunction from "./ArrayGroupFunction";
 
 /**
@@ -6,11 +8,15 @@ import ArrayGroupFunction from "./ArrayGroupFunction";
  * @param grouper Grouper function (returns the group name).
  */
 export const arrayGroup: ArrayGroupFunction = (array, grouper) =>
-	array.reduce(
+	arrayReduce(
+		array,
 		(output, item) =>
 			(group => ({
 				...output,
-				[group]: [...(output[group] || []), item]
+				[group]: [
+					...(typeOf(output[group]).isArray ? output[group] : []),
+					item
+				]
 			}))(`${grouper(item)}`),
 		{}
 	);
