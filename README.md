@@ -50,10 +50,30 @@ import { typeOf } from "https://cdn.pika.dev/@vangware/micro";
 
 - **stringMapReplace** Takes a string an a map of replacements, and returns the resulting string (successor of micron's `mrx`).
 
+### Type checking
+
+- **isArray** Check if given value is an Array.
+- **isBigInt** Check if given value is a BigInt.
+- **isBoolean** Check if given value is a Boolean.
+- **isDate** Check if given value is a Date.
+- **isFunction** Check if given value is a Function.
+- **isInstanceOf** Check if given value is an instance of the given constructor.
+- **isMap** Check if given value is a Map.
+- **isNull** Check if given value is null.
+- **isNumber** Check if given value is a Number.
+- **isObject** Check if given value is an Object (excludes null).
+- **isPromise** Check if give value is a Promise.
+- **isRegExp** Check if given value is a regular expression.
+- **isSet** Check if the given value is a Set.
+- **isString** Check if given value is a String.
+- **isSymbol** Check if given value is a Symbol.
+- **isUndefined** Check if given value is an undefined.
+- **isWeakMap** Check if given value is an WeakMap.
+- **isWeakSet** Check if given value is an WeakSet.
+
 ### Others
 
 - **noop** No Operational function to be used as placeholder.
 - **tap** Let's you tap into a value (like logging it or tracking it).
 - **tryCatch** Wrapper of `try` / `catch`.
-- **typeOf** Takes a value and returns an object with several getters to check the type of the value.
 - **when** Wraps a ternary operator, sending truthy or falsy values to a truthyCallback and an optional falsyCallback.

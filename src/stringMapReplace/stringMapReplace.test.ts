@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomString } from "../testUtils";
+import { randomString } from "../tests";
 import stringMapReplace from "./stringMapReplace";
 import StringMapReplaceMap from "./StringMapReplaceMap";
 

@@ -1,7 +1,7 @@
 import test from "ava";
 import { spy } from "sinon";
 import noop from "../noop";
-import { randomRoundNumber, randomString } from "../testUtils";
+import { randomRoundNumber, randomString } from "../tests";
 import when from "./when";
 
 test("works with truthy values", t => {

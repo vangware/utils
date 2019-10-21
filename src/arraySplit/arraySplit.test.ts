@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomLengthNumberArray, randomRoundNumber } from "../testUtils";
+import { randomLengthNumberArray, randomRoundNumber } from "../tests";
 import arraySplit from "./arraySplit";
 
 test("split horizontal works as expected", t => {

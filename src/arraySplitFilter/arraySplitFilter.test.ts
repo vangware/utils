@@ -4,7 +4,7 @@ import {
 	randomLengthStringArray,
 	randomRoundNumber,
 	randomString
-} from "../testUtils";
+} from "../tests";
 import arraySplitFilter from "./arraySplitFilter";
 
 test("groups correctly with any length", t => {
