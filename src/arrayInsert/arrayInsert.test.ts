@@ -4,7 +4,7 @@ import {
 	randomLengthStringArray,
 	randomRoundNumber,
 	randomString
-} from "../testUtils";
+} from "../tests";
 import arrayInsert from "./arrayInsert";
 
 test("adds one item correctly", t => {

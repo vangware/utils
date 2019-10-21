@@ -1,4 +1,4 @@
-import typeOf from "../typeOf";
+import isArray from "../isArray";
 import ArrayReduceFunction from "./ArrayReduceFunction";
 
 /**
@@ -11,7 +11,6 @@ export const arrayReduce: ArrayReduceFunction = (
 	array,
 	reducer,
 	initialValue
-) =>
-	typeOf(array).isArray ? array.reduce(reducer, initialValue) : initialValue;
+) => (isArray(array) ? array.reduce(reducer, initialValue) : initialValue);
 
 export default arrayReduce;

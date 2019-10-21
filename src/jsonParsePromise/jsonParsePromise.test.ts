@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomString } from "../testUtils";
+import { randomString } from "../tests";
 import jsonParsePromise from "./jsonParsePromise";
 
 test("parses invalid without throwing", async t => {

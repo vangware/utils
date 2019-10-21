@@ -1,12 +1,30 @@
-import PrimitiveBigInt from "./PrimitiveBigInt";
-import PrimitiveBoolean from "./PrimitiveBoolean";
-import PrimitiveFunction from "./PrimitiveFunction";
-import PrimitiveNull from "./PrimitiveNull";
-import PrimitiveNumber from "./PrimitiveNumber";
-import PrimitiveString from "./PrimitiveString";
-import PrimitiveSymbol from "./PrimitiveSymbol";
-import PrimitiveUndefined from "./PrimitiveUndefined";
+import isArray from "../isArray/isArray";
+import isBigInt from "../isBigInt";
+import isBoolean from "../isBoolean";
+import isDate from "../isDate";
+import isFunction from "../isFunction";
+import isInstanceOf from "../isInstanceOf";
+import isMap from "../isMap";
+import isNull from "../isNull";
+import isNumber from "../isNumber";
+import isObject from "../isObject";
+import isPromise from "../isPromise";
+import isRegExp from "../isRegExp";
+import isSet from "../isSet";
+import isString from "../isString";
+import isSymbol from "../isSymbol";
+import isUndefined from "../isUndefined";
+import isWeakMap from "../isWeakMap";
+import isWeakSet from "../isWeakSet";
+import tap from "../tap";
 import TypeOfFunction from "./TypeOfFunction";
+
+const deprecationWarning = (getterName: string) =>
+	tap(() =>
+		console.warn(
+			`typeOf is being deprecated. Import the function ${getterName} directly`
+		)
+	);
 
 /**
  * Returns an object with boolean properties.
@@ -14,57 +32,58 @@ import TypeOfFunction from "./TypeOfFunction";
  */
 export const typeOf: TypeOfFunction = value => ({
 	get isArray() {
-		return this.isInstanceOf(Array);
+		return isArray(deprecationWarning("isArray")(value));
 	},
 	get isBigInt() {
-		return this.isInstanceOf(PrimitiveBigInt);
+		return isBigInt(deprecationWarning("isBigInt")(value));
 	},
 	get isBoolean() {
-		return this.isInstanceOf(PrimitiveBoolean);
+		return isBoolean(deprecationWarning("isBoolean")(value));
 	},
 	get isDate() {
-		return this.isInstanceOf(Date);
+		return isDate(deprecationWarning("isDate")(value));
 	},
 	get isFunction() {
-		return this.isInstanceOf(PrimitiveFunction);
+		return isFunction(deprecationWarning("isFunction")(value));
 	},
 	get isMap() {
-		return this.isInstanceOf(Map);
+		return isMap(deprecationWarning("isMap")(value));
 	},
 	get isNull() {
-		return this.isInstanceOf(PrimitiveNull);
+		return isNull(deprecationWarning("isNull")(value));
 	},
 	get isNumber() {
-		return this.isInstanceOf(PrimitiveNumber);
+		return isNumber(deprecationWarning("isNumber")(value));
 	},
 	get isObject() {
-		return this.isInstanceOf(Object);
+		return isObject(deprecationWarning("isObject")(value));
 	},
 	get isPromise() {
-		return this.isInstanceOf(Promise);
+		return isPromise(deprecationWarning("isPromise")(value));
 	},
 	get isRegExp() {
-		return this.isInstanceOf(RegExp);
+		return isRegExp(deprecationWarning("isRegExp")(value));
 	},
 	get isSet() {
-		return this.isInstanceOf(Set);
+		return isSet(deprecationWarning("isSet")(value));
 	},
 	get isString() {
-		return this.isInstanceOf(PrimitiveString);
+		return isString(deprecationWarning("isString")(value));
 	},
 	get isSymbol() {
-		return this.isInstanceOf(PrimitiveSymbol);
+		return isSymbol(deprecationWarning("isSymbol")(value));
 	},
 	get isUndefined() {
-		return this.isInstanceOf(PrimitiveUndefined);
+		return isUndefined(deprecationWarning("isUndefined")(value));
 	},
 	get isWeakMap() {
-		return this.isInstanceOf(WeakMap);
+		return isWeakMap(deprecationWarning("isWeakMap")(value));
 	},
 	get isWeakSet() {
-		return this.isInstanceOf(WeakSet);
+		return isWeakSet(deprecationWarning("isWeakSet")(value));
 	},
-	isInstanceOf: constructor => value instanceof constructor
+	isInstanceOf: constructor =>
+		isInstanceOf(deprecationWarning("isInstanceOf")(value), constructor)
 });
 
 export default typeOf;
