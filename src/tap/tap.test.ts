@@ -1,6 +1,6 @@
 import test from "ava";
 import { spy } from "sinon";
-import { randomString } from "../testUtils";
+import { randomString } from "../tests";
 import tap from "./tap";
 
 test("taps to value", t => {

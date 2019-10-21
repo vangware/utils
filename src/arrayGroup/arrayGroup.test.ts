@@ -4,7 +4,7 @@ import {
 	randomLengthStringArray,
 	randomRoundNumber,
 	randomString
-} from "../testUtils";
+} from "../tests";
 import arrayGroup from "./arrayGroup";
 
 test("groups correctly with any length", t => {

@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomLengthStringArray } from "../testUtils";
+import { randomLengthStringArray } from "../tests";
 import noop from "./noop";
 
 test("returns undefined and takes any amount of parameters", t => {
