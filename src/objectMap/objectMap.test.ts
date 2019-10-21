@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomString } from "../testUtils";
+import { randomString } from "../tests";
 import objectMap from "./objectMap";
 
 test("maps correctly", t => {

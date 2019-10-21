@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomString } from "../testUtils";
+import { randomString } from "../tests";
 import tryCatch from "./tryCatch";
 
 test("returns correct types", t => {

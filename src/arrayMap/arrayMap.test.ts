@@ -1,5 +1,5 @@
 import test from "ava";
-import { randomLengthNumberArray, randomRoundNumber } from "../testUtils";
+import { randomLengthNumberArray, randomRoundNumber } from "../tests";
 import arrayMap from "./arrayMap";
 
 test("maps values as expected", t => {
