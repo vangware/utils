@@ -28,4 +28,5 @@ test("returns correct types", t => {
 	t.assert(typeOf(void 0).isUndefined);
 	t.assert(typeOf(new WeakMap()).isWeakMap);
 	t.assert(typeOf(new WeakSet()).isWeakSet);
+	t.assert(typeOf([]).isInstanceOf(Array));
 });
