@@ -22,7 +22,7 @@ npm i -S @vangware/micro
 Or you can use it directly as an ESM module trough services like [Pika](https://www.pika.dev/):
 
 ```js
-import { typeOf } from "https://cdn.pika.dev/@vangware/micro";
+import { isObject } from "https://cdn.pika.dev/@vangware/micro";
 ```
 
 ## Utils
@@ -70,6 +70,12 @@ import { typeOf } from "https://cdn.pika.dev/@vangware/micro";
 - **isUndefined** Check if given value is an undefined.
 - **isWeakMap** Check if given value is an WeakMap.
 - **isWeakSet** Check if given value is an WeakSet.
+
+### Constants
+
+- **EMPTY_ARRAY** Is just a `[]`.
+- **EMPTY_OBJECT** And this one is just a `{}` (without prototype).
+- **EMPTY_STRING** So obviously this one is a `""`.
 
 ### Others
 

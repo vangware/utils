@@ -1,5 +1,6 @@
 import test from "ava";
 import { spy } from "sinon";
+import { EMPTY_STRING } from "../constants";
 import noop from "../noop";
 import { randomRoundNumber, randomString } from "../tests";
 import when from "./when";
@@ -38,7 +39,6 @@ test("works with truthy values", t => {
 
 test("works with falsy values", t => {
 	const FALSY_NUMBER = 0;
-	const FALSY_STRING = "";
 	const SPY = spy();
 
 	t.is(
@@ -50,20 +50,19 @@ test("works with falsy values", t => {
 		FALSY_NUMBER
 	);
 	t.is(
-		when(FALSY_STRING, SPY, value => {
-			t.is(value, FALSY_STRING);
+		when(EMPTY_STRING, SPY, value => {
+			t.is(value, EMPTY_STRING);
 
 			return value;
 		}),
-		FALSY_STRING
+		EMPTY_STRING
 	);
 	t.assert(SPY.notCalled);
 });
 
 test("works with undefined falsy callback", t => {
 	const FALSY_NUMBER = 0;
-	const FALSY_STRING = "";
 
 	t.is(when(FALSY_NUMBER, noop), undefined);
-	t.is(when(FALSY_STRING, noop), undefined);
+	t.is(when(EMPTY_STRING, noop), undefined);
 });

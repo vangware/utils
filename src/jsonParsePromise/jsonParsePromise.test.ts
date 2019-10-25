@@ -12,7 +12,7 @@ test("parses invalid without throwing", async t => {
 });
 
 test("parses valid normally", async t => {
-	const TEST_OBJECT = { valid: true };
+	const TEST_OBJECT = { [randomString()]: randomString() };
 	const VALID_JSON = JSON.stringify(TEST_OBJECT);
 
 	const jsonParseOutput = await jsonParsePromise<typeof TEST_OBJECT>(
