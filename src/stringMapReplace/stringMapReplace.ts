@@ -1,3 +1,4 @@
+import { EMPTY_ARRAY } from "../constants";
 import StringMapReplaceFunction from "./StringMapReplaceFunction";
 
 /**
@@ -10,7 +11,7 @@ export const stringMapReplace: StringMapReplaceFunction = (
 	replaceMap
 ) => {
 	/** Array of replace matches (empty if none are given). */
-	const replaceMapArray = replaceMap ? Object.keys(replaceMap) : [];
+	const replaceMapArray = replaceMap ? Object.keys(replaceMap) : EMPTY_ARRAY;
 
 	/** Regular expression joining all matches together. */
 	const regExp = new RegExp(
