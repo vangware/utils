@@ -1,4 +1,5 @@
 import test from "ava";
+import { EMPTY_ARRAY } from "../constants";
 import { randomLengthNumberArray, randomRoundNumber } from "../tests";
 import arrayReduce from "./arrayReduce";
 
@@ -9,7 +10,7 @@ test("reduces values as expected", t => {
 	const arrayReduceOutput = arrayReduce(
 		NUMBERS_ARRAY,
 		(output, value) => [...output, value * 2],
-		[] as number[]
+		EMPTY_ARRAY as number[]
 	);
 	t.is(arrayReduceOutput.length, NUMBERS_ARRAY.length);
 	t.is(arrayReduceOutput[TEST_INDEX], NUMBERS_ARRAY[TEST_INDEX] * 2);

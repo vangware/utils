@@ -5,6 +5,7 @@ export { arrayReduce } from "./arrayReduce";
 export { arrayReplace } from "./arrayReplace";
 export { arraySplit } from "./arraySplit";
 export { arraySplitFilter } from "./arraySplitFilter";
+export { EMPTY_ARRAY, EMPTY_OBJECT, EMPTY_STRING } from "./constants";
 export { isArray } from "./isArray";
 export { isBigInt } from "./isBigInt";
 export { isBoolean } from "./isBoolean";

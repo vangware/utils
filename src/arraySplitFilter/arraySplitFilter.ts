@@ -1,4 +1,5 @@
 import arrayReduce from "../arrayReduce";
+import { EMPTY_ARRAY } from "../constants";
 import ArraySplitFilterFilter from "./ArraySplitFilterFilter";
 import ArraySplitFilterFunction from "./ArraySplitFilterFunction";
 
@@ -18,7 +19,7 @@ export const arraySplitFilter: ArraySplitFilterFunction = <ItemType>(
 			filter(item, index, array)
 				? [[...trueValues, item], falseValues]
 				: [trueValues, [...falseValues, item]],
-		[[] as ItemType[], [] as ItemType[]]
+		[EMPTY_ARRAY as ItemType[], EMPTY_ARRAY as ItemType[]]
 	);
 
 export default arraySplitFilter;

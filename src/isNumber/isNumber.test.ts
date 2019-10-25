@@ -1,4 +1,5 @@
 import test from "ava";
+import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import { randomRoundNumber, randomString } from "../tests";
 import isNumber from "./isNumber";
 
@@ -11,7 +12,7 @@ test("checks Number correctly", t => {
 	t.assert(isNumber(Number.NEGATIVE_INFINITY));
 	t.assert(isNumber(NaN));
 	t.assert(!isNumber(undefined));
-	t.assert(!isNumber([]));
-	t.assert(!isNumber({}));
+	t.assert(!isNumber(EMPTY_ARRAY));
+	t.assert(!isNumber(EMPTY_OBJECT));
 	t.assert(!isNumber(RANDOM_STRING));
 });
