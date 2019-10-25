@@ -1,4 +1,5 @@
 import test from "ava";
+import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import { randomRoundNumber, randomString } from "../tests";
 import isBigInt from "./isBigInt";
 
@@ -9,8 +10,8 @@ test("checks BigInt correctly", t => {
 	t.assert(isBigInt(1n));
 	t.assert(isBigInt(BigInt("1")));
 	t.assert(!isBigInt(undefined));
-	t.assert(!isBigInt([]));
-	t.assert(!isBigInt({}));
+	t.assert(!isBigInt(EMPTY_ARRAY));
+	t.assert(!isBigInt(EMPTY_OBJECT));
 	t.assert(!isBigInt(RANDOM_STRING));
 	t.assert(!isBigInt(RANDOM_NUMBER));
 });

@@ -1,5 +1,6 @@
 import arrayReduce from "../arrayReduce";
 import arrayReplace from "../arrayReplace";
+import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
 import ArraySplitFunction from "./ArraySplitFunction";
 
@@ -20,10 +21,12 @@ export const arraySplit: ArraySplitFunction = <ItemType>(
 		(output, item, index) =>
 			(arrayIndex =>
 				arrayReplace(output, arrayIndex, [
-					...(isArray(output[arrayIndex]) ? output[arrayIndex] : []),
+					...(isArray(output[arrayIndex])
+						? output[arrayIndex]
+						: EMPTY_ARRAY),
 					item
 				]))(Math.floor(vertical ? index % length : index / length)),
-		[] as ItemType[][]
+		EMPTY_ARRAY as ItemType[][]
 	);
 
 export default arraySplit;

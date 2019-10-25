@@ -1,9 +1,13 @@
 import test from "ava";
-import { randomLengthNumberArray, randomLengthStringArray } from "../tests";
+import {
+	randomLengthNumberArray,
+	randomLengthStringArray,
+	randomString
+} from "../tests";
 import isInstanceOf from "./isInstanceOf";
 
 test("works as expected", t => {
-	const TEST_OBJECT = { valid: true };
+	const TEST_OBJECT = { [randomString()]: randomString() };
 	const TEST_ARRAY_NUMBER = randomLengthNumberArray();
 	const TEST_ARRAY_STRING = randomLengthStringArray();
 
