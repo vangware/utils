@@ -1,3 +1,5 @@
+import { EMPTY_ARRAY } from "../constants";
+import isObject from "../isObject";
 import ObjectMapFunction from "./ObjectMapFunction";
 
 /**
@@ -6,8 +8,8 @@ import ObjectMapFunction from "./ObjectMapFunction";
  * @param mapper Map callback (to be called for every object key).
  */
 export const objectMap: ObjectMapFunction = (targetObject, mapper) =>
-	Object.keys(targetObject).map(key =>
-		mapper(targetObject[key], key, targetObject)
+	(isObject(targetObject) ? Object.keys(targetObject) : EMPTY_ARRAY).map(
+		key => mapper(targetObject[key], key, targetObject)
 	);
 
 export default objectMap;
