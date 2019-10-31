@@ -15,3 +15,11 @@ test("maps correctly", t => {
 	t.assert(Array.isArray(objectMapOutput));
 	t.deepEqual(objectMapOutput[0], OBJECT);
 });
+
+test("maps even if the value isn't a valid object", t => {
+	// tslint:disable-next-line: no-null-keyword
+	const objectMapOutput = objectMap(null, (value, key) => ({
+		[key]: value
+	}));
+	t.assert(Array.isArray(objectMapOutput));
+});
