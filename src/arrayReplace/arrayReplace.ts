@@ -2,9 +2,11 @@ import ArrayReplaceFunction from "./ArrayReplaceFunction";
 
 /**
  * Replace value in array at given index.
- * @param array Target array.
- * @param index Index to start replacing items.
- * @param items Items to be inserted.
+ *
+ * @param array - Target array.
+ * @param index - Index to start replacing items.
+ * @param items - Items to be inserted.
+ * @returns Array with replaced elements.
  */
 export const arrayReplace: ArrayReplaceFunction = (array, index, ...items) =>
 	(replacePoint => [

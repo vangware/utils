@@ -3,8 +3,10 @@ import StringMapReplaceFunction from "./StringMapReplaceFunction";
 
 /**
  * Takes a string and an object and makes a regex map replace
- * @param target Target string.
- * @param replaceMap Map with format `{ "match": "replacing string" }`.
+ *
+ * @param target - Target string.
+ * @param replaceMap - Map with format `{ "match": "replacing string" }`.
+ * @returns String with replaced values.
  */
 export const stringMapReplace: StringMapReplaceFunction = (
 	target,

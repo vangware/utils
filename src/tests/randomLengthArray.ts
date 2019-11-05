@@ -1,8 +1,10 @@
 /**
  * Generates random length array.
- * @param callback Callback that returns value to fill the random length array.
- * @param maxLength Max length of the array.
- * @param minLength Min length of the array.
+ *
+ * @param callback - Callback that returns value to fill the random length array.
+ * @param maxLength - Max length of the array.
+ * @param minLength - Min length of the array.
+ * @ignore
  */
 export const randomLengthArray = <ItemType>(
 	callback: (value: ItemType, index: number, array: ItemType[]) => ItemType,

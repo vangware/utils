@@ -3,9 +3,11 @@ import randomString from "./randomString";
 
 /**
  * Generates a random length array of strings.
- * @param text String
- * @param maxLength Max length of the array.
- * @param minLength Min length of the array.
+ *
+ * @param text - String.
+ * @param maxLength - Max length of the array.
+ * @param minLength - Min length of the array.
+ * @ignore
  */
 export const randomLengthStringArray = (
 	text: string = randomString(),

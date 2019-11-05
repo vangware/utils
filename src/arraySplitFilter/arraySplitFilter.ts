@@ -5,8 +5,9 @@ import ArraySplitFilterFunction from "./ArraySplitFilterFunction";
 
 /**
  * Split array into two arrays based on a filter.
- * @param target Target array.
- * @param filter Filter function.
+ *
+ * @param target - Target array.
+ * @param filter - Filter function.
  * @returns Array of 2 elements (the true values, and the false values).
  */
 export const arraySplitFilter: ArraySplitFilterFunction = <ItemType>(
