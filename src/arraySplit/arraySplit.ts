@@ -6,9 +6,10 @@ import ArraySplitFunction from "./ArraySplitFunction";
 
 /**
  * Split array into multiple arrays of the given size.
- * @param array Target array.
- * @param length Size of every piece.
- * @param vertical Changes the orientation of the split.
+ *
+ * @param array - Target array.
+ * @param length - Size of every piece.
+ * @param vertical - Changes the orientation of the split.
  * @returns Array of arrays of the given length.
  */
 export const arraySplit: ArraySplitFunction = <ItemType>(

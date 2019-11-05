@@ -3,7 +3,9 @@ import PrimitiveNull from "./PrimitiveNull";
 
 /**
  * Check if given value is null.
- * @param value Value to check.
+ *
+ * @param value - Value to check.
+ * @returns True if is a null, false if not.
  */
 export const isNull = <ValueType = unknown>(
 	value: ValueType | null

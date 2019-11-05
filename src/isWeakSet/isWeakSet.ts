@@ -2,7 +2,9 @@ import isInstanceOf from "../isInstanceOf";
 
 /**
  * Check if given value is an instance of WeakSet.
- * @param value Value to check.
+ *
+ * @param value - Value to check.
+ * @returns True if is a WeakSet, false if not.
  */
 export const isWeakSet = <ValueType = unknown, SetType extends object = object>(
 	value: ValueType | WeakSet<SetType>

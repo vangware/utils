@@ -1,5 +1,6 @@
 /**
  * Generate random string.
+ * @ignore
  */
 export const randomString = () =>
 	Math.random()
