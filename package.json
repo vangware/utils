@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware utils library",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -41,6 +41,8 @@
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^2.2.11",
     "typescript": "^3.6.4"
   },
   "files": [
@@ -50,7 +52,7 @@
   "homepage": "https://github.com/vangware/micro#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "run-s clean pre-compile lint test"
+      "pre-commit": "run-s clean pre-compile lint test documentation"
     }
   },
   "keywords": [
@@ -98,6 +100,7 @@
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "documentation": "typedoc --plugin typedoc-plugin-markdown --exclude \"**/+(*.test|index|*Function).ts\" --mode file --readme none --hideSources --hideBreadcrumbs --out documentation ./src/**/*.ts",
     "lint": "tslint -c ./tslint.json -p .",
     "pre-compile": "run-s pre-compile:*",
     "pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",
