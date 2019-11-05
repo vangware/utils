@@ -5,8 +5,10 @@ import ArrayGroupFunction from "./ArrayGroupFunction";
 
 /**
  * Creates object with properties grouped by grouper function.
- * @param array Target array.
- * @param grouper Grouper function (returns the group name).
+ *
+ * @param array - Target array.
+ * @param grouper - Grouper function (returns the group name).
+ * @returns An object with the shape `{ [group]: [items] }`.
  */
 export const arrayGroup: ArrayGroupFunction = (array, grouper) =>
 	arrayReduce(

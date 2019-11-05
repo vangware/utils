@@ -4,8 +4,10 @@ import ObjectMapFunction from "./ObjectMapFunction";
 
 /**
  * Object mapping.
- * @param targetObject Target object.
- * @param mapper Map callback (to be called for every object key).
+ *
+ * @param targetObject - Target object.
+ * @param mapper - Map callback (to be called for every object key).
+ * @returns An array with the object mapped values/keys.
  */
 export const objectMap: ObjectMapFunction = (targetObject, mapper) =>
 	(isObject(targetObject) ? Object.keys(targetObject) : EMPTY_ARRAY).map(

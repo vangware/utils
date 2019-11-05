@@ -3,9 +3,11 @@ import ArrayReduceFunction from "./ArrayReduceFunction";
 
 /**
  * Array.prototype.reduce wrapper that can take an undefined value.
- * @param array Target array.
- * @param reducer Map callback (to be called for every array item).
- * @param initialValue Initial value of reducer (returned if array is invalid).
+ *
+ * @param array - Target array.
+ * @param reducer - Map callback (to be called for every array item).
+ * @param initialValue - Initial value of reducer (returned if array is invalid).
+ * @returns Reduced value.
  */
 export const arrayReduce: ArrayReduceFunction = (
 	array,
