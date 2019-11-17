@@ -11,6 +11,10 @@ Primitive type wrapper.
 
   ↳ [PrimitiveBoolean](primitiveboolean.md)
 
+  ↳ [PrimitiveNull](primitivenull.md)
+
+  ↳ [PrimitiveUndefined](primitiveundefined.md)
+
   ↳ [PrimitiveNumber](primitivenumber.md)
 
   ↳ [PrimitiveObject](primitiveobject.md)
@@ -18,8 +22,6 @@ Primitive type wrapper.
   ↳ [PrimitiveString](primitivestring.md)
 
   ↳ [PrimitiveSymbol](primitivesymbol.md)
-
-  ↳ [PrimitiveUndefined](primitiveundefined.md)
 
 ## Index
 

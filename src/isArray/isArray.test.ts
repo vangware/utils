@@ -8,6 +8,7 @@ test("checks Array correctly", t => {
 	const RANDOM_STRING = randomString();
 
 	t.assert(isArray(EMPTY_ARRAY));
+	// eslint-disable-next-line @typescript-eslint/no-array-constructor
 	t.assert(isArray(new Array()));
 	t.assert(!isArray(undefined));
 	t.assert(!isArray(EMPTY_OBJECT));

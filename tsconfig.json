@@ -2,7 +2,10 @@
   "compilerOptions": {
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
+    "lib": [
+      "es2018",
+      "esnext.bigint"
+    ],
     "listEmittedFiles": true,
     "module": "commonjs",
     "moduleResolution": "node",
@@ -14,7 +17,7 @@
     "preserveConstEnums": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "ESNext"
+    "target": "ES2018",
   },
   "include": [
     "src/**/*.ts"

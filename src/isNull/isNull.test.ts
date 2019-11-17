@@ -7,7 +7,7 @@ test("checks null correctly", t => {
 	const RANDOM_NUMBER = randomRoundNumber(10);
 	const RANDOM_STRING = randomString();
 
-	// tslint:disable-next-line: no-null-keyword
+	// eslint-disable-next-line no-null/no-null
 	t.assert(isNull(null));
 	t.assert(!isNull(undefined));
 	t.assert(!isNull(EMPTY_ARRAY));

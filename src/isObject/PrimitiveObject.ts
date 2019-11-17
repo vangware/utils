@@ -9,7 +9,7 @@ export class PrimitiveObject extends PrimitiveType {
 	protected static type: PrimitiveTypeString = "object";
 
 	public static [Symbol.hasInstance]<ValueType = unknown>(value: ValueType) {
-		return !isNull(value) && typeof value === this.type;
+		return !isNull(value) && super[Symbol.hasInstance](value);
 	}
 }
 

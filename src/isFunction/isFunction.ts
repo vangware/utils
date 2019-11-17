@@ -8,9 +8,7 @@ import PrimitiveFunction from "./PrimitiveFunction";
  * @returns True if is a Function, false if not.
  */
 export const isFunction = <ValueType = unknown>(
-	// tslint:disable-next-line: ban-types
 	value: ValueType | Function
-	// tslint:disable-next-line: ban-types
 ): value is Function => isInstanceOf(value, PrimitiveFunction);
 
 export default isFunction;
