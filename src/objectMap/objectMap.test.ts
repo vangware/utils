@@ -17,7 +17,7 @@ test("maps correctly", t => {
 });
 
 test("maps even if the value isn't a valid object", t => {
-	// tslint:disable-next-line: no-null-keyword
+	// eslint-disable-next-line no-null/no-null
 	const objectMapOutput = objectMap(null, (value, key) => ({
 		[key]: value
 	}));

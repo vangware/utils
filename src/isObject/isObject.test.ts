@@ -9,7 +9,7 @@ test("checks Object correctly", t => {
 
 	t.assert(isObject(EMPTY_OBJECT));
 	t.assert(isObject(EMPTY_ARRAY));
-	// tslint:disable-next-line: no-null-keyword
+	// eslint-disable-next-line no-null/no-null
 	t.assert(!isObject(null));
 	t.assert(!isObject(undefined));
 	t.assert(!isObject(RANDOM_NUMBER));

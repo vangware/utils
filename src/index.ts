@@ -1,34 +1,62 @@
-export { arrayGroup } from "./arrayGroup";
-export { arrayInsert } from "./arrayInsert";
-export { arrayMap } from "./arrayMap";
-export { arrayReduce } from "./arrayReduce";
-export { arrayReplace } from "./arrayReplace";
-export { arraySplit } from "./arraySplit";
-export { arraySplitFilter } from "./arraySplitFilter";
+export {
+	arrayGroup,
+	ArrayGroupFunction,
+	ArrayGroupGrouper,
+	ArrayGroupObject
+} from "./arrayGroup";
+export { arrayInsert, ArrayInsertFunction } from "./arrayInsert";
+export { arrayMap, ArrayMapFunction, ArrayMapMapper } from "./arrayMap";
+export { arrayPush, ArrayPushFunction } from "./arrayPush";
+export {
+	arrayReduce,
+	ArrayReduceFunction,
+	ArrayReduceReducer
+} from "./arrayReduce";
+export { arrayReplace, ArrayReplaceFunction } from "./arrayReplace";
+export { arraySplit, ArraySplitFunction } from "./arraySplit";
+export {
+	arraySplitFilter,
+	ArraySplitFilterFilter,
+	ArraySplitFilterFunction
+} from "./arraySplitFilter";
 export { EMPTY_ARRAY, EMPTY_OBJECT, EMPTY_STRING } from "./constants";
-export { isArray } from "./isArray";
-export { isBigInt } from "./isBigInt";
-export { isBoolean } from "./isBoolean";
-export { isDate } from "./isDate";
-export { isFunction } from "./isFunction";
-export { isInstanceOf } from "./isInstanceOf";
-export { isMap } from "./isMap";
-export { isNull } from "./isNull";
-export { isNumber } from "./isNumber";
-export { isObject } from "./isObject";
-export { isPromise } from "./isPromise";
-export { isRegExp } from "./isRegExp";
-export { isSet } from "./isSet";
-export { isString } from "./isString";
-export { isSymbol } from "./isSymbol";
-export { isUndefined } from "./isUndefined";
-export { isWeakMap } from "./isWeakMap";
-export { isWeakSet } from "./isWeakSet";
-export { jsonParse } from "./jsonParse";
-export { jsonParsePromise } from "./jsonParsePromise";
-export { noop } from "./noop";
-export { objectMap } from "./objectMap";
-export { stringMapReplace } from "./stringMapReplace";
-export { tap } from "./tap";
-export { tryCatch } from "./tryCatch";
-export { when } from "./when";
+export { isArray, IsArrayFunction } from "./isArray";
+export { isBigInt, IsBigIntFunction, PrimitiveBigInt } from "./isBigInt";
+export { isBoolean, IsBooleanFunction, PrimitiveBoolean } from "./isBoolean";
+export { isDate, IsDateFunction } from "./isDate";
+export {
+	isFunction,
+	IsFunctionFunction,
+	PrimitiveFunction
+} from "./isFunction";
+export { isInstanceOf, IsInstanceOfFunction } from "./isInstanceOf";
+export { isMap, IsMapFunction } from "./isMap";
+export { isNull, IsNullFunction, PrimitiveNull } from "./isNull";
+export { isNullish, IsNullishFunction } from "./isNullish";
+export { isNumber, IsNumberFunction, PrimitiveNumber } from "./isNumber";
+export { isObject, IsObjectFunction, PrimitiveObject } from "./isObject";
+export { isPromise, IsPromiseFunction } from "./isPromise";
+export { isRegExp, IsRegExpFunction } from "./isRegExp";
+export { isSet, IsSetFunction } from "./isSet";
+export { isString, IsStringFunction, PrimitiveString } from "./isString";
+export { isSymbol, IsSymbolFunction, PrimitiveSymbol } from "./isSymbol";
+export {
+	isUndefined,
+	IsUndefinedFunction,
+	PrimitiveUndefined
+} from "./isUndefined";
+export { isWeakMap, IsWeakMapFunction } from "./isWeakMap";
+export { isWeakSet, IsWeakSetFunction } from "./isWeakSet";
+export { jsonParse, JSONParseFunction, JSONParseReviver } from "./jsonParse";
+export { jsonParsePromise, JSONParsePromiseFunction } from "./jsonParsePromise";
+export { noop, NoopFunction } from "./noop";
+export { objectMap, ObjectMapFunction, ObjectMapMapper } from "./objectMap";
+export { stringMapReplace, StringMapReplaceMap } from "./stringMapReplace";
+export { tap, TapFunction, TapObserver, TapWrapper } from "./tap";
+export { tryCatch, TryCatchCatch, TryCatchFunction } from "./tryCatch";
+export {
+	when,
+	WhenFunction,
+	WhenNotNullishCallback,
+	WhenNullishCallback
+} from "./when";

@@ -8,6 +8,6 @@ import randomLengthArray from "./randomLengthArray";
  * @ignore
  */
 export const randomLengthNumberArray = (maxLength = 10, minLength = 1) =>
-	randomLengthArray<number>((_, index) => index, maxLength, minLength);
+	randomLengthArray<number>((_value, index) => index, maxLength, minLength);
 
 export default randomLengthNumberArray;

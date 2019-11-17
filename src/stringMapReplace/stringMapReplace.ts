@@ -1,4 +1,6 @@
-import { EMPTY_ARRAY } from "../constants";
+import arrayReduce from "../arrayReduce";
+import { EMPTY_OBJECT } from "../constants";
+import objectMap from "../objectMap";
 import StringMapReplaceFunction from "./StringMapReplaceFunction";
 
 /**
@@ -10,24 +12,15 @@ import StringMapReplaceFunction from "./StringMapReplaceFunction";
  */
 export const stringMapReplace: StringMapReplaceFunction = (
 	target,
-	replaceMap
-) => {
-	/** Array of replace matches (empty if none are given). */
-	const replaceMapArray = replaceMap ? Object.keys(replaceMap) : EMPTY_ARRAY;
-
-	/** Regular expression joining all matches together. */
-	const regExp = new RegExp(
-		replaceMapArray
-			.map(match =>
-				match.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
-			)
-			.join("|"),
-		"g"
+	replaceMap = EMPTY_OBJECT
+) =>
+	arrayReduce(
+		objectMap(replaceMap, (value, match) => ({
+			search: new RegExp(match, "gu"),
+			value: `${value}`
+		})),
+		(output, { search, value }) => output.replace(search, value),
+		target
 	);
-
-	return replaceMapArray.length > 0
-		? target.replace(regExp, match => `${replaceMap[match]}`)
-		: target;
-};
 
 export default stringMapReplace;
