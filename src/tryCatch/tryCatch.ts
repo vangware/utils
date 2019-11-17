@@ -8,15 +8,11 @@ import TryCatchFunction from "./TryCatchFunction";
  * @returns The returned value of the tryCallback or the catchCallback (or undefined).
  */
 export const tryCatch: TryCatchFunction = (tryCallback, catchCallback) => {
-	let returnedValue;
-
 	try {
-		returnedValue = tryCallback();
+		return tryCallback();
 	} catch (error) {
-		returnedValue = catchCallback ? catchCallback(error) : undefined;
+		return catchCallback?.(error);
 	}
-
-	return returnedValue;
 };
 
 export default tryCatch;

@@ -7,7 +7,7 @@ test("checks BigInt correctly", t => {
 	const RANDOM_NUMBER = randomRoundNumber(10);
 	const RANDOM_STRING = randomString();
 
-	t.assert(isBigInt(1n));
+	t.assert(isBigInt(BigInt(1)));
 	t.assert(isBigInt(BigInt("1")));
 	t.assert(!isBigInt(undefined));
 	t.assert(!isBigInt(EMPTY_ARRAY));

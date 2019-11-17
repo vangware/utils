@@ -32,11 +32,8 @@
 * [TapObserver](README.md#tapobserver)
 * [TapWrapper](README.md#tapwrapper)
 * [TryCatchCatch](README.md#trycatchcatch)
-* [WhenFalsy](README.md#whenfalsy)
-* [WhenFalsyCallback](README.md#whenfalsycallback)
-* [WhenFalsyValue](README.md#whenfalsyvalue)
-* [WhenTruthyCallback](README.md#whentruthycallback)
-* [WhenTruthyValue](README.md#whentruthyvalue)
+* [WhenNotNullishCallback](README.md#whennotnullishcallback)
+* [WhenNullishCallback](README.md#whennullishcallback)
 
 ### Variables
 
@@ -49,6 +46,7 @@
 * [arrayGroup](README.md#const-arraygroup)
 * [arrayInsert](README.md#const-arrayinsert)
 * [arrayMap](README.md#const-arraymap)
+* [arrayPush](README.md#const-arraypush)
 * [arrayReduce](README.md#const-arrayreduce)
 * [arrayReplace](README.md#const-arrayreplace)
 * [arraySplit](README.md#const-arraysplit)
@@ -60,6 +58,7 @@
 * [isInstanceOf](README.md#const-isinstanceof)
 * [isMap](README.md#const-ismap)
 * [isNull](README.md#const-isnull)
+* [isNullish](README.md#const-isnullish)
 * [isNumber](README.md#const-isnumber)
 * [isObject](README.md#const-isobject)
 * [isPromise](README.md#const-ispromise)
@@ -244,53 +243,29 @@ Name | Type |
 
 ___
 
-###  WhenFalsy
+###  WhenNotNullishCallback
 
-Ƭ **WhenFalsy**: *null | undefined | false | 0 | ""*
-
-___
-
-###  WhenFalsyCallback
-
-Ƭ **WhenFalsyCallback**: *function*
+Ƭ **WhenNotNullishCallback**: *function*
 
 #### Type declaration:
 
-▸ (`value`: [WhenFalsyValue](README.md#whenfalsyvalue)‹ValueType›): *OutputType*
+▸ (`value`: NonNullable‹ValueType›): *OutputType*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`value` | [WhenFalsyValue](README.md#whenfalsyvalue)‹ValueType› |
+`value` | NonNullable‹ValueType› |
 
 ___
 
-###  WhenFalsyValue
+###  WhenNullishCallback
 
-Ƭ **WhenFalsyValue**: *Extract‹ValueType, [WhenFalsy](README.md#whenfalsy)›*
-
-___
-
-###  WhenTruthyCallback
-
-Ƭ **WhenTruthyCallback**: *function*
+Ƭ **WhenNullishCallback**: *function*
 
 #### Type declaration:
 
-▸ (`value`: [WhenTruthyValue](README.md#whentruthyvalue)‹ValueType›): *OutputType*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`value` | [WhenTruthyValue](README.md#whentruthyvalue)‹ValueType› |
-
-___
-
-###  WhenTruthyValue
-
-Ƭ **WhenTruthyValue**: *Exclude‹ValueType, [WhenFalsy](README.md#whenfalsy)›*
+▸ (): *OutputType*
 
 ## Variables
 
@@ -400,6 +375,25 @@ Mapped array.
 
 ___
 
+### `Const` arrayPush
+
+▸ **arrayPush**(`array`: ItemType[], ...`items`: ItemType[]): *ItemType[]*
+
+Insert given items at the end of given array.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`array` | ItemType[] | Target array. |
+`...items` | ItemType[] | Items to be inserted. |
+
+**Returns:** *ItemType[]*
+
+New array with inserted values in it.
+
+___
+
 ### `Const` arrayReduce
 
 ▸ **arrayReduce**(`array`: ItemType[], `reducer`: function, `initialValue`: OutputType): *OutputType*
@@ -506,7 +500,7 @@ ___
 
 ### `Const` isArray
 
-▸ **isArray**<**ValueType**, **ItemType**>(`value`: ValueType | ItemType[]): *boolean*
+▸ **isArray**<**ValueType**, **ItemType**>(`value`: ValueType | ItemType[]): *value is ItemType[]*
 
 Check if given value is an instance of Array.
 
@@ -522,7 +516,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; ItemType[] | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is ItemType[]*
 
 True if is an array, false if not.
 
@@ -530,7 +524,7 @@ ___
 
 ### `Const` isBigInt
 
-▸ **isBigInt**<**ValueType**>(`value`: ValueType | BigInt): *boolean*
+▸ **isBigInt**<**ValueType**>(`value`: ValueType | BigInt): *value is BigInt*
 
 Check if given value is an instance of BigInt.
 
@@ -544,7 +538,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; BigInt | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is BigInt*
 
 True if is a BigInt, false if not.
 
@@ -552,7 +546,7 @@ ___
 
 ### `Const` isBoolean
 
-▸ **isBoolean**<**ValueType**>(`value`: ValueType | boolean): *boolean*
+▸ **isBoolean**<**ValueType**>(`value`: ValueType | boolean): *value is boolean*
 
 Check if given value is an instance of Boolean.
 
@@ -566,7 +560,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; boolean | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is boolean*
 
 True if is a Boolean, false if not.
 
@@ -574,7 +568,7 @@ ___
 
 ### `Const` isDate
 
-▸ **isDate**<**ValueType**>(`value`: ValueType | Date): *boolean*
+▸ **isDate**<**ValueType**>(`value`: ValueType | Date): *value is Date*
 
 Check if given value is an instance of Date.
 
@@ -588,7 +582,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; Date | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is Date*
 
 True if is a Date, false if not.
 
@@ -615,7 +609,7 @@ ___
 
 ### `Const` isMap
 
-▸ **isMap**<**ValueType**, **MapKeyType**, **MapValueType**>(`value`: ValueType | Map‹MapKeyType, MapValueType›): *boolean*
+▸ **isMap**<**ValueType**, **MapKeyType**, **MapValueType**>(`value`: ValueType | Map‹MapKeyType, MapValueType›): *value is Map<MapKeyType, MapValueType>*
 
 Check if given value is an instance of Map.
 
@@ -633,7 +627,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; Map‹MapKeyType, MapValueType› | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is Map<MapKeyType, MapValueType>*
 
 True if is a Map, false if not.
 
@@ -641,7 +635,7 @@ ___
 
 ### `Const` isNull
 
-▸ **isNull**<**ValueType**>(`value`: ValueType | null): *boolean*
+▸ **isNull**<**ValueType**>(`value`: ValueType | null): *value is null*
 
 Check if given value is null.
 
@@ -655,15 +649,37 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; null | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is null*
 
 True if is a null, false if not.
 
 ___
 
+### `Const` isNullish
+
+▸ **isNullish**<**ValueType**>(`value`: ValueType | null | undefined): *value is null | undefined*
+
+Check if given value is null or undefined.
+
+**Type parameters:**
+
+▪ **ValueType**
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`value` | ValueType &#124; null &#124; undefined | Value to check. |
+
+**Returns:** *value is null | undefined*
+
+True if is a null or undefined, false if not.
+
+___
+
 ### `Const` isNumber
 
-▸ **isNumber**<**ValueType**>(`value`: ValueType | number): *boolean*
+▸ **isNumber**<**ValueType**>(`value`: ValueType | number): *value is number*
 
 Check if given value is instance of Number.
 
@@ -677,7 +693,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; number | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is number*
 
 True if is a number, false if not.
 
@@ -685,7 +701,7 @@ ___
 
 ### `Const` isObject
 
-▸ **isObject**<**ValueType**>(`value`: ValueType): *boolean*
+▸ **isObject**<**ValueType**>(`value`: ValueType): *value is Extract<ValueType, object>*
 
 Check if given value is instance of Object (and is not null).
 
@@ -699,7 +715,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is Extract<ValueType, object>*
 
 True if is an object, false if not.
 
@@ -707,7 +723,7 @@ ___
 
 ### `Const` isPromise
 
-▸ **isPromise**<**ValueType**, **PromiseValue**>(`value`: ValueType | Promise‹PromiseValue›): *boolean*
+▸ **isPromise**<**ValueType**, **PromiseValue**>(`value`: ValueType | Promise‹PromiseValue›): *value is Promise<PromiseValue>*
 
 Check if given value is an instance of Promise.
 
@@ -723,7 +739,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; Promise‹PromiseValue› | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is Promise<PromiseValue>*
 
 True if is a Promise, false if not.
 
@@ -731,7 +747,7 @@ ___
 
 ### `Const` isRegExp
 
-▸ **isRegExp**<**ValueType**>(`value`: ValueType | RegExp): *boolean*
+▸ **isRegExp**<**ValueType**>(`value`: ValueType | RegExp): *value is RegExp*
 
 Check if given value is an instance of RegExp.
 
@@ -745,7 +761,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; RegExp | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is RegExp*
 
 True if is a RegExp, false if not.
 
@@ -753,7 +769,7 @@ ___
 
 ### `Const` isSet
 
-▸ **isSet**<**ValueType**, **SetType**>(`value`: ValueType | Set‹SetType›): *boolean*
+▸ **isSet**<**ValueType**, **SetType**>(`value`: ValueType | Set‹SetType›): *value is Set<SetType>*
 
 Check if given value is an instance of Set.
 
@@ -769,7 +785,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; Set‹SetType› | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is Set<SetType>*
 
 True if is a Set, false if not.
 
@@ -777,7 +793,7 @@ ___
 
 ### `Const` isString
 
-▸ **isString**<**ValueType**>(`value`: ValueType | string): *boolean*
+▸ **isString**<**ValueType**>(`value`: ValueType | string): *value is string*
 
 Check if given value is instance of String.
 
@@ -791,7 +807,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; string | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is string*
 
 True if is a string, false if not.
 
@@ -799,7 +815,7 @@ ___
 
 ### `Const` isSymbol
 
-▸ **isSymbol**<**ValueType**>(`value`: ValueType | symbol): *boolean*
+▸ **isSymbol**<**ValueType**>(`value`: ValueType | symbol): *value is symbol*
 
 Check if given value is instance of Symbol.
 
@@ -813,7 +829,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; symbol | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is symbol*
 
 True if is a symbol, false if not.
 
@@ -821,7 +837,7 @@ ___
 
 ### `Const` isUndefined
 
-▸ **isUndefined**<**ValueType**>(`value`: ValueType | undefined): *boolean*
+▸ **isUndefined**<**ValueType**>(`value`: ValueType | undefined): *value is undefined*
 
 Check if given value is undefined.
 
@@ -835,7 +851,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; undefined | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is undefined*
 
 True if is undefined, false if not.
 
@@ -843,7 +859,7 @@ ___
 
 ### `Const` isWeakMap
 
-▸ **isWeakMap**<**ValueType**, **WeakMapKeyType**, **WeakMapValueType**>(`value`: ValueType | WeakMap‹WeakMapKeyType, WeakMapValueType›): *boolean*
+▸ **isWeakMap**<**ValueType**, **WeakMapKeyType**, **WeakMapValueType**>(`value`: ValueType | WeakMap‹WeakMapKeyType, WeakMapValueType›): *value is WeakMap<WeakMapKeyType, WeakMapValueType>*
 
 Check if given value is an instance of WeakMap.
 
@@ -861,7 +877,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; WeakMap‹WeakMapKeyType, WeakMapValueType› | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is WeakMap<WeakMapKeyType, WeakMapValueType>*
 
 True if is a WeakMap, false if not.
 
@@ -869,7 +885,7 @@ ___
 
 ### `Const` isWeakSet
 
-▸ **isWeakSet**<**ValueType**, **SetType**>(`value`: ValueType | WeakSet‹SetType›): *boolean*
+▸ **isWeakSet**<**ValueType**, **SetType**>(`value`: ValueType | WeakSet‹SetType›): *value is WeakSet<SetType>*
 
 Check if given value is an instance of WeakSet.
 
@@ -885,7 +901,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `value` | ValueType &#124; WeakSet‹SetType› | Value to check. |
 
-**Returns:** *boolean*
+**Returns:** *value is WeakSet<SetType>*
 
 True if is a WeakSet, false if not.
 
@@ -987,10 +1003,10 @@ Takes a string and an object and makes a regex map replace
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`target` | string | Target string. |
-`replaceMap` | [StringMapReplaceMap](interfaces/stringmapreplacemap.md) | Map with format `{ "match": "replacing string" }`. |
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`target` | string | - | Target string. |
+`replaceMap` | [StringMapReplaceMap](interfaces/stringmapreplacemap.md) |  EMPTY_OBJECT | Map with format `{ "match": "replacing string" }`. |
 
 **Returns:** *string*
 
@@ -1050,7 +1066,7 @@ ___
 
 ### `Const` when
 
-▸ **when**(`value`: ValueType, `truthyCallback`: function, `falsyCallback`: undefined | function): *undefined | OutputType*
+▸ **when**(`value`: ValueType, `notNullishCallback`: function, `nullishCallback`: undefined | function): *undefined | OutputType*
 
 Ternary wrapper based on callbacks.
 
@@ -1060,22 +1076,22 @@ Ternary wrapper based on callbacks.
 
 Value to be checked (truthy/falsy).
 
-▪ **truthyCallback**: *function*
+▪ **notNullishCallback**: *function*
 
-Callback when value is truthy.
+Callback when value is not nullish.
 
-▸ (`value`: [WhenTruthyValue](README.md#whentruthyvalue)‹ValueType›): *OutputType*
+▸ (`value`: NonNullable‹ValueType›): *OutputType*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`value` | [WhenTruthyValue](README.md#whentruthyvalue)‹ValueType› |
+`value` | NonNullable‹ValueType› |
 
-▪ **falsyCallback**: *undefined | function*
+▪ **nullishCallback**: *undefined | function*
 
-Callback when value is falsy.
+Callback when value is nullish.
 
 **Returns:** *undefined | OutputType*
 
-The returned value of truthyCallback or falsyCallback.
+The returned value of notNullishCallback or nullishCallback.

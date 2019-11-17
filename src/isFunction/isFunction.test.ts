@@ -8,7 +8,7 @@ test("checks Function correctly", t => {
 	const RANDOM_STRING = randomString();
 
 	t.assert(isFunction(() => undefined));
-	// tslint:disable-next-line: only-arrow-functions no-empty space-before-function-paren
+	// eslint-disable-next-line prefer-arrow/prefer-arrow-functions, @typescript-eslint/no-empty-function
 	t.assert(isFunction(function() {}));
 	t.assert(!isFunction(undefined));
 	t.assert(!isFunction(EMPTY_ARRAY));

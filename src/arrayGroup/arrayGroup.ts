@@ -1,3 +1,4 @@
+import arrayPush from "../arrayPush";
 import arrayReduce from "../arrayReduce";
 import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import isArray from "../isArray";
@@ -16,10 +17,10 @@ export const arrayGroup: ArrayGroupFunction = (array, grouper) =>
 		(output, item) =>
 			(group => ({
 				...output,
-				[group]: [
-					...(isArray(output[group]) ? output[group] : EMPTY_ARRAY),
+				[group]: arrayPush(
+					isArray(output[group]) ? output[group] : EMPTY_ARRAY,
 					item
-				]
+				)
 			}))(`${grouper(item)}`),
 		EMPTY_OBJECT
 	);
