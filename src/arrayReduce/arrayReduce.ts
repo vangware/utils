@@ -6,7 +6,7 @@ import ArrayReduceFunction from "./ArrayReduceFunction";
  *
  * @param array - Target array.
  * @param reducer - Map callback (to be called for every array item).
- * @param initialValue - Initial value of reducer (returned if array is invalid).
+ * @param initialValue - Initial value of reducer.
  * @returns Reduced value.
  */
 export const arrayReduce: ArrayReduceFunction = (
