@@ -5,7 +5,7 @@ import TryCatchFunction from "./TryCatchFunction";
  *
  * @param tryCallback - Callback for try.
  * @param catchCallback - Callback for catch.
- * @returns The returned value of the tryCallback or the catchCallback (or undefined).
+ * @returns The returned value of the tryCallback or catchCallback.
  */
 export const tryCatch: TryCatchFunction = (tryCallback, catchCallback) => {
 	try {

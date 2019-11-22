@@ -423,7 +423,7 @@ Name | Type |
 
 ▪ **initialValue**: *OutputType*
 
-Initial value of reducer (returned if array is invalid).
+Initial value of reducer.
 
 **Returns:** *OutputType*
 
@@ -1060,7 +1060,7 @@ Callback for catch.
 
 **Returns:** *undefined | ReturnedValue*
 
-The returned value of the tryCallback or the catchCallback (or undefined).
+The returned value of the tryCallback or catchCallback.
 
 ___
 

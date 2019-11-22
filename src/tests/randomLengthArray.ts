@@ -1,7 +1,7 @@
 /**
  * Generates random length array.
  *
- * @param callback - Callback that returns value to fill the random length array.
+ * @param callback - Callback that returns value to fill the array.
  * @param maxLength - Max length of the array.
  * @param minLength - Min length of the array.
  * @ignore
