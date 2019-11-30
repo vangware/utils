@@ -9,6 +9,6 @@ import isUndefined from "../isUndefined";
  */
 export const isNullish = <ValueType = unknown>(
 	value: ValueType | null | undefined
-): value is null | undefined => isNull(value) || isUndefined(value);
+): value is null | undefined => isUndefined(value) || isNull(value);
 
 export default isNullish;
