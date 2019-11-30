@@ -1,4 +1,4 @@
-import JSONParseReviver from "../jsonParse/JSONParseReviver";
+import JSONParseReviver from "./JSONParseReviver";
 
 export type JSONParsePromiseFunction = <OutputType>(
 	text: string,

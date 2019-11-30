@@ -3,9 +3,9 @@ import NoopFunction from "./NoopFunction";
 /**
  * No operation placeholder function.
  *
- * @param _params - Params (will be ignored).
- * @returns Nothing (is just a placeholder function).
+ * @param value - Value will be returned without changing it.
+ * @returns The given value.
  */
-export const noop: NoopFunction = (..._params) => undefined;
+export const noop: NoopFunction = value => value;
 
 export default noop;

@@ -6,6 +6,6 @@ export type ObjectMapFunction = <
 >(
 	targetObject: ObjectType,
 	mapper: ObjectMapMapper<ObjectType, OutputType>
-) => OutputType[];
+) => readonly OutputType[];
 
 export default ObjectMapFunction;

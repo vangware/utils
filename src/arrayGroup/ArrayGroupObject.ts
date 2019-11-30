@@ -1,5 +1,5 @@
-export interface ArrayGroupObject<ItemType> {
-	[group: string]: ItemType[];
-}
+export type ArrayGroupObject<ItemType> = {
+	readonly [group: string]: readonly ItemType[];
+};
 
 export default ArrayGroupObject;

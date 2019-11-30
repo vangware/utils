@@ -1,25 +1,26 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
 import { EMPTY_ARRAY } from "../constants";
-import { randomLengthNumberArray, randomRoundNumber } from "../tests";
+import noop from "../noop";
+import { ARRAY_NUMBER } from "../testConstants";
 import arrayReduce from "./arrayReduce";
 
 test("reduces values as expected", t => {
-	const NUMBERS_ARRAY = randomLengthNumberArray();
-	const TEST_INDEX = randomRoundNumber(NUMBERS_ARRAY.length - 1);
+	const TEST_INDEX = Math.floor(ARRAY_NUMBER.length / 2);
 
 	const arrayReduceOutput = arrayReduce(
-		NUMBERS_ARRAY,
+		ARRAY_NUMBER,
 		(output, value) => [...output, value * 2],
-		EMPTY_ARRAY as number[]
+		EMPTY_ARRAY as readonly number[]
 	);
-	t.is(arrayReduceOutput.length, NUMBERS_ARRAY.length);
-	t.is(arrayReduceOutput[TEST_INDEX], NUMBERS_ARRAY[TEST_INDEX] * 2);
+	t.is(arrayReduceOutput.length, ARRAY_NUMBER.length);
+	t.is(arrayReduceOutput[TEST_INDEX], ARRAY_NUMBER[TEST_INDEX] * 2);
 });
 
 test("reduces even with invalid values", t => {
 	const arrayReduceOutput = arrayReduce(
-		(undefined as unknown) as unknown[],
-		value => value,
+		(undefined as unknown) as readonly unknown[],
+		noop,
 		true
 	);
 	t.assert(arrayReduceOutput);

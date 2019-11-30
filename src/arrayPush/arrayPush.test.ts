@@ -1,10 +1,10 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
-import { randomLengthNumberArray } from "../tests";
+import { ARRAY_NUMBER } from "../testConstants";
 import arrayPush from "./arrayPush";
 
 test("adds items correctly", t => {
-	const ARRAY = randomLengthNumberArray();
-	const ADDED_VALUES = randomLengthNumberArray();
-	const NEW_ARRAY = arrayPush(ARRAY, ...ADDED_VALUES);
-	t.assert(NEW_ARRAY.length === ARRAY.length + ADDED_VALUES.length);
+	const ADDED_VALUE = 1;
+	const NEW_ARRAY = arrayPush(ARRAY_NUMBER, ADDED_VALUE);
+	t.assert(NEW_ARRAY[NEW_ARRAY.length - 1] === ADDED_VALUE);
 });

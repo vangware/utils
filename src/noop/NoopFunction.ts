@@ -1,3 +1,3 @@
-export type NoopFunction = <ParamsType>(..._params: ParamsType[]) => undefined;
+export type NoopFunction = <ValueType>(value: ValueType) => ValueType;
 
 export default NoopFunction;

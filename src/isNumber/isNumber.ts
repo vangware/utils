@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveNumber from "./PrimitiveNumber";
-
 /**
  * Check if given value is instance of Number.
  *
@@ -9,6 +6,6 @@ import PrimitiveNumber from "./PrimitiveNumber";
  */
 export const isNumber = <ValueType = unknown>(
 	value: ValueType | number
-): value is number => isInstanceOf(value, PrimitiveNumber);
+): value is number => typeof value === "number";
 
 export default isNumber;

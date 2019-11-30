@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveNull from "./PrimitiveNull";
-
 /**
  * Check if given value is null.
  *
@@ -9,6 +6,7 @@ import PrimitiveNull from "./PrimitiveNull";
  */
 export const isNull = <ValueType = unknown>(
 	value: ValueType | null
-): value is null => isInstanceOf(value, PrimitiveNull);
+	// eslint-disable-next-line no-null/no-null
+): value is null => value === null;
 
 export default isNull;
