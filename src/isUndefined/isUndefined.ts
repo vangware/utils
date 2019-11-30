@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveUndefined from "./PrimitiveUndefined";
-
 /**
  * Check if given value is undefined.
  *
@@ -9,6 +6,6 @@ import PrimitiveUndefined from "./PrimitiveUndefined";
  */
 export const isUndefined = <ValueType = unknown>(
 	value: ValueType | undefined
-): value is undefined => isInstanceOf(value, PrimitiveUndefined);
+): value is undefined => typeof value === "undefined";
 
 export default isUndefined;

@@ -1,7 +1,7 @@
 export type ArraySplitFunction = <ItemType>(
-	array: ItemType[],
+	array: readonly ItemType[],
 	length: number,
 	vertical?: boolean
-) => ItemType[][];
+) => readonly (readonly ItemType[])[];
 
 export default ArraySplitFunction;

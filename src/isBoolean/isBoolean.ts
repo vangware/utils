@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveBoolean from "./PrimitiveBoolean";
-
 /**
  * Check if given value is an instance of Boolean.
  *
@@ -9,6 +6,6 @@ import PrimitiveBoolean from "./PrimitiveBoolean";
  */
 export const isBoolean = <ValueType = unknown>(
 	value: ValueType | boolean
-): value is boolean => isInstanceOf(value, PrimitiveBoolean);
+): value is boolean => typeof value === "boolean";
 
 export default isBoolean;

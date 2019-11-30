@@ -1,8 +1,8 @@
 import ArrayMapMapper from "./ArrayMapMapper";
 
 export type ArrayMapFunction = <ItemType, OutputType = ItemType>(
-	array: ItemType[],
+	array: readonly ItemType[],
 	mapper: ArrayMapMapper<ItemType, OutputType>
-) => OutputType[];
+) => readonly OutputType[];
 
 export default ArrayMapFunction;

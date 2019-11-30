@@ -9,7 +9,7 @@
 ![Coverage](https://img.shields.io/coveralls/github/vangware/micro?style=flat-square)
 ![Open Issues](https://img.shields.io/github/issues/vangware/micro?style=flat-square)
 
-This library is a collection of utils made entirely in TypeScript. Is the successor of [@vangware/micron](https://github.com/vangware/micron), with less focus on small footprint and higher focus on utility and readability across all JS environments (Node and the browser).
+This library is a collection of functional utils made entirely in TypeScript. Is the successor of [@vangware/micron](https://github.com/vangware/micron), with less focus on small footprint and higher focus on utility and readability across all JS environments (Node and the browser).
 
 ## Installation
 

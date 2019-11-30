@@ -2,7 +2,7 @@ import ArrayGroupGrouper from "./ArrayGroupGrouper";
 import ArrayGroupObject from "./ArrayGroupObject";
 
 export type ArrayGroupFunction = <ItemType>(
-	array: ItemType[],
+	array: readonly ItemType[],
 	grouper: ArrayGroupGrouper<ItemType>
 ) => ArrayGroupObject<ItemType>;
 

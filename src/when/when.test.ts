@@ -1,37 +1,37 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
 import { spy } from "sinon";
 import noop from "../noop";
-import { randomRoundNumber, randomString } from "../tests";
+import { STRING_1 } from "../testConstants";
 import when from "./when";
 
 test("works with not nullish values", t => {
-	const RANDOM_NUMBER = randomRoundNumber(10, 1);
-	const RANDOM_STRING = randomString();
+	const NUMBER = 1;
 	const SPY = spy();
 
 	t.is(
 		when(
-			RANDOM_NUMBER,
+			NUMBER,
 			value => {
-				t.is(value, RANDOM_NUMBER);
+				t.is(value, NUMBER);
 
 				return value;
 			},
 			SPY
 		),
-		RANDOM_NUMBER
+		NUMBER
 	);
 	t.is(
 		when(
-			RANDOM_STRING,
+			STRING_1,
 			value => {
-				t.is(value, RANDOM_STRING);
+				t.is(value, STRING_1);
 
 				return value;
 			},
 			SPY
 		),
-		RANDOM_STRING
+		STRING_1
 	);
 	t.assert(SPY.notCalled);
 });

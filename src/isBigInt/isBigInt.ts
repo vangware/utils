@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveBigInt from "./PrimitiveBigInt";
-
 /**
  * Check if given value is an instance of BigInt.
  *
@@ -9,6 +6,6 @@ import PrimitiveBigInt from "./PrimitiveBigInt";
  */
 export const isBigInt = <ValueType = unknown>(
 	value: ValueType | BigInt
-): value is BigInt => isInstanceOf(value, PrimitiveBigInt);
+): value is BigInt => typeof value === "bigint";
 
 export default isBigInt;

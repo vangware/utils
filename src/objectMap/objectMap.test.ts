@@ -1,12 +1,11 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
-import { randomString } from "../tests";
+import { STRING_1, STRING_2 } from "../testConstants";
 import objectMap from "./objectMap";
 
 test("maps correctly", t => {
-	const PROPERTY_NAME = randomString();
-	const PROPERTY_VALUE = randomString();
 	const OBJECT = {
-		[PROPERTY_NAME]: PROPERTY_VALUE
+		[STRING_1]: STRING_2
 	};
 
 	const objectMapOutput = objectMap(OBJECT, (value, key) => ({

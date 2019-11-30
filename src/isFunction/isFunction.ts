@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveFunction from "./PrimitiveFunction";
-
 /**
  * Check if given value is an instance of Function.
  *
@@ -9,6 +6,6 @@ import PrimitiveFunction from "./PrimitiveFunction";
  */
 export const isFunction = <ValueType = unknown>(
 	value: ValueType | Function
-): value is Function => isInstanceOf(value, PrimitiveFunction);
+): value is Function => typeof value === "function";
 
 export default isFunction;
