@@ -1,8 +1,9 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
-import { randomLengthStringArray } from "../tests";
+import { STRING_1 } from "../testConstants";
 import noop from "./noop";
 
-test("returns undefined and takes any amount of parameters", t => {
-	const noopOutput = noop(...randomLengthStringArray());
-	t.is(noopOutput, undefined);
+test("Returns the given value without changing it", t => {
+	const noopOutput = noop(STRING_1);
+	t.is(noopOutput, STRING_1);
 });

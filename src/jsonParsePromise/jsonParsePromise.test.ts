@@ -1,18 +1,17 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
-import { randomString } from "../tests";
+import { STRING_1, STRING_2 } from "../testConstants";
 import jsonParsePromise from "./jsonParsePromise";
 
 test("parses invalid without throwing", async t => {
-	const INVALID_JSON = randomString();
-
-	const jsonParseOutput = await jsonParsePromise(INVALID_JSON).catch(
-		() => undefined
+	const jsonParseOutput = await jsonParsePromise(STRING_1).catch(
+		_error => undefined
 	);
 	t.is(jsonParseOutput, undefined);
 });
 
 test("parses valid normally", async t => {
-	const TEST_OBJECT = { [randomString()]: randomString() };
+	const TEST_OBJECT = { [STRING_1]: STRING_2 };
 	const VALID_JSON = JSON.stringify(TEST_OBJECT);
 
 	const jsonParseOutput = await jsonParsePromise<typeof TEST_OBJECT>(

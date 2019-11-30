@@ -13,7 +13,7 @@ import ArraySplitFunction from "./ArraySplitFunction";
  * @returns Array of arrays of the given length.
  */
 export const arraySplit: ArraySplitFunction = <ItemType>(
-	array: ItemType[],
+	array: readonly ItemType[],
 	length: number,
 	vertical: boolean = false
 ) =>
@@ -27,7 +27,7 @@ export const arraySplit: ArraySplitFunction = <ItemType>(
 						: EMPTY_ARRAY),
 					item
 				]))(Math.floor(vertical ? index % length : index / length)),
-		EMPTY_ARRAY as ItemType[][]
+		EMPTY_ARRAY as readonly (readonly ItemType[])[]
 	);
 
 export default arraySplit;

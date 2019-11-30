@@ -1,7 +1,7 @@
 export type ArrayReplaceFunction = <ItemType>(
-	array: ItemType[],
+	array: readonly ItemType[],
 	index: number,
-	...items: ItemType[]
-) => ItemType[];
+	item: ItemType
+) => readonly ItemType[];
 
 export default ArrayReplaceFunction;

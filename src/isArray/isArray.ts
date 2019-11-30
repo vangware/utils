@@ -7,7 +7,7 @@ import isInstanceOf from "../isInstanceOf";
  * @returns True if is an array, false if not.
  */
 export const isArray = <ValueType = unknown, ItemType = unknown>(
-	value: ValueType | ItemType[]
-): value is ItemType[] => isInstanceOf(value, Array);
+	value: ValueType | readonly ItemType[]
+): value is readonly ItemType[] => isInstanceOf(value, Array);
 
 export default isArray;

@@ -2,13 +2,13 @@ import arrayInsert from "../arrayInsert";
 import ArrayPushFunction from "./ArrayPushFunction";
 
 /**
- * Insert given items at the end of given array.
+ * Insert given item at the end of given array.
  *
  * @param array - Target array.
- * @param items - Items to be inserted.
+ * @param item - Item to be inserted.
  * @returns New array with inserted values in it.
  */
-export const arrayPush: ArrayPushFunction = (array, ...items) =>
-	arrayInsert(array, array.length, ...items);
+export const arrayPush: ArrayPushFunction = (array, item) =>
+	arrayInsert(array, array.length, item);
 
 export default arrayPush;

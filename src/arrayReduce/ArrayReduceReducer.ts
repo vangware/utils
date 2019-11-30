@@ -2,7 +2,7 @@ export type ArrayReduceReducer<ItemType, OutputType> = (
 	previousValue: OutputType,
 	value: ItemType,
 	index: number,
-	array: ItemType[]
+	array: readonly ItemType[]
 ) => OutputType;
 
 export default ArrayReduceReducer;

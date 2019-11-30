@@ -1,6 +1,6 @@
 export type ArrayPushFunction = <ItemType>(
-	array: ItemType[],
-	...items: ItemType[]
-) => ItemType[];
+	array: readonly ItemType[],
+	item: ItemType
+) => readonly ItemType[];
 
 export default ArrayPushFunction;

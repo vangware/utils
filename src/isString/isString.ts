@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveString from "./PrimitiveString";
-
 /**
  * Check if given value is instance of String.
  *
@@ -9,6 +6,6 @@ import PrimitiveString from "./PrimitiveString";
  */
 export const isString = <ValueType = unknown>(
 	value: ValueType | string
-): value is string => isInstanceOf(value, PrimitiveString);
+): value is string => typeof value === "string";
 
 export default isString;
