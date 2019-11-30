@@ -1,17 +1,15 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
 import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
-import { randomRoundNumber, randomString } from "../tests";
+import { NUMBER, STRING_1 } from "../testConstants";
 import isObject from "./isObject";
 
 test("checks Object correctly", t => {
-	const RANDOM_NUMBER = randomRoundNumber(10);
-	const RANDOM_STRING = randomString();
-
 	t.assert(isObject(EMPTY_OBJECT));
 	t.assert(isObject(EMPTY_ARRAY));
 	// eslint-disable-next-line no-null/no-null
 	t.assert(!isObject(null));
 	t.assert(!isObject(undefined));
-	t.assert(!isObject(RANDOM_NUMBER));
-	t.assert(!isObject(RANDOM_STRING));
+	t.assert(!isObject(STRING_1));
+	t.assert(!isObject(NUMBER));
 });

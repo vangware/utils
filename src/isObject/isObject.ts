@@ -1,5 +1,4 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveObject from "./PrimitiveObject";
+import isNull from "../isNull";
 
 /**
  * Check if given value is instance of Object (and is not null).
@@ -9,6 +8,7 @@ import PrimitiveObject from "./PrimitiveObject";
  */
 export const isObject = <ValueType = unknown>(
 	value: ValueType
-): value is Extract<ValueType, object> => isInstanceOf(value, PrimitiveObject);
+): value is Extract<ValueType, object> =>
+	!isNull(value) && typeof value === "object";
 
 export default isObject;

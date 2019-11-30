@@ -1,6 +1,3 @@
-import isInstanceOf from "../isInstanceOf";
-import PrimitiveSymbol from "./PrimitiveSymbol";
-
 /**
  * Check if given value is instance of Symbol.
  *
@@ -9,6 +6,6 @@ import PrimitiveSymbol from "./PrimitiveSymbol";
  */
 export const isSymbol = <ValueType = unknown>(
 	value: ValueType | symbol
-): value is symbol => isInstanceOf(value, PrimitiveSymbol);
+): value is symbol => typeof value === "symbol";
 
 export default isSymbol;

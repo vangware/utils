@@ -3,35 +3,18 @@
 
 ## Index
 
-### Classes
-
-* [PrimitiveBigInt](classes/primitivebigint.md)
-* [PrimitiveBoolean](classes/primitiveboolean.md)
-* [PrimitiveNull](classes/primitivenull.md)
-* [PrimitiveNumber](classes/primitivenumber.md)
-* [PrimitiveObject](classes/primitiveobject.md)
-* [PrimitiveString](classes/primitivestring.md)
-* [PrimitiveSymbol](classes/primitivesymbol.md)
-* [PrimitiveType](classes/primitivetype.md)
-* [PrimitiveUndefined](classes/primitiveundefined.md)
-
-### Interfaces
-
-* [ArrayGroupObject](interfaces/arraygroupobject.md)
-* [StringMapReplaceMap](interfaces/stringmapreplacemap.md)
-
 ### Type aliases
 
+* [ArrayFilterTupleFilter](README.md#arrayfiltertuplefilter)
 * [ArrayGroupGrouper](README.md#arraygroupgrouper)
+* [ArrayGroupObject](README.md#arraygroupobject)
 * [ArrayMapMapper](README.md#arraymapmapper)
 * [ArrayReduceReducer](README.md#arrayreducereducer)
-* [ArraySplitFilterFilter](README.md#arraysplitfilterfilter)
 * [JSONParseReviver](README.md#jsonparsereviver)
 * [ObjectMapMapper](README.md#objectmapmapper)
-* [PrimitiveTypeString](README.md#primitivetypestring)
+* [StringMapReplaceMap](README.md#stringmapreplacemap)
 * [TapObserver](README.md#tapobserver)
 * [TapWrapper](README.md#tapwrapper)
-* [TryCatchCatch](README.md#trycatchcatch)
 * [WhenNotNullishCallback](README.md#whennotnullishcallback)
 * [WhenNullishCallback](README.md#whennullishcallback)
 
@@ -43,6 +26,7 @@
 
 ### Functions
 
+* [arrayFilterTuple](README.md#const-arrayfiltertuple)
 * [arrayGroup](README.md#const-arraygroup)
 * [arrayInsert](README.md#const-arrayinsert)
 * [arrayMap](README.md#const-arraymap)
@@ -50,35 +34,47 @@
 * [arrayReduce](README.md#const-arrayreduce)
 * [arrayReplace](README.md#const-arrayreplace)
 * [arraySplit](README.md#const-arraysplit)
-* [arraySplitFilter](README.md#const-arraysplitfilter)
 * [isArray](README.md#const-isarray)
 * [isBigInt](README.md#const-isbigint)
 * [isBoolean](README.md#const-isboolean)
 * [isDate](README.md#const-isdate)
+* [isFunction](README.md#const-isfunction)
 * [isInstanceOf](README.md#const-isinstanceof)
-* [isMap](README.md#const-ismap)
 * [isNull](README.md#const-isnull)
 * [isNullish](README.md#const-isnullish)
 * [isNumber](README.md#const-isnumber)
 * [isObject](README.md#const-isobject)
 * [isPromise](README.md#const-ispromise)
 * [isRegExp](README.md#const-isregexp)
-* [isSet](README.md#const-isset)
 * [isString](README.md#const-isstring)
 * [isSymbol](README.md#const-issymbol)
 * [isUndefined](README.md#const-isundefined)
-* [isWeakMap](README.md#const-isweakmap)
-* [isWeakSet](README.md#const-isweakset)
-* [jsonParse](README.md#const-jsonparse)
 * [jsonParsePromise](README.md#const-jsonparsepromise)
 * [noop](README.md#const-noop)
 * [objectMap](README.md#const-objectmap)
 * [stringMapReplace](README.md#const-stringmapreplace)
 * [tap](README.md#const-tap)
-* [tryCatch](README.md#const-trycatch)
 * [when](README.md#const-when)
 
 ## Type aliases
+
+###  ArrayFilterTupleFilter
+
+Ƭ **ArrayFilterTupleFilter**: *function*
+
+#### Type declaration:
+
+▸ (`item`: ItemType, `index`: number, `array`: keyof ItemType[]): *boolean*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`item` | ItemType |
+`index` | number |
+`array` | keyof ItemType[] |
+
+___
 
 ###  ArrayGroupGrouper
 
@@ -96,13 +92,23 @@ Name | Type |
 
 ___
 
+###  ArrayGroupObject
+
+Ƭ **ArrayGroupObject**: *object*
+
+#### Type declaration:
+
+* \[ **group**: *string*\]: keyof ItemType[]
+
+___
+
 ###  ArrayMapMapper
 
 Ƭ **ArrayMapMapper**: *function*
 
 #### Type declaration:
 
-▸ (`value`: ItemType, `index`: number, `array`: ItemType[]): *OutputType*
+▸ (`value`: ItemType, `index`: number, `array`: keyof ItemType[]): *OutputType*
 
 **Parameters:**
 
@@ -110,7 +116,7 @@ Name | Type |
 ------ | ------ |
 `value` | ItemType |
 `index` | number |
-`array` | ItemType[] |
+`array` | keyof ItemType[] |
 
 ___
 
@@ -120,7 +126,7 @@ ___
 
 #### Type declaration:
 
-▸ (`previousValue`: OutputType, `value`: ItemType, `index`: number, `array`: ItemType[]): *OutputType*
+▸ (`previousValue`: OutputType, `value`: ItemType, `index`: number, `array`: keyof ItemType[]): *OutputType*
 
 **Parameters:**
 
@@ -129,25 +135,7 @@ Name | Type |
 `previousValue` | OutputType |
 `value` | ItemType |
 `index` | number |
-`array` | ItemType[] |
-
-___
-
-###  ArraySplitFilterFilter
-
-Ƭ **ArraySplitFilterFilter**: *function*
-
-#### Type declaration:
-
-▸ (`item`: ItemType, `index`: number, `array`: ItemType[]): *boolean*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`item` | ItemType |
-`index` | number |
-`array` | ItemType[] |
+`array` | keyof ItemType[] |
 
 ___
 
@@ -187,11 +175,13 @@ Name | Type |
 
 ___
 
-###  PrimitiveTypeString
+###  StringMapReplaceMap
 
-Ƭ **PrimitiveTypeString**: *"bigint" | "boolean" | "function" | "number" | "object" | "string" | "symbol" | "undefined"*
+Ƭ **StringMapReplaceMap**: *object*
 
-Possible primitive types (returned by typeof).
+#### Type declaration:
+
+* \[ **match**: *string*\]: string | number
 
 ___
 
@@ -201,7 +191,7 @@ ___
 
 #### Type declaration:
 
-▸ (`value`: ValueType): *void*
+▸ (`value`: ValueType): *ValueType*
 
 **Parameters:**
 
@@ -224,22 +214,6 @@ ___
 Name | Type |
 ------ | ------ |
 `value` | ValueType |
-
-___
-
-###  TryCatchCatch
-
-Ƭ **TryCatchCatch**: *function*
-
-#### Type declaration:
-
-▸ (`error?`: [ErrorType](undefined)): *ReturnedValue | undefined*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`error?` | [ErrorType](undefined) |
 
 ___
 
@@ -293,15 +267,38 @@ Empty string.
 
 ## Functions
 
+### `Const` arrayFilterTuple
+
+▸ **arrayFilterTuple**<**ItemType**>(`target`: keyof ItemType[], `filter`: [ArrayFilterTupleFilter](README.md#arrayfiltertuplefilter)‹ItemType›): *[ReadonlyArray‹ItemType›, ReadonlyArray‹ItemType›]*
+
+Like Array.prototype.filter, but returns a tuple [matching, notMatching].
+
+**Type parameters:**
+
+▪ **ItemType**
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`target` | keyof ItemType[] | Target array. |
+`filter` | [ArrayFilterTupleFilter](README.md#arrayfiltertuplefilter)‹ItemType› | Filter function. |
+
+**Returns:** *[ReadonlyArray‹ItemType›, ReadonlyArray‹ItemType›]*
+
+Array of 2 elements (the matching and the non matching values).
+
+___
+
 ### `Const` arrayGroup
 
-▸ **arrayGroup**(`array`: ItemType[], `grouper`: function): *__type*
+▸ **arrayGroup**(`array`: ReadonlyArray‹ItemType›, `grouper`: function): *__type*
 
 Creates object with properties grouped by grouper function.
 
 **Parameters:**
 
-▪ **array**: *ItemType[]*
+▪ **array**: *ReadonlyArray‹ItemType›*
 
 Target array.
 
@@ -325,7 +322,7 @@ ___
 
 ### `Const` arrayInsert
 
-▸ **arrayInsert**(`array`: ItemType[], `index`: number, ...`items`: ItemType[]): *ItemType[]*
+▸ **arrayInsert**(`array`: ReadonlyArray‹ItemType›, `index`: number, `item`: ItemType): *ItemType[]*
 
 Insert value in array at given index.
 
@@ -333,9 +330,9 @@ Insert value in array at given index.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`array` | ItemType[] | Target array. |
-`index` | number | Index to start inserting items. |
-`...items` | ItemType[] | Items to be inserted. |
+`array` | ReadonlyArray‹ItemType› | Target array. |
+`index` | number | Index to insert item. |
+`item` | ItemType | Item to be inserted. |
 
 **Returns:** *ItemType[]*
 
@@ -345,13 +342,13 @@ ___
 
 ### `Const` arrayMap
 
-▸ **arrayMap**(`array`: ItemType[], `mapper`: function): *OutputType[]*
+▸ **arrayMap**(`array`: ReadonlyArray‹ItemType›, `mapper`: function): *OutputType[]*
 
 Array.prototype.map wrapper that can take an undefined value.
 
 **Parameters:**
 
-▪ **array**: *ItemType[]*
+▪ **array**: *ReadonlyArray‹ItemType›*
 
 Target array.
 
@@ -359,7 +356,7 @@ Target array.
 
 Map callback (to be called for every array item).
 
-▸ (`value`: ItemType, `index`: number, `array`: ItemType[]): *OutputType*
+▸ (`value`: ItemType, `index`: number, `array`: keyof ItemType[]): *OutputType*
 
 **Parameters:**
 
@@ -367,7 +364,7 @@ Name | Type |
 ------ | ------ |
 `value` | ItemType |
 `index` | number |
-`array` | ItemType[] |
+`array` | keyof ItemType[] |
 
 **Returns:** *OutputType[]*
 
@@ -377,18 +374,18 @@ ___
 
 ### `Const` arrayPush
 
-▸ **arrayPush**(`array`: ItemType[], ...`items`: ItemType[]): *ItemType[]*
+▸ **arrayPush**(`array`: ReadonlyArray‹ItemType›, `item`: ItemType): *ReadonlyArray‹ItemType›*
 
-Insert given items at the end of given array.
+Insert given item at the end of given array.
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`array` | ItemType[] | Target array. |
-`...items` | ItemType[] | Items to be inserted. |
+`array` | ReadonlyArray‹ItemType› | Target array. |
+`item` | ItemType | Item to be inserted. |
 
-**Returns:** *ItemType[]*
+**Returns:** *ReadonlyArray‹ItemType›*
 
 New array with inserted values in it.
 
@@ -396,13 +393,13 @@ ___
 
 ### `Const` arrayReduce
 
-▸ **arrayReduce**(`array`: ItemType[], `reducer`: function, `initialValue`: OutputType): *OutputType*
+▸ **arrayReduce**(`array`: ReadonlyArray‹ItemType›, `reducer`: function, `initialValue`: OutputType): *OutputType*
 
 Array.prototype.reduce wrapper that can take an undefined value.
 
 **Parameters:**
 
-▪ **array**: *ItemType[]*
+▪ **array**: *ReadonlyArray‹ItemType›*
 
 Target array.
 
@@ -410,7 +407,7 @@ Target array.
 
 Map callback (to be called for every array item).
 
-▸ (`previousValue`: OutputType, `value`: ItemType, `index`: number, `array`: ItemType[]): *OutputType*
+▸ (`previousValue`: OutputType, `value`: ItemType, `index`: number, `array`: keyof ItemType[]): *OutputType*
 
 **Parameters:**
 
@@ -419,7 +416,7 @@ Name | Type |
 `previousValue` | OutputType |
 `value` | ItemType |
 `index` | number |
-`array` | ItemType[] |
+`array` | keyof ItemType[] |
 
 ▪ **initialValue**: *OutputType*
 
@@ -433,7 +430,7 @@ ___
 
 ### `Const` arrayReplace
 
-▸ **arrayReplace**(`array`: ItemType[], `index`: number, ...`items`: ItemType[]): *ItemType[]*
+▸ **arrayReplace**(`array`: ReadonlyArray‹ItemType›, `index`: number, `item`: ItemType): *ItemType[]*
 
 Replace value in array at given index.
 
@@ -441,9 +438,9 @@ Replace value in array at given index.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`array` | ItemType[] | Target array. |
-`index` | number | Index to start replacing items. |
-`...items` | ItemType[] | Items to be inserted. |
+`array` | ReadonlyArray‹ItemType› | Target array. |
+`index` | number | Index to start replace item. |
+`item` | ItemType | Replacing item. |
 
 **Returns:** *ItemType[]*
 
@@ -453,7 +450,7 @@ ___
 
 ### `Const` arraySplit
 
-▸ **arraySplit**<**ItemType**>(`array`: ItemType[], `length`: number, `vertical`: boolean): *ItemType[][]*
+▸ **arraySplit**<**ItemType**>(`array`: keyof ItemType[], `length`: number, `vertical`: boolean): *ReadonlyArray‹ReadonlyArray‹ItemType››*
 
 Split array into multiple arrays of the given size.
 
@@ -465,42 +462,19 @@ Split array into multiple arrays of the given size.
 
 Name | Type | Default | Description |
 ------ | ------ | ------ | ------ |
-`array` | ItemType[] | - | Target array. |
+`array` | keyof ItemType[] | - | Target array. |
 `length` | number | - | Size of every piece. |
 `vertical` | boolean | false | Changes the orientation of the split. |
 
-**Returns:** *ItemType[][]*
+**Returns:** *ReadonlyArray‹ReadonlyArray‹ItemType››*
 
 Array of arrays of the given length.
 
 ___
 
-### `Const` arraySplitFilter
-
-▸ **arraySplitFilter**<**ItemType**>(`target`: ItemType[], `filter`: [ArraySplitFilterFilter](README.md#arraysplitfilterfilter)‹ItemType›): *[ItemType[], ItemType[]]*
-
-Split array into two arrays based on a filter.
-
-**Type parameters:**
-
-▪ **ItemType**
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`target` | ItemType[] | Target array. |
-`filter` | [ArraySplitFilterFilter](README.md#arraysplitfilterfilter)‹ItemType› | Filter function. |
-
-**Returns:** *[ItemType[], ItemType[]]*
-
-Array of 2 elements (the true values, and the false values).
-
-___
-
 ### `Const` isArray
 
-▸ **isArray**<**ValueType**, **ItemType**>(`value`: ValueType | ItemType[]): *value is ItemType[]*
+▸ **isArray**<**ValueType**, **ItemType**>(`value`: ValueType | keyof ItemType[]): *value is keyof ItemType[]*
 
 Check if given value is an instance of Array.
 
@@ -514,9 +488,9 @@ Check if given value is an instance of Array.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`value` | ValueType &#124; ItemType[] | Value to check. |
+`value` | ValueType &#124; keyof ItemType[] | Value to check. |
 
-**Returns:** *value is ItemType[]*
+**Returns:** *value is keyof ItemType[]*
 
 True if is an array, false if not.
 
@@ -588,6 +562,28 @@ True if is a Date, false if not.
 
 ___
 
+### `Const` isFunction
+
+▸ **isFunction**<**ValueType**>(`value`: ValueType | Function): *value is Function*
+
+Check if given value is an instance of Function.
+
+**Type parameters:**
+
+▪ **ValueType**
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`value` | ValueType &#124; Function | Value to check. |
+
+**Returns:** *value is Function*
+
+True if is a Function, false if not.
+
+___
+
 ### `Const` isInstanceOf
 
 ▸ **isInstanceOf**(`value`: ValueType, `constructor`: Function): *boolean*
@@ -604,32 +600,6 @@ Name | Type | Description |
 **Returns:** *boolean*
 
 True if is an instance of the given constructor, false if not.
-
-___
-
-### `Const` isMap
-
-▸ **isMap**<**ValueType**, **MapKeyType**, **MapValueType**>(`value`: ValueType | Map‹MapKeyType, MapValueType›): *value is Map<MapKeyType, MapValueType>*
-
-Check if given value is an instance of Map.
-
-**Type parameters:**
-
-▪ **ValueType**
-
-▪ **MapKeyType**
-
-▪ **MapValueType**
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`value` | ValueType &#124; Map‹MapKeyType, MapValueType› | Value to check. |
-
-**Returns:** *value is Map<MapKeyType, MapValueType>*
-
-True if is a Map, false if not.
 
 ___
 
@@ -767,30 +737,6 @@ True if is a RegExp, false if not.
 
 ___
 
-### `Const` isSet
-
-▸ **isSet**<**ValueType**, **SetType**>(`value`: ValueType | Set‹SetType›): *value is Set<SetType>*
-
-Check if given value is an instance of Set.
-
-**Type parameters:**
-
-▪ **ValueType**
-
-▪ **SetType**
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`value` | ValueType &#124; Set‹SetType› | Value to check. |
-
-**Returns:** *value is Set<SetType>*
-
-True if is a Set, false if not.
-
-___
-
 ### `Const` isString
 
 ▸ **isString**<**ValueType**>(`value`: ValueType | string): *value is string*
@@ -857,75 +803,6 @@ True if is undefined, false if not.
 
 ___
 
-### `Const` isWeakMap
-
-▸ **isWeakMap**<**ValueType**, **WeakMapKeyType**, **WeakMapValueType**>(`value`: ValueType | WeakMap‹WeakMapKeyType, WeakMapValueType›): *value is WeakMap<WeakMapKeyType, WeakMapValueType>*
-
-Check if given value is an instance of WeakMap.
-
-**Type parameters:**
-
-▪ **ValueType**
-
-▪ **WeakMapKeyType**: *object*
-
-▪ **WeakMapValueType**
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`value` | ValueType &#124; WeakMap‹WeakMapKeyType, WeakMapValueType› | Value to check. |
-
-**Returns:** *value is WeakMap<WeakMapKeyType, WeakMapValueType>*
-
-True if is a WeakMap, false if not.
-
-___
-
-### `Const` isWeakSet
-
-▸ **isWeakSet**<**ValueType**, **SetType**>(`value`: ValueType | WeakSet‹SetType›): *value is WeakSet<SetType>*
-
-Check if given value is an instance of WeakSet.
-
-**Type parameters:**
-
-▪ **ValueType**
-
-▪ **SetType**: *object*
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`value` | ValueType &#124; WeakSet‹SetType› | Value to check. |
-
-**Returns:** *value is WeakSet<SetType>*
-
-True if is a WeakSet, false if not.
-
-___
-
-### `Const` jsonParse
-
-▸ **jsonParse**(`text`: string, `reviver`: undefined | function): *any*
-
-JSON.parse wrapper with integrated try catch.
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`text` | string | Text value to parse. |
-`reviver` | undefined &#124; function | Transformer function. |
-
-**Returns:** *any*
-
-Parsed JSON or undefined.
-
-___
-
 ### `Const` jsonParsePromise
 
 ▸ **jsonParsePromise**(`text`: string, `reviver`: undefined | function): *Promise‹OutputType›*
@@ -947,7 +824,7 @@ ___
 
 ### `Const` noop
 
-▸ **noop**(...`_params`: ParamsType[]): *undefined*
+▸ **noop**(`value`: ValueType): *ValueType*
 
 No operation placeholder function.
 
@@ -955,17 +832,17 @@ No operation placeholder function.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`..._params` | ParamsType[] | Params (will be ignored). |
+`value` | ValueType | Value will be returned without changing it. |
 
-**Returns:** *undefined*
+**Returns:** *ValueType*
 
-Nothing (is just a placeholder function).
+The given value.
 
 ___
 
 ### `Const` objectMap
 
-▸ **objectMap**(`targetObject`: ObjectType, `mapper`: function): *OutputType[]*
+▸ **objectMap**(`targetObject`: ObjectType, `mapper`: function): *ReadonlyArray‹OutputType›*
 
 Object mapping.
 
@@ -989,7 +866,7 @@ Name | Type |
 `key` | string |
 `targetObject` | ObjectType |
 
-**Returns:** *OutputType[]*
+**Returns:** *ReadonlyArray‹OutputType›*
 
 An array with the object mapped values/keys.
 
@@ -997,7 +874,7 @@ ___
 
 ### `Const` stringMapReplace
 
-▸ **stringMapReplace**(`target`: string, `replaceMap`: [StringMapReplaceMap](interfaces/stringmapreplacemap.md)): *string*
+▸ **stringMapReplace**(`target`: string, `replaceMap`: object): *string*
 
 Takes a string and an object and makes a regex map replace
 
@@ -1006,7 +883,7 @@ Takes a string and an object and makes a regex map replace
 Name | Type | Default | Description |
 ------ | ------ | ------ | ------ |
 `target` | string | - | Target string. |
-`replaceMap` | [StringMapReplaceMap](interfaces/stringmapreplacemap.md) |  EMPTY_OBJECT | Map with format `{ "match": "replacing string" }`. |
+`replaceMap` | object |  EMPTY_OBJECT | Map with format `{ "match": "replacing string" }`. |
 
 **Returns:** *string*
 
@@ -1026,7 +903,7 @@ Tap into any value.
 
 Observer function.
 
-▸ (`value`: ValueType): *void*
+▸ (`value`: ValueType): *ValueType*
 
 **Parameters:**
 
@@ -1037,30 +914,6 @@ Name | Type |
 **Returns:** *(Anonymous function)*
 
 Tapped function (calls observer with value and returns it).
-
-___
-
-### `Const` tryCatch
-
-▸ **tryCatch**(`tryCallback`: function, `catchCallback`: undefined | function): *undefined | ReturnedValue*
-
-Functional try/catch wrapper.
-
-**Parameters:**
-
-▪ **tryCallback**: *function*
-
-Callback for try.
-
-▸ (): *ReturnedValue*
-
-▪ **catchCallback**: *undefined | function*
-
-Callback for catch.
-
-**Returns:** *undefined | ReturnedValue*
-
-The returned value of the tryCallback or catchCallback.
 
 ___
 

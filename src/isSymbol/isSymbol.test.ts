@@ -1,16 +1,14 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
 import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
-import { randomRoundNumber, randomString } from "../tests";
+import { NUMBER, STRING_1 } from "../testConstants";
 import isSymbol from "./isSymbol";
 
 test("checks Symbol correctly", t => {
-	const RANDOM_STRING = randomString();
-	const RANDOM_NUMBER = randomRoundNumber(10);
-
-	t.assert(isSymbol(Symbol("Test")));
+	t.assert(isSymbol(Symbol(STRING_1)));
 	t.assert(!isSymbol(undefined));
 	t.assert(!isSymbol(EMPTY_ARRAY));
 	t.assert(!isSymbol(EMPTY_OBJECT));
-	t.assert(!isSymbol(RANDOM_NUMBER));
-	t.assert(!isSymbol(RANDOM_STRING));
+	t.assert(!isSymbol(STRING_1));
+	t.assert(!isSymbol(NUMBER));
 });

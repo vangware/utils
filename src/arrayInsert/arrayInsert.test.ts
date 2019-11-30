@@ -1,58 +1,47 @@
+/* eslint-disable functional/no-expression-statement */
 import test from "ava";
-import {
-	randomLengthNumberArray,
-	randomLengthStringArray,
-	randomRoundNumber,
-	randomString
-} from "../tests";
+import { ARRAY_NUMBER, STRING_1 } from "../testConstants";
 import arrayInsert from "./arrayInsert";
 
 test("adds one item correctly", t => {
-	const NUMBER_ARRAY = randomLengthNumberArray();
-	const INSERT_POSITION = randomRoundNumber(NUMBER_ARRAY.length - 1);
-	const INSERT_STRING = randomString();
+	const INSERT_POSITION = Math.floor(ARRAY_NUMBER.length / 2);
+	const INSERT_STRING = STRING_1;
 
 	const arrayInsertOutput = arrayInsert<string | number>(
-		NUMBER_ARRAY,
+		ARRAY_NUMBER,
 		INSERT_POSITION,
 		INSERT_STRING
 	);
 	t.is(arrayInsertOutput[INSERT_POSITION], INSERT_STRING);
-	t.is(arrayInsertOutput.length, NUMBER_ARRAY.length + 1);
-	t.notDeepEqual(arrayInsertOutput, NUMBER_ARRAY);
+	t.is(arrayInsertOutput.length, ARRAY_NUMBER.length + 1);
+	t.notDeepEqual(arrayInsertOutput, ARRAY_NUMBER);
 });
 
 test("adds one from the end item when value is negative", t => {
-	const NUMBER_ARRAY = randomLengthNumberArray(10, 5);
-	const INSERT_STRING = randomString();
+	const INSERT_STRING = STRING_1;
 
 	const arrayInsertOutput = arrayInsert<string | number>(
-		NUMBER_ARRAY,
+		ARRAY_NUMBER,
 		-1,
 		INSERT_STRING
 	);
 	t.is(arrayInsertOutput[arrayInsertOutput.length - 2], INSERT_STRING);
-	t.is(arrayInsertOutput.length, NUMBER_ARRAY.length + 1);
-	t.notDeepEqual(arrayInsertOutput, NUMBER_ARRAY);
+	t.is(arrayInsertOutput.length, ARRAY_NUMBER.length + 1);
+	t.notDeepEqual(arrayInsertOutput, ARRAY_NUMBER);
 });
 
 test("adds multiple items correctly", t => {
-	const NUMBER_ARRAY = randomLengthNumberArray();
-	const INSERT_POSITION = randomRoundNumber(NUMBER_ARRAY.length - 1);
-	const INSERT_STRINGS = randomLengthStringArray();
+	const INSERT_POSITION = Math.floor(ARRAY_NUMBER.length / 2);
 
 	const arrayInsertOutput = arrayInsert<string | number>(
-		NUMBER_ARRAY,
+		ARRAY_NUMBER,
 		INSERT_POSITION,
-		...INSERT_STRINGS
+		STRING_1
 	);
-	t.deepEqual(
-		arrayInsertOutput.slice(
-			INSERT_POSITION,
-			INSERT_POSITION + INSERT_STRINGS.length
-		),
-		INSERT_STRINGS
+	t.assert(
+		arrayInsertOutput.slice(INSERT_POSITION, INSERT_POSITION + 1)[0] ===
+			STRING_1
 	);
-	t.is(arrayInsertOutput.length, NUMBER_ARRAY.length + INSERT_STRINGS.length);
-	t.notDeepEqual(arrayInsertOutput, NUMBER_ARRAY);
+	t.is(arrayInsertOutput.length, ARRAY_NUMBER.length + 1);
+	t.notDeepEqual(arrayInsertOutput, ARRAY_NUMBER);
 });
