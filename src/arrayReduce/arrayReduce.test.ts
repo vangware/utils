@@ -5,7 +5,7 @@ import noop from "../noop";
 import { ARRAY_NUMBER } from "../testConstants";
 import arrayReduce from "./arrayReduce";
 
-test("reduces values as expected", t => {
+test("reduces values as expected", assert => {
 	const TEST_INDEX = Math.floor(ARRAY_NUMBER.length / 2);
 
 	const arrayReduceOutput = arrayReduce(
@@ -13,15 +13,15 @@ test("reduces values as expected", t => {
 		(output, value) => [...output, value * 2],
 		EMPTY_ARRAY as readonly number[]
 	);
-	t.is(arrayReduceOutput.length, ARRAY_NUMBER.length);
-	t.is(arrayReduceOutput[TEST_INDEX], ARRAY_NUMBER[TEST_INDEX] * 2);
+	assert.is(arrayReduceOutput.length, ARRAY_NUMBER.length);
+	assert.is(arrayReduceOutput[TEST_INDEX], ARRAY_NUMBER[TEST_INDEX] * 2);
 });
 
-test("reduces even with invalid values", t => {
+test("reduces even with invalid values", assert => {
 	const arrayReduceOutput = arrayReduce(
 		(undefined as unknown) as readonly unknown[],
 		noop,
 		true
 	);
-	t.assert(arrayReduceOutput);
+	assert.true(arrayReduceOutput);
 });

@@ -4,7 +4,7 @@ import { spy } from "sinon";
 import { STRING_1 } from "../testConstants";
 import tap from "./tap";
 
-test("taps to value", t => {
+test("taps to value", assert => {
 	const SPY = spy();
 
 	const tapOutput = tap<string>(value => {
@@ -13,6 +13,6 @@ test("taps to value", t => {
 		return value;
 	});
 
-	t.is(tapOutput(STRING_1), STRING_1);
-	t.assert(SPY.calledWith(STRING_1));
+	assert.is(tapOutput(STRING_1), STRING_1);
+	assert.true(SPY.calledWith(STRING_1));
 });

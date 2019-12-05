@@ -19,10 +19,10 @@ You can use `npm`, `pnpm` or `yarn` to install it locally:
 npm i -S @vangware/micro
 ```
 
-Or you can use it directly as an ESM module trough services like [Pika](https://www.pika.dev/):
+Or you can use it directly as an ESM module trough services like [UNPKG](https://unpkg.com/):
 
 ```js
-import { isObject } from "https://cdn.pika.dev/@vangware/micro";
+import { isObject } from "https://unpkg.com/@vangware/micro?module";
 ```
 
 ## Documentation

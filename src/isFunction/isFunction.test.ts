@@ -5,11 +5,11 @@ import noop from "../noop";
 import { NUMBER, STRING_1 } from "../testConstants";
 import isFunction from "./isFunction";
 
-test("checks Function correctly", t => {
-	t.assert(isFunction(noop));
-	t.assert(!isFunction(undefined));
-	t.assert(!isFunction(EMPTY_ARRAY));
-	t.assert(!isFunction(EMPTY_OBJECT));
-	t.assert(!isFunction(STRING_1));
-	t.assert(!isFunction(NUMBER));
+test("checks Function correctly", assert => {
+	assert.true(isFunction(noop));
+	assert.false(isFunction(undefined));
+	assert.false(isFunction(EMPTY_ARRAY));
+	assert.false(isFunction(EMPTY_OBJECT));
+	assert.false(isFunction(STRING_1));
+	assert.false(isFunction(NUMBER));
 });

@@ -4,12 +4,12 @@ import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import { NUMBER, STRING_1 } from "../testConstants";
 import isObject from "./isObject";
 
-test("checks Object correctly", t => {
-	t.assert(isObject(EMPTY_OBJECT));
-	t.assert(isObject(EMPTY_ARRAY));
+test("checks Object correctly", assert => {
+	assert.true(isObject(EMPTY_OBJECT));
+	assert.true(isObject(EMPTY_ARRAY));
 	// eslint-disable-next-line no-null/no-null
-	t.assert(!isObject(null));
-	t.assert(!isObject(undefined));
-	t.assert(!isObject(STRING_1));
-	t.assert(!isObject(NUMBER));
+	assert.false(isObject(null));
+	assert.false(isObject(undefined));
+	assert.false(isObject(STRING_1));
+	assert.false(isObject(NUMBER));
 });
