@@ -5,15 +5,15 @@ import noop from "../noop";
 import { STRING_1 } from "../testConstants";
 import when from "./when";
 
-test("works with not nullish values", t => {
+test("works with not nullish values", assert => {
 	const NUMBER = 1;
 	const SPY = spy();
 
-	t.is(
+	assert.is(
 		when(
 			NUMBER,
 			value => {
-				t.is(value, NUMBER);
+				assert.is(value, NUMBER);
 
 				return value;
 			},
@@ -21,11 +21,11 @@ test("works with not nullish values", t => {
 		),
 		NUMBER
 	);
-	t.is(
+	assert.is(
 		when(
 			STRING_1,
 			value => {
-				t.is(value, STRING_1);
+				assert.is(value, STRING_1);
 
 				return value;
 			},
@@ -33,15 +33,15 @@ test("works with not nullish values", t => {
 		),
 		STRING_1
 	);
-	t.assert(SPY.notCalled);
+	assert.true(SPY.notCalled);
 });
 
-test("works with nullish values", t => {
+test("works with nullish values", assert => {
 	const SPY = spy();
 
 	// eslint-disable-next-line no-null/no-null
-	t.is(when(null, noop, SPY), undefined);
-	t.is(when(undefined, noop, SPY), undefined);
-	t.is(when(undefined, noop), undefined);
-	t.assert(SPY.calledTwice);
+	assert.is(when(null, noop, SPY), undefined);
+	assert.is(when(undefined, noop, SPY), undefined);
+	assert.is(when(undefined, noop), undefined);
+	assert.true(SPY.calledTwice);
 });
