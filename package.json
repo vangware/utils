@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -24,19 +24,19 @@
   },
   "devDependencies": {
     "@types/sinon": "^7.5.1",
-    "@typescript-eslint/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/parser": "^2.9.0",
-    "@vangware/vangstyle": "4.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "@vangware/vangstyle": "^4.0.3",
     "ava": "^2.4.0",
     "coveralls": "^3.0.9",
     "custom-event": "^1.0.1",
-    "eslint": "^6.7.1",
+    "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-ban": "^1.3.0",
     "eslint-plugin-functional": "^1.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-no-null": "^1.0.2",
-    "eslint-plugin-prefer-arrow": "^1.1.6",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.1.0",
     "npm-run-all": "^4.1.5",
@@ -49,8 +49,8 @@
     "stylelint-prettier": "^1.1.1",
     "ts-node": "^8.5.4",
     "typedoc": "^0.15.3",
-    "typedoc-plugin-markdown": "^2.2.11",
-    "typescript": "^3.7.2"
+    "typedoc-plugin-markdown": "^2.2.13",
+    "typescript": "^3.7.3"
   },
   "files": [
     "cjs",
@@ -94,7 +94,7 @@
     ],
     "reporter": [
       "html",
-      "text"
+      "text-summary"
     ],
     "all": true
   },
@@ -117,7 +117,7 @@
     "prettify": "run-s prettify:*",
     "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
     "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
-    "test": "nyc ava --verbose",
+    "test": "nyc ava",
     "test:watch": "ava --watch"
   },
   "source": "./src/index.ts",
