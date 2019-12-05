@@ -4,10 +4,10 @@ import { EMPTY_OBJECT } from "../constants";
 import { NUMBER, STRING_1 } from "../testConstants";
 import isRegExp from "./isRegExp";
 
-test("checks Promise correctly", t => {
-	t.assert(isRegExp(/./u));
-	t.assert(!isRegExp(undefined));
-	t.assert(!isRegExp(EMPTY_OBJECT));
-	t.assert(!isRegExp(STRING_1));
-	t.assert(!isRegExp(NUMBER));
+test("checks Promise correctly", assert => {
+	assert.true(isRegExp(/./u));
+	assert.false(isRegExp(undefined));
+	assert.false(isRegExp(EMPTY_OBJECT));
+	assert.false(isRegExp(STRING_1));
+	assert.false(isRegExp(NUMBER));
 });

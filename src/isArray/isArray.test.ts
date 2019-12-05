@@ -4,10 +4,10 @@ import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import { NUMBER, STRING_1 } from "../testConstants";
 import isArray from "./isArray";
 
-test("checks Array correctly", t => {
-	t.assert(isArray(EMPTY_ARRAY));
-	t.assert(!isArray(undefined));
-	t.assert(!isArray(EMPTY_OBJECT));
-	t.assert(!isArray(STRING_1));
-	t.assert(!isArray(NUMBER));
+test("checks Array correctly", assert => {
+	assert.true(isArray(EMPTY_ARRAY));
+	assert.false(isArray(undefined));
+	assert.false(isArray(EMPTY_OBJECT));
+	assert.false(isArray(STRING_1));
+	assert.false(isArray(NUMBER));
 });

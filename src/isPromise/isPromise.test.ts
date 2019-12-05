@@ -5,10 +5,10 @@ import noop from "../noop";
 import { NUMBER, STRING_1 } from "../testConstants";
 import isPromise from "./isPromise";
 
-test("checks Promise correctly", t => {
-	t.assert(isPromise(new Promise(noop)));
-	t.assert(!isPromise(undefined));
-	t.assert(!isPromise(EMPTY_OBJECT));
-	t.assert(!isPromise(STRING_1));
-	t.assert(!isPromise(NUMBER));
+test("checks Promise correctly", assert => {
+	assert.true(isPromise(new Promise(noop)));
+	assert.false(isPromise(undefined));
+	assert.false(isPromise(EMPTY_OBJECT));
+	assert.false(isPromise(STRING_1));
+	assert.false(isPromise(NUMBER));
 });
