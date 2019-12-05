@@ -27,4 +27,4 @@ import { isObject } from "https://unpkg.com/@vangware/micro?module";
 
 ## Documentation
 
-You can read the documentation here: [Documentation](https://github.com/vangware/micro/blob/master/documentation/README.md).
+You can read the documentation here: [Documentation](https://micro.vangware.com).
