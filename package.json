@@ -49,7 +49,6 @@
     "stylelint-prettier": "^1.1.1",
     "ts-node": "^8.5.4",
     "typedoc": "^0.15.3",
-    "typedoc-plugin-markdown": "^2.2.13",
     "typescript": "^3.7.3"
   },
   "files": [
@@ -59,7 +58,7 @@
   "homepage": "https://github.com/vangware/micro#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "run-s clean pre-compile lint test documentation"
+      "pre-commit": "run-s clean pre-compile lint test docs"
     }
   },
   "keywords": [
@@ -108,7 +107,7 @@
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "documentation": "typedoc --plugin typedoc-plugin-markdown --exclude \"**/+(*.test|index|*???Function|testConstants).ts\" --mode file --readme none --hideSources --hideBreadcrumbs --out documentation ./src/**/*.ts",
+    "docs": "typedoc --exclude \"**/+(*.test|index|testConstants).ts\" --mode file --exclude \"**/+(*.test|index|*???Function|testConstants).ts\" --out ./docs ./src/**/*.ts",
     "lint": "eslint src/**/*.ts",
     "pre-compile": "run-s pre-compile:*",
     "pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",
