@@ -1,5 +1,5 @@
 export type ArrayInsertFunction = <ItemType>(
-	array: readonly ItemType[],
+	target: readonly ItemType[],
 	index: number,
 	item: ItemType
 ) => readonly ItemType[];

@@ -1,6 +1,7 @@
 import arrayMap from "../arrayMap";
 import { EMPTY_ARRAY } from "../constants";
 import isObject from "../isObject";
+import objectEntries from "../objectEntries";
 import ObjectMapFunction from "./ObjectMapFunction";
 
 /**
@@ -12,8 +13,8 @@ import ObjectMapFunction from "./ObjectMapFunction";
  */
 export const objectMap: ObjectMapFunction = (targetObject, mapper) =>
 	arrayMap(
-		isObject(targetObject) ? Object.keys(targetObject) : EMPTY_ARRAY,
-		key => mapper(targetObject[key], key, targetObject)
+		isObject(targetObject) ? objectEntries(targetObject) : EMPTY_ARRAY,
+		([key, value]) => mapper(value, key, targetObject)
 	);
 
 export default objectMap;

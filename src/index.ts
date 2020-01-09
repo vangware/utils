@@ -1,8 +1,9 @@
 export {
-	arrayFilterTuple,
-	ArrayFilterTupleFilter,
-	ArrayFilterTupleFunction
-} from "./arrayFilterTuple";
+	arrayFilter,
+	ArrayFilterFilter,
+	ArrayFilterFunction
+} from "./arrayFilter";
+export { arrayFilterTuple, ArrayFilterTupleFunction } from "./arrayFilterTuple";
 export {
 	arrayGroup,
 	ArrayGroupFunction,
@@ -18,6 +19,7 @@ export {
 	ArrayReduceReducer
 } from "./arrayReduce";
 export { arrayReplace, ArrayReplaceFunction } from "./arrayReplace";
+export { arraySlice, ArraySliceFunction } from "./arraySlice";
 export { arraySplit, ArraySplitFunction } from "./arraySplit";
 export { EMPTY_ARRAY, EMPTY_OBJECT, EMPTY_STRING } from "./constants";
 export { isArray, IsArrayFunction } from "./isArray";
@@ -41,6 +43,8 @@ export {
 	JSONParseReviver
 } from "./jsonParsePromise";
 export { noop, NoopFunction } from "./noop";
+export { objectCreate, ObjectCreateFunction } from "./objectCreate";
+export { objectEntries, ObjectEntriesFunction } from "./objectEntries";
 export { objectMap, ObjectMapFunction, ObjectMapMapper } from "./objectMap";
 export { stringMapReplace, StringMapReplaceMap } from "./stringMapReplace";
 export { tap, TapFunction, TapObserver, TapWrapper } from "./tap";
