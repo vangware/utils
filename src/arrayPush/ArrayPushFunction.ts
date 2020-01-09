@@ -1,5 +1,5 @@
 export type ArrayPushFunction = <ItemType>(
-	array: readonly ItemType[],
+	target: readonly ItemType[],
 	item: ItemType
 ) => readonly ItemType[];
 

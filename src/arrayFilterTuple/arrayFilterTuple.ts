@@ -1,6 +1,4 @@
-import arrayReduce from "../arrayReduce";
-import { EMPTY_ARRAY } from "../constants";
-import ArrayFilterTupleFilter from "./ArrayFilterTupleFilter";
+import arrayFilter from "../arrayFilter/arrayFilter";
 import ArrayFilterTupleFunction from "./ArrayFilterTupleFunction";
 
 /**
@@ -10,17 +8,9 @@ import ArrayFilterTupleFunction from "./ArrayFilterTupleFunction";
  * @param filter - Filter function.
  * @returns Array of 2 elements (the matching and the non matching values).
  */
-export const arrayFilterTuple: ArrayFilterTupleFunction = <ItemType>(
-	target: readonly ItemType[],
-	filter: ArrayFilterTupleFilter<ItemType>
-) =>
-	arrayReduce(
-		target,
-		([trueValues, falseValues], item, index, array) =>
-			filter(item, index, array)
-				? [[...trueValues, item], falseValues]
-				: [trueValues, [...falseValues, item]],
-		[EMPTY_ARRAY as readonly ItemType[], EMPTY_ARRAY as readonly ItemType[]]
-	);
+export const arrayFilterTuple: ArrayFilterTupleFunction = (target, filter) => [
+	arrayFilter(target, filter),
+	arrayFilter(target, (item, index, array) => !filter(item, index, array))
+];
 
 export default arrayFilterTuple;
