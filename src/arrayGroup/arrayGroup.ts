@@ -1,27 +1,23 @@
 import arrayPush from "../arrayPush";
 import arrayReduce from "../arrayReduce";
 import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
-import isArray from "../isArray";
 import ArrayGroupFunction from "./ArrayGroupFunction";
 
 /**
  * Creates object with properties grouped by grouper function.
  *
- * @param array - Target array.
+ * @param target - Target array.
  * @param grouper - Grouper function (returns the group name).
  * @returns An object with the shape `{ [group]: [items] }`.
  */
-export const arrayGroup: ArrayGroupFunction = (array, grouper) =>
+export const arrayGroup: ArrayGroupFunction = (target, grouper) =>
 	arrayReduce(
-		array,
-		(output, item) =>
+		target,
+		(groups, item, index, array) =>
 			(group => ({
-				...output,
-				[group]: arrayPush(
-					isArray(output[group]) ? output[group] : EMPTY_ARRAY,
-					item
-				)
-			}))(`${grouper(item)}`),
+				...groups,
+				[group]: arrayPush(groups[group] ?? EMPTY_ARRAY, item)
+			}))(`${grouper(item, index, array)}`),
 		EMPTY_OBJECT
 	);
 

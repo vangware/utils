@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 4.0.5
+
+- :arrow_up: dependency upgrade.
+- :bookmark: version bump.
+- :building_construction: arrayFilterTuple doesn't use `arrayReduce` anymore.
+- :building_construction: objectMap now uses `objectEntries`.
+- :memo: update docs.
+- :page_facing_up: update license year.
+- :sparkles: add arrayFilter.
+- :sparkles: add arraySlice.
+- :sparkles: add objectCreate.
+- :sparkles: add objectEntries.
+
 ## 4.0.4
 
 - :arrow_up: dependency upgrade.

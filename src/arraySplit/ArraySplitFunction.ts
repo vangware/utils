@@ -1,5 +1,5 @@
 export type ArraySplitFunction = <ItemType>(
-	array: readonly ItemType[],
+	target: readonly ItemType[],
 	length: number,
 	vertical?: boolean
 ) => readonly (readonly ItemType[])[];
