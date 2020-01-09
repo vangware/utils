@@ -1,7 +1,10 @@
+import objectCreate from "./objectCreate";
+
 /** Empty array. */
-export const EMPTY_ARRAY = [];
+export const EMPTY_ARRAY: readonly never[] = [];
+
 /** Empty object (with no prototype). */
-// eslint-disable-next-line no-null/no-null
-export const EMPTY_OBJECT = Object.create(null) as {};
+export const EMPTY_OBJECT = objectCreate();
+
 /** Empty string. */
 export const EMPTY_STRING = "";

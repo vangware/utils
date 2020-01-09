@@ -1,8 +1,8 @@
-import ArrayFilterTupleFilter from "./ArrayFilterTupleFilter";
+import ArrayFilterFilter from "../arrayFilter/ArrayFilterFilter";
 
 export type ArrayFilterTupleFunction = <ItemType>(
 	target: readonly ItemType[],
-	filter: ArrayFilterTupleFilter<ItemType>
+	filter: ArrayFilterFilter<ItemType>
 ) => readonly [readonly ItemType[], readonly ItemType[]];
 
 export default ArrayFilterTupleFunction;

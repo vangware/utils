@@ -5,11 +5,11 @@ import ArrayMapFunction from "./ArrayMapFunction";
 /**
  * Array.prototype.map wrapper that can take an undefined value.
  *
- * @param array - Target array.
+ * @param target - Target array.
  * @param mapper - Map callback (to be called for every array item).
  * @returns Mapped array.
  */
-export const arrayMap: ArrayMapFunction = (array, mapper) =>
-	isArray(array) ? array.map(mapper) : EMPTY_ARRAY;
+export const arrayMap: ArrayMapFunction = (target, mapper) =>
+	isArray(target) ? target.map(mapper) : EMPTY_ARRAY;
 
 export default arrayMap;
