@@ -1,5 +1,9 @@
-export type ObjectCreateFunction = <Prototype extends {} = {}>(
+export type ObjectCreateFunction = <
+	Base extends {} = {},
+	Prototype extends {} = {}
+>(
+	base?: Base | {},
 	prototype?: Prototype | null
-) => Prototype;
+) => Readonly<Base>;
 
 export default ObjectCreateFunction;
