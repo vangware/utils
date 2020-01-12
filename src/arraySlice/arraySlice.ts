@@ -1,5 +1,6 @@
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
+import objectFreeze from "../objectFreeze";
 import ArraySliceFunction from "./ArraySliceFunction";
 
 /**
@@ -14,6 +15,6 @@ export const arraySlice: ArraySliceFunction = (
 	target,
 	start = 0,
 	end = target.length
-) => (isArray(target) ? target.slice(start, end) : EMPTY_ARRAY);
+) => (isArray(target) ? objectFreeze(target.slice(start, end)) : EMPTY_ARRAY);
 
 export default arraySlice;

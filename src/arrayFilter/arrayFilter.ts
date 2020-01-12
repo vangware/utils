@@ -1,5 +1,6 @@
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
+import objectFreeze from "../objectFreeze";
 import ArrayFilterFunction from "./ArrayFilterFunction";
 
 /**
@@ -9,7 +10,17 @@ import ArrayFilterFunction from "./ArrayFilterFunction";
  * @param filter - Filter function.
  * @returns An array of elements matching the given filter.
  */
-export const arrayFilter: ArrayFilterFunction = (target, filter = _ => true) =>
-	isArray(target) ? target.filter(filter) : EMPTY_ARRAY;
+export const arrayFilter: ArrayFilterFunction = (
+	target,
+	filter = _ => true
+) => {
+	const frozenTarget = isArray(target) ? objectFreeze(target) : EMPTY_ARRAY;
+
+	return objectFreeze(
+		frozenTarget.filter((item, index) =>
+			filter(objectFreeze(item), index, frozenTarget)
+		)
+	);
+};
 
 export default arrayFilter;

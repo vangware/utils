@@ -8,7 +8,7 @@ test("Creates an object with an empty prototype by default", assert => {
 });
 
 test("Creates an object with given prototype", assert => {
-	const objectCreateOutput = objectCreate({ test: "test" });
+	const objectCreateOutput = objectCreate({ test: "test" }, {});
 	assert.is(objectCreateOutput.test, "test");
 	assert.not(objectCreateOutput.hasOwnProperty, undefined);
 });

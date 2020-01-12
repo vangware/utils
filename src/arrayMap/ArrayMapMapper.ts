@@ -1,5 +1,5 @@
 export type ArrayMapMapper<ItemType, OutputType> = (
-	value: ItemType,
+	value: Readonly<ItemType>,
 	index: number,
 	array: readonly ItemType[]
 ) => OutputType;

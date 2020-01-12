@@ -1,6 +1,6 @@
 export type ArrayReduceReducer<ItemType, OutputType> = (
-	previousValue: OutputType,
-	value: ItemType,
+	previousValue: Readonly<OutputType>,
+	item: Readonly<ItemType>,
 	index: number,
 	array: readonly ItemType[]
 ) => OutputType;
