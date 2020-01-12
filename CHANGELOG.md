@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 5.0.0
+
+- :arrow_up: dependency upgrade.
+- :bookmark: version bump.
+- :building_construction: update `arrayFilter` to avoid mutations even further.
+- :building_construction: update `arrayFilterTuple` to avoid mutations even further.
+- :building_construction: update `arrayGroup` to avoid mutations even further.
+- :building_construction: update `arrayInsert` to avoid mutations even further.
+- :building_construction: update `arrayMap` to avoid mutations even further.
+- :building_construction: update `arrayReduce` to avoid mutations even further.
+- :building_construction: update `arrayReplace` to avoid mutations even further.
+- :building_construction: update `arraySlice` to avoid mutations even further.
+- :building_construction: update `arraySplit` to avoid mutations even further.
+- :building_construction: update `objectCreate` to be use a base besides the prototype.
+- :building_construction: update `objectEntries` to avoid mutations even further.
+- :sparkles: add `objectFreeze` to be used by everything.
+
 ## 4.0.5
 
 - :arrow_up: dependency upgrade.

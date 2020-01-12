@@ -1,4 +1,5 @@
 import isArray from "../isArray";
+import objectFreeze from "../objectFreeze";
 import ArrayReduceFunction from "./ArrayReduceFunction";
 
 /**
@@ -13,6 +14,23 @@ export const arrayReduce: ArrayReduceFunction = (
 	target,
 	reducer,
 	initialValue
-) => (isArray(target) ? target.reduce(reducer, initialValue) : initialValue);
+) => {
+	const frozenTarget = objectFreeze(target);
+
+	return objectFreeze(
+		isArray(target)
+			? target.reduce(
+					(previousValue, item, index) =>
+						reducer(
+							objectFreeze(previousValue),
+							objectFreeze(item),
+							index,
+							frozenTarget
+						),
+					initialValue
+			  )
+			: initialValue
+	);
+};
 
 export default arrayReduce;

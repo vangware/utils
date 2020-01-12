@@ -19,14 +19,18 @@ export const arraySplit: ArraySplitFunction = <ItemType>(
 ) =>
 	arrayReduce(
 		target,
-		(output, item, index) =>
-			(splitIndex =>
-				arrayReplace(output, splitIndex, [
-					...(isArray(output[splitIndex])
-						? output[splitIndex]
-						: EMPTY_ARRAY),
-					item
-				]))(Math.floor(vertical ? index % length : index / length)),
+		(output, item, index) => {
+			const splitIndex = Math.floor(
+				vertical ? index % length : index / length
+			);
+
+			return arrayReplace(output, splitIndex, [
+				...(isArray(output[splitIndex])
+					? output[splitIndex]
+					: EMPTY_ARRAY),
+				item
+			]);
+		},
 		EMPTY_ARRAY as readonly (readonly ItemType[])[]
 	);
 

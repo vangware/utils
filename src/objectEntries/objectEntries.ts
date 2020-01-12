@@ -1,3 +1,4 @@
+import objectFreeze from "../objectFreeze";
 import ObjectEntriesFunction from "./ObjectEntriesFunction";
 
 /**
@@ -7,6 +8,8 @@ import ObjectEntriesFunction from "./ObjectEntriesFunction";
  * @returns Array of tuples ([key, value]) of the given object.
  */
 export const objectEntries: ObjectEntriesFunction = target =>
-	Object.entries(target);
+	objectFreeze(
+		Object.entries(target).map(([key, value]) => [key, objectFreeze(value)])
+	);
 
 export default objectEntries;

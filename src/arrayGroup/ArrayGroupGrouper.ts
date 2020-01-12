@@ -1,5 +1,5 @@
 export type ArrayGroupGrouper<ItemType> = (
-	item: ItemType,
+	item: Readonly<ItemType>,
 	index: number,
 	array: readonly ItemType[]
 ) => string | number;

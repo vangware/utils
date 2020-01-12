@@ -45,6 +45,7 @@ export {
 export { noop, NoopFunction } from "./noop";
 export { objectCreate, ObjectCreateFunction } from "./objectCreate";
 export { objectEntries, ObjectEntriesFunction } from "./objectEntries";
+export { objectFreeze, ObjectFreezeFunction } from "./objectFreeze";
 export { objectMap, ObjectMapFunction, ObjectMapMapper } from "./objectMap";
 export { stringMapReplace, StringMapReplaceMap } from "./stringMapReplace";
 export { tap, TapFunction, TapObserver, TapWrapper } from "./tap";

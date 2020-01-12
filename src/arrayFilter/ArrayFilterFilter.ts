@@ -1,7 +1,5 @@
-export type ArrayFilterFilter<ItemType> = (
-	item: ItemType,
-	index: number,
-	array: readonly ItemType[]
-) => boolean;
+import { ArrayMapMapper } from "../arrayMap";
+
+export type ArrayFilterFilter<ItemType> = ArrayMapMapper<ItemType, boolean>;
 
 export default ArrayFilterFilter;
