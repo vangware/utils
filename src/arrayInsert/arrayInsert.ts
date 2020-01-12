@@ -1,4 +1,5 @@
 import arraySlice from "../arraySlice";
+import objectFreeze from "../objectFreeze";
 import ArrayInsertFunction from "./ArrayInsertFunction";
 
 /**
@@ -9,11 +10,14 @@ import ArrayInsertFunction from "./ArrayInsertFunction";
  * @param item - Item to be inserted.
  * @returns New array with inserted values in it.
  */
-export const arrayInsert: ArrayInsertFunction = (target, index, item) =>
-	(insertionPoint => [
+export const arrayInsert: ArrayInsertFunction = (target, index, item) => {
+	const insertionPoint = index < 0 ? target.length + index : index;
+
+	return objectFreeze([
 		...arraySlice(target, 0, insertionPoint),
 		item,
 		...arraySlice(target, insertionPoint)
-	])(index < 0 ? target.length + index : index);
+	]);
+};
 
 export default arrayInsert;

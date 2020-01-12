@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@vangware/micro - v4.0.5</title>
+	<title>@vangware/micro - v5.0.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@vangware/micro - v4.0.5</a>
+					<a href="index.html" class="title">@vangware/micro - v5.0.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @vangware/micro - v4.0.5</h1>
+			<h1> @vangware/micro - v5.0.0</h1>
 		</div>
 	</div>
 </header>
@@ -124,6 +124,7 @@
 								<li class="tsd-kind-function"><a href="globals.html#noop" class="tsd-kind-icon">noop</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#objectcreate" class="tsd-kind-icon">object<wbr>Create</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#objectentries" class="tsd-kind-icon">object<wbr>Entries</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#objectfreeze" class="tsd-kind-icon">object<wbr>Freeze</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#objectmap" class="tsd-kind-icon">object<wbr>Map</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#stringmapreplace" class="tsd-kind-icon">string<wbr>Map<wbr>Replace</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#tap" class="tsd-kind-icon">tap</a></li>
@@ -138,10 +139,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="arrayfilterfilter" class="tsd-anchor"></a>
 					<h3>Array<wbr>Filter<wbr>Filter</h3>
-					<div class="tsd-signature tsd-kind-icon">Array<wbr>Filter<wbr>Filter&lt;ItemType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Array<wbr>Filter<wbr>Filter&lt;ItemType&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#arraymapmapper" class="tsd-signature-type">ArrayMapMapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayFilter/ArrayFilterFilter.ts#L1">arrayFilter/ArrayFilterFilter.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayFilter/ArrayFilterFilter.ts#L3">arrayFilter/ArrayFilterFilter.ts:3</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -150,33 +151,6 @@
 							<h4>ItemType</h4>
 						</li>
 					</ul>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>item: <span class="tsd-signature-type">ItemType</span></h5>
-											</li>
-											<li>
-												<h5>index: <span class="tsd-signature-type">number</span></h5>
-											</li>
-											<li>
-												<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="arraygroupgrouper" class="tsd-anchor"></a>
@@ -184,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">Array<wbr>Group<wbr>Grouper&lt;ItemType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayGroup/ArrayGroupGrouper.ts#L1">arrayGroup/ArrayGroupGrouper.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayGroup/ArrayGroupGrouper.ts#L1">arrayGroup/ArrayGroupGrouper.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -198,20 +172,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>item: <span class="tsd-signature-type">ItemType</span></h5>
+												<h5>item: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
 												<h5>index: <span class="tsd-signature-type">number</span></h5>
 											</li>
 											<li>
-												<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+												<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
@@ -230,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">Array<wbr>Group<wbr>Object&lt;ItemType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayGroup/ArrayGroupObject.ts#L1">arrayGroup/ArrayGroupObject.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayGroup/ArrayGroupObject.ts#L1">arrayGroup/ArrayGroupObject.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -243,7 +217,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>group: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">keyof ItemType[]</span></h5>
+								<h5><span class="tsd-signature-symbol">[</span>group: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 							</li>
 						</ul>
 					</div>
@@ -254,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">Array<wbr>Map<wbr>Mapper&lt;ItemType, OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayMap/ArrayMapMapper.ts#L1">arrayMap/ArrayMapMapper.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayMap/ArrayMapMapper.ts#L1">arrayMap/ArrayMapMapper.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -271,20 +245,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>value: <span class="tsd-signature-type">ItemType</span></h5>
+												<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
 												<h5>index: <span class="tsd-signature-type">number</span></h5>
 											</li>
 											<li>
-												<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+												<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -300,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">Array<wbr>Reduce<wbr>Reducer&lt;ItemType, OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayReduce/ArrayReduceReducer.ts#L1">arrayReduce/ArrayReduceReducer.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayReduce/ArrayReduceReducer.ts#L1">arrayReduce/ArrayReduceReducer.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -317,23 +291,23 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>previousValue: <span class="tsd-signature-type">OutputType</span></h5>
+												<h5>previousValue: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
-												<h5>value: <span class="tsd-signature-type">ItemType</span></h5>
+												<h5>item: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
 												<h5>index: <span class="tsd-signature-type">number</span></h5>
 											</li>
 											<li>
-												<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+												<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -349,7 +323,7 @@
 					<div class="tsd-signature tsd-kind-icon">JSONParse<wbr>Reviver&lt;OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/jsonParsePromise/JSONParseReviver.ts#L1">jsonParsePromise/JSONParseReviver.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/jsonParsePromise/JSONParseReviver.ts#L1">jsonParsePromise/JSONParseReviver.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -392,7 +366,7 @@
 					<div class="tsd-signature tsd-kind-icon">Object<wbr>Map<wbr>Mapper&lt;ObjectType, OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/objectMap/ObjectMapMapper.ts#L1">objectMap/ObjectMapMapper.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/objectMap/ObjectMapMapper.ts#L1">objectMap/ObjectMapMapper.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -409,20 +383,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span><span class="tsd-signature-symbol">&gt;</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>value: <span class="tsd-signature-type">ObjectType[keyof ObjectType]</span></h5>
+												<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
 												<h5>key: <span class="tsd-signature-type">string</span></h5>
 											</li>
 											<li>
-												<h5>targetObject: <span class="tsd-signature-type">ObjectType</span></h5>
+												<h5>targetObject: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -438,7 +412,7 @@
 					<div class="tsd-signature tsd-kind-icon">String<wbr>Map<wbr>Replace<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/stringMapReplace/StringMapReplaceMap.ts#L1">stringMapReplace/StringMapReplaceMap.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/stringMapReplace/StringMapReplaceMap.ts#L1">stringMapReplace/StringMapReplaceMap.ts:1</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -456,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tap<wbr>Observer&lt;ValueType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/tap/TapObserver.ts#L1">tap/TapObserver.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/tap/TapObserver.ts#L1">tap/TapObserver.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -470,17 +444,17 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>value: <span class="tsd-signature-type">ValueType</span></h5>
+												<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValueType</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -493,7 +467,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tap<wbr>Wrapper&lt;ValueType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/tap/TapWrapper.ts#L1">tap/TapWrapper.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/tap/TapWrapper.ts#L1">tap/TapWrapper.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -530,7 +504,7 @@
 					<div class="tsd-signature tsd-kind-icon">When<wbr>Not<wbr>Nullish<wbr>Callback&lt;ValueType, OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/when/WhenNotNullishCallback.ts#L1">when/WhenNotNullishCallback.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/when/WhenNotNullishCallback.ts#L1">when/WhenNotNullishCallback.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -570,7 +544,7 @@
 					<div class="tsd-signature tsd-kind-icon">When<wbr>Nullish<wbr>Callback&lt;OutputType&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/when/WhenNullishCallback.ts#L1">when/WhenNullishCallback.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/when/WhenNullishCallback.ts#L1">when/WhenNullishCallback.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -601,10 +575,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="empty_array" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> EMPTY_<wbr>ARRAY</h3>
-					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof never[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol"> =&nbsp;objectFreeze([])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/constants.ts#L4">constants.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/constants.ts#L5">constants.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -616,10 +590,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="empty_object" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> EMPTY_<wbr>OBJECT</h3>
-					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>OBJECT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__type</span><span class="tsd-signature-symbol"> =&nbsp;objectCreate()</span></div>
+					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>OBJECT<span class="tsd-signature-symbol">:</span> <a href="globals.html#arraymapmapper.__type" class="tsd-signature-type">__type</a><span class="tsd-signature-symbol"> =&nbsp;objectCreate()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/constants.ts#L7">constants.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/constants.ts#L8">constants.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -634,7 +608,7 @@
 					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>STRING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/constants.ts#L10">constants.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/constants.ts#L11">constants.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -650,13 +624,13 @@
 					<a name="arrayfilter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Filter</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Filter<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, filter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Filter<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, filter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayFilter/arrayFilter.ts#L12">arrayFilter/arrayFilter.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayFilter/arrayFilter.ts#L13">arrayFilter/arrayFilter.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,10 +657,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An array of elements matching the given filter.</p>
 						</li>
 					</ul>
@@ -701,7 +672,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayFilterTuple/arrayFilterTuple.ts#L11">arrayFilterTuple/arrayFilterTuple.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayFilterTuple/arrayFilterTuple.ts#L12">arrayFilterTuple/arrayFilterTuple.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,23 +700,23 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>item: <span class="tsd-signature-type">ItemType</span></h5>
+															<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
 															<h5>index: <span class="tsd-signature-type">number</span></h5>
 														</li>
 														<li>
-															<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+															<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 														</li>
 													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
 												</li>
 											</ul>
 										</li>
@@ -761,13 +732,13 @@
 					<a name="arraygroup" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Group</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Group<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, grouper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__type</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Group<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, grouper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayGroup/arrayGroup.ts#L13">arrayGroup/arrayGroup.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayGroup/arrayGroup.ts#L15">arrayGroup/arrayGroup.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -795,20 +766,20 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>item: <span class="tsd-signature-type">ItemType</span></h5>
+															<h5>item: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
 															<h5>index: <span class="tsd-signature-type">number</span></h5>
 														</li>
 														<li>
-															<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+															<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
@@ -821,8 +792,10 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">__type</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 							<p>An object with the shape <code>{ [group]: [items] }</code>.</p>
+							<ul class="tsd-parameters">
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -830,13 +803,13 @@
 					<a name="arrayinsert" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Insert</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Insert<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Insert<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayInsert/arrayInsert.ts#L12">arrayInsert/arrayInsert.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayInsert/arrayInsert.ts#L13">arrayInsert/arrayInsert.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -871,7 +844,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>New array with inserted values in it.</p>
 						</li>
 					</ul>
@@ -880,13 +853,13 @@
 					<a name="arraymap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Map<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, mapper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Map<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, mapper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayMap/arrayMap.ts#L12">arrayMap/arrayMap.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayMap/arrayMap.ts#L13">arrayMap/arrayMap.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -914,20 +887,20 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>value: <span class="tsd-signature-type">ItemType</span></h5>
+															<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
 															<h5>index: <span class="tsd-signature-type">number</span></h5>
 														</li>
 														<li>
-															<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+															<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -937,10 +910,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">[]</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Mapped array.</p>
 						</li>
 					</ul>
@@ -955,7 +925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayPush/arrayPush.ts#L11">arrayPush/arrayPush.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayPush/arrayPush.ts#L11">arrayPush/arrayPush.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -991,13 +961,13 @@
 					<a name="arrayreduce" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Reduce</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Reduce<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, reducer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Reduce<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, reducer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayReduce/arrayReduce.ts#L12">arrayReduce/arrayReduce.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayReduce/arrayReduce.ts#L13">arrayReduce/arrayReduce.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,23 +995,23 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>previousValue: <span class="tsd-signature-type">OutputType</span></h5>
+															<h5>previousValue: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
-															<h5>value: <span class="tsd-signature-type">ItemType</span></h5>
+															<h5>item: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
 															<h5>index: <span class="tsd-signature-type">number</span></h5>
 														</li>
 														<li>
-															<h5>array: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+															<h5>array: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -1059,8 +1029,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 							<p>Reduced value.</p>
+							<ul class="tsd-parameters">
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -1068,13 +1040,13 @@
 					<a name="arrayreplace" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Replace</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Replace<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Replace<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arrayReplace/arrayReplace.ts#L12">arrayReplace/arrayReplace.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arrayReplace/arrayReplace.ts#L13">arrayReplace/arrayReplace.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1109,7 +1081,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Array with replaced elements.</p>
 						</li>
 					</ul>
@@ -1118,13 +1090,13 @@
 					<a name="arrayslice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Slice</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Slice<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Slice<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arraySlice/arraySlice.ts#L13">arraySlice/arraySlice.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arraySlice/arraySlice.ts#L14">arraySlice/arraySlice.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,10 +1131,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A slice of the given array (from start to end).</p>
 						</li>
 					</ul>
@@ -1171,13 +1140,13 @@
 					<a name="arraysplit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Split</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">array<wbr>Split&lt;ItemType&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof ItemType[]</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, vertical<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Split&lt;ItemType&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, vertical<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/arraySplit/arraySplit.ts#L15">arraySplit/arraySplit.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/arraySplit/arraySplit.ts#L15">arraySplit/arraySplit.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1194,7 +1163,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>target: <span class="tsd-signature-type">keyof ItemType[]</span></h5>
+									<h5>target: <span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Target array.</p>
@@ -1227,13 +1196,13 @@
 					<a name="isarray" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Array</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Array&lt;ValueType, ItemType&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">keyof ItemType[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">keyof ItemType[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array&lt;ValueType, ItemType&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isArray/isArray.ts#L9">isArray/isArray.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isArray/isArray.ts#L9">isArray/isArray.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1253,7 +1222,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">keyof ItemType[]</span></h5>
+									<h5>value: <span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Value to check.</p>
@@ -1261,7 +1230,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">keyof ItemType[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">keyof <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">[]</span></span></h4>
 							<p>True if is an array, false if not.</p>
 						</li>
 					</ul>
@@ -1276,7 +1245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isBigInt/isBigInt.ts#L7">isBigInt/isBigInt.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isBigInt/isBigInt.ts#L7">isBigInt/isBigInt.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1316,7 +1285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isBoolean/isBoolean.ts#L7">isBoolean/isBoolean.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isBoolean/isBoolean.ts#L7">isBoolean/isBoolean.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1356,7 +1325,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isDate/isDate.ts#L9">isDate/isDate.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isDate/isDate.ts#L9">isDate/isDate.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1396,7 +1365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isFunction/isFunction.ts#L7">isFunction/isFunction.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isFunction/isFunction.ts#L7">isFunction/isFunction.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1436,7 +1405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isInstanceOf/isInstanceOf.ts#L10">isInstanceOf/isInstanceOf.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isInstanceOf/isInstanceOf.ts#L10">isInstanceOf/isInstanceOf.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1478,7 +1447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isNull/isNull.ts#L7">isNull/isNull.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isNull/isNull.ts#L7">isNull/isNull.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1518,7 +1487,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isNullish/isNullish.ts#L10">isNullish/isNullish.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isNullish/isNullish.ts#L10">isNullish/isNullish.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1558,7 +1527,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isNumber/isNumber.ts#L7">isNumber/isNumber.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isNumber/isNumber.ts#L7">isNumber/isNumber.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1598,7 +1567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isObject/isObject.ts#L9">isObject/isObject.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isObject/isObject.ts#L9">isObject/isObject.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1638,7 +1607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isPromise/isPromise.ts#L9">isPromise/isPromise.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isPromise/isPromise.ts#L9">isPromise/isPromise.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1681,7 +1650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isRegExp/isRegExp.ts#L9">isRegExp/isRegExp.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isRegExp/isRegExp.ts#L9">isRegExp/isRegExp.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1721,7 +1690,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isString/isString.ts#L7">isString/isString.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isString/isString.ts#L7">isString/isString.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1761,7 +1730,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isSymbol/isSymbol.ts#L7">isSymbol/isSymbol.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isSymbol/isSymbol.ts#L7">isSymbol/isSymbol.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1801,7 +1770,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/isUndefined/isUndefined.ts#L7">isUndefined/isUndefined.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/isUndefined/isUndefined.ts#L7">isUndefined/isUndefined.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1841,7 +1810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/jsonParsePromise/jsonParsePromise.ts#L10">jsonParsePromise/jsonParsePromise.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/jsonParsePromise/jsonParsePromise.ts#L10">jsonParsePromise/jsonParsePromise.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1883,7 +1852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/noop/noop.ts#L9">noop/noop.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/noop/noop.ts#L9">noop/noop.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1911,22 +1880,30 @@
 					<a name="objectcreate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> object<wbr>Create</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">object<wbr>Create<span class="tsd-signature-symbol">(</span>prototype<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Prototype</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">object<wbr>Create<span class="tsd-signature-symbol">(</span>base<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="globals.html#arraymapmapper.__type" class="tsd-signature-type">__type</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Base</span>, prototype<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Prototype</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/objectCreate/objectCreate.ts#L10">objectCreate/objectCreate.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/objectCreate/objectCreate.ts#L10">objectCreate/objectCreate.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Object.create wrapper with default null prototype.</p>
+									<p>Object.create + Object.assign wrapper with default null prototype.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> base: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="globals.html#arraymapmapper.__type" class="tsd-signature-type">__type</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Base</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Base object (null by default).</p>
+										</div>
+									</div>
+								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> prototype: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Prototype</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -1937,7 +1914,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>New object with given prototype.</p>
+							<p>New object with given base and prototype.</p>
 						</li>
 					</ul>
 				</section>
@@ -1945,13 +1922,13 @@
 					<a name="objectentries" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> object<wbr>Entries</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">object<wbr>Entries<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">object<wbr>Entries<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/objectEntries/objectEntries.ts#L9">objectEntries/objectEntries.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/objectEntries/objectEntries.ts#L10">objectEntries/objectEntries.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1970,8 +1947,42 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Array of tuples ([key, value]) of the given object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="objectfreeze" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> object<wbr>Freeze</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">object<wbr>Freeze<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TargetType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TargetType</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/objectFreeze/objectFreeze.ts#L12">objectFreeze/objectFreeze.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Object.freeze wrapper (returns a frozen copy of the object).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">TargetType</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Object to be frozen.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TargetType</span></h4>
+							<p>Frozen object.</p>
 						</li>
 					</ul>
 				</section>
@@ -1979,13 +1990,13 @@
 					<a name="objectmap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> object<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">object<wbr>Map<span class="tsd-signature-symbol">(</span>targetObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span>, mapper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">object<wbr>Map<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span>, mapper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/objectMap/objectMap.ts#L14">objectMap/objectMap.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/objectMap/objectMap.ts#L15">objectMap/objectMap.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1996,7 +2007,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>targetObject: <span class="tsd-signature-type">ObjectType</span></h5>
+									<h5>target: <span class="tsd-signature-type">ObjectType</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Target object.</p>
@@ -2013,20 +2024,20 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span><span class="tsd-signature-symbol">&gt;</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputType</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>value: <span class="tsd-signature-type">ObjectType[keyof ObjectType]</span></h5>
+															<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType[keyof ObjectType]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 														<li>
 															<h5>key: <span class="tsd-signature-type">string</span></h5>
 														</li>
 														<li>
-															<h5>targetObject: <span class="tsd-signature-type">ObjectType</span></h5>
+															<h5>targetObject: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputType</span></h4>
@@ -2051,7 +2062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/stringMapReplace/stringMapReplace.ts#L13">stringMapReplace/stringMapReplace.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/stringMapReplace/stringMapReplace.ts#L13">stringMapReplace/stringMapReplace.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2098,7 +2109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/tap/tap.ts#L8">tap/tap.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/tap/tap.ts#L8">tap/tap.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2118,17 +2129,17 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValueType</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>value: <span class="tsd-signature-type">ValueType</span></h5>
+															<h5>value: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValueType</span></h4>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValueType</span><span class="tsd-signature-symbol">&gt;</span></h4>
 												</li>
 											</ul>
 										</li>
@@ -2150,7 +2161,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/0624792/src/when/when.ts#L12">when/when.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/when/when.ts#L12">when/when.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2354,6 +2365,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#objectentries" class="tsd-kind-icon">object<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#objectfreeze" class="tsd-kind-icon">object<wbr>Freeze</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#objectmap" class="tsd-kind-icon">object<wbr>Map</a>

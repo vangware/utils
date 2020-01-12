@@ -2,9 +2,9 @@ export type ObjectMapMapper<
 	ObjectType,
 	OutputType = ObjectType[keyof ObjectType]
 > = (
-	value: ObjectType[keyof ObjectType],
+	value: Readonly<ObjectType[keyof ObjectType]>,
 	key: string,
-	targetObject: ObjectType
+	targetObject: Readonly<ObjectType>
 ) => OutputType;
 
 export default ObjectMapMapper;
