@@ -1,6 +1,6 @@
 sudo: false
 language: node_js
-node_js: 12.0
+node_js: 13.7
 before_install: npm i -g pnpm rimraf
 install: # Test install with NPM, PNPM and Yarn
     - npm i # Test NPM install
