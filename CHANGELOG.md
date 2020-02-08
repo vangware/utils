@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 5.0.5
+
+- :arrow_up: version bump.
+- :sparkles: export time constants.
+
 ## 5.0.4
 
 - :wrench: update travis config.

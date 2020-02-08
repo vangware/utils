@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -23,10 +23,10 @@
   },
   "devDependencies": {
     "@types/sinon": "^7.5.1",
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
-    "@vangware/vangstyle": "^4.0.13",
-    "ava": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "@vangware/vangstyle": "^4.0.14",
+    "ava": "^3.2.0",
     "coveralls": "^3.0.9",
     "custom-event": "^1.0.1",
     "eslint": "^6.8.0",
@@ -34,7 +34,7 @@
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-ban": "^1.4.0",
     "eslint-plugin-functional": "^3.0.1",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-prefer-arrow": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.2",
