@@ -21,7 +21,19 @@ export {
 export { arrayReplace, ArrayReplaceFunction } from "./arrayReplace";
 export { arraySlice, ArraySliceFunction } from "./arraySlice";
 export { arraySplit, ArraySplitFunction } from "./arraySplit";
-export { EMPTY_ARRAY, EMPTY_OBJECT, EMPTY_STRING } from "./constants";
+export {
+	EMPTY_ARRAY,
+	EMPTY_OBJECT,
+	EMPTY_STRING,
+	TIME_DAY,
+	TIME_HOUR,
+	TIME_MINUTE,
+	TIME_SECOND,
+	TIME_WEEK,
+	TIME_WEEK_WORK,
+	TIME_YEAR,
+	TIME_YEAR_LEAP
+} from "./constants";
 export { isArray, IsArrayFunction } from "./isArray";
 export { isBigInt, IsBigIntFunction } from "./isBigInt";
 export { isBoolean, IsBooleanFunction } from "./isBoolean";
