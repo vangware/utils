@@ -8,11 +8,16 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :bookmark: version bump.
 - :building_construction: change exports/imports to use import type/export type when needed.
 
-## 5.0.5
+## 5.0.6
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :building_construction: change code matching new linting settings.
+
+## 5.0.5
+
+- :arrow_up: version bump.
+- :sparkles: export time constants.
 
 ## 5.0.4
 
