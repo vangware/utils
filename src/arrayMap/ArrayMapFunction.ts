@@ -1,4 +1,4 @@
-import ArrayMapMapper from "./ArrayMapMapper";
+import type ArrayMapMapper from "./ArrayMapMapper";
 
 export type ArrayMapFunction = <ItemType, OutputType = ItemType>(
 	target: readonly ItemType[],

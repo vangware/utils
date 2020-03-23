@@ -1,2 +1,2 @@
 export { default, objectCreate } from "./objectCreate";
-export { ObjectCreateFunction } from "./ObjectCreateFunction";
+export type { ObjectCreateFunction } from "./ObjectCreateFunction";

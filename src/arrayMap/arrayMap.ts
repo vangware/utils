@@ -1,7 +1,7 @@
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
 import objectFreeze from "../objectFreeze";
-import ArrayMapFunction from "./ArrayMapFunction";
+import type ArrayMapFunction from "./ArrayMapFunction";
 
 /**
  * Array.prototype.map wrapper that can take an undefined value.

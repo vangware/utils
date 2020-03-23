@@ -1,4 +1,4 @@
-import isArray from "./isArray";
+import type isArray from "./isArray";
 
 // Type predicates with arrow functions can't be extracted.
 export type IsArrayFunction = typeof isArray;

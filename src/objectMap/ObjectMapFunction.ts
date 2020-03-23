@@ -1,4 +1,4 @@
-import ObjectMapMapper from "./ObjectMapMapper";
+import type ObjectMapMapper from "./ObjectMapMapper";
 
 export type ObjectMapFunction = <
 	ObjectType,

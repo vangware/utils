@@ -1,5 +1,5 @@
 import isNullish from "../isNullish";
-import WhenFunction from "./WhenFunction";
+import type WhenFunction from "./WhenFunction";
 
 /**
  * Ternary wrapper based on callbacks.

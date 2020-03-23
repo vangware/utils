@@ -1,4 +1,4 @@
 export { default, tap } from "./tap";
-export { TapFunction } from "./TapFunction";
-export { TapObserver } from "./TapObserver";
-export { TapWrapper } from "./TapWrapper";
+export type { TapFunction } from "./TapFunction";
+export type { TapObserver } from "./TapObserver";
+export type { TapWrapper } from "./TapWrapper";

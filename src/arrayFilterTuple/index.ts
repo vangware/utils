@@ -1,2 +1,2 @@
 export { arrayFilterTuple, default } from "./arrayFilterTuple";
-export { ArrayFilterTupleFunction } from "./ArrayFilterTupleFunction";
+export type { ArrayFilterTupleFunction } from "./ArrayFilterTupleFunction";

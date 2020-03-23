@@ -1,4 +1,4 @@
-import TapFunction from "./TapFunction";
+import type TapFunction from "./TapFunction";
 
 /**
  * Tap into any value.

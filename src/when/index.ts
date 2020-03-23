@@ -1,4 +1,4 @@
 export { default, when } from "./when";
-export { WhenFunction } from "./WhenFunction";
-export { WhenNotNullishCallback } from "./WhenNotNullishCallback";
-export { WhenNullishCallback } from "./WhenNullishCallback";
+export type { WhenFunction } from "./WhenFunction";
+export type { WhenNotNullishCallback } from "./WhenNotNullishCallback";
+export type { WhenNullishCallback } from "./WhenNullishCallback";

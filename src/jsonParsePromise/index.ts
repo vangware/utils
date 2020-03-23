@@ -1,3 +1,3 @@
 export { default, jsonParsePromise } from "./jsonParsePromise";
-export { JSONParsePromiseFunction } from "./JSONParsePromiseFunction";
-export { JSONParseReviver } from "./JSONParseReviver";
+export type { JSONParsePromiseFunction } from "./JSONParsePromiseFunction";
+export type { JSONParseReviver } from "./JSONParseReviver";

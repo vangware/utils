@@ -1,2 +1,2 @@
 export { default, isBoolean } from "./isBoolean";
-export { IsBooleanFunction } from "./IsBooleanFunction";
+export type { IsBooleanFunction } from "./IsBooleanFunction";

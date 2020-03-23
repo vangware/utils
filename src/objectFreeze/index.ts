@@ -1,2 +1,2 @@
 export { default, objectFreeze } from "./objectFreeze";
-export { ObjectFreezeFunction } from "./ObjectFreezeFunction";
+export type { ObjectFreezeFunction } from "./ObjectFreezeFunction";

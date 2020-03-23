@@ -1,2 +1,2 @@
 export { default, objectEntries } from "./objectEntries";
-export { ObjectEntriesFunction } from "./ObjectEntriesFunction";
+export type { ObjectEntriesFunction } from "./ObjectEntriesFunction";
