@@ -12,7 +12,7 @@ import ArrayFilterFunction from "./ArrayFilterFunction";
  */
 export const arrayFilter: ArrayFilterFunction = (
 	target,
-	filter = _ => true
+	filter = _item => true
 ) => {
 	const frozenTarget = isArray(target) ? objectFreeze(target) : EMPTY_ARRAY;
 

@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 5.0.5
+
+- :arrow_up: dependency upgrade.
+- :bookmark: version bump.
+- :building_construction: change code matching new linting settings.
+
 ## 5.0.4
 
 - :wrench: update travis config.
