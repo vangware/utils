@@ -1,2 +1,2 @@
 export { default, noop } from "./noop";
-export { NoopFunction } from "./NoopFunction";
+export type { NoopFunction } from "./NoopFunction";

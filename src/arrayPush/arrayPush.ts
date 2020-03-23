@@ -1,5 +1,5 @@
 import arrayInsert from "../arrayInsert";
-import ArrayPushFunction from "./ArrayPushFunction";
+import type ArrayPushFunction from "./ArrayPushFunction";
 
 /**
  * Insert given item at the end of given array.

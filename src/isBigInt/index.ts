@@ -1,2 +1,2 @@
 export { default, isBigInt } from "./isBigInt";
-export { IsBigIntFunction } from "./IsBigIntFunction";
+export type { IsBigIntFunction } from "./IsBigIntFunction";

@@ -1,7 +1,7 @@
 import isArray from "../isArray";
 import isObject from "../isObject";
 import objectCreate from "../objectCreate";
-import ObjectFreezeFunction from "./ObjectFreezeFunction";
+import type ObjectFreezeFunction from "./ObjectFreezeFunction";
 
 /**
  * Object.freeze wrapper (returns a frozen copy of the object).

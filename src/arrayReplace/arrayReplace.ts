@@ -1,6 +1,6 @@
 import arraySlice from "../arraySlice";
 import objectFreeze from "../objectFreeze";
-import ArrayReplaceFunction from "./ArrayReplaceFunction";
+import type ArrayReplaceFunction from "./ArrayReplaceFunction";
 
 /**
  * Replace value in array at given index.

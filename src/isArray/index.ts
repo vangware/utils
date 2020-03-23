@@ -1,2 +1,2 @@
 export { default, isArray } from "./isArray";
-export { IsArrayFunction } from "./IsArrayFunction";
+export type { IsArrayFunction } from "./IsArrayFunction";

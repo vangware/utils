@@ -1,3 +1,3 @@
 export { default, objectMap } from "./objectMap";
-export { ObjectMapFunction } from "./ObjectMapFunction";
-export { ObjectMapMapper } from "./ObjectMapMapper";
+export type { ObjectMapFunction } from "./ObjectMapFunction";
+export type { ObjectMapMapper } from "./ObjectMapMapper";

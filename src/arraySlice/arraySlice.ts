@@ -1,7 +1,7 @@
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
 import objectFreeze from "../objectFreeze";
-import ArraySliceFunction from "./ArraySliceFunction";
+import type ArraySliceFunction from "./ArraySliceFunction";
 
 /**
  * Array.prototype.slice wrapper.

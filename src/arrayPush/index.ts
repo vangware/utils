@@ -1,2 +1,2 @@
 export { arrayPush, default } from "./arrayPush";
-export { ArrayPushFunction } from "./ArrayPushFunction";
+export type { ArrayPushFunction } from "./ArrayPushFunction";
