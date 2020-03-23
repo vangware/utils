@@ -11,7 +11,7 @@ test("works without filter", assert => {
 });
 
 test("works with an always false filter", assert => {
-	const arrayFilterOutput = arrayFilter(ARRAY_NUMBER, _ => false);
+	const arrayFilterOutput = arrayFilter(ARRAY_NUMBER, _item => false);
 	assert.is(arrayFilterOutput.length, 0);
 });
 
