@@ -1,4 +1,4 @@
-import isUndefined from "./isUndefined";
+import type isUndefined from "./isUndefined";
 
 // Type predicates with arrow functions can't be extracted.
 export type IsUndefinedFunction = typeof isUndefined;

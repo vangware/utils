@@ -1,2 +1,2 @@
 export { default, isObject } from "./isObject";
-export { IsObjectFunction } from "./IsObjectFunction";
+export type { IsObjectFunction } from "./IsObjectFunction";

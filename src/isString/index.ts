@@ -1,2 +1,2 @@
 export { default, isString } from "./isString";
-export { IsStringFunction } from "./IsStringFunction";
+export type { IsStringFunction } from "./IsStringFunction";

@@ -1,2 +1,2 @@
 export { default, isPromise } from "./isPromise";
-export { IsPromiseFunction } from "./IsPromiseFunction";
+export type { IsPromiseFunction } from "./IsPromiseFunction";

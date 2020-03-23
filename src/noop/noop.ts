@@ -1,4 +1,4 @@
-import NoopFunction from "./NoopFunction";
+import type NoopFunction from "./NoopFunction";
 
 /**
  * No operation placeholder function.

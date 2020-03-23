@@ -1,5 +1,5 @@
 import objectFreeze from "../objectFreeze";
-import ObjectEntriesFunction from "./ObjectEntriesFunction";
+import type ObjectEntriesFunction from "./ObjectEntriesFunction";
 
 /**
  * Object.entries wrapper.

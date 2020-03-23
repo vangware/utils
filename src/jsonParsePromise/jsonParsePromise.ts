@@ -1,4 +1,4 @@
-import JSONParsePromiseFunction from "./JSONParsePromiseFunction";
+import type JSONParsePromiseFunction from "./JSONParsePromiseFunction";
 
 /**
  * Promise wrapper of JSON.parse.

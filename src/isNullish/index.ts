@@ -1,2 +1,2 @@
 export { default, isNullish } from "./isNullish";
-export { IsNullishFunction } from "./IsNullishFunction";
+export type { IsNullishFunction } from "./IsNullishFunction";

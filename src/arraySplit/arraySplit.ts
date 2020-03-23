@@ -2,7 +2,7 @@ import arrayReduce from "../arrayReduce";
 import arrayReplace from "../arrayReplace";
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
-import ArraySplitFunction from "./ArraySplitFunction";
+import type ArraySplitFunction from "./ArraySplitFunction";
 
 /**
  * Split array into multiple arrays of the given size.

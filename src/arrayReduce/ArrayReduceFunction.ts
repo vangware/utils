@@ -1,4 +1,4 @@
-import ArrayReduceReducer from "./ArrayReduceReducer";
+import type ArrayReduceReducer from "./ArrayReduceReducer";
 
 export type ArrayReduceFunction = <ItemType, OutputType = readonly ItemType[]>(
 	target: readonly ItemType[],

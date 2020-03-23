@@ -1,7 +1,7 @@
 import arrayReduce from "../arrayReduce";
 import { EMPTY_OBJECT } from "../constants";
 import objectMap from "../objectMap";
-import StringMapReplaceFunction from "./StringMapReplaceFunction";
+import type StringMapReplaceFunction from "./StringMapReplaceFunction";
 
 /**
  * Takes a string and an object and makes a regex map replace

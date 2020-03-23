@@ -1,6 +1,6 @@
 import arraySlice from "../arraySlice";
 import objectFreeze from "../objectFreeze";
-import ArrayInsertFunction from "./ArrayInsertFunction";
+import type ArrayInsertFunction from "./ArrayInsertFunction";
 
 /**
  * Insert value in array at given index.
