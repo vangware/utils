@@ -2,8 +2,8 @@ import arrayPush from "../arrayPush";
 import arrayReduce from "../arrayReduce";
 import { EMPTY_ARRAY, EMPTY_OBJECT } from "../constants";
 import objectFreeze from "../objectFreeze";
-import ArrayGroupFunction from "./ArrayGroupFunction";
-import ArrayGroupObject from "./ArrayGroupObject";
+import type ArrayGroupFunction from "./ArrayGroupFunction";
+import type ArrayGroupObject from "./ArrayGroupObject";
 
 /**
  * Creates object with properties grouped by grouper function.

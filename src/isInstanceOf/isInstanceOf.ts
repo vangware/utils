@@ -1,4 +1,4 @@
-import IsInstanceOfFunction from "./IsInstanceOfFunction";
+import type IsInstanceOfFunction from "./IsInstanceOfFunction";
 
 /**
  * Check if the given value is an instance of the given constructor.

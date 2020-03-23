@@ -1,2 +1,2 @@
 export { default, isInstanceOf } from "./isInstanceOf";
-export { IsInstanceOfFunction } from "./IsInstanceOfFunction";
+export type { IsInstanceOfFunction } from "./IsInstanceOfFunction";

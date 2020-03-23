@@ -1,5 +1,5 @@
-import WhenNotNullishCallback from "./WhenNotNullishCallback";
-import WhenNullishCallback from "./WhenNullishCallback";
+import type WhenNotNullishCallback from "./WhenNotNullishCallback";
+import type WhenNullishCallback from "./WhenNullishCallback";
 
 export type WhenFunction = <ValueType = unknown, OutputType = unknown>(
 	value: ValueType,

@@ -1,6 +1,6 @@
 import isArray from "../isArray";
 import objectFreeze from "../objectFreeze";
-import ArrayReduceFunction from "./ArrayReduceFunction";
+import type ArrayReduceFunction from "./ArrayReduceFunction";
 
 /**
  * Array.prototype.reduce wrapper that can take an undefined value.

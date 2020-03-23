@@ -1,7 +1,7 @@
 import { EMPTY_ARRAY } from "../constants";
 import isArray from "../isArray";
 import objectFreeze from "../objectFreeze";
-import ArrayFilterFunction from "./ArrayFilterFunction";
+import type ArrayFilterFunction from "./ArrayFilterFunction";
 
 /**
  * Array.prototype.filter wrapper.

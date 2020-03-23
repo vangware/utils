@@ -1,4 +1,4 @@
-import { ArrayMapMapper } from "../arrayMap";
+import type { ArrayMapMapper } from "../arrayMap";
 
 export type ArrayFilterFilter<ItemType> = ArrayMapMapper<ItemType, boolean>;
 

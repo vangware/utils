@@ -1,2 +1,2 @@
 export { arrayInsert, default } from "./arrayInsert";
-export { ArrayInsertFunction } from "./ArrayInsertFunction";
+export type { ArrayInsertFunction } from "./ArrayInsertFunction";

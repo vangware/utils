@@ -1,3 +1,3 @@
 export { arrayMap, default } from "./arrayMap";
-export { ArrayMapFunction } from "./ArrayMapFunction";
-export { ArrayMapMapper } from "./ArrayMapMapper";
+export type { ArrayMapFunction } from "./ArrayMapFunction";
+export type { ArrayMapMapper } from "./ArrayMapMapper";

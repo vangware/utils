@@ -1,4 +1,4 @@
-import ObjectCreateFunction from "./ObjectCreateFunction";
+import type ObjectCreateFunction from "./ObjectCreateFunction";
 
 /**
  * Object.create + Object.assign wrapper with default null prototype.

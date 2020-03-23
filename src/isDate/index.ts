@@ -1,2 +1,2 @@
 export { default, isDate } from "./isDate";
-export { IsDateFunction } from "./IsDateFunction";
+export type { IsDateFunction } from "./IsDateFunction";

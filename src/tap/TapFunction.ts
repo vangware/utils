@@ -1,5 +1,5 @@
-import TapObserver from "./TapObserver";
-import TapWrapper from "./TapWrapper";
+import type TapObserver from "./TapObserver";
+import type TapWrapper from "./TapWrapper";
 
 export type TapFunction = <ValueType>(
 	observer: TapObserver<ValueType>

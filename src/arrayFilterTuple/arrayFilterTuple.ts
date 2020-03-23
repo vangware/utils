@@ -1,6 +1,6 @@
 import arrayFilter from "../arrayFilter/arrayFilter";
 import objectFreeze from "../objectFreeze";
-import ArrayFilterTupleFunction from "./ArrayFilterTupleFunction";
+import type ArrayFilterTupleFunction from "./ArrayFilterTupleFunction";
 
 /**
  * Like Array.prototype.filter, but returns a tuple [matching, notMatching].

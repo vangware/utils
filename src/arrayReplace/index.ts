@@ -1,2 +1,2 @@
 export { arrayReplace, default } from "./arrayReplace";
-export { ArrayReplaceFunction } from "./ArrayReplaceFunction";
+export type { ArrayReplaceFunction } from "./ArrayReplaceFunction";

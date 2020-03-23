@@ -1,4 +1,4 @@
-import isNull from "./isNull";
+import type isNull from "./isNull";
 
 // Type predicates with arrow functions can't be extracted.
 export type IsNullFunction = typeof isNull;

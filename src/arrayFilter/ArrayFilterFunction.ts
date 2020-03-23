@@ -1,4 +1,4 @@
-import ArrayFilterFilter from "./ArrayFilterFilter";
+import type ArrayFilterFilter from "./ArrayFilterFilter";
 
 export type ArrayFilterFunction = <ItemType>(
 	target: readonly ItemType[],

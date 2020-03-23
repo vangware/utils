@@ -1,4 +1,4 @@
-import StringMapReplaceMap from "./StringMapReplaceMap";
+import type StringMapReplaceMap from "./StringMapReplaceMap";
 
 export type StringMapReplaceFunction = (
 	target: string,

@@ -3,7 +3,7 @@ import { EMPTY_ARRAY } from "../constants";
 import isObject from "../isObject";
 import objectEntries from "../objectEntries";
 import objectFreeze from "../objectFreeze";
-import ObjectMapFunction from "./ObjectMapFunction";
+import type ObjectMapFunction from "./ObjectMapFunction";
 
 /**
  * Object mapping.

@@ -1,4 +1,4 @@
-import isString from "./isString";
+import type isString from "./isString";
 
 // Type predicates with arrow functions can't be extracted.
 export type IsStringFunction = typeof isString;
