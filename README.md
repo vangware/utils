@@ -1,6 +1,6 @@
 # @vangware/micro
 
-![@vangware/micro logo](https://i.imgur.com/qAj2DYK.png)
+![@vangware/micro logo](https://i.imgur.com/nGVEORZ.png)
 
 ![NPM Version](https://img.shields.io/npm/v/@vangware/micro.svg?style=flat-square)
 ![Size](https://img.shields.io/bundlephobia/minzip/@vangware/micro?label=size&style=flat-square)
@@ -23,6 +23,12 @@ Or you can use it directly as an ESM module trough services like [UNPKG](https:/
 
 ```js
 import { isObject } from "https://unpkg.com/@vangware/micro?module";
+```
+
+You can even use it with [deno](https://deno.land/) and [pika](https://www.pika.dev/):
+
+```ts
+import { isObject } from "http://cdn.pika.dev/@vangware/micro";
 ```
 
 ## Documentation
