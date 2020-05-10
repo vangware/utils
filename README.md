@@ -1,6 +1,4 @@
-# @vangware/micro
-
-![@vangware/micro logo](https://i.imgur.com/nGVEORZ.png)
+![@vangware/micro](https://i.imgur.com/nGVEORZ.png)
 
 ![NPM Version](https://img.shields.io/npm/v/@vangware/micro.svg?style=flat-square)
 ![Size](https://img.shields.io/bundlephobia/minzip/@vangware/micro?label=size&style=flat-square)
@@ -9,28 +7,55 @@
 ![Coverage](https://img.shields.io/coveralls/github/vangware/micro?style=flat-square)
 ![Open Issues](https://img.shields.io/github/issues/vangware/micro?style=flat-square)
 
-This library is a collection of functional utils made entirely in TypeScript. Is the successor of [@vangware/micron](https://github.com/vangware/micron), with less focus on small footprint and higher focus on utility and readability across all JS environments (Node and the browser).
+Collection of [curried](https://en.wikipedia.org/wiki/Currying) [functional](https://en.wikipedia.org/wiki/Functional_programming) utils made entirely in [TypeScript](http://typescriptlang.org/). Compatible with all modern JS environments:
+- 📦 [Node.js](https://nodejs.org/).
+- 🦕 [Deno](https://deno.land/).
+- 🌎 Browsers (Chrome, Firefox, Edge, and so on).
 
-## Installation
+## Usage
 
-You can use `npm`, `pnpm` or `yarn` to install it locally:
+This package can be installed as a dependency or used directly.
+
+### Usage as ECMAScript module
+
+In JS or [deno](https://deno.land/):
+
+```js
+import { isObject } from "http://cdn.pika.dev/@vangware/micro";
+```
+
+Or in HTML:
+
+```html
+<script type="module" src="http://cdn.pika.dev/@vangware/micro"></script>
+```
+
+### Usage with local installation
+
+First:
 
 ```bash
 npm i -S @vangware/micro
+# or
+pnpm i -S @vangware/micro
+# or
+yarn add @vangware/micro
 ```
 
-Or you can use it directly as an ESM module trough services like [UNPKG](https://unpkg.com/):
+And then:
 
 ```js
-import { isObject } from "https://unpkg.com/@vangware/micro?module";
-```
-
-You can even use it with [deno](https://deno.land/) and [pika](https://www.pika.dev/):
-
-```ts
-import { isObject } from "http://cdn.pika.dev/@vangware/micro";
+import { isObject } from "@vangware/micro";
 ```
 
 ## Documentation
 
-You can read the documentation here: [Documentation](https://micro.vangware.com).
+Documentation can be found [HERE](https://micro.vangware.com). It is auto-generated with [typedoc](https://typedoc.org/) based on the JSDocs and the types in the source. Shouldn't be necessary to read this, code editors like [VSCode](https://code.visualstudio.com/) integrate the documentation in the UI.
+
+## Changelog
+
+Changelog can be found [HERE](https://github.com/vangware/micro/blob/master/CHANGELOG.md).
+
+## Test coverage
+
+Test coverage can be found [HERE](https://coveralls.io/github/vangware/micro).
