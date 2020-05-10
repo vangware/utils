@@ -3,6 +3,28 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.0.0
+
+- :bookmark: major version bump.
+- :arrow_up: dependency upgrade.
+- :sparkles: add arrayFilterIn.
+- :sparkles: add arrayFilterOut.
+- :sparkles: add arrayUnshift.
+- :sparkles: add functionNot.
+- :sparkles: add isType.
+- :sparkles: add numberBetween
+- :sparkles: add numberBoundary
+- :building_construction: change everything to curried.
+- :building_construction: change folder structure.
+- :building_construction: change the way tests are done (inspired by RITEway).
+- :building_construction: change to named exports only.
+- :bulb: new documentation with examples for everything.
+- :memo: updated README.md.
+- :fire: remove arrayFilter (separated int `arrayFilterIn` and `arrayFilterOut`).
+- :fire: remove constants.
+- :fire: remove tap (use function in place).
+- :fire: remove when (use ternaries instead).
+
 ## 5.2.1
 
 - :bento: Update logo.
