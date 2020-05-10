@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.0.1
+
+- :bug: fix mixing exports in index.
+
 ## 6.0.0
 
 - :bookmark: major version bump.
