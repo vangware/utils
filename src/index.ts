@@ -27,6 +27,7 @@ export { isSymbol } from "./isSymbol";
 export { isType } from "./isType";
 export { isUndefined } from "./isUndefined";
 export { jsonParsePromise } from "./jsonParsePromise";
+export { numberBetween } from "./numberBetween";
 export { numberBoundary } from "./numberBoundary";
 export { objectEntries } from "./objectEntries";
 export { objectFreeze } from "./objectFreeze";
