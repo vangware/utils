@@ -1,6 +1,6 @@
 import { arrayMap } from "./arrayMap";
 import { objectFreeze } from "./objectFreeze";
-import type { Tuple } from "./types/Tuple";
+import { Entry } from "./types/Entry";
 
 /**
  * Takes a `source` object and returns an entries array.
@@ -15,7 +15,6 @@ import type { Tuple } from "./types/Tuple";
  * @returns Array of entries of the given source object.
  */
 export const objectEntries = <Source>(source: Source) =>
-	arrayMap<Tuple<string, Readonly<Source[keyof Source]>>>(([key, value]) => [
-		key,
-		objectFreeze(value)
-	])(Object.entries(source));
+	arrayMap<Entry<Source>>(([key, value]) => [key, objectFreeze(value)])(
+		Object.entries(source)
+	);

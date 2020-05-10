@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.0.2
+
+- :sparkles: add Entity type.
+- :building_construction: change exports to include types.
+
 ## 6.0.1
 
 - :bug: fix mixing exports in index.
