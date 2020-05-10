@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "5.2.1",
+  "version": "6.0.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -11,8 +11,7 @@
       "ts"
     ],
     "files": [
-      "src/**/*.test.ts",
-      "!src/tests"
+      "src/tests/*.test.ts"
     ],
     "require": [
       "ts-node/register"
@@ -25,11 +24,11 @@
     "@types/sinon": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "@vangware/vangstyle": "^4.2.0",
-    "ava": "^3.8.1",
+    "@vangware/vangstyle": "^4.2.1",
+    "ava": "^3.8.2",
     "coveralls": "^3.1.0",
     "custom-event": "^1.0.1",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-ban": "^1.5.1",
@@ -83,7 +82,7 @@
       ".tsx"
     ],
     "include": [
-      "src/**/*.ts"
+      "src/*.ts"
     ],
     "exclude": [
       "**/*.d.ts",
@@ -107,7 +106,7 @@
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "docs": "typedoc --gitRevision master --exclude \"**/+(*.test|index|testConstants).ts\" --mode file --exclude \"**/+(*.test|index|*???Function|testConstants).ts\" --out ./docs ./src/**/*.ts",
+    "docs": "typedoc --gitRevision master --mode file --out ./docs ./src/*.ts",
     "lint": "eslint src/**/*.ts",
     "pre-compile": "run-s pre-compile:*",
     "pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",
