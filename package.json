@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "6.0.3",
+  "version": "6.0.4",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@types/sinon": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.32.0",
-    "@typescript-eslint/parser": "^2.32.0",
-    "@vangware/vangstyle": "^4.3.1",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vangware/vangstyle": "^4.3.2",
     "ava": "^3.8.2",
     "coveralls": "^3.1.0",
     "custom-event": "^1.0.1",
@@ -48,7 +48,7 @@
     "stylelint-prettier": "^1.1.2",
     "ts-node": "^8.10.1",
     "typedoc": "^0.17.6",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "files": [
     "cjs",
