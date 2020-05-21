@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.0.6
+
+- :arrow_up: dependency upgrade.
+- :lock: fix small security concern in `arrayFilterIn` and `arrayMap`.
+
 ## 6.0.5
 
 - :arrow_up: dependency upgrade.
