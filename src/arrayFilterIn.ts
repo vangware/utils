@@ -23,4 +23,6 @@ export const arrayFilterIn = <Item>(filterer: Filterer<Item>) =>
 	 * @returns Source array with filter applied.
 	 */
 	(source: readonly Item[]) =>
-		objectFreeze(arrayMap<Item>(objectFreeze)(source).filter(filterer));
+		objectFreeze(
+			arrayMap<Item>(objectFreeze)(source).filter(item => filterer(item))
+		);
