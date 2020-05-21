@@ -21,4 +21,4 @@ export const arrayMap = <Item, Output = Item>(mapper: Mapper<Item, Output>) =>
 	 * @returns Copy of source with mapped values using `mapper`.
 	 */
 	(source: readonly Item[]) =>
-		objectFreeze(source.map(objectFreeze).map(mapper));
+		objectFreeze(source.map(objectFreeze).map(item => mapper(item)));
