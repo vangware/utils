@@ -1,7 +1,7 @@
 import { Tuple } from "./Tuple";
 
 /**
- * Entity tuple `[key, object[key]]`
+ * Entity tuple `[key, object[key]]`.
  *
  * @template Source Source object to which the entity belongs to.
  */
