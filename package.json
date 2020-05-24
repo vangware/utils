@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "6.0.6",
+  "version": "7.0.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -11,7 +11,7 @@
       "ts"
     ],
     "files": [
-      "src/tests/*.test.ts"
+      "src/**/tests/*.test.ts"
     ],
     "require": [
       "ts-node/register"
@@ -21,14 +21,14 @@
     "url": "https://github.com/vangware/micro/issues"
   },
   "devDependencies": {
-    "@types/sinon": "^9.0.3",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
-    "@vangware/vangstyle": "^4.3.4",
+    "@types/sinon": "^9.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "@vangware/vangstyle": "^4.3.7",
     "ava": "^3.8.2",
     "coveralls": "^3.1.0",
     "custom-event": "^1.0.1",
-    "eslint": "^7.0.0",
+    "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-ban": "^1.5.1",
@@ -82,13 +82,13 @@
       ".tsx"
     ],
     "include": [
-      "src/*.ts"
+      "src/**/*.ts"
     ],
     "exclude": [
       "**/*.d.ts",
       "**/*.test.ts",
-      "src/tests/**",
-      "src/types/**"
+      "src/types/**",
+      "src/assert.ts"
     ],
     "reporter": [
       "html",
@@ -106,7 +106,7 @@
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "docs": "typedoc --gitRevision master --mode file --out ./docs ./src/*.ts",
+    "docs": "typedoc --gitRevision master --mode file --out ./docs ./src/**/*.ts",
     "lint": "eslint src/**/*.ts",
     "pre-compile": "run-s pre-compile:*",
     "pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",

@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 7.0.0
+
+- :bookmark: major version bump.
+- :building_construction: change architecture to have utils in directories.
+- :truck: rename all utils to avoid redundance based on directories.
+- :building_construction: add defaults back.
+- :sparkles: add `array/from`.
+- :sparkles: add `json/stringifyPromise`.
+- :sparkles: add `object/fromEntries`.
+- :fire: remove object freezing (types will keep being readonly, but not in runtime).
+- :arrow_up: dependency upgrade.
+
 ## 6.0.6
 
 - :arrow_up: dependency upgrade.
