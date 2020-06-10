@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 7.1.0
+
+- :sparkles: add stringReverse util.
+- :arrow_up: dependency upgrade.
+- :bookmark: version bump.
+
 ## 7.0.0
 
 - :bookmark: major version bump.

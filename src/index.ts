@@ -17,6 +17,7 @@ export { default as numberBetween } from "./number/between";
 export { default as objectEntries } from "./object/entries";
 export { default as objectFromEntries } from "./object/fromEntries";
 export { default as stringMapReplace } from "./string/mapReplace";
+export { default as stringReverse } from "./string/reverse";
 export { instanceOf } from "./type/instanceOf";
 export { isArray } from "./type/isArray";
 export { isBigInt } from "./type/isBigInt";
