@@ -9,8 +9,6 @@
  * isInstanceOfArray({}); // false
  * ```
  * @template Expected Expected type.
- * @template Argument Expected arguments of constructor.
- * @template Output Expected output of constructor.
  * @param constructor Constructor used to check.
  * @returns Curried function with `constructor` in context.
  */

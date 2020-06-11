@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 7.1.1
+
+- :pencil2: fix wrong docs in instanceOf.
+- :arrow_up: dependency upgrade.
+- :bookmark: version bump.
+- :memo: update docs (they still suck because they are using internal names instead of exported and they don't handle curried functions that well...).
+
 ## 7.1.0
 
 - :sparkles: add stringReverse util.
