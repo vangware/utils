@@ -485,7 +485,7 @@
 						<div class="lead">
 							<p>Object with the following shape:</p>
 							<pre><code>{
-    [searchString]: <span class="hljs-string">"replacingString"</span>
+    [searchString]: <span class="hljs-string">&quot;replacingString&quot;</span>
 }</code></pre>
 						</div>
 					</div>
@@ -752,8 +752,8 @@ between0And10(<span class="hljs-number">11</span>); <span class="hljs-comment">/
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript">entries({ key: <span class="hljs-string">"value"</span> }); <span class="hljs-comment">// [["key", "value"]]</span>
-entries({ foo: <span class="hljs-string">"bar"</span>, <span class="hljs-built_in">number</span>: <span class="hljs-number">1</span> }); <span class="hljs-comment">// [["foo", "bar"], ["number", 1]]</span></code></pre>
+									<dd><pre><code class="language-typescript">entries({ key: <span class="hljs-string">&quot;value&quot;</span> }); <span class="hljs-comment">// [[&quot;key&quot;, &quot;value&quot;]]</span>
+entries({ foo: <span class="hljs-string">&quot;bar&quot;</span>, <span class="hljs-built_in">number</span>: <span class="hljs-number">1</span> }); <span class="hljs-comment">// [[&quot;foo&quot;, &quot;bar&quot;], [&quot;number&quot;, 1]]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -802,10 +802,10 @@ entries({ foo: <span class="hljs-string">"bar"</span>, <span class="hljs-built_i
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterInEven = filterIn&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>);
-<span class="hljs-keyword">const</span> filterOutEmpty = filterIn&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item !== <span class="hljs-string">""</span>);
+<span class="hljs-keyword">const</span> filterOutEmpty = filterIn&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item !== <span class="hljs-string">&quot;&quot;</span>);
 
 filterInEven([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 2]</span>
-filterOutEmpty([<span class="hljs-string">"hello"</span>, <span class="hljs-string">""</span>, <span class="hljs-string">""</span>, <span class="hljs-string">"world"</span>]); <span class="hljs-comment">// ["hello", "world"]</span></code></pre>
+filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;world&quot;</span>]); <span class="hljs-comment">// [&quot;hello&quot;, &quot;world&quot;]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -854,10 +854,10 @@ filterOutEmpty([<span class="hljs-string">"hello"</span>, <span class="hljs-stri
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterOutEven = filterOut&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>);
-<span class="hljs-keyword">const</span> filterOutEmpty = filterOut&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-string">""</span>);
+<span class="hljs-keyword">const</span> filterOutEmpty = filterOut&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-string">&quot;&quot;</span>);
 
 filterOutEven([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [1, 3]</span>
-filterOutEmpty([<span class="hljs-string">"hello"</span>, <span class="hljs-string">""</span>, <span class="hljs-string">""</span>, <span class="hljs-string">"world"</span>]); <span class="hljs-comment">// ["hello", "world"]</span></code></pre>
+filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;world&quot;</span>]); <span class="hljs-comment">// [&quot;hello&quot;, &quot;world&quot;]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -956,7 +956,7 @@ filterTupleEventOdd([<span class="hljs-number">0</span>, <span class="hljs-numbe
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">from</span>(<span class="hljs-string">"hello"</span>); <span class="hljs-comment">// ["h", "e", "l", "l", "o"]</span></code></pre>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">from</span>(<span class="hljs-string">&quot;hello&quot;</span>); <span class="hljs-comment">// [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1004,8 +1004,8 @@ filterTupleEventOdd([<span class="hljs-number">0</span>, <span class="hljs-numbe
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript">fromEntries([[<span class="hljs-string">"key"</span>, <span class="hljs-string">"value"</span>]]); <span class="hljs-comment">// { key: "value" }</span>
-fromEntries([[<span class="hljs-string">"foo"</span>, <span class="hljs-string">"bar"</span>], [<span class="hljs-string">"number"</span>, <span class="hljs-number">1</span>]]); <span class="hljs-comment">// { foo: "bar", number: 1 }</span></code></pre>
+									<dd><pre><code class="language-typescript">fromEntries([[<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;value&quot;</span>]]); <span class="hljs-comment">// { key: &quot;value&quot; }</span>
+fromEntries([[<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>], [<span class="hljs-string">&quot;number&quot;</span>, <span class="hljs-number">1</span>]]); <span class="hljs-comment">// { foo: &quot;bar&quot;, number: 1 }</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1056,7 +1056,7 @@ fromEntries([[<span class="hljs-string">"foo"</span>, <span class="hljs-string">
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> evenOddGroup = group&lt;<span class="hljs-built_in">number</span>&gt;(
-    <span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span> <span class="hljs-string">"even"</span> : <span class="hljs-string">"odd"</span>
+    <span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span> <span class="hljs-string">&quot;even&quot;</span> : <span class="hljs-string">&quot;odd&quot;</span>
 );
 
 evenOddGroup([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// { even: [0, 2], odd: [1, 3] }</span></code></pre>
@@ -1108,14 +1108,14 @@ evenOddGroup([<span class="hljs-number">0</span>, <span class="hljs-number">1</s
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> insertItem = insert(<span class="hljs-string">"new"</span>);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> insertItem = insert(<span class="hljs-string">&quot;new&quot;</span>);
 <span class="hljs-keyword">const</span> insertItemLast = insertItem(<span class="hljs-literal">Infinity</span>);
 <span class="hljs-keyword">const</span> insertItemFirst = insertItem(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> insertItemSecond = insertItem(<span class="hljs-number">1</span>);
 
-insertItemLast([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, 3, "new"]</span>
-insertItemFirst([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// ["new", 0, 1, 2, 3]</span>
-insertItemSecond([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, "new", 1, 2, 3]</span></code></pre>
+insertItemLast([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, 3, &quot;new&quot;]</span>
+insertItemFirst([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [&quot;new&quot;, 0, 1, 2, 3]</span>
+insertItemSecond([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, &quot;new&quot;, 1, 2, 3]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1436,9 +1436,9 @@ isInstanceOfArray({}); <span class="hljs-comment">// false</span></code></pre>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> isTypeString = typeOf&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">"string"</span>);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> isTypeString = typeOf&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">&quot;string&quot;</span>);
 
-isTypeString(<span class="hljs-string">"value"</span>); <span class="hljs-comment">// true</span>
+isTypeString(<span class="hljs-string">&quot;value&quot;</span>); <span class="hljs-comment">// true</span>
 isTypeString(<span class="hljs-number">1</span>); <span class="hljs-comment">// false</span></code></pre>
 									</dd>
 								</dl>
@@ -1551,7 +1551,7 @@ mapDouble([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
     o: <span class="hljs-number">0</span>
 });
 
-leet(<span class="hljs-string">"hello there!"</span>); <span class="hljs-comment">// "h3ll0 th3r3!"</span></code></pre>
+leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hljs-comment">// &quot;h3ll0 th3r3!&quot;</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1660,8 +1660,8 @@ isNegative(<span class="hljs-number">1</span>); <span class="hljs-comment">// fa
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript">parsePromise(<span class="hljs-string">"invalid"</span>).then(<span class="hljs-built_in">console</span>.log).catch(<span class="hljs-built_in">console</span>.error); <span class="hljs-comment">// error</span>
-parsePromise(<span class="hljs-string">"{}"</span>).then(<span class="hljs-built_in">console</span>.log).catch(<span class="hljs-built_in">console</span>.error); <span class="hljs-comment">// log</span></code></pre>
+									<dd><pre><code class="language-typescript">parsePromise(<span class="hljs-string">&quot;invalid&quot;</span>).then(<span class="hljs-built_in">console</span>.log).catch(<span class="hljs-built_in">console</span>.error); <span class="hljs-comment">// error</span>
+parsePromise(<span class="hljs-string">&quot;{}&quot;</span>).then(<span class="hljs-built_in">console</span>.log).catch(<span class="hljs-built_in">console</span>.error); <span class="hljs-comment">// log</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1712,7 +1712,7 @@ parsePromise(<span class="hljs-string">"{}"</span>).then(<span class="hljs-built
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> pushFour = push(<span class="hljs-number">4</span>);
 
 pushFour([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, 3, 4]</span>
-pushFour([<span class="hljs-string">"value"</span>]); <span class="hljs-comment">// ["value", 4]</span></code></pre>
+pushFour([<span class="hljs-string">&quot;value&quot;</span>]); <span class="hljs-comment">// [&quot;value&quot;, 4]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1815,14 +1815,14 @@ sumStartingInTwo([<span class="hljs-number">1</span>, <span class="hljs-number">
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> replaceWithReplacement = replace(<span class="hljs-string">"replacement"</span>);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> replaceWithReplacement = replace(<span class="hljs-string">&quot;replacement&quot;</span>);
 <span class="hljs-keyword">const</span> replaceItemLast = replaceWithReplacement(<span class="hljs-literal">Infinity</span>);
 <span class="hljs-keyword">const</span> replaceItemFirst = replaceWithReplacement(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> replaceItemSecond = replaceWithReplacement(<span class="hljs-number">1</span>);
 
-replaceItemLast([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, "replacement"]</span>
-replaceItemFirst([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// ["replacement", 1, 2, 3]</span>
-replaceItemSecond([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, "replacement", 2, 3]</span></code></pre>
+replaceItemLast([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, &quot;replacement&quot;]</span>
+replaceItemFirst([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [&quot;replacement&quot;, 1, 2, 3]</span>
+replaceItemSecond([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, &quot;replacement&quot;, 2, 3]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1870,8 +1870,8 @@ replaceItemSecond([<span class="hljs-number">0</span>, <span class="hljs-number"
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> oof = reverse(<span class="hljs-string">"foo"</span>); <span class="hljs-comment">// off === "oof"</span>
-<span class="hljs-keyword">const</span> rab = reverse(<span class="hljs-string">"bar"</span>); <span class="hljs-comment">// rab === "rab"</span></code></pre>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> oof = reverse(<span class="hljs-string">&quot;foo&quot;</span>); <span class="hljs-comment">// off === &quot;oof&quot;</span>
+<span class="hljs-keyword">const</span> rab = reverse(<span class="hljs-string">&quot;bar&quot;</span>); <span class="hljs-comment">// rab === &quot;rab&quot;</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2004,7 +2004,7 @@ stringifyPromise({}).then(<span class="hljs-built_in">console</span>.log).catch(
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> unshiftZero = unshift(<span class="hljs-number">0</span>);
 
 unshiftZero([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 1, 2, 3]</span>
-unshiftZero([<span class="hljs-string">"value"</span>]); <span class="hljs-comment">// [0, "value"]</span></code></pre>
+unshiftZero([<span class="hljs-string">&quot;value&quot;</span>]); <span class="hljs-comment">// [0, &quot;value&quot;]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
