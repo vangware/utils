@@ -1,7 +1,6 @@
 export { default as arrayFilterIn } from "./array/filterIn";
 export { default as arrayFilterOut } from "./array/filterOut";
 export { default as arrayFilterTuple } from "./array/filterTuple";
-export { default as arrayFrom } from "./array/from";
 export { default as arrayGroup } from "./array/group";
 export { default as arrayInsert } from "./array/insert";
 export { default as arrayMap } from "./array/map";
@@ -9,6 +8,7 @@ export { default as arrayPush } from "./array/push";
 export { default as arrayReduce } from "./array/reduce";
 export { default as arrayReplace } from "./array/replace";
 export { default as arraySlice } from "./array/slice";
+export { default as arrayFrom } from "./array/toArray";
 export { default as arrayUnshift } from "./array/unshift";
 export { default as functionNot } from "./function/not";
 export { default as jsonParsePromise } from "./json/parsePromise";
