@@ -7,3 +7,5 @@
  * @returns Mapped value.
  */
 export type Mapper<Item, Output> = (item: Readonly<Item>) => Output;
+
+export default Mapper;
