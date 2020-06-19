@@ -1,7 +1,7 @@
 {
   "name": "@vangware/micro",
   "description": "Vangware functional utils library",
-  "version": "7.1.3",
+  "version": "7.2.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -115,7 +115,7 @@
     "pre-compile": "run-s pre-compile:*",
     "pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",
     "pre-compile:esm": "tsc --noemit --project tsconfig.esm.json",
-    "prepublishOnly": "run-s compile",
+    "prepublishOnly": "run-s compile prettify",
     "prettify": "run-s prettify:*",
     "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
     "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",

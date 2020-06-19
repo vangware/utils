@@ -1,13 +1,13 @@
 import { assert } from "../../assert";
-import { from } from "../from";
+import { toArray } from "../toArray";
 
 const string = "string";
 
-export const fromAssertions = assert([
+export const toArrayAssertions = assert([
 	{
 		given: "a string",
 		must: "return an array of it's characters",
-		received: from(string),
+		received: toArray(string),
 		wanted: ["s", "t", "r", "i", "n", "g"]
 	}
 ]);
