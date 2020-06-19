@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 8.0.0
+
+- :truck: rename all utils to avoid reserved words clashing (now the internal API resembles the external)
+- :bookmark: major version bump.
+- :building_construction: removed typed imports/exports until bundlers work better.
+- :building_construction: better `package.json` exports.
+- :building_construction: imports/exports now include `.js` extension (more ESM friendly).
+
 ## 7.2.0
 
 - :bug: broken `from` util. Renamed it to `toArray`.

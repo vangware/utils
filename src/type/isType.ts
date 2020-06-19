@@ -1,4 +1,4 @@
-import type { TypeOf } from "../types/TypeOf";
+import { TypeOf } from "../types/TypeOf";
 
 /**
  * Takes a `type` string and checks if given `entity` is of that `typeof`.

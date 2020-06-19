@@ -1,0 +1,1 @@
+export { functionNot } from "./functionNot";

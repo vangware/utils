@@ -1,0 +1,16 @@
+export { instanceOf } from "./instanceOf";
+export { isArray } from "./isArray";
+export { isBigInt } from "./isBigInt";
+export { isBoolean } from "./isBoolean";
+export { isDate } from "./isDate";
+export { isFunction } from "./isFunction";
+export { isNull } from "./isNull";
+export { isNullish } from "./isNullish";
+export { isNumber } from "./isNumber";
+export { isObject } from "./isObject";
+export { isPromise } from "./isPromise";
+export { isRegExp } from "./isRegExp";
+export { isString } from "./isString";
+export { isSymbol } from "./isSymbol";
+export { isType } from "./isType";
+export { isUndefined } from "./isUndefined";

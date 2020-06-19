@@ -11,3 +11,5 @@ import { Mapper } from "./Mapper";
 export type Reducer<Item, Output = readonly Item[]> = (
 	accumulator: Readonly<Output>
 ) => Mapper<Item, Output>;
+
+export default Reducer;

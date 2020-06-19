@@ -6,3 +6,5 @@ import { Mapper } from "./Mapper";
  * @template Item Type of the items in the source array.
  */
 export type Filterer<Item> = Mapper<Item, boolean>;
+
+export default Filterer;
