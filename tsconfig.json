@@ -16,8 +16,7 @@
     "outDir": "./cjs",
     "preserveConstEnums": true,
     "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "target": "ES2018",
+    "target": "ES2018"
   },
   "include": [
     "src/*.ts",
