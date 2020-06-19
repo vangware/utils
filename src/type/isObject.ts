@@ -1,4 +1,4 @@
-import { not } from "../function/not";
+import { functionNot } from "../function/functionNot";
 import { isNull } from "./isNull";
 import { isType } from "./isType";
 
@@ -11,6 +11,6 @@ import { isType } from "./isType";
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const isObject = <Actual>(entity: Actual | object): entity is object =>
 	// eslint-disable-next-line @typescript-eslint/ban-types
-	not(isNull)(entity) && isType<object>("object")(entity);
+	functionNot(isNull)(entity) && isType<object>("object")(entity);
 
 export default isObject;

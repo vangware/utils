@@ -9,3 +9,5 @@
 export type StringReplaceMap = {
 	readonly [match: string]: string | number;
 };
+
+export default StringReplaceMap;

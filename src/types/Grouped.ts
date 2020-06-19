@@ -8,6 +8,6 @@
  *
  * @template Item Type of the items in the source array.
  */
-export type Grouped<Item> = {
-	readonly [group: string]: readonly Item[];
-};
+export type Grouped<Item> = Readonly<Record<string, readonly Item[]>>;
+
+export default Grouped;

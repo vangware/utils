@@ -6,3 +6,5 @@ import { Entry } from "./Entry";
  * @template Source Source object to which the entities belong to.
  */
 export type Entries<Source> = readonly Entry<Source>[];
+
+export default Entries;
