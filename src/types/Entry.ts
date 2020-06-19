@@ -6,3 +6,5 @@ import { Tuple } from "./Tuple";
  * @template Source Source object to which the entity belongs to.
  */
 export type Entry<Source> = Tuple<string, Readonly<Source[keyof Source]>>;
+
+export default Entry;

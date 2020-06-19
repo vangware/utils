@@ -6,3 +6,5 @@
  * @returns Group name.
  */
 export type Grouper<Item> = (item: Readonly<Item>) => string | number;
+
+export default Grouper;
