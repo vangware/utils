@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 7.2.0
+
+- :bug: broken `from` util. Renamed it to `toArray`.
+- :bookmark: version bump.
+
 ## 7.1.3
 
 - :arrow_up: dependency upgrade.
