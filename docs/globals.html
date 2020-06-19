@@ -106,7 +106,6 @@
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#filterin" class="tsd-kind-icon">filter<wbr>In</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#filterout" class="tsd-kind-icon">filter<wbr>Out</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#filtertuple" class="tsd-kind-icon">filter<wbr>Tuple</a></li>
-								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#from" class="tsd-kind-icon">from</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#fromentries" class="tsd-kind-icon">from<wbr>Entries</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#group" class="tsd-kind-icon">group</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#insert" class="tsd-kind-icon">insert</a></li>
@@ -127,6 +126,7 @@
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#reverse" class="tsd-kind-icon">reverse</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#slice" class="tsd-kind-icon">slice</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#stringifypromise" class="tsd-kind-icon">stringify<wbr>Promise</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#unshift" class="tsd-kind-icon">unshift</a></li>
 							</ul>
 						</section>
@@ -934,54 +934,6 @@ filterTupleEventOdd([<span class="hljs-number">0</span>, <span class="hljs-numbe
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 							<p>Curried function with <code>filter</code> in context.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
-					<a name="from" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> from</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">from&lt;Item&gt;<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="globals.html#arrayoriterable" class="tsd-signature-type">ArrayOrIterable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/array/from.ts#L14">array/from.ts:14</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Given an <code>ArrayLike</code> or <code>Iterable</code>, return an array.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">from</span>(<span class="hljs-string">&quot;hello&quot;</span>); <span class="hljs-comment">// [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>Item</h4>
-									<div class="tsd-comment tsd-typography">
-										<p>Type of items in source array.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>source: <a href="globals.html#arrayoriterable" class="tsd-signature-type">ArrayOrIterable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Source value (must be an <code>ArrayLike</code> or <code>Iterable</code>).</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>Frozen array made with given <code>ArrayLike</code> or <code>Iterable</code>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1983,6 +1935,54 @@ stringifyPromise({}).then(<span class="hljs-built_in">console</span>.log).catch(
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
+					<a name="toarray" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Array&lt;Item&gt;<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="globals.html#arrayoriterable" class="tsd-signature-type">ArrayOrIterable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/micro/blob/master/src/array/toArray.ts#L14">array/toArray.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given an <code>ArrayLike</code> or <code>Iterable</code>, return an array.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript">toArray(<span class="hljs-string">&quot;hello&quot;</span>); <span class="hljs-comment">// [&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>Item</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>Type of items in source array.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="globals.html#arrayoriterable" class="tsd-signature-type">ArrayOrIterable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Source value (must be an <code>ArrayLike</code> or <code>Iterable</code>).</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>Frozen array made with given <code>ArrayLike</code> or <code>Iterable</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
 					<a name="unshift" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> unshift</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
@@ -2124,9 +2124,6 @@ unshiftZero([<span class="hljs-string">&quot;value&quot;</span>]); <span class="
 						<a href="globals.html#filtertuple" class="tsd-kind-icon">filter<wbr>Tuple</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="globals.html#from" class="tsd-kind-icon">from</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#fromentries" class="tsd-kind-icon">from<wbr>Entries</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
@@ -2185,6 +2182,9 @@ unshiftZero([<span class="hljs-string">&quot;value&quot;</span>]); <span class="
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#stringifypromise" class="tsd-kind-icon">stringify<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#unshift" class="tsd-kind-icon">unshift</a>
