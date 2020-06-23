@@ -7,8 +7,8 @@ import { arrayFilterIn } from "./arrayFilterIn";
  *
  * @example
  * ```typescript
- * const filterOutEven = arrayFilterOut<number>(item => item % 2 === 0);
- * const filterOutEmpty = arrayFilterOut<string>(item => item === "");
+ * const filterOutEven = arrayFilterOut((item: number) => item % 2 === 0);
+ * const filterOutEmpty = arrayFilterOut((item: string) => item === "");
  *
  * filterOutEven([0, 1, 2, 3]); // [1, 3]
  * filterOutEmpty(["hello", "", "", "world"]); // ["hello", "world"]

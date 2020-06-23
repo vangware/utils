@@ -1,3 +1,5 @@
+import ReadOnlyRecord from "./ReadOnlyRecord";
+
 /**
  * Object with the following shape:
  * ```
@@ -6,8 +8,6 @@
  * }
  * ```
  */
-export type StringReplaceMap = {
-	readonly [match: string]: string | number;
-};
+export type StringReplaceMap = ReadOnlyRecord<string, string | number>;
 
 export default StringReplaceMap;
