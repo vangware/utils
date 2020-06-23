@@ -3,19 +3,27 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
-## 8.1.2
+## 1.0.0
+
+- :truck: rename package from `@vangware/micro` to `@vangware/utils`.
+- :bookmark: version reset due to name change.
+- :arrow_up: dependency upgrade.
+- :memo: updated `README.md`.
+- :building_construction: better type inference.
+
+## 8.1.2 (deprecated @vangware/micro)
 
 - :arrow_up: yet another dependency upgrade.
 
-## 8.1.1
+## 8.1.1 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 
-## 8.1.0
+## 8.1.0 (deprecated @vangware/micro)
 
 - :fire: remove `exports` from `package.json`.
 
-## 8.0.0
+## 8.0.0 (deprecated @vangware/micro)
 
 - :truck: rename all utils to avoid reserved words clashing (now the internal API resembles the external)
 - :bookmark: major version bump.
@@ -23,36 +31,36 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :building_construction: better `package.json` exports.
 - :building_construction: imports/exports now include `.js` extension (more ESM friendly).
 
-## 7.2.0
+## 7.2.0 (deprecated @vangware/micro)
 
 - :bug: broken `from` util. Renamed it to `toArray`.
 - :bookmark: version bump.
 
-## 7.1.3
+## 7.1.3 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :wrench: update tsconfig.
 
-## 7.1.2
+## 7.1.2 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 
-## 7.1.1
+## 7.1.1 (deprecated @vangware/micro)
 
 - :pencil2: fix wrong docs in instanceOf.
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :memo: update docs (they still suck because they are using internal names instead of exported and they don't handle curried functions that well...).
 
-## 7.1.0
+## 7.1.0 (deprecated @vangware/micro)
 
 - :sparkles: add stringReverse util.
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 
-## 7.0.0
+## 7.0.0 (deprecated @vangware/micro)
 
 - :bookmark: major version bump.
 - :building_construction: change architecture to have utils in directories.
@@ -64,33 +72,33 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :fire: remove object freezing (types will keep being readonly, but not in runtime).
 - :arrow_up: dependency upgrade.
 
-## 6.0.6
+## 6.0.6 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :lock: fix small security concern in `arrayFilterIn` and `arrayMap`.
 
-## 6.0.5
+## 6.0.5 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 
-## 6.0.4
+## 6.0.4 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 
-## 6.0.3
+## 6.0.3 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 
-## 6.0.2
+## 6.0.2 (deprecated @vangware/micro)
 
 - :sparkles: add Entity type.
 - :building_construction: change exports to include types.
 
-## 6.0.1
+## 6.0.1 (deprecated @vangware/micro)
 
 - :bug: fix mixing exports in index.
 
-## 6.0.0
+## 6.0.0 (deprecated @vangware/micro)
 
 - :bookmark: major version bump.
 - :arrow_up: dependency upgrade.
@@ -112,56 +120,56 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :fire: remove tap (use function in place).
 - :fire: remove when (use ternaries instead).
 
-## 5.2.1
+## 5.2.1 (deprecated @vangware/micro)
 
 - :bento: Update logo.
 - :sparkles: Added favicon.
 
-## 5.2.0
+## 5.2.0 (deprecated @vangware/micro)
 
 - :bookmark: version bump.
 - :arrow_up: dependency upgrade.
 
-## 5.1.0
+## 5.1.0 (deprecated @vangware/micro)
 
 - :bookmark: version bump.
 - :building_construction: change exports/imports to use import type/export type when needed.
 
-## 5.0.6
+## 5.0.6 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :building_construction: change code matching new linting settings.
 
-## 5.0.5
+## 5.0.5 (deprecated @vangware/micro)
 
 - :arrow_up: version bump.
 - :sparkles: export time constants.
 
-## 5.0.4
+## 5.0.4 (deprecated @vangware/micro)
 
 - :wrench: update travis config.
 - :arrow_up: version bump.
 - :sparkles: add time constants.
 
-## 5.0.3
+## 5.0.3 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :wrench: update ava config.
 
-## 5.0.2
+## 5.0.2 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :memo: update docs.
 
-## 5.0.1
+## 5.0.1 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 
-## 5.0.0
+## 5.0.0 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
@@ -178,7 +186,7 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :building_construction: update `objectEntries` to avoid mutations even further.
 - :sparkles: add `objectFreeze` to be used by everything.
 
-## 4.0.5
+## 4.0.5 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
@@ -191,13 +199,13 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :sparkles: add objectCreate.
 - :sparkles: add objectEntries.
 
-## 4.0.4
+## 4.0.4 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 - :memo: add CHANGELOG.md.
 
-## 4.0.3
+## 4.0.3 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :wrench: update settings.json.
@@ -207,18 +215,18 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :sparkles: Create CNAME
 - :truck: move docs to html in docs directory (for GH Pages)
 
-## 4.0.2
+## 4.0.2 (deprecated @vangware/micro)
 
 - :white_check_mark: update tests.
 - :memo: update README.md.
 - :bookmark: version bump.
 
-## 4.0.1
+## 4.0.1 (deprecated @vangware/micro)
 
 - :ambulance: isNullish should check undefined first.
 - :white_check_mark: minor test tweaks related to linter.
 
-## 4.0.0
+## 4.0.0 (deprecated @vangware/micro)
 
 - :building_construction: functional rework.
 - :fire: remove isMap (use immutable structures).
@@ -236,14 +244,14 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :building_construction: noop to return the given value.
 - :building_construction: tapObserver to return the given value.
 
-## 3.0.1
+## 3.0.1 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :art: improve code to match new linter rules.
 - :memo: update documentation based on line length changes.
 - :bookmark: version bump.
 
-## 3.0.0
+## 3.0.0 (deprecated @vangware/micro)
 
 - :bookmark: version 3.0.0
 - :building_construction: change when to work with nullish instead of falsy.
@@ -254,36 +262,36 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :truck: rename config files (Prettier, linter, etc)
 - :memo: update documentation.
 
-## 2.1.1
+## 2.1.1 (deprecated @vangware/micro)
 
 - :bulb: document with typedoc.
 - :bookmark: version bump.
 
-## 2.1.0
+## 2.1.0 (deprecated @vangware/micro)
 
 - :art: improve objectMap to work with no object.
 
-## 2.0.0
+## 2.0.0 (deprecated @vangware/micro)
 
 - :fire: remove typeOf (goodbye good fella).
 
-## 1.5.0
+## 1.5.0 (deprecated @vangware/micro)
 
 - :sparkles: add constants.
 - :memo: update README.md.
 - :bookmark: version bump.
 
-## 1.4.2
+## 1.4.2 (deprecated @vangware/micro)
 
 - :bug: fix mixing exports in index.
 - :bookmark: version bump.
 
-## 1.4.1
+## 1.4.1 (deprecated @vangware/micro)
 
 - :truck: rename isMapFunction to IsMapFunction (casing issue).
 - :bookmark: version bump.
 
-## 1.4.0
+## 1.4.0 (deprecated @vangware/micro)
 
 - :sparkles: add `isArray` util.
 - :sparkles: add `isBigInt` util.
@@ -311,14 +319,14 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :memo: update README.md to include more badges.
 - :green_heart: add CI comments.
 
-## 1.3.1
+## 1.3.1 (deprecated @vangware/micro)
 
 - :white_check_mark: Improved tests.
 - :white_check_mark: Add test coverage.
 - :wrench: update TS configurations.
 - :bookmark: version bump.
 
-## 1.3.0
+## 1.3.0 (deprecated @vangware/micro)
 
 - :sparkles: add arrayReduce.
 - :sparkles: add arraySplit.
@@ -328,12 +336,12 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 
-## 1.2.1
+## 1.2.1 (deprecated @vangware/micro)
 
 - :arrow_up: dependency upgrade.
 - :bookmark: version bump.
 
-## 1.2.0
+## 1.2.0 (deprecated @vangware/micro)
 
 - :construction_worker: add Travis config.
 - :sparkles: add when util.
@@ -341,18 +349,18 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 - :bookmark: version bump.
 - :memo: update README-md.
 
-## 1.1.0
+## 1.1.0 (deprecated @vangware/micro)
 
 - :art: improve types.
 - :building_construction: removed defaults and some optionals that didn't made any sense.
 - :bookmark: version bump.
 
-## 1.0.1
+## 1.0.1 (deprecated @vangware/micro)
 
 - :art: improve noop types.
 - :bookmark: version bump.
 - :page_facing_up: add MIT license file.
 
-## 1.0.0
+## 1.0.0 (deprecated @vangware/micro)
 
 - :tada: initial commit

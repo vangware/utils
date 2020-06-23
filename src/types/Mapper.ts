@@ -1,3 +1,5 @@
+import ReadOnlyObject from "./ReadOnlyObject";
+
 /**
  * Mapper function.
  *
@@ -6,6 +8,8 @@
  * @param item Item of the source array.
  * @returns Mapped value.
  */
-export type Mapper<Item, Output> = (item: Readonly<Item>) => Output;
+export type Mapper<Item, Output> = (
+	item: ReadOnlyObject<Item>
+) => ReadOnlyObject<Output>;
 
 export default Mapper;
