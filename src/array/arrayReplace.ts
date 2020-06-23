@@ -1,3 +1,5 @@
+import ReadOnlyObject from "../types/ReadOnlyObject";
+import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
 import { arraySlice } from "./arraySlice";
 
 /**
@@ -20,7 +22,7 @@ import { arraySlice } from "./arraySlice";
  * @param item Replacing item.
  * @returns Curried function with `item` in context.
  */
-export const arrayReplace = <Item>(item: Item) =>
+export const arrayReplace = <Item>(item: ReadOnlyObject<Item>) =>
 	/**
 	 * @param index Index to start replace item.
 	 * @returns Curried function with `item` and `index` in context.
@@ -31,7 +33,7 @@ export const arrayReplace = <Item>(item: Item) =>
 		 * @param source Source array to apply replace on.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: readonly SourceItem[]) =>
+		<SourceItem = Item>(source: ReadOnlyObjectArray<SourceItem>) =>
 			index <= 0
 				? [item, ...arraySlice(1)(Infinity)(source)]
 				: index >= source.length

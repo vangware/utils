@@ -14,7 +14,7 @@ assert([
 	{
 		given: "an array of numbers and an even number filter",
 		must: "return only odd numbers",
-		received: arrayFilterOut<number>(item => item % 2 === 0)(array),
+		received: arrayFilterOut((item: number) => item % 2 === 0)(array),
 		wanted: [1, 3]
 	}
 ]);

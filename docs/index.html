@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@vangware/micro</title>
-	<meta name="description" content="Documentation for @vangware/micro">
+	<title>@vangware/utils</title>
+	<meta name="description" content="Documentation for @vangware/utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@vangware/micro</a>
+					<a href="index.html" class="title">@vangware/utils</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1>@vangware/micro</h1>
+			<h1>@vangware/utils</h1>
 		</div>
 	</div>
 </header>
@@ -64,13 +64,13 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><img src="https://i.imgur.com/nGVEORZ.png" alt="@vangware/micro"></p>
-				<p><img src="https://img.shields.io/npm/v/@vangware/micro.svg?style=flat-square" alt="NPM Version">
-					<img src="https://img.shields.io/bundlephobia/minzip/@vangware/micro?label=size&style=flat-square" alt="Size">
-					<img src="https://img.shields.io/npm/l/@vangware/micro?style=flat-square" alt="License">
-					<img src="https://img.shields.io/travis/vangware/micro.svg?style=flat-square" alt="Build Status">
-					<img src="https://img.shields.io/coveralls/github/vangware/micro?style=flat-square" alt="Coverage">
-				<img src="https://img.shields.io/github/issues/vangware/micro?style=flat-square" alt="Open Issues"></p>
+				<p><img src="https://i.imgur.com/Qt3fWpw.png" alt="@vangware/utils"></p>
+				<p><img src="https://img.shields.io/npm/v/@vangware/utils.svg?style=flat-square" alt="NPM Version">
+					<img src="https://img.shields.io/bundlephobia/minzip/@vangware/utils?label=size&style=flat-square" alt="Size">
+					<img src="https://img.shields.io/npm/l/@vangware/utils?style=flat-square" alt="License">
+					<img src="https://img.shields.io/travis/vangware/utils.svg?style=flat-square" alt="Build Status">
+					<img src="https://img.shields.io/coveralls/github/vangware/utils?style=flat-square" alt="Coverage">
+				<img src="https://img.shields.io/github/issues/vangware/utils?style=flat-square" alt="Open Issues"></p>
 				<p>Collection of <a href="https://en.wikipedia.org/wiki/Currying">curried</a> <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> utils made entirely in <a href="http://typescriptlang.org/">TypeScript</a>. Compatible with all modern JS environments:</p>
 				<ul>
 					<li>📦 <a href="https://nodejs.org/">Node.js</a>.</li>
@@ -85,32 +85,28 @@
 					<h3>Usage as ECMAScript module</h3>
 				</a>
 				<p>In JS or <a href="https://deno.land/">deno</a>:</p>
-				<pre><code class="language-js"><span class="hljs-keyword">import</span> { isObject } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;http://cdn.pika.dev/@vangware/micro&quot;</span>;</code></pre>
+				<pre><code class="language-js"><span class="hljs-keyword">import</span> { isObject } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;http://cdn.pika.dev/@vangware/utils&quot;</span>;</code></pre>
 				<p>Or in HTML:</p>
-				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;module&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://cdn.pika.dev/@vangware/micro&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;module&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://cdn.pika.dev/@vangware/utils&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 				<a href="#usage-with-local-installation" id="usage-with-local-installation" style="color: inherit; text-decoration: none;">
 					<h3>Usage with local installation</h3>
 				</a>
 				<p>First:</p>
-				<pre><code class="language-bash">npm i -S @vangware/micro
-<span class="hljs-comment"># or</span>
-pnpm i -S @vangware/micro
-<span class="hljs-comment"># or</span>
-yarn add @vangware/micro</code></pre>
+				<pre><code class="language-bash">npm i -S @vangware/utils</code></pre>
 				<p>And then:</p>
-				<pre><code class="language-js"><span class="hljs-keyword">import</span> { isObject } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@vangware/micro&quot;</span>;</code></pre>
+				<pre><code class="language-js"><span class="hljs-keyword">import</span> { isObject } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@vangware/utils&quot;</span>;</code></pre>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
-				<p>Documentation can be found <a href="https://micro.vangware.com">HERE</a>. It is auto-generated with <a href="https://typedoc.org/">typedoc</a> based on the JSDocs and the types in the source. Shouldn&#39;t be necessary to read this, code editors like <a href="https://code.visualstudio.com/">VSCode</a> integrate the documentation in the UI.</p>
+				<p>Documentation can be found <a href="https://utils.vangware.com">HERE</a>. It is auto-generated with <a href="https://typedoc.org/">typedoc</a> based on the JSDocs and the types in the source. Shouldn&#39;t be necessary to read this, code editors like <a href="https://code.visualstudio.com/">VSCode</a> integrate the documentation in the UI.</p>
 				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
 					<h2>Changelog</h2>
 				</a>
-				<p>Changelog can be found <a href="https://github.com/vangware/micro/blob/master/CHANGELOG.md">HERE</a>.</p>
+				<p>Changelog can be found <a href="https://github.com/vangware/utils/blob/master/CHANGELOG.md">HERE</a>.</p>
 				<a href="#test-coverage" id="test-coverage" style="color: inherit; text-decoration: none;">
 					<h2>Test coverage</h2>
 				</a>
-				<p>Test coverage can be found <a href="https://coveralls.io/github/vangware/micro">HERE</a>.</p>
+				<p>Test coverage can be found <a href="https://coveralls.io/github/vangware/utils">HERE</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -146,6 +142,15 @@ yarn add @vangware/micro</code></pre>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#nullish" class="tsd-kind-icon">Nullish</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#readonlyobject" class="tsd-kind-icon">Read<wbr>Only<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#readonlyobjectarray" class="tsd-kind-icon">Read<wbr>Only<wbr>Object<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#readonlyrecord" class="tsd-kind-icon">Read<wbr>Only<wbr>Record</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#reducer" class="tsd-kind-icon">Reducer</a>

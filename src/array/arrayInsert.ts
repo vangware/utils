@@ -1,3 +1,5 @@
+import ReadOnlyObject from "../types/ReadOnlyObject";
+import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
 import { arraySlice } from "./arraySlice";
 
 /**
@@ -19,7 +21,7 @@ import { arraySlice } from "./arraySlice";
  * @param item Item to be inserted.
  * @returns Curried function with `item` in context.
  */
-export const arrayInsert = <Item>(item: Item) =>
+export const arrayInsert = <Item>(item: ReadOnlyObject<Item>) =>
 	/**
 	 * @param index Index to insert item.
 	 * @returns Curried function with `item` and `index` in context.
@@ -30,7 +32,7 @@ export const arrayInsert = <Item>(item: Item) =>
 		 * @param source Source array to insert item in.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: readonly SourceItem[]) =>
+		<SourceItem = Item>(source: ReadOnlyObjectArray<SourceItem>) =>
 			index <= 0
 				? [item, ...source]
 				: index >= source.length

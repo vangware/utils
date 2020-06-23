@@ -1,3 +1,5 @@
+import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+
 /**
  * Takes a `start` and and `end` and applies a `slice` to given `source` array.
  *
@@ -22,6 +24,6 @@ export const arraySlice = (start: number) =>
 		 * @param source Source array to slice.
 		 * @returns Sliced copy of `source` array using `start` and `end`.
 		 */
-		<Item>(source: readonly Item[]) => source.slice(start, end);
+		<Item>(source: ReadOnlyObjectArray<Item>) => source.slice(start, end);
 
 export default arraySlice;
