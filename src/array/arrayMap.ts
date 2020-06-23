@@ -1,11 +1,12 @@
 import { Mapper } from "../types/Mapper";
+import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a `mapper` function and applies it to given `source` array.
  *
  * @example
  * ```typescript
- * const mapDouble = arrayMap<number>(item => item * 2);
+ * const mapDouble = arrayMap((item: number) => item * 2);
  *
  * mapDouble([0, 1, 2, 3]); // [0, 2, 4, 6]
  * ```
@@ -19,6 +20,6 @@ export const arrayMap = <Item, Output = Item>(mapper: Mapper<Item, Output>) =>
 	 * @param source Source array to be mapped.
 	 * @returns Copy of source with mapped values using `mapper`.
 	 */
-	(source: readonly Item[]) => source.map(item => mapper(item));
+	(source: ReadOnlyObjectArray<Item>) => source.map(item => mapper(item));
 
 export default arrayMap;

@@ -1,3 +1,4 @@
+import ReadOnlyObject from "../types/ReadOnlyObject";
 import { arrayInsert } from "./arrayInsert";
 
 /**
@@ -14,6 +15,7 @@ import { arrayInsert } from "./arrayInsert";
  * @param item Item to be inserted.
  * @returns Curried function with `item` and `index` in context.
  */
-export const arrayUnshift = <Item>(item: Item) => arrayInsert(item)(0);
+export const arrayUnshift = <Item>(item: ReadOnlyObject<Item>) =>
+	arrayInsert(item)(0);
 
 export default arrayUnshift;

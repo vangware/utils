@@ -8,8 +8,8 @@ import { arrayReduce } from "./arrayReduce";
  *
  * @example
  * ```typescript
- * const evenOddGroup = arrayGroup<number>(
- * 	item => item % 2 === 0 "even" : "odd"
+ * const evenOddGroup = arrayGroup(
+ * 	(item: number) => item % 2 === 0 "even" : "odd"
  * );
  *
  * evenOddGroup([0, 1, 2, 3]); // { even: [0, 2], odd: [1, 3] }

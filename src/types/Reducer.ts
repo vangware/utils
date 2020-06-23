@@ -1,4 +1,5 @@
 import { Mapper } from "./Mapper";
+import ReadOnlyObject from "./ReadOnlyObject";
 
 /**
  * Reducer function.
@@ -9,7 +10,7 @@ import { Mapper } from "./Mapper";
  * @returns Mapper with accumulator context.
  */
 export type Reducer<Item, Output = readonly Item[]> = (
-	accumulator: Readonly<Output>
+	accumulator: ReadOnlyObject<Output>
 ) => Mapper<Item, Output>;
 
 export default Reducer;
