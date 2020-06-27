@@ -1,11 +1,11 @@
 ![@vangware/utils](https://i.imgur.com/Qt3fWpw.png)
 
-![NPM Version](https://img.shields.io/npm/v/@vangware/utils.svg?style=flat-square)
-![Size](https://img.shields.io/bundlephobia/minzip/@vangware/utils?label=size&style=flat-square)
-![License](https://img.shields.io/npm/l/@vangware/utils?style=flat-square)
-![Build Status](https://img.shields.io/travis/vangware/utils.svg?style=flat-square)
-![Coverage](https://img.shields.io/coveralls/github/vangware/utils?style=flat-square)
-![Open Issues](https://img.shields.io/github/issues/vangware/utils?style=flat-square)
+![Build Status](https://img.shields.io/travis/vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&link=https://travis-ci.org/github/vangware/utils)
+![Coverage](https://img.shields.io/coveralls/github/vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&link=https://coveralls.io/github/vangware/utils)
+![License](https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&link=https://github.com/vangware/utils/blob/master/LICENSE)
+![NPM Version](https://img.shields.io/npm/v/@vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&link=https://npm.im/@vangware/utils)
+![Open Issues](https://img.shields.io/github/issues/vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&link=https://github.com/vangware/utils/issues)
+![Size](https://img.shields.io/bundlephobia/minzip/@vangware/utils.svg?style=for-the-badge&labelColor=333&color=20b075&label=size&link=https://bundlephobia.com/result?p=@vangware/utils)
 
 Collection of [curried](https://en.wikipedia.org/wiki/Currying) [functional](https://en.wikipedia.org/wiki/Functional_programming) utils made entirely in [TypeScript](http://typescriptlang.org/). Compatible with all modern JS environments:
 - 📦 [Node.js](https://nodejs.org/).
