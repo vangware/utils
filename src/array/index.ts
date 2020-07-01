@@ -9,4 +9,5 @@ export { arrayPush } from "./arrayPush";
 export { arrayReduce } from "./arrayReduce";
 export { arrayReplace } from "./arrayReplace";
 export { arraySlice } from "./arraySlice";
+export { arraySort } from "./arraySort";
 export { arrayUnshift } from "./arrayUnshift";
