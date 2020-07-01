@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.0
+
+- :sparkles: add new `Sorter` type.
+- :sparkles: add new `arraySort` util.
+- :bug: fix bad diff output of tests.
+- :arrow_up: dependency upgrade.
+
 ## 1.0.1
 
 - :arrow_up: dependency upgrade.

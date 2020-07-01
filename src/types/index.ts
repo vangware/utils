@@ -10,6 +10,7 @@ export { ReadOnlyObject } from "./ReadOnlyObject";
 export { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
 export { ReadOnlyRecord } from "./ReadOnlyRecord";
 export { Reducer } from "./Reducer";
+export { Sorter } from "./Sorter";
 export { StringReplaceMap } from "./StringReplaceMap";
 export { Tuple } from "./Tuple";
 export { TypeOf } from "./TypeOf";
