@@ -16,8 +16,8 @@ export const assert: Assertion = assertOptions =>
 	assertOptions.map(({ given, must, received, wanted }) =>
 		ava(`Given ${given}, must ${must}.`, async executionContext =>
 			executionContext.deepEqual(
-				received instanceof Promise ? await received : received,
-				wanted instanceof Promise ? await wanted : wanted
+				wanted instanceof Promise ? await wanted : wanted,
+				received instanceof Promise ? await received : received
 			)
 		)
 	);
