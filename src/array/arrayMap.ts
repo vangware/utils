@@ -1,5 +1,5 @@
 import { Mapper } from "../types/Mapper";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a `mapper` function and applies it to given `source` array.
