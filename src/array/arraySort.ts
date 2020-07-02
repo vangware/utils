@@ -1,5 +1,5 @@
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
-import Sorter from "../types/Sorter";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import { Sorter } from "../types/Sorter";
 
 /**
  * Takes a `sorter` function and applies it to given `source` array.

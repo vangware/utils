@@ -1,7 +1,8 @@
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
- * Takes a `start` and and `end` and applies a `slice` to given `source` array.
+ * Takes a `start` and `end` and applies a `slice` to `source` array from given
+ * `start` to given `end`.
  *
  * @example
  * ```typescript

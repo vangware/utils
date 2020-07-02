@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.0.0
+
+- :truck: rename `arrayPush` to `arrayInsertLast`.
+- :truck: rename `arrayUnshift` to `arrayInsertFirst`.
+- :sparkles: add new `arraySliceFrom` util.
+- :sparkles: add new `arraySliceTo` util.
+- :sparkles: add new `Falsy` type.
+- :sparkles: add new `Truthy` type.
+- :pencil2: fix some docs examples.
+- :bookmark: major change because of the above mentioned renames.
+- :building_construction: better imports.
+- :arrow_up: dependency upgrade.
+
 ## 1.1.0
 
 - :sparkles: add new `Sorter` type.

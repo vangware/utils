@@ -1,4 +1,4 @@
-import ReadOnlyObject from "./ReadOnlyObject";
+import { ReadOnlyObject } from "./ReadOnlyObject";
 
 /**
  * Grouper function.
