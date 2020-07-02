@@ -1,5 +1,5 @@
-import ReadOnlyObjectArray from "./ReadOnlyObjectArray";
-import ReadOnlyRecord from "./ReadOnlyRecord";
+import { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
+import { ReadOnlyRecord } from "./ReadOnlyRecord";
 
 /**
  * Object with the following shape:

@@ -1,5 +1,5 @@
-import ReadOnlyObject from "../types/ReadOnlyObject";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+import { ReadOnlyObject } from "../types/ReadOnlyObject";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { Reducer } from "../types/Reducer";
 
 /**

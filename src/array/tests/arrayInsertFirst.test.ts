@@ -1,5 +1,5 @@
 import { assert } from "../../assert";
-import { arrayUnshift } from "../arrayUnshift";
+import { arrayInsertFirst } from "../arrayInsertFirst";
 
 const array = [0, 1, 2, 3];
 const string = "string";
@@ -9,7 +9,7 @@ assert([
 	{
 		given: "an array of numbers and a string to insert",
 		must: "insert that string at the beginning",
-		received: arrayUnshift(string)(array),
+		received: arrayInsertFirst(string)(array),
 		wanted: [string, ...array]
 	}
 ]);

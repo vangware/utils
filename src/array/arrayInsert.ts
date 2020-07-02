@@ -1,6 +1,7 @@
-import ReadOnlyObject from "../types/ReadOnlyObject";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
-import { arraySlice } from "./arraySlice";
+import { ReadOnlyObject } from "../types/ReadOnlyObject";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import { arraySliceFrom } from "./arraySliceFrom";
+import { arraySliceTo } from "./arraySliceTo";
 
 /**
  * Takes an `item` and an `index` and makes a copy of given `source` array with
@@ -8,14 +9,14 @@ import { arraySlice } from "./arraySlice";
  *
  * @example
  * ```typescript
- * const insertItem = arrayInsert("new");
- * const insertItemLast = insertItem(Infinity);
- * const insertItemFirst = insertItem(0);
- * const insertItemSecond = insertItem(1);
+ * const insertValue = arrayInsert("value");
+ * const insertValueLast = insertValue(Infinity);
+ * const insertValueFirst = insertValue(0);
+ * const insertValueSecond = insertValue(1);
  *
- * insertItemLast([0, 1, 2, 3]); // [0, 1, 2, 3, "new"]
- * insertItemFirst([0, 1, 2, 3]); // ["new", 0, 1, 2, 3]
- * insertItemSecond([0, 1, 2, 3]); // [0, "new", 1, 2, 3]
+ * insertValueLast([0, 1, 2, 3]); // [0, 1, 2, 3, "value"]
+ * insertValueFirst([0, 1, 2, 3]); // ["value", 0, 1, 2, 3]
+ * insertValueSecond([0, 1, 2, 3]); // [0, "value", 1, 2, 3]
  * ```
  * @template Item Type of items to insert in source array.
  * @param item Item to be inserted.
@@ -38,9 +39,9 @@ export const arrayInsert = <Item>(item: ReadOnlyObject<Item>) =>
 				: index >= source.length
 				? [...source, item]
 				: [
-						...arraySlice(0)(index)(source),
+						...arraySliceTo(index)(source),
 						item,
-						...arraySlice(index)(source.length)(source)
+						...arraySliceFrom(index)(source)
 				  ];
 
 export default arrayInsert;
