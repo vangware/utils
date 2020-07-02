@@ -1,6 +1,7 @@
-import ReadOnlyObject from "../types/ReadOnlyObject";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
-import { arraySlice } from "./arraySlice";
+import { ReadOnlyObject } from "../types/ReadOnlyObject";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import { arraySliceFrom } from "./arraySliceFrom";
+import { arraySliceTo } from "./arraySliceTo";
 
 /**
  * Takes an `item` and an `index` and replaces the `source` array item in that
@@ -35,13 +36,13 @@ export const arrayReplace = <Item>(item: ReadOnlyObject<Item>) =>
 		 */
 		<SourceItem = Item>(source: ReadOnlyObjectArray<SourceItem>) =>
 			index <= 0
-				? [item, ...arraySlice(1)(Infinity)(source)]
+				? [item, ...arraySliceFrom(1)(source)]
 				: index >= source.length
-				? [...arraySlice(0)(-1)(source), item]
+				? [...arraySliceTo(-1)(source), item]
 				: [
-						...arraySlice(0)(index)(source),
+						...arraySliceTo(index)(source),
 						item,
-						...arraySlice(index + 1)(source.length)(source)
+						...arraySliceFrom(index + 1)(source)
 				  ];
 
 export default arrayReplace;

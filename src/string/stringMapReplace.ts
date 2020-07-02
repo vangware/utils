@@ -4,8 +4,8 @@ import { Entry } from "../types/Entry";
 import { StringReplaceMap } from "../types/StringReplaceMap";
 
 /**
- * Takes `StringReplaceMap` object and makes a regex map replace of
- * given `source` string.
+ * Takes `StringReplaceMap` object and runs a replaceAll of given object keys
+ * with it's values in the `source` string.
  *
  * @example
  * ```typescript

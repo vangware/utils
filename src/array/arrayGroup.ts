@@ -1,6 +1,6 @@
 import { Grouped } from "../types/Grouped";
 import { Grouper } from "../types/Grouper";
-import { arrayPush } from "./arrayPush";
+import { arrayInsertLast } from "./arrayInsertLast";
 import { arrayReduce } from "./arrayReduce";
 
 /**
@@ -8,11 +8,11 @@ import { arrayReduce } from "./arrayReduce";
  *
  * @example
  * ```typescript
- * const evenOddGroup = arrayGroup(
+ * const groupEvenOdd = arrayGroup(
  * 	(item: number) => item % 2 === 0 "even" : "odd"
  * );
  *
- * evenOddGroup([0, 1, 2, 3]); // { even: [0, 2], odd: [1, 3] }
+ * groupEvenOdd([0, 1, 2, 3]); // { even: [0, 2], odd: [1, 3] }
  * ```
  * @template Item Type of items in source array.
  * @param grouper Grouper function.
@@ -22,7 +22,7 @@ export const arrayGroup = <Item>(grouper: Grouper<Item>) =>
 	arrayReduce<Item, Grouped<Item>>(groups => item =>
 		(groupName => ({
 			...groups,
-			[groupName]: arrayPush(item)(groups[groupName] || [])
+			[groupName]: arrayInsertLast(item)(groups[groupName] || [])
 		}))(`${grouper(item)}`)
 	)({});
 

@@ -1,5 +1,5 @@
 import { Filterer } from "../types/Filterer";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a positive `filterer` and applies it to given `source` array.

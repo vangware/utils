@@ -1,5 +1,5 @@
 import { Filterer } from "../types/Filterer";
-import ReadOnlyObjectArray from "../types/ReadOnlyObjectArray";
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { Tuple } from "../types/Tuple";
 import { arrayFilterIn } from "./arrayFilterIn";
 import { arrayFilterOut } from "./arrayFilterOut";
@@ -10,11 +10,9 @@ import { arrayFilterOut } from "./arrayFilterOut";
  *
  * @example
  * ```typescript
- * const filterTupleTupleEvenOdd = arrayFilterTuple<number>(
- * 	item => item % 2 === 0
- * );
+ * const filterEvenOdd = arrayFilterTuple((item: number) => item % 2 === 0);
  *
- * filterTupleTupleEventOdd([0, 1, 2, 3]); // [[0, 2], [1, 3]]
+ * filterEvenOdd([0, 1, 2, 3]); // [[0, 2], [1, 3]]
  * ```
  * @template Item Type of items in source array.
  * @param filterer Filterer function.
