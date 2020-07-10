@@ -1,0 +1,20 @@
+import { arrayFilterIn } from "../../src/array/arrayFilterIn";
+import { test } from "../test";
+
+const array = [0, 1, 2, 3];
+
+// eslint-disable-next-line functional/no-expression-statement
+test([
+	{
+		given: "an array of numbers and an always false filter",
+		must: "return an empty array",
+		received: arrayFilterIn(_ => false)(array),
+		wanted: []
+	},
+	{
+		given: "an array of numbers and an even number filter",
+		must: "return only even numbers",
+		received: arrayFilterIn((item: number) => item % 2 === 0)(array),
+		wanted: [0, 2]
+	}
+]);
