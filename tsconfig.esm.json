@@ -6,7 +6,6 @@
     "target": "ESNext"
   },
   "exclude": [
-    "src/**/tests/*",
-    "src/assert.ts"
+    "tests/**/*"
   ]
 }

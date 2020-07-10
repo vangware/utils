@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.0.1
+
+- :truck: moved all tests to tests directory.
+- :building_construction: change `ava` with `uvu`.
+- :building_construction: change `nyc` with `c8`.
+- :heavy_minus_sign: remove `ava`.
+- :heavy_minus_sign: remove `nyc`.
+- :fire: removed `test:watch` because it doesn't make any sense with the speed of `uvu`.
+- :wrench: update travis config.
+
 ## 2.0.0
 
 - :truck: rename `arrayPush` to `arrayInsertLast`.
