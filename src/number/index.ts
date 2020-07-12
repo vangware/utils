@@ -1,2 +1,12 @@
+export { decimalTupleAdd } from "./decimalTupleAdd";
+export { decimalTupleDivide } from "./decimalTupleDivide";
+export { decimalTupleMultiply } from "./decimalTupleMultiply";
+export { decimalTupleSubtract } from "./decimalTupleSubtract";
+export { decimalTupleToNumber } from "./decimalTupleToNumber";
+export { numberAdd } from "./numberAdd";
 export { numberBetween } from "./numberBetween";
 export { numberBoundary } from "./numberBoundary";
+export { numberDivide } from "./numberDivide";
+export { numberMultiply } from "./numberMultiply";
+export { numberSubtract } from "./numberSubtract";
+export { numberToDecimalTuple } from "./numberToDecimalTuple";

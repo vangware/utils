@@ -71,6 +71,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayoriterable" class="tsd-kind-icon">Array<wbr>OrIterable</a></li>
+								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#decimaltuple" class="tsd-kind-icon">Decimal<wbr>Tuple</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#entries" class="tsd-kind-icon">Entries</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#entry" class="tsd-kind-icon">Entry</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#falsy" class="tsd-kind-icon">Falsy</a></li>
@@ -122,6 +123,11 @@
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#arrayslice" class="tsd-kind-icon">array<wbr>Slice</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#arrayslicefrom" class="tsd-kind-icon">array<wbr>Slice<wbr>From</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arraysort" class="tsd-kind-icon">array<wbr>Sort</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#decimaltupleadd" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Add</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#decimaltupledivide" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Divide</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#decimaltuplemultiply" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Multiply</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#decimaltuplesubtract" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Subtract</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#decimaltupletonumber" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>ToNumber</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#functionnot" class="tsd-kind-icon">function<wbr>Not</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#instanceof" class="tsd-kind-icon">instance<wbr>Of</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#isarray" class="tsd-kind-icon">is<wbr>Array</a></li>
@@ -132,8 +138,13 @@
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#istype" class="tsd-kind-icon">is<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#jsonparsepromise" class="tsd-kind-icon">json<wbr>Parse<wbr>Promise</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#jsonstringifypromise" class="tsd-kind-icon">json<wbr>Stringify<wbr>Promise</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numberadd" class="tsd-kind-icon">number<wbr>Add</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numberbetween" class="tsd-kind-icon">number<wbr>Between</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numberboundary" class="tsd-kind-icon">number<wbr>Boundary</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numberdivide" class="tsd-kind-icon">number<wbr>Divide</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numbermultiply" class="tsd-kind-icon">number<wbr>Multiply</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numbersubtract" class="tsd-kind-icon">number<wbr>Subtract</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#numbertodecimaltuple" class="tsd-kind-icon">number<wbr>ToDecimal<wbr>Tuple</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#objectentries" class="tsd-kind-icon">object<wbr>Entries</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#objectfromentries" class="tsd-kind-icon">object<wbr>From<wbr>Entries</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringmapreplace" class="tsd-kind-icon">string<wbr>Map<wbr>Replace</a></li>
@@ -170,6 +181,21 @@
 							</div>
 						</li>
 					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
+					<a name="decimaltuple" class="tsd-anchor"></a>
+					<h3>Decimal<wbr>Tuple</h3>
+					<div class="tsd-signature tsd-kind-icon">Decimal<wbr>Tuple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/DecimalTuple.ts#L4">types/DecimalTuple.ts:4</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>2-Tuple to represent decimals [coefficient, exponent]</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="entries" class="tsd-anchor"></a>
@@ -1579,6 +1605,192 @@ sortNumbers([<span class="hljs-number">3</span>, <span class="hljs-number">0</sp
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="decimaltupleadd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Tuple<wbr>Add</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Tuple<wbr>Add<span class="tsd-signature-symbol">(</span>addend1<span class="tsd-signature-symbol">: </span><a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleAdd.ts#L17">number/decimalTupleAdd.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>addend1</code> and <code>addend2</code> and returns the addition of those values.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> addPoint1 = decimalTupleAdd([<span class="hljs-number">1</span>, <span class="hljs-number">-1</span>]);
+
+addPoint1([<span class="hljs-number">2</span>, <span class="hljs-number">-1</span>]); <span class="hljs-comment">// [3, -1] -&gt; 0.3</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>addend1: <a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>First addend <code>DecimalTuple</code> of the addition.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>addend1</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="decimaltupledivide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Tuple<wbr>Divide</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Tuple<wbr>Divide<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleDivide.ts#L18">number/decimalTupleDivide.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>divisor</code> and <code>dividend</code> and returns the division of those values.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> half = decimalTupleDivide([<span class="hljs-number">2</span>, <span class="hljs-number">0</span>]);
+
+half([<span class="hljs-number">5</span>, <span class="hljs-number">0</span>]); <span class="hljs-comment">// [25, -1] -&gt; 2.5</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>divisor</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="decimaltuplemultiply" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Tuple<wbr>Multiply</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Tuple<wbr>Multiply<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleMultiply.ts#L17">number/decimalTupleMultiply.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>multiplier</code> and <code>multiplicand</code> and returns the multiplication result
+									of those factors.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> double = decimalTupleMultiply([<span class="hljs-number">2</span>, <span class="hljs-number">0</span>]);
+
+double([<span class="hljs-number">5</span>, <span class="hljs-number">-1</span>]); <span class="hljs-comment">// [1, 0] -&gt; 1</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>multiplier</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="decimaltuplesubtract" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Tuple<wbr>Subtract</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Tuple<wbr>Subtract<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleSubtract.ts#L17">number/decimalTupleSubtract.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>subtrahend</code> and <code>minuend</code> and returns the subtraction of those
+									values.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> subtractPoint1 = decimalTupleSubtract([<span class="hljs-number">1</span>, <span class="hljs-number">-1</span>]);
+
+subtractPoint1([<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]); <span class="hljs-comment">// [9, -1] -&gt; 0.9</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>subtrahend</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="decimaltupletonumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Tuple<wbr>ToNumber</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Tuple<wbr>ToNumber<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleToNumber.ts#L14">number/decimalTupleToNumber.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>source</code> DecimalTuple [coefficient, exponent] and returns a number.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript">decimalTupleToNumber([<span class="hljs-number">3141592653589793</span>, <span class="hljs-number">-15</span>]); <span class="hljs-comment">// 3.141592653589793</span>
+decimalTupleToNumber([<span class="hljs-number">5</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// 5000</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Number generated from the source coefficient and exponent.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
 					<a name="functionnot" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> function<wbr>Not</h3>
@@ -2080,6 +2292,48 @@ jsonStringifyPromise({})
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="numberadd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Add</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>Add<span class="tsd-signature-symbol">(</span>addend1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/numberAdd.ts#L18">number/numberAdd.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>addend1</code> and <code>addend2</code> and returns the precise addition of those
+									values (uses <code>DecimalTuple</code> internally).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> addPoint1 = numberAdd(<span class="hljs-number">0.1</span>);
+
+addPoint1(<span class="hljs-number">0.2</span>); <span class="hljs-comment">// 0.3</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>addend1: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>First addend of the addition.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>addend1</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
 					<a name="numberbetween" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Between</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
@@ -2165,6 +2419,172 @@ boundaryFrom0To10(<span class="hljs-number">11</span>); <span class="hljs-commen
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 							<p>Curried function with <code>minimum</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="numberdivide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Divide</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>Divide<span class="tsd-signature-symbol">(</span>divisor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/numberDivide.ts#L18">number/numberDivide.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>divisor</code> and <code>dividend</code> and returns the precise division of those
+									values (uses <code>DecimalTuple</code> internally).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> half = numberDivide(<span class="hljs-number">2</span>);
+
+half(<span class="hljs-number">5</span>); <span class="hljs-comment">// 2.5</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>divisor: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Divisor of the division.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>divisor</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="numbermultiply" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Multiply</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>Multiply<span class="tsd-signature-symbol">(</span>multiplier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/numberMultiply.ts#L18">number/numberMultiply.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>multiplier</code> and <code>multiplicand</code> and returns the precise
+									multiplication of those factors (uses <code>DecimalTuple</code> internally).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> double = numberMultiply(<span class="hljs-number">2</span>);
+
+double(<span class="hljs-number">0.5</span>); <span class="hljs-comment">// 1</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>multiplier: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Multiplier of the multiplication.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>multiplier</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="numbersubtract" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Subtract</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>Subtract<span class="tsd-signature-symbol">(</span>subtrahend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/numberSubtract.ts#L18">number/numberSubtract.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>subtrahend</code> and <code>minuend</code> and returns the precise subtraction of
+									those values (uses <code>DecimalTuple</code> internally).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> subtractPoint1 = numberSubtract(<span class="hljs-number">0.1</span>);
+
+subtractPoint1(<span class="hljs-number">1</span>); <span class="hljs-comment">// 0.9</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>subtrahend: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Subtrahend of the subtraction.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>subtrahend</code> set in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="numbertodecimaltuple" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>ToDecimal<wbr>Tuple</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/numberToDecimalTuple.ts#L14">number/numberToDecimalTuple.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a <code>source</code> number and returns a DecimalTuple [coefficient, exponent].</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript">numberToDecimalTuple(<span class="hljs-built_in">Math</span>.PI); <span class="hljs-comment">// [3141592653589793, -15]</span>
+numberToDecimalTuple(<span class="hljs-number">5000</span>); <span class="hljs-comment">// [5, 3]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Source number to be parsed into a DecimalTuple.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4>
+							<p>DecimalTuple [coefficient, exponent].</p>
 						</li>
 					</ul>
 				</section>
@@ -2369,6 +2789,9 @@ leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hl
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#arrayoriterable" class="tsd-kind-icon">Array<wbr>OrIterable</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#decimaltuple" class="tsd-kind-icon">Decimal<wbr>Tuple</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#entries" class="tsd-kind-icon">Entries</a>
 					</li>
@@ -2492,6 +2915,21 @@ leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hl
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#arraysort" class="tsd-kind-icon">array<wbr>Sort</a>
 					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#decimaltupleadd" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Add</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#decimaltupledivide" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Divide</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#decimaltuplemultiply" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Multiply</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#decimaltuplesubtract" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>Subtract</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#decimaltupletonumber" class="tsd-kind-icon">decimal<wbr>Tuple<wbr>ToNumber</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#functionnot" class="tsd-kind-icon">function<wbr>Not</a>
 					</li>
@@ -2523,10 +2961,25 @@ leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hl
 						<a href="globals.html#jsonstringifypromise" class="tsd-kind-icon">json<wbr>Stringify<wbr>Promise</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#numberadd" class="tsd-kind-icon">number<wbr>Add</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
 						<a href="globals.html#numberbetween" class="tsd-kind-icon">number<wbr>Between</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-external">
 						<a href="globals.html#numberboundary" class="tsd-kind-icon">number<wbr>Boundary</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#numberdivide" class="tsd-kind-icon">number<wbr>Divide</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#numbermultiply" class="tsd-kind-icon">number<wbr>Multiply</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#numbersubtract" class="tsd-kind-icon">number<wbr>Subtract</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#numbertodecimaltuple" class="tsd-kind-icon">number<wbr>ToDecimal<wbr>Tuple</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#objectentries" class="tsd-kind-icon">object<wbr>Entries</a>
