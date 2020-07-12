@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.1.0
+
+- :sparkles: add new `DecimalTuple` type to represent decimal numbers with two integers.
+- :sparkles: add new `decimalTupleAdd` util.
+- :sparkles: add new `decimalTupleDivide` util.
+- :sparkles: add new `decimalTupleMultiply` util.
+- :sparkles: add new `decimalTupleSubtract` util.
+- :sparkles: add new `decimalTupleToNumber` util.
+- :sparkles: add new `numberToDecimalTuple` util.
+- :sparkles: add new `numberAdd` util (0.1 + 0.2 returns 0.3 :mage:).
+- :sparkles: add new `numberDivide` util.
+- :sparkles: add new `numberMultiply` util.
+- :sparkles: add new `numberSubtract` util.
+- :arrow_up: dependency upgrade.
+
 ## 2.0.1
 
 - :truck: moved all tests to tests directory.

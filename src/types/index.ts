@@ -1,4 +1,5 @@
 export { ArrayOrIterable } from "./ArrayOrIterable";
+export { DecimalTuple } from "./DecimalTuple";
 export { Entries } from "./Entries";
 export { Entry } from "./Entry";
 export { Falsy } from "./Falsy";
