@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.1.2
+
+- :bug: fix `numberToDecimalTuple` parsing error with numbers that had exponent.
+- :white_check_mark: add tests for those scenarios.
+
 ## 2.1.1
 
 - :bug: fix `numberToDecimalTuple` parsing error.

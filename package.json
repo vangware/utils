@@ -1,7 +1,7 @@
 {
   "name": "@vangware/utils",
   "description": "Vangware curried functional utils",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -87,7 +87,7 @@
     "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
     "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
     "prettify:esm-fix": "prettify-esm ./esm",
-    "test": "c8 --reporter=html --reporter=text-summary uvu --bail --ignore assert.ts --require ts-node/register ./tests"
+    "test": "c8 --reporter=html --reporter=text-summary uvu --bail --ignore test.ts --require ts-node/register ./tests"
   },
   "source": "./src/index.ts",
   "types": "./esm/index.d.ts"
