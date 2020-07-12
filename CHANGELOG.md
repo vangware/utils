@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.1.1
+
+- :bug: fix `numberToDecimalTuple` parsing error.
+
 ## 2.1.0
 
 - :sparkles: add new `DecimalTuple` type to represent decimal numbers with two integers.
