@@ -20,5 +20,17 @@ test([
 		must: "get a tuple with the correct coefficient and exponent",
 		received: numberToDecimalTuple(7000),
 		wanted: [7, 3]
+	},
+	{
+		given: "a large number with exponent",
+		must: "get a tuple with the correct coefficient and exponent",
+		received: numberToDecimalTuple(1.5e21),
+		wanted: [15, 20]
+	},
+	{
+		given: "a small number with exponent",
+		must: "get a tuple with the correct coefficient and exponent",
+		received: numberToDecimalTuple(2.1e-10),
+		wanted: [21, -11]
 	}
 ]);
