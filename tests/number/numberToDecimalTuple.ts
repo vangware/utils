@@ -32,5 +32,11 @@ test([
 		must: "get a tuple with the correct coefficient and exponent",
 		received: numberToDecimalTuple(2.1e-10),
 		wanted: [21, -11]
+	},
+	{
+		given: "0",
+		must: "get a tuple with the correct coefficient and exponent",
+		received: numberToDecimalTuple(0),
+		wanted: [0, 0]
 	}
 ]);
