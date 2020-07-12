@@ -20,5 +20,11 @@ test([
 		must: "get a DecimalTuple representing 99000",
 		received: decimalTupleSubtract([1, 3])([1, 5]),
 		wanted: [99, 3]
+	},
+	{
+		given: "a DecimalTuple representing 1 and 0",
+		must: "get a DecimalTuple representing 1",
+		received: decimalTupleSubtract([0, 0])([1, 0]),
+		wanted: [1, 0]
 	}
 ]);

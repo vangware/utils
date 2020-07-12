@@ -20,5 +20,11 @@ test([
 		must: "get 99000",
 		received: numberSubtract(1000)(100000),
 		wanted: 99000
+	},
+	{
+		given: "1 and 0",
+		must: "get 1",
+		received: numberSubtract(0)(1),
+		wanted: 1
 	}
 ]);
