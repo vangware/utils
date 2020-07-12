@@ -16,7 +16,10 @@ export const numberToDecimalTuple = (source: number) => {
 	const wholeWithoutTrailingZeros = whole.replace(/(?<zeros>0+)$/u, "");
 
 	return [
-		parseInt(`${wholeWithoutTrailingZeros}${decimal}`, 10),
+		parseInt(
+			`${decimal.length ? whole : wholeWithoutTrailingZeros}${decimal}`,
+			10
+		),
 		decimal.length
 			? -decimal.length
 			: whole.length - wholeWithoutTrailingZeros.length
