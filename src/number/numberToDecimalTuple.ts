@@ -18,7 +18,7 @@ export const numberToDecimalTuple = (source: number) => {
 		const [whole, decimal = ""] = wholeDecimalSource.split(".");
 		const wholeWithoutTrailingZeros = decimal.length
 			? whole
-			: whole.replace(/(?<zeros>0+)$/u, "");
+			: whole.replace(/(?<nonZeros>[1-9])(?<zeros>0+)$/u, "$1");
 
 		return [
 			parseInt(`${wholeWithoutTrailingZeros}${decimal}`, 10),
