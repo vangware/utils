@@ -11,15 +11,15 @@ import { decimalTupleToNumber } from "./decimalTupleToNumber";
  *
  * addPoint1([2, -1]); // [3, -1] -> 0.3
  * ```
- * @param addend1 First addend `DecimalTuple` of the addition.
+ * @param addend2 Second addend `DecimalTuple` of the addition.
  * @returns Curried function with `addend1` set in context.
  */
-export const decimalTupleAdd = (addend1: DecimalTuple) =>
+export const decimalTupleAdd = (addend2: DecimalTuple) =>
 	/**
-	 * @param addend2 Second addend `DecimalTuple` of the addition.
+	 * @param addend1 Fist addend `DecimalTuple` of the addition.
 	 * @returns DecimalTuple with the result of `addend1` + `addend2`.
 	 */
-	(addend2: DecimalTuple) => {
+	(addend1: DecimalTuple) => {
 		const [
 			[minCoefficient, minExponent],
 			[maxCoefficient, maxExponent]
