@@ -1,6 +1,6 @@
+import { test } from "@vangware/test";
 import { arrayFilterTuple } from "../../src/array/arrayFilterTuple";
 import { Tuple } from "../../src/types/Tuple";
-import { test } from "../test";
 
 const array = [0, 1, 2, 3];
 

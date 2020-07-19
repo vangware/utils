@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { numberSubtract } from "../../src/number/numberSubtract";
-import { test } from "../test";
 
 // eslint-disable-next-line functional/no-expression-statement
 test([

@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { instanceOf } from "../../src/type/instanceOf";
-import { test } from "../test";
 
 const object = { key: "value" };
 const array = [0, 1, 2, 3];

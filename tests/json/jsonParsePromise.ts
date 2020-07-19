@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { jsonParsePromise } from "../../src/json/jsonParsePromise";
-import { test } from "../test";
 
 const key = "key";
 const value = "value";
