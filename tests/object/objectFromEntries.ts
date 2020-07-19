@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { objectFromEntries } from "../../src/object/objectFromEntries";
-import { test } from "../test";
 
 const key = "key";
 const value = "value";

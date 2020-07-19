@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { stringReverse } from "../../src/string/stringReverse";
-import { test } from "../test";
 
 const string = "string";
 

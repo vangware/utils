@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { arrayFilterIn } from "../../src/array/arrayFilterIn";
-import { test } from "../test";
 
 const array = [0, 1, 2, 3];
 

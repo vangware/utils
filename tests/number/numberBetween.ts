@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { numberBetween } from "../../src/number/numberBetween";
-import { test } from "../test";
 
 const maximum = 10;
 const minimum = 0;
