@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { arraySort } from "../../src/array/arraySort";
-import { test } from "../test";
 
 const numberArray = [3, 0, 2, 1];
 const stringArray = ["b", "a", "c"];

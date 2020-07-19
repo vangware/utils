@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { stringMapReplace } from "../../src/string/stringMapReplace";
-import { test } from "../test";
 
 const string1 = "string1";
 const string2 = "string2";
