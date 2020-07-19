@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { numberToDecimalTuple } from "../../src/number/numberToDecimalTuple";
-import { test } from "../test";
 
 // eslint-disable-next-line functional/no-expression-statement
 test([

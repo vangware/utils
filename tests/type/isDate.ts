@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { isDate } from "../../src/type/isDate";
-import { test } from "../test";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

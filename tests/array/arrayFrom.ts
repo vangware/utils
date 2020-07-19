@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { arrayFrom } from "../../src/array/arrayFrom";
-import { test } from "../test";
 
 const string = "string";
 

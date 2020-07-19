@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { decimalTupleDivide } from "../../src/number/decimalTupleDivide";
-import { test } from "../test";
 
 // eslint-disable-next-line functional/no-expression-statement
 test([

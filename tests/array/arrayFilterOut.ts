@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { arrayFilterOut } from "../../src/array/arrayFilterOut";
-import { test } from "../test";
 
 const array = [0, 1, 2, 3];
 

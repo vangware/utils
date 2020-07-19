@@ -1,5 +1,5 @@
+import { test } from "@vangware/test";
 import { numberMultiply } from "../../src/number/numberMultiply";
-import { test } from "../test";
 
 // eslint-disable-next-line functional/no-expression-statement
 test([
