@@ -4,8 +4,7 @@ import { jsonParsePromise } from "../../src/json/jsonParsePromise";
 const key = "key";
 const value = "value";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "an invalid JSON string",
 		must: "catch without throwing",

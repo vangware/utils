@@ -4,8 +4,7 @@ import { isArray } from "../../src/type/isArray";
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a BigInt",
 		received: isArray(BigInt(1)) && isArray(BigInt("1")),

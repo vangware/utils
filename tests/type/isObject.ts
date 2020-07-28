@@ -4,8 +4,7 @@ import { isObject } from "../../src/type/isObject";
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a BigInt",
 		received: isObject(BigInt(1)) && isObject(BigInt("1")),

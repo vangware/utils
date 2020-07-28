@@ -3,8 +3,7 @@ import { arrayReduce } from "../../src/array/arrayReduce";
 
 const array = [0, 1, 2, 3];
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "an array of numbers and a sum reducer",
 		must: "return the total sum",

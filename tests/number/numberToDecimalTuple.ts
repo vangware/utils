@@ -1,8 +1,7 @@
 import { test } from "@vangware/test";
 import { numberToDecimalTuple } from "../../src/number/numberToDecimalTuple";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "PI",
 		must: "get a tuple with the correct coefficient and exponent",

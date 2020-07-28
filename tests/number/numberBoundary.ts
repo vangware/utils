@@ -8,8 +8,7 @@ const inside = 5;
 const bigger = maximum + 1;
 const lower = minimum - 1;
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a number inside the boundaries",
 		must: "get the same number",

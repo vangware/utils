@@ -1,8 +1,7 @@
 import { test } from "@vangware/test";
 import { numberSubtract } from "../../src/number/numberSubtract";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "1 and 0.1",
 		must: "get 0.9",

@@ -1,10 +1,13 @@
-import { Mapper } from "./Mapper";
+import { ReadOnlyObject } from "./ReadOnlyObject";
 
 /**
- * `Mapper` that only returns `boolean` (used by filtering functions).
+ * Filter function.
  *
  * @template Item Type of the items in the source array.
+ * @template Filtered Type of filtered items.
  */
-export type Filterer<Item> = Mapper<Item, boolean>;
+export type Filterer<Item, Filtered extends Item = Item> = (
+	item: ReadOnlyObject<Item>
+) => item is ReadOnlyObject<Filtered>;
 
 export default Filterer;
