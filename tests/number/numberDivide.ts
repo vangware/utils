@@ -1,8 +1,7 @@
 import { test } from "@vangware/test";
 import { numberDivide } from "../../src/number/numberDivide";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "5 and 2",
 		must: "get 2.5",

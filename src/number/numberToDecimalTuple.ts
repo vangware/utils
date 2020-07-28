@@ -1,4 +1,5 @@
-import { DecimalTuple } from "../types/DecimalTuple";
+import { numberFloatToDecimalTuple } from "./numberFloatToDecimalTuple";
+import { numberWithExponentToDecimalTuple } from "./numberWithExponentToDecimalTuple";
 
 /**
  * Takes a `source` number and returns a DecimalTuple [coefficient, exponent].
@@ -11,38 +12,9 @@ import { DecimalTuple } from "../types/DecimalTuple";
  * @param source Source number to be parsed into a DecimalTuple.
  * @returns DecimalTuple [coefficient, exponent].
  */
-export const numberToDecimalTuple = (source: number) => {
-	const stringSource = `${source}`;
-	// TODO: Maybe move this to it's own file?
-	const parseDecimalPoint = (wholeDecimalSource: string) => {
-		const [whole, decimal = ""] = wholeDecimalSource.split(".");
-		const wholeWithoutTrailingZeros = decimal.length
-			? whole
-			: whole.replace(/(?<nonZeros>[1-9])(?<zeros>0+)$/u, "$1");
-
-		return [
-			parseInt(`${wholeWithoutTrailingZeros}${decimal}`, 10),
-			decimal.length
-				? -decimal.length
-				: whole.length - wholeWithoutTrailingZeros.length
-		] as DecimalTuple;
-	};
-	// TODO: Maybe move this to it's own file?
-	const parseExponential = (sourceWithExponential: string) => {
-		const [sourceCoefficient, sourceExponent] = sourceWithExponential.split(
-			"e"
-		);
-		const [coefficient, exponent] = parseDecimalPoint(sourceCoefficient);
-
-		return [
-			coefficient,
-			parseInt(sourceExponent, 10) + exponent
-		] as DecimalTuple;
-	};
-
-	return stringSource.includes("e")
-		? parseExponential(stringSource)
-		: parseDecimalPoint(stringSource);
-};
+export const numberToDecimalTuple = (source: number) =>
+	`${source}`.includes("e")
+		? numberWithExponentToDecimalTuple(source)
+		: numberFloatToDecimalTuple(source);
 
 export default numberToDecimalTuple;

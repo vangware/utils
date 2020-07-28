@@ -4,8 +4,7 @@ import { isPromise } from "../../src/type/isPromise";
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a BigInt",
 		received: isPromise(BigInt(1)) && isPromise(BigInt("1")),

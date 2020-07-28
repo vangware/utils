@@ -3,8 +3,7 @@ import { arrayFrom } from "../../src/array/arrayFrom";
 
 const string = "string";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a string",
 		must: "return an array of it's characters",

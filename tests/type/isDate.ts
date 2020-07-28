@@ -4,8 +4,7 @@ import { isDate } from "../../src/type/isDate";
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a BigInt",
 		received: isDate(BigInt(1)) && isDate(BigInt("1")),

@@ -4,30 +4,29 @@ import { arraySliceFrom } from "./arraySliceFrom";
 import { arraySliceTo } from "./arraySliceTo";
 
 /**
- * Takes an `item` and an `index` and makes a copy of given `source` array with
+ * Takes an `index` and an `item` and makes a copy of given `source` array with
  * that new `item` in the given `index`.
  *
  * @example
  * ```typescript
- * const insertValue = arrayInsert("value");
- * const insertValueLast = insertValue(Infinity);
- * const insertValueFirst = insertValue(0);
- * const insertValueSecond = insertValue(1);
+ * const insertLast = arrayInsert(Infinity);
+ * const insertFirst = arrayInsert(0);
+ * const insertValueLast = insertLast("value");
+ * const insertValueFirst = insertFirst("value");
  *
  * insertValueLast([0, 1, 2, 3]); // [0, 1, 2, 3, "value"]
  * insertValueFirst([0, 1, 2, 3]); // ["value", 0, 1, 2, 3]
- * insertValueSecond([0, 1, 2, 3]); // [0, "value", 1, 2, 3]
  * ```
- * @template Item Type of items to insert in source array.
- * @param item Item to be inserted.
+ * @param index Index to insert item.
  * @returns Curried function with `item` in context.
  */
-export const arrayInsert = <Item>(item: ReadOnlyObject<Item>) =>
+export const arrayInsert = (index: number) =>
 	/**
-	 * @param index Index to insert item.
-	 * @returns Curried function with `item` and `index` in context.
+	 * @template Item Type of items to insert in source array.
+	 * @param item Item to be inserted.
+	 * @returns Curried function with `index` and `item` in context.
 	 */
-	(index: number) =>
+	<Item>(item: ReadOnlyObject<Item>) =>
 		/**
 		 * @template SourceItem Type of items in source Array.
 		 * @param source Source array to insert item in.

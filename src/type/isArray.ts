@@ -1,3 +1,5 @@
+import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+
 /**
  * Check if given `entity` is an instance of `Array`.
  *
@@ -6,7 +8,7 @@
  * @param entity Entity to check.
  */
 export const isArray = <Actual = unknown, Item = unknown>(
-	entity: Actual | readonly Item[]
-): entity is readonly Item[] => Array.isArray(entity);
+	entity: Actual | ReadOnlyObjectArray<Item>
+): entity is ReadOnlyObjectArray<Item> => Array.isArray(entity);
 
 export default isArray;
