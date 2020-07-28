@@ -4,8 +4,7 @@ import { instanceOf } from "../../src/type/instanceOf";
 const object = { key: "value" };
 const array = [0, 1, 2, 3];
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "an object",
 		must: "return true for instanceOf(Object)",

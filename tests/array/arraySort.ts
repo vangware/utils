@@ -8,8 +8,7 @@ const stringSorter = (next: string) => (item: string) => (next > item ? 1 : -1);
 const numberArraySort = arraySort(numberSorter);
 const stringArraySort = arraySort(stringSorter);
 
-// eslint-disable-next-line functional/no-expression-statement
-test<readonly (number | string)[]>([
+export default test<readonly (number | string)[]>([
 	{
 		given: "an array of unsorted numbers",
 		must: "get an array with sorted numbers",

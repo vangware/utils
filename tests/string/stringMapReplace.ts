@@ -4,8 +4,7 @@ import { stringMapReplace } from "../../src/string/stringMapReplace";
 const string1 = "string1";
 const string2 = "string2";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a simple string and a replace map",
 		must: "replace the string parts based on that map",

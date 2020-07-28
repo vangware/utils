@@ -11,8 +11,7 @@ const circularObject = {
 const key = "key";
 const value = "value";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "an object with a circular reference",
 		must: "catch without throwing",

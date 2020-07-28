@@ -4,8 +4,7 @@ import { isType } from "../../src/type/isType";
 const string = "string";
 const isString = isType<string>("string");
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a string",
 		must: "return true",

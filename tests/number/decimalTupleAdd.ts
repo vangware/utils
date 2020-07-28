@@ -1,8 +1,7 @@
 import { test } from "@vangware/test";
 import { decimalTupleAdd } from "../../src/number/decimalTupleAdd";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a DecimalTuple representing 0.1 and 0.2",
 		must: "get a DecimalTuple representing 0.3",
