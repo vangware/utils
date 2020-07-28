@@ -9,6 +9,8 @@ export { arrayInsertLast } from "./arrayInsertLast";
 export { arrayMap } from "./arrayMap";
 export { arrayReduce } from "./arrayReduce";
 export { arrayReplace } from "./arrayReplace";
+export { arrayReplaceFirst } from "./arrayReplaceFirst";
+export { arrayReplaceLast } from "./arrayReplaceLast";
 export { arraySlice } from "./arraySlice";
 export { arraySliceFrom } from "./arraySliceFrom";
 export { arraySliceTo } from "./arraySliceTo";

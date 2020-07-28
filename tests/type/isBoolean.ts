@@ -4,8 +4,7 @@ import { isBoolean } from "../../src/type/isBoolean";
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "a BigInt",
 		received: isBoolean(BigInt(1)) && isBoolean(BigInt("1")),

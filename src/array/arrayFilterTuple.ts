@@ -10,22 +10,33 @@ import { arrayFilterOut } from "./arrayFilterOut";
  *
  * @example
  * ```typescript
- * const filterEvenOdd = arrayFilterTuple((item: number) => item % 2 === 0);
+ * const filterEvenOdd = arrayFilterTuple(
+ * 	(item: number): item is number => item % 2 === 0
+ * );
  *
  * filterEvenOdd([0, 1, 2, 3]); // [[0, 2], [1, 3]]
  * ```
  * @template Item Type of items in source array.
+ * @template Filtered Type of filtered items.
  * @param filterer Filterer function.
  * @returns Curried function with `filter` in context.
  */
-export const arrayFilterTuple = <Item>(filterer: Filterer<Item>) =>
+export const arrayFilterTuple = <Item, Filtered extends Item = Item>(
+	filterer: Filterer<Item, Filtered>
+) =>
 	/**
 	 * @param source Source array to filter.
 	 * @returns Tuple with shape `[matching, nonMatching]`.
 	 */
-	(source: ReadOnlyObjectArray<Item>): Tuple<ReadOnlyObjectArray<Item>> => [
-		arrayFilterIn(filterer)(source),
-		arrayFilterOut(filterer)(source)
-	];
+	(
+		source: ReadOnlyObjectArray<Item>
+	): Tuple<
+		ReadOnlyObjectArray<Filtered>,
+		ReadOnlyObjectArray<
+			Exclude<Item, Filtered> extends never
+				? Filtered
+				: Exclude<Item, Filtered>
+		>
+	> => [arrayFilterIn(filterer)(source), arrayFilterOut(filterer)(source)];
 
 export default arrayFilterTuple;

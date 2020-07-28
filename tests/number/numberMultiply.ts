@@ -1,8 +1,7 @@
 import { test } from "@vangware/test";
 import { numberMultiply } from "../../src/number/numberMultiply";
 
-// eslint-disable-next-line functional/no-expression-statement
-test([
+export default test([
 	{
 		given: "2 and 0.5",
 		must: "get 1",

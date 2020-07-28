@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 3.0.0
+
+- :arrow_up: dependency upgrade
+- :boom: change types of filter functions to use `is`.
+- :boom: change order of params for `arrayInsert` util.
+- :boom: change order of params for `arrayReplace` util.
+- :sparkles: add new `arrayReplaceFirst` util.
+- :sparkles: add new `arrayReplaceLast` util.
+- :sparkles: add new `isFalsy` util.
+- :sparkles: add new `isTruthy` util.
+- :sparkles: add new `numberFloatToDecimalTuple` util (internal usage mainly).
+- :sparkles: add new `numberWithExponentToDecimalTuple` util (internal usage mainly).
+- :sparkles: add new `stringParseDecimal` util.
+- :sparkles: add new `stringParseHexadecimal` util.
+- :sparkles: add new `stringParseNumber` util.
+- :building_construction: improve internals of `numberToDecimalTuple`.
+
+
 ## 2.1.5
 
 - :arrow_up: dependency upgrade.

@@ -1,5 +1,5 @@
-import { arraySort } from "../array/arraySort";
-import { DecimalTuple } from "../types";
+import { DecimalTuple } from "../types/DecimalTuple";
+import { Tuple } from "../types/Tuple";
 import { decimalTupleToNumber } from "./decimalTupleToNumber";
 
 /**
@@ -23,10 +23,8 @@ export const decimalTupleAdd = (addend2: DecimalTuple) =>
 		const [
 			[minCoefficient, minExponent],
 			[maxCoefficient, maxExponent]
-		] = arraySort<DecimalTuple>(
-			([, nextExponent]) => ([, currentExponent]) =>
-				nextExponent - currentExponent
-		)([addend1, addend2]);
+		]: Tuple<DecimalTuple> =
+			addend1[1] < addend2[1] ? [addend1, addend2] : [addend2, addend1];
 
 		return [
 			decimalTupleToNumber([maxCoefficient, maxExponent - minExponent]) +
