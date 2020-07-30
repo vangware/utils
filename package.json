@@ -1,7 +1,7 @@
 {
   "name": "@vangware/utils",
   "description": "Vangware curried functional utils",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -13,7 +13,7 @@
     "@types/sinon": "^9.0.4",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
-    "@vangware/base": "^1.0.11",
+    "@vangware/base": "^1.0.12",
     "@vangware/test": "^1.0.1",
     "c8": "^7.2.1",
     "coveralls": "^3.1.0",
