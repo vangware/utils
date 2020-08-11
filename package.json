@@ -1,7 +1,7 @@
 {
   "name": "@vangware/utils",
   "description": "Vangware curried functional utils",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -10,14 +10,12 @@
     "url": "https://github.com/vangware/utils/issues"
   },
   "devDependencies": {
-    "@types/sinon": "^9.0.4",
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
-    "@typescript-eslint/parser": "^3.8.0",
-    "@vangware/base": "^1.0.13",
-    "@vangware/test": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "@vangware/base": "^1.0.14",
+    "@vangware/test": "^1.0.4",
     "c8": "^7.3.0",
     "coveralls": "^3.1.0",
-    "custom-event": "^1.0.1",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.4",
@@ -27,19 +25,17 @@
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-prefer-arrow": "^1.2.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "filehound": "^1.17.4",
     "husky": "^4.2.5",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
-    "sinon": "^9.0.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.1.2",
     "ts-node": "^8.10.2",
-    "typedoc": "^0.17.8",
+    "typedoc": "^0.18.0",
     "typescript": "^3.9.7",
-    "uvu": "^0.3.1"
+    "uvu": "^0.3.3"
   },
   "files": [
     "cjs",
