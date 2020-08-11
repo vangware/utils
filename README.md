@@ -21,13 +21,13 @@ This package can be installed as a dependency or used directly.
 In JS or [deno](https://deno.land/):
 
 ```js
-import { isObject } from "http://cdn.pika.dev/@vangware/utils";
+import { isObject } from "https://cdn.skypack.dev/@vangware/utils";
 ```
 
 Or in HTML:
 
 ```html
-<script type="module" src="http://cdn.pika.dev/@vangware/utils"></script>
+<script type="module" src="https://cdn.skypack.dev/@vangware/utils"></script>
 ```
 
 ### Usage with local installation
