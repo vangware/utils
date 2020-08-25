@@ -75,6 +75,7 @@
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#entries" class="tsd-kind-icon">Entries</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#entry" class="tsd-kind-icon">Entry</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#falsy" class="tsd-kind-icon">Falsy</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#filtertuple" class="tsd-kind-icon">Filter<wbr>Tuple</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#filterer" class="tsd-kind-icon">Filterer</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#grouped" class="tsd-kind-icon">Grouped</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#grouper" class="tsd-kind-icon">Grouper</a></li>
@@ -87,7 +88,6 @@
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#sorter" class="tsd-kind-icon">Sorter</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#stringreplacemap" class="tsd-kind-icon">String<wbr>Replace<wbr>Map</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#truthy" class="tsd-kind-icon">Truthy</a></li>
-								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#tuple" class="tsd-kind-icon">Tuple</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#typeof" class="tsd-kind-icon">Type<wbr>Of</a></li>
 							</ul>
 						</section>
@@ -195,10 +195,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
 					<a name="decimaltuple" class="tsd-anchor"></a>
 					<h3>Decimal<wbr>Tuple</h3>
-					<div class="tsd-signature tsd-kind-icon">Decimal<wbr>Tuple<span class="tsd-signature-symbol">:</span> <a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Decimal<wbr>Tuple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/DecimalTuple.ts#L6">types/DecimalTuple.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/DecimalTuple.ts#L4">types/DecimalTuple.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,10 +236,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="entry" class="tsd-anchor"></a>
 					<h3>Entry</h3>
-					<div class="tsd-signature tsd-kind-icon">Entry&lt;Source&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Entry&lt;Source&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/Entry.ts#L9">types/Entry.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/Entry.ts#L8">types/Entry.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,6 +273,41 @@
 							<p>Types that evaluates to <code>false</code> in JS.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="filtertuple" class="tsd-anchor"></a>
+					<h3>Filter<wbr>Tuple</h3>
+					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Tuple&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/FilterTuple.ts#L10">types/FilterTuple.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Tuple generated by arrayFilterTuple, which contains matching and non matching
+							values.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Item</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type of the items being filtered.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type of the matching items.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="filterer" class="tsd-anchor"></a>
@@ -706,40 +741,6 @@
 					<ul class="tsd-type-parameters">
 						<li>
 							<h4>Actual</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-					<a name="tuple" class="tsd-anchor"></a>
-					<h3>Tuple</h3>
-					<div class="tsd-signature tsd-kind-icon">Tuple&lt;Item1, Item2&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Item1</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Item2</span><span class="tsd-signature-symbol">]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/Tuple.ts#L7">types/Tuple.ts:7</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>2-Tuple <code>[Item1, Item2]</code></p>
-						</div>
-					</div>
-					<h4 class="tsd-type-parameters-title">Type parameters</h4>
-					<ul class="tsd-type-parameters">
-						<li>
-							<h4>Item1</h4>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>First item type.</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<h4>Item2</h4>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Second item item type (Same as <code>Item1</code> by default).</p>
-								</div>
-							</div>
 						</li>
 					</ul>
 				</section>
@@ -1718,7 +1719,7 @@ sortNumbers([<span class="hljs-number">3</span>, <span class="hljs-number">0</sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleAdd.ts#L17">number/decimalTupleAdd.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/number/decimalTupleAdd.ts#L16">number/decimalTupleAdd.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2543,7 +2544,7 @@ addPoint1(<span class="hljs-number">0.2</span>); <span class="hljs-comment">// 0
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> between0 = numberBetween(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> between0And10 = between0(<span class="hljs-number">10</span>);
 
-between0And10(<span class="hljs-number">5</span>); <span class="hljs-comment">// 5 because is inside the between10)</span>
+between0And10(<span class="hljs-number">5</span>); <span class="hljs-comment">// 5 because is inside the range (0-10).</span>
 between0And10(<span class="hljs-number">-1</span>); <span class="hljs-comment">// 0 because it was lower than the minimum (0).</span>
 between0And10(<span class="hljs-number">11</span>); <span class="hljs-comment">// 10 because it was higher than the maximum (10).</span></code></pre>
 									</dd>
@@ -2655,7 +2656,7 @@ half(<span class="hljs-number">5</span>); <span class="hljs-comment">// 2.5</spa
 					<a name="numberfloattodecimaltuple" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>Float<wbr>ToDecimal<wbr>Tuple</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">number<wbr>Float<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">number<wbr>Float<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2686,7 +2687,7 @@ numberFloatToDecimalTuple(<span class="hljs-number">0.2</span>); <span class="hl
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></h4>
 							<p>DecimalTuple [coefficient, exponent].</p>
 						</li>
 					</ul>
@@ -2779,7 +2780,7 @@ subtractPoint1(<span class="hljs-number">1</span>); <span class="hljs-comment">/
 					<a name="numbertodecimaltuple" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>ToDecimal<wbr>Tuple</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">number<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">number<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2810,7 +2811,7 @@ numberToDecimalTuple(<span class="hljs-number">5000</span>); <span class="hljs-c
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></h4>
 							<p>DecimalTuple [coefficient, exponent].</p>
 						</li>
 					</ul>
@@ -2819,7 +2820,7 @@ numberToDecimalTuple(<span class="hljs-number">5000</span>); <span class="hljs-c
 					<a name="numberwithexponenttodecimaltuple" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> number<wbr>With<wbr>Exponent<wbr>ToDecimal<wbr>Tuple</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">number<wbr>With<wbr>Exponent<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">number<wbr>With<wbr>Exponent<wbr>ToDecimal<wbr>Tuple<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2850,7 +2851,7 @@ numberWithExponentToDecimalTuple(<span class="hljs-number">1.5e21</span>); <span
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="globals.html#tuple" class="tsd-signature-type">Tuple</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="globals.html#decimaltuple" class="tsd-signature-type">DecimalTuple</a></h4>
 							<p>DecimalTuple [coefficient, exponent].</p>
 						</li>
 					</ul>
@@ -3169,6 +3170,9 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 						<a href="globals.html#falsy" class="tsd-kind-icon">Falsy</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#filtertuple" class="tsd-kind-icon">Filter<wbr>Tuple</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#filterer" class="tsd-kind-icon">Filterer</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
@@ -3203,9 +3207,6 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#truthy" class="tsd-kind-icon">Truthy</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="globals.html#tuple" class="tsd-kind-icon">Tuple</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#typeof" class="tsd-kind-icon">Type<wbr>Of</a>

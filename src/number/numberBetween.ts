@@ -7,7 +7,7 @@
  * const between0 = numberBetween(0);
  * const between0And10 = between0(10);
  *
- * between0And10(5); // 5 because is inside the between10)
+ * between0And10(5); // 5 because is inside the range (0-10).
  * between0And10(-1); // 0 because it was lower than the minimum (0).
  * between0And10(11); // 10 because it was higher than the maximum (10).
  * ```
