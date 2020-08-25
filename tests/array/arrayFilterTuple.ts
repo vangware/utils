@@ -1,6 +1,6 @@
 import { test } from "@vangware/test";
 import { arrayFilterTuple } from "../../src/array/arrayFilterTuple";
-import { Tuple } from "../../src/types/Tuple";
+import { FilterTuple } from "../../src/types/FilterTuple";
 
 const array = [0, 1, 2, 3];
 
@@ -11,7 +11,7 @@ export default test([
 		received: arrayFilterTuple(
 			(item: number): item is number => item === 1
 		)(array),
-		wanted: [[1], [0, 2, 3]] as Tuple<readonly number[]>
+		wanted: [[1], [0, 2, 3]] as FilterTuple<number>
 	},
 	{
 		given: "an array of numbers and a filter for even numbers",
@@ -22,6 +22,6 @@ export default test([
 		wanted: [
 			[0, 2],
 			[1, 3]
-		] as Tuple<readonly number[]>
+		] as FilterTuple<number>
 	}
 ]);
