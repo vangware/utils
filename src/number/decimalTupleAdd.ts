@@ -1,5 +1,4 @@
 import { DecimalTuple } from "../types/DecimalTuple";
-import { Tuple } from "../types/Tuple";
 import { decimalTupleToNumber } from "./decimalTupleToNumber";
 
 /**
@@ -23,7 +22,7 @@ export const decimalTupleAdd = (addend2: DecimalTuple) =>
 		const [
 			[minCoefficient, minExponent],
 			[maxCoefficient, maxExponent]
-		]: Tuple<DecimalTuple> =
+		]: readonly [min: DecimalTuple, max: DecimalTuple] =
 			addend1[1] < addend2[1] ? [addend1, addend2] : [addend2, addend1];
 
 		return [

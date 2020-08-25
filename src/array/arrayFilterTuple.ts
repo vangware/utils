@@ -1,6 +1,6 @@
 import { Filterer } from "../types/Filterer";
+import { FilterTuple } from "../types/FilterTuple";
 import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
-import { Tuple } from "../types/Tuple";
 import { arrayFilterIn } from "./arrayFilterIn";
 import { arrayFilterOut } from "./arrayFilterOut";
 
@@ -28,15 +28,9 @@ export const arrayFilterTuple = <Item, Filtered extends Item = Item>(
 	 * @param source Source array to filter.
 	 * @returns Tuple with shape `[matching, nonMatching]`.
 	 */
-	(
-		source: ReadOnlyObjectArray<Item>
-	): Tuple<
-		ReadOnlyObjectArray<Filtered>,
-		ReadOnlyObjectArray<
-			Exclude<Item, Filtered> extends never
-				? Filtered
-				: Exclude<Item, Filtered>
-		>
-	> => [arrayFilterIn(filterer)(source), arrayFilterOut(filterer)(source)];
+	(source: ReadOnlyObjectArray<Item>): FilterTuple<Item, Filtered> => [
+		arrayFilterIn(filterer)(source),
+		arrayFilterOut(filterer)(source)
+	];
 
 export default arrayFilterTuple;
