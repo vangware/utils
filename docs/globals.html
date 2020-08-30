@@ -195,7 +195,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
 					<a name="decimaltuple" class="tsd-anchor"></a>
 					<h3>Decimal<wbr>Tuple</h3>
-					<div class="tsd-signature tsd-kind-icon">Decimal<wbr>Tuple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Decimal<wbr>Tuple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span>coefficient<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span>exponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/DecimalTuple.ts#L4">types/DecimalTuple.ts:4</a></li>
@@ -236,7 +236,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="entry" class="tsd-anchor"></a>
 					<h3>Entry</h3>
-					<div class="tsd-signature tsd-kind-icon">Entry&lt;Source&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Entry&lt;Source&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Source</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/Entry.ts#L8">types/Entry.ts:8</a></li>
@@ -277,7 +277,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="filtertuple" class="tsd-anchor"></a>
 					<h3>Filter<wbr>Tuple</h3>
-					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Tuple&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Tuple&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span>matching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span>nonMatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/FilterTuple.ts#L10">types/FilterTuple.ts:10</a></li>
@@ -300,7 +300,7 @@
 							</div>
 						</li>
 						<li>
-							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Type of the matching items.</p>
@@ -334,7 +334,7 @@
 							</div>
 						</li>
 						<li>
-							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Type of filtered items.</p>
@@ -550,7 +550,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="readonlyobjectarray" class="tsd-anchor"></a>
 					<h3>Read<wbr>Only<wbr>Object<wbr>Array</h3>
-					<div class="tsd-signature tsd-kind-icon">Read<wbr>Only<wbr>Object<wbr>Array&lt;Item&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Read<wbr>Only<wbr>Object<wbr>Array&lt;Item&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/vangware/utils/blob/master/src/types/ReadOnlyObjectArray.ts#L6">types/ReadOnlyObjectArray.ts:6</a></li>
@@ -625,7 +625,7 @@
 							</div>
 						</li>
 						<li>
-							<h4>Output</h4>
+							<h4>Output = <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">[]</span></h4>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Type of the output (same as the input by default).</p>
@@ -1127,7 +1127,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -1189,7 +1189,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -1248,7 +1248,7 @@ filterEvenOdd([<span class="hljs-number">0</span>, <span class="hljs-number">1</
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -1450,7 +1450,7 @@ mapDouble([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
 									</div>
 								</li>
 								<li>
-									<h4>Output</h4>
+									<h4>Output = <span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of the output (same as the input by default).</p>
 									</div>
@@ -1509,7 +1509,7 @@ sumStartingInTwo([<span class="hljs-number">1</span>, <span class="hljs-number">
 									</div>
 								</li>
 								<li>
-									<h4>Output</h4>
+									<h4>Output = <span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of the output (an array of <code>Input</code> by default).</p>
 									</div>
@@ -1899,7 +1899,7 @@ decimalTupleToNumber([<span class="hljs-number">5</span>, <span class="hljs-numb
 					<a name="functionnot" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> function<wbr>Not</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">function<wbr>Not&lt;Argument&gt;<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">function<wbr>Not&lt;Argument&gt;<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1925,7 +1925,7 @@ isNegative(<span class="hljs-number">1</span>); <span class="hljs-comment">// fa
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Argument</h4>
+									<h4>Argument = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Argument type of the given function</p>
 									</div>
@@ -1934,7 +1934,7 @@ isNegative(<span class="hljs-number">1</span>); <span class="hljs-comment">// fa
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>source: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<h5>source: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Source function which output will be negated.</p>
@@ -1943,14 +1943,14 @@ isNegative(<span class="hljs-number">1</span>); <span class="hljs-comment">// fa
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>argument: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span></h5>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>argument: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Argument</span><span class="tsd-signature-symbol">[]</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1994,7 +1994,7 @@ isInstanceOfArray({}); <span class="hljs-comment">// false</span></code></pre>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Expected</h4>
+									<h4>Expected = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Expected type.</p>
 									</div>
@@ -2037,13 +2037,13 @@ isInstanceOfArray({}); <span class="hljs-comment">// false</span></code></pre>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Actual</h4>
+									<h4>Actual = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Actual type of the given entity.</p>
 									</div>
 								</li>
 								<li>
-									<h4>Item</h4>
+									<h4>Item = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of items in given entity.</p>
 									</div>
@@ -2127,7 +2127,7 @@ isInstanceOfArray({}); <span class="hljs-comment">// false</span></code></pre>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Actual</h4>
+									<h4>Actual = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Actual type of the entity.</p>
 									</div>
@@ -2253,13 +2253,13 @@ isInstanceOfArray({}); <span class="hljs-comment">// false</span></code></pre>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>PromiseValue</h4>
+									<h4>PromiseValue = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Value of the promise.</p>
 									</div>
 								</li>
 								<li>
-									<h4>Actual</h4>
+									<h4>Actual = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Actual type of the entity.</p>
 									</div>
@@ -2351,7 +2351,7 @@ isTypeString(<span class="hljs-number">1</span>); <span class="hljs-comment">// 
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Expected</h4>
+									<h4>Expected = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Expected type.</p>
 									</div>
@@ -2404,7 +2404,7 @@ jsonParsePromise(<span class="hljs-string">&quot;{}&quot;</span>)
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Output</h4>
+									<h4>Output = <span class="tsd-signature-type">unknown</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Expected type if the parse is successful.</p>
 									</div>
@@ -2992,7 +2992,7 @@ mapDouble({ a: <span class="hljs-number">0</span>, b: <span class="hljs-number">
 									</div>
 								</li>
 								<li>
-									<h4>Output</h4>
+									<h4>Output = <span class="tsd-signature-type">Input</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of the output object.</p>
 									</div>
