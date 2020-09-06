@@ -2,7 +2,7 @@
 
 ![Build Status](https://img.shields.io/travis/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://travis-ci.org/github/vangware/utils)
 ![Coverage](https://img.shields.io/coveralls/github/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/utils)
-![License](https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/blob/master/LICENSE)
+![License](https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/blob/main/LICENSE)
 ![NPM Version](https://img.shields.io/npm/v/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/utils)
 ![Open Issues](https://img.shields.io/github/issues/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/issues)
 ![Size](https://img.shields.io/bundlephobia/minzip/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&label=size&link=https://bundlephobia.com/result?p=@vangware/utils)
@@ -50,7 +50,7 @@ Documentation can be found [HERE](https://utils.vangware.com). It is auto-genera
 
 ## Changelog
 
-Changelog can be found [HERE](https://github.com/vangware/utils/blob/master/CHANGELOG.md).
+Changelog can be found [HERE](https://github.com/vangware/utils/blob/main/CHANGELOG.md).
 
 ## Test coverage
 
