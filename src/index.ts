@@ -1,4 +1,5 @@
 export * from "./array/index";
+export * from "./equal/index";
 export * from "./function/index";
 export * from "./json/index";
 export * from "./number/index";
