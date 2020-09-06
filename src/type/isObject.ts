@@ -8,9 +8,10 @@ import { isType } from "./isType";
  * @template Actual Actual type of the entity.
  * @param entity Entity to check.
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
-export const isObject = <Actual>(entity: Actual | object): entity is object =>
-	// eslint-disable-next-line @typescript-eslint/ban-types
-	functionNot(isNull)(entity) && isType<object>("object")(entity);
+export const isObject = <Actual, Values>(
+	entity: Actual | Record<string | number | symbol, Values>
+): entity is Record<string | number | symbol, Values> =>
+	functionNot(isNull)(entity) &&
+	isType<Record<string | number | symbol, Values>>("object")(entity);
 
 export default isObject;
