@@ -1,4 +1,6 @@
 import { Filterer } from "../types/Filterer";
+import { OptionalExclude } from "../types/OptionalExclude";
+import { ReadOnlyObject } from "../types/ReadOnlyObject";
 import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
@@ -6,12 +8,8 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  *
  * @example
  * ```typescript
- * const filterOutEven = arrayFilterOut(
- * 	(item: number): item is number => item % 2 === 0
- * );
- * const filterOutEmpty = arrayFilterOut(
- * 	(item: string): item is string => item === ""
- * );
+ * const filterOutEven = arrayFilterOut((item: number) => item % 2 === 0);
+ * const filterOutEmpty = arrayFilterOut((item: string) => item === "");
  *
  * filterOutEven([0, 1, 2, 3]); // [1, 3]
  * filterOutEmpty(["hello", "", "", "world"]); // ["hello", "world"]
@@ -21,7 +19,7 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  * @param filterer Filterer out function.
  * @returns Curried function with `filter` set in context.
  */
-export const arrayFilterOut = <Item, Filtered extends Item = Item>(
+export const arrayFilterOut = <Item, Filtered extends Item>(
 	filterer: Filterer<Item, Filtered>
 ) =>
 	/**
@@ -30,13 +28,8 @@ export const arrayFilterOut = <Item, Filtered extends Item = Item>(
 	 */
 	(source: ReadOnlyObjectArray<Item>) =>
 		source.filter(
-			(
-				item
-			): item is ReadOnlyObjectArray<
-				Exclude<Item, Filtered> extends never
-					? Filtered
-					: Exclude<Item, Filtered>
-			>[number] => !filterer(item)
+			(item): item is ReadOnlyObject<OptionalExclude<Item, Filtered>> =>
+				!filterer(item)
 		);
 
 export default arrayFilterOut;
