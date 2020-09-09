@@ -10,9 +10,7 @@ import { arrayFilterOut } from "./arrayFilterOut";
  *
  * @example
  * ```typescript
- * const filterEvenOdd = arrayFilterTuple(
- * 	(item: number): item is number => item % 2 === 0
- * );
+ * const filterEvenOdd = arrayFilterTuple((item: number) => item % 2 === 0);
  *
  * filterEvenOdd([0, 1, 2, 3]); // [[0, 2], [1, 3]]
  * ```
@@ -21,12 +19,12 @@ import { arrayFilterOut } from "./arrayFilterOut";
  * @param filterer Filterer function.
  * @returns Curried function with `filter` in context.
  */
-export const arrayFilterTuple = <Item, Filtered extends Item = Item>(
+export const arrayFilterTuple = <Item, Filtered extends Item>(
 	filterer: Filterer<Item, Filtered>
 ) =>
 	/**
 	 * @param source Source array to filter.
-	 * @returns Tuple with shape `[matching, nonMatching]`.
+	 * @returns Tuple with shape `[filteredIn, filteredOut]`.
 	 */
 	(source: ReadOnlyObjectArray<Item>): FilterTuple<Item, Filtered> => [
 		arrayFilterIn(filterer)(source),
