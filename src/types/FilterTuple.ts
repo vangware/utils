@@ -1,3 +1,4 @@
+import { OptionalExclude } from "./OptionalExclude";
 import { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
 
 /**
@@ -8,12 +9,8 @@ import { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
  * @template Filtered Type of the matching items.
  */
 export type FilterTuple<Item, Filtered extends Item = Item> = readonly [
-	matching: ReadOnlyObjectArray<Filtered>,
-	nonMatching: ReadOnlyObjectArray<
-		Exclude<Item, Filtered> extends never
-			? Filtered
-			: Exclude<Item, Filtered>
-	>
+	filteredIn: ReadOnlyObjectArray<Filtered>,
+	filteredOut: ReadOnlyObjectArray<OptionalExclude<Item, Filtered>>
 ];
 
 export default FilterTuple;
