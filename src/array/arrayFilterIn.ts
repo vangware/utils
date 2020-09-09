@@ -1,4 +1,5 @@
 import { Filterer } from "../types/Filterer";
+import { ReadOnlyObject } from "../types/ReadOnlyObject";
 import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
@@ -6,12 +7,8 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  *
  * @example
  * ```typescript
- * const filterInEven = arrayFilterIn(
- * 	(item: number): item is number => item % 2 === 0
- * );
- * const filterOutEmpty = arrayFilterIn(
- * 	(item: string): item is string => item !== ""
- * );
+ * const filterInEven = arrayFilterIn((item: number) => item % 2 === 0);
+ * const filterOutEmpty = arrayFilterIn((item: string) => item !== "");
  *
  * filterInEven([0, 1, 2, 3]); // [0, 2]
  * filterOutEmpty(["hello", "", "", "world"]); // ["hello", "world"]
@@ -21,7 +18,7 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  * @param filterer Filterer function.
  * @returns Curried function with `filter` set in context.
  */
-export const arrayFilterIn = <Item, Filtered extends Item = Item>(
+export const arrayFilterIn = <Item, Filtered extends Item>(
 	filterer: Filterer<Item, Filtered>
 ) =>
 	/**
@@ -29,7 +26,7 @@ export const arrayFilterIn = <Item, Filtered extends Item = Item>(
 	 * @returns Source array with filter applied (excluding `false` returning).
 	 */
 	(source: ReadOnlyObjectArray<Item>) =>
-		source.filter((item): item is ReadOnlyObjectArray<Filtered>[number] =>
+		source.filter((item): item is ReadOnlyObject<Filtered> =>
 			filterer(item)
 		);
 

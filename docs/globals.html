@@ -79,8 +79,10 @@
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#filterer" class="tsd-kind-icon">Filterer</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#grouped" class="tsd-kind-icon">Grouped</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#grouper" class="tsd-kind-icon">Grouper</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#guardedfilterer" class="tsd-kind-icon">Guarded<wbr>Filterer</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#mapper" class="tsd-kind-icon">Mapper</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#nullish" class="tsd-kind-icon">Nullish</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#optionalexclude" class="tsd-kind-icon">Optional<wbr>Exclude</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#readonlyobject" class="tsd-kind-icon">Read<wbr>Only<wbr>Object</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#readonlyobjectarray" class="tsd-kind-icon">Read<wbr>Only<wbr>Object<wbr>Array</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#readonlyrecord" class="tsd-kind-icon">Read<wbr>Only<wbr>Record</a></li>
@@ -89,6 +91,7 @@
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#stringreplacemap" class="tsd-kind-icon">String<wbr>Replace<wbr>Map</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#truthy" class="tsd-kind-icon">Truthy</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#typeof" class="tsd-kind-icon">Type<wbr>Of</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#unguardedfilterer" class="tsd-kind-icon">Unguarded<wbr>Filterer</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
@@ -283,10 +286,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="filtertuple" class="tsd-anchor"></a>
 					<h3>Filter<wbr>Tuple</h3>
-					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Tuple&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span>matching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span>nonMatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Tuple&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span>filteredIn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span>filteredOut<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadOnlyObjectArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OptionalExclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/FilterTuple.ts#L10">types/FilterTuple.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/FilterTuple.ts#L11">types/FilterTuple.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -318,15 +321,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="filterer" class="tsd-anchor"></a>
 					<h3>Filterer</h3>
-					<div class="tsd-signature tsd-kind-icon">Filterer&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Filterer&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#guardedfilterer" class="tsd-signature-type">GuardedFilterer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="globals.html#unguardedfilterer" class="tsd-signature-type">UnguardedFilterer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/Filterer.ts#L9">types/Filterer.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/Filterer.ts#L10">types/Filterer.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Filter function.</p>
+							<p>Filterer function.</p>
 						</div>
 					</div>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -340,7 +343,7 @@
 							</div>
 						</li>
 						<li>
-							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
+							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Type of filtered items.</p>
@@ -348,27 +351,6 @@
 							</div>
 						</li>
 					</ul>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>item: <a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="grouped" class="tsd-anchor"></a>
@@ -455,6 +437,61 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="guardedfilterer" class="tsd-anchor"></a>
+					<h3>Guarded<wbr>Filterer</h3>
+					<div class="tsd-signature tsd-kind-icon">Guarded<wbr>Filterer&lt;Item, Filtered&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/GuardedFilterer.ts#L9">types/GuardedFilterer.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Guarded filterer function.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Item</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type of the items in the source array.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type of filtered items.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">item</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ReadOnlyObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Filtered</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="mapper" class="tsd-anchor"></a>
 					<h3>Mapper</h3>
 					<div class="tsd-signature tsd-kind-icon">Mapper&lt;Item, Output&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Output</span><span class="tsd-signature-symbol">&gt;</span></div>
@@ -531,6 +568,40 @@
 							<p>Union of <code>null</code> and <code>undefined</code>.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="optionalexclude" class="tsd-anchor"></a>
+					<h3>Optional<wbr>Exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">Optional<wbr>Exclude&lt;Type, Exclusion&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclusion</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Exclusion</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclusion</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/OptionalExclude.ts#L7">types/OptionalExclude.ts:7</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Excludes only if it doesn&#39;t return <code>never</code>. Fallback to <code>Exclusion</code>.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Type</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type to apply exclusion on.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h4>Exclusion</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Exclusion object.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="readonlyobject" class="tsd-anchor"></a>
@@ -763,6 +834,53 @@
 						<div class="lead">
 							<p>Possible types returned by <code>typeof</code>.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="unguardedfilterer" class="tsd-anchor"></a>
+					<h3>Unguarded<wbr>Filterer</h3>
+					<div class="tsd-signature tsd-kind-icon">Unguarded<wbr>Filterer&lt;Item&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/types/UnguardedFilterer.ts#L8">types/UnguardedFilterer.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unguarded filter function.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Item</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type of the items in the source array.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <a href="globals.html#readonlyobject" class="tsd-signature-type">ReadOnlyObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Item</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -1103,7 +1221,7 @@ stringParseHexadecimal(<span class="hljs-string">&quot;0x10&quot;</span>); <span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterIn.ts#L24">array/arrayFilterIn.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterIn.ts#L21">array/arrayFilterIn.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1112,12 +1230,8 @@ stringParseHexadecimal(<span class="hljs-string">&quot;0x10&quot;</span>); <span
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterInEven = arrayFilterIn(
-    (item: <span class="hljs-built_in">number</span>): item is <span class="hljs-built_in">number</span> =&gt; item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>
-);
-<span class="hljs-keyword">const</span> filterOutEmpty = arrayFilterIn(
-    (item: <span class="hljs-built_in">string</span>): item is <span class="hljs-built_in">string</span> =&gt; item !== <span class="hljs-string">&quot;&quot;</span>
-);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterInEven = arrayFilterIn(<span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">number</span></span>) =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>);
+<span class="hljs-keyword">const</span> filterOutEmpty = arrayFilterIn(<span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">string</span></span>) =&gt;</span> item !== <span class="hljs-string">&quot;&quot;</span>);
 
 filterInEven([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [0, 2]</span>
 filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;world&quot;</span>]); <span class="hljs-comment">// [&quot;hello&quot;, &quot;world&quot;]</span></code></pre>
@@ -1133,7 +1247,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -1165,7 +1279,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterOut.ts#L24">array/arrayFilterOut.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterOut.ts#L22">array/arrayFilterOut.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1174,12 +1288,8 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterOutEven = arrayFilterOut(
-    (item: <span class="hljs-built_in">number</span>): item is <span class="hljs-built_in">number</span> =&gt; item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>
-);
-<span class="hljs-keyword">const</span> filterOutEmpty = arrayFilterOut(
-    (item: <span class="hljs-built_in">string</span>): item is <span class="hljs-built_in">string</span> =&gt; item === <span class="hljs-string">&quot;&quot;</span>
-);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterOutEven = arrayFilterOut(<span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">number</span></span>) =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>);
+<span class="hljs-keyword">const</span> filterOutEmpty = arrayFilterOut(<span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">string</span></span>) =&gt;</span> item === <span class="hljs-string">&quot;&quot;</span>);
 
 filterOutEven([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [1, 3]</span>
 filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;world&quot;</span>]); <span class="hljs-comment">// [&quot;hello&quot;, &quot;world&quot;]</span></code></pre>
@@ -1195,7 +1305,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -1227,7 +1337,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterTuple.ts#L24">array/arrayFilterTuple.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFilterTuple.ts#L22">array/arrayFilterTuple.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1237,9 +1347,7 @@ filterOutEmpty([<span class="hljs-string">&quot;hello&quot;</span>, <span class=
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterEvenOdd = arrayFilterTuple(
-    (item: <span class="hljs-built_in">number</span>): item is <span class="hljs-built_in">number</span> =&gt; item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>
-);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> filterEvenOdd = arrayFilterTuple(<span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">number</span></span>) =&gt;</span> item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>);
 
 filterEvenOdd([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// [[0, 2], [1, 3]]</span></code></pre>
 									</dd>
@@ -1254,7 +1362,7 @@ filterEvenOdd([<span class="hljs-number">0</span>, <span class="hljs-number">1</
 									</div>
 								</li>
 								<li>
-									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span> = <span class="tsd-signature-type">Item</span></h4>
+									<h4>Filtered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of filtered items.</p>
 									</div>
@@ -3514,10 +3622,16 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 						<a href="globals.html#grouper" class="tsd-kind-icon">Grouper</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#guardedfilterer" class="tsd-kind-icon">Guarded<wbr>Filterer</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#mapper" class="tsd-kind-icon">Mapper</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#nullish" class="tsd-kind-icon">Nullish</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#optionalexclude" class="tsd-kind-icon">Optional<wbr>Exclude</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#readonlyobject" class="tsd-kind-icon">Read<wbr>Only<wbr>Object</a>
@@ -3542,6 +3656,9 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#typeof" class="tsd-kind-icon">Type<wbr>Of</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#unguardedfilterer" class="tsd-kind-icon">Unguarded<wbr>Filterer</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-external">
 						<a href="globals.html#arrayinsertfirst" class="tsd-kind-icon">array<wbr>Insert<wbr>First</a>
