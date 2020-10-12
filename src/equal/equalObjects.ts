@@ -1,4 +1,6 @@
+import { isDate } from "../type/isDate";
 import { isObject } from "../type/isObject";
+import { isRegExp } from "../type/isRegExp";
 
 /**
  * Given a `compare` function, an `expected` value and an `actual` value,
@@ -26,6 +28,10 @@ export const equalObjects = (
 		 * @param actual Actual value to compare.
 		 */
 		(actual: unknown) =>
+			!isRegExp(expected) &&
+			!isRegExp(actual) &&
+			!isDate(expected) &&
+			!isDate(actual) &&
 			isObject(expected) &&
 			isObject(actual) &&
 			Object.keys(expected).length === Object.keys(actual).length &&
