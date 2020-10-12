@@ -24,6 +24,6 @@ export const equalRegExp =
 		(actual: unknown) =>
 			isRegExp(expected) &&
 			isRegExp(actual) &&
-			expected.toString() === actual.toString();
+			`${expected}` === `${actual}`;
 
 export default equalRegExp;
