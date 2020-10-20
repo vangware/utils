@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 4.3.0
+
+- :arrow_up: dependency upgrade.
+- :heavy_minus_sign: remove uvu.
+- :wrench: update package.json scripts.
+- :truck: rename tests to .test.ts to match new `@vangware/test` implementation.
+- :sparkles: add `arrayFlat`.
+- :sparkles: add `arrayJoin`.
+- :sparkles: add `stringTest`.
+- :sparkles: add `stringMatches`.
+
 ## 4.2.6
 
 - :arrow_up: dependency upgrade.
