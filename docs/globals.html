@@ -121,9 +121,11 @@
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayfilterin" class="tsd-kind-icon">array<wbr>Filter<wbr>In</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayfilterout" class="tsd-kind-icon">array<wbr>Filter<wbr>Out</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayfiltertuple" class="tsd-kind-icon">array<wbr>Filter<wbr>Tuple</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayflat" class="tsd-kind-icon">array<wbr>Flat</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayfrom" class="tsd-kind-icon">array<wbr>From</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arraygroup" class="tsd-kind-icon">array<wbr>Group</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#arrayinsert" class="tsd-kind-icon">array<wbr>Insert</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#arrayjoin" class="tsd-kind-icon">array<wbr>Join</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arraymap" class="tsd-kind-icon">array<wbr>Map</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#arrayreduce" class="tsd-kind-icon">array<wbr>Reduce</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#arrayreplace" class="tsd-kind-icon">array<wbr>Replace</a></li>
@@ -166,8 +168,10 @@
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#objectfromentries" class="tsd-kind-icon">object<wbr>From<wbr>Entries</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#objectmap" class="tsd-kind-icon">object<wbr>Map</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringmapreplace" class="tsd-kind-icon">string<wbr>Map<wbr>Replace</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringmatches" class="tsd-kind-icon">string<wbr>Matches</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringparsenumber" class="tsd-kind-icon">string<wbr>Parse<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringreverse" class="tsd-kind-icon">string<wbr>Reverse</a></li>
+								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#stringtest" class="tsd-kind-icon">string<wbr>Test</a></li>
 							</ul>
 						</section>
 					</div>
@@ -1385,6 +1389,52 @@ filterEvenOdd([<span class="hljs-number">0</span>, <span class="hljs-number">1</
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
+					<a name="arrayflat" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Flat</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Flat&lt;Depth&gt;<span class="tsd-signature-symbol">(</span>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Depth</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayFlat.ts#L14">array/arrayFlat.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Curried wrapper for <code>Array.prototype.flat</code>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> flatten = arrayFlat(<span class="hljs-number">1</span>);
+flatten([[<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]]); <span class="hljs-comment">// [&quot;foo&quot;, &quot;bar&quot;, 1, 2]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>Depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>depth: <span class="tsd-signature-type">Depth</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The maximum recursion depth.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>depth</code> in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
 					<a name="arrayfrom" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>From</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
@@ -1530,6 +1580,46 @@ insertValueFirst([<span class="hljs-number">0</span>, <span class="hljs-number">
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="arrayjoin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Join</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Join<span class="tsd-signature-symbol">(</span>separator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/array/arrayJoin.ts#L14">array/arrayJoin.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Curried wrapper for <code>Array.prototype.join</code>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> joinWithSpaces = arrayJoin(<span class="hljs-string">&quot; &quot;</span>);
+joinWithSpaces([<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>]); <span class="hljs-comment">// &quot;foo bar&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>separator: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value separator.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>separator</code> in context.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
 					<a name="arraymap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> array<wbr>Map</h3>
@@ -1605,7 +1695,7 @@ mapDouble([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> sum = arrayReduce&lt;<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>&gt;(<span class="hljs-function"><span class="hljs-params">total</span> =&gt;</span> item =&gt; total + item);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> sum = arrayReduce&lt;<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>&gt;(<span class="hljs-function"><span class="hljs-params">total</span> =&gt;</span> <span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> total + item);
 <span class="hljs-keyword">const</span> sumStartingInZero = sum(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> sumStartingInTwo = sum(<span class="hljs-number">2</span>);
 
@@ -1791,7 +1881,7 @@ sliceFrom1([<span class="hljs-number">0</span>, <span class="hljs-number">1</spa
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> sortNumbers = arraySort(
-    <span class="hljs-function">(<span class="hljs-params">next: <span class="hljs-built_in">number</span></span>) =&gt;</span> (item: <span class="hljs-built_in">number</span>) =&gt; next - item
+    <span class="hljs-function">(<span class="hljs-params">next: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-function">(<span class="hljs-params">item: <span class="hljs-built_in">number</span></span>) =&gt;</span> next - item
 );
 
 sortNumbers([<span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]); <span class="hljs-comment">// [0, 1, 2, 3]</span></code></pre>
@@ -1842,9 +1932,9 @@ sortNumbers([<span class="hljs-number">3</span>, <span class="hljs-number">0</sp
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> addPoint1 = decimalTupleAdd([<span class="hljs-number">1</span>, <span class="hljs-number">-1</span>]);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> addPoint1 = decimalTupleAdd([<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>]);
 
-addPoint1([<span class="hljs-number">2</span>, <span class="hljs-number">-1</span>]); <span class="hljs-comment">// [3, -1] -&gt; 0.3</span></code></pre>
+addPoint1([<span class="hljs-number">2</span>, -<span class="hljs-number">1</span>]); <span class="hljs-comment">// [3, -1] -&gt; 0.3</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1922,7 +2012,7 @@ half([<span class="hljs-number">5</span>, <span class="hljs-number">0</span>]); 
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> double = decimalTupleMultiply([<span class="hljs-number">2</span>, <span class="hljs-number">0</span>]);
 
-double([<span class="hljs-number">5</span>, <span class="hljs-number">-1</span>]); <span class="hljs-comment">// [1, 0] -&gt; 1</span></code></pre>
+double([<span class="hljs-number">5</span>, -<span class="hljs-number">1</span>]); <span class="hljs-comment">// [1, 0] -&gt; 1</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1957,7 +2047,7 @@ double([<span class="hljs-number">5</span>, <span class="hljs-number">-1</span>]
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> subtractPoint1 = decimalTupleSubtract([<span class="hljs-number">1</span>, <span class="hljs-number">-1</span>]);
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> subtractPoint1 = decimalTupleSubtract([<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>]);
 
 subtractPoint1([<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]); <span class="hljs-comment">// [9, -1] -&gt; 0.9</span></code></pre>
 									</dd>
@@ -1993,7 +2083,7 @@ subtractPoint1([<span class="hljs-number">1</span>, <span class="hljs-number">0<
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript">decimalTupleToNumber([<span class="hljs-number">3141592653589793</span>, <span class="hljs-number">-15</span>]); <span class="hljs-comment">// 3.141592653589793</span>
+									<dd><pre><code class="language-typescript">decimalTupleToNumber([<span class="hljs-number">3141592653589793</span>, -<span class="hljs-number">15</span>]); <span class="hljs-comment">// 3.141592653589793</span>
 decimalTupleToNumber([<span class="hljs-number">5</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// 5000</span></code></pre>
 									</dd>
 								</dl>
@@ -2030,12 +2120,12 @@ decimalTupleToNumber([<span class="hljs-number">5</span>, <span class="hljs-numb
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> equalTo2 = equal(<span class="hljs-number">2</span>);
-<span class="hljs-keyword">const</span> equalToObject = equal({ foo: <span class="hljs-string">&quot;bar&quot;</span> });
+<span class="hljs-keyword">const</span> equalToObject = equal({ <span class="hljs-attr">foo</span>: <span class="hljs-string">&quot;bar&quot;</span> });
 
 equalTo2(<span class="hljs-number">2</span>); <span class="hljs-comment">// true</span>
 equalTo2(<span class="hljs-number">5</span>); <span class="hljs-comment">// false</span>
-equalToObject({ foo: <span class="hljs-string">&quot;bar&quot;</span> }); <span class="hljs-comment">// true</span>
-equalToObject({ bar: <span class="hljs-string">&quot;baz&quot;</span> }); <span class="hljs-comment">// false</span></code></pre>
+equalToObject({ <span class="hljs-attr">foo</span>: <span class="hljs-string">&quot;bar&quot;</span> }); <span class="hljs-comment">// true</span>
+equalToObject({ <span class="hljs-attr">bar</span>: <span class="hljs-string">&quot;baz&quot;</span> }); <span class="hljs-comment">// false</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2075,7 +2165,7 @@ equalToObject({ bar: <span class="hljs-string">&quot;baz&quot;</span> }); <span 
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> compare = <span class="hljs-function"><span class="hljs-params">actual</span> =&gt;</span> expected =&gt; actual === expected;
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> compare = <span class="hljs-function"><span class="hljs-params">actual</span> =&gt;</span> <span class="hljs-function"><span class="hljs-params">expected</span> =&gt;</span> actual === expected;
 <span class="hljs-keyword">const</span> equalToArray = equalArrays(compare)([<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>]);
 
 equalToArray([<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>]); <span class="hljs-comment">// true</span>
@@ -2197,11 +2287,11 @@ equalToDate(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Da
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> compare = <span class="hljs-function"><span class="hljs-params">actual</span> =&gt;</span> expected =&gt; actual === expected;
-<span class="hljs-keyword">const</span> equalToObject = equalObjects(compare)({ foo: <span class="hljs-string">&quot;bar&quot;</span> });
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> compare = <span class="hljs-function"><span class="hljs-params">actual</span> =&gt;</span> <span class="hljs-function"><span class="hljs-params">expected</span> =&gt;</span> actual === expected;
+<span class="hljs-keyword">const</span> equalToObject = equalObjects(compare)({ <span class="hljs-attr">foo</span>: <span class="hljs-string">&quot;bar&quot;</span> });
 
-equalToObject({ foo: <span class="hljs-string">&quot;bar&quot;</span> }); <span class="hljs-comment">// true</span>
-equalToObject({ bar: <span class="hljs-string">&quot;baz&quot;</span> }); <span class="hljs-comment">// false</span></code></pre>
+equalToObject({ <span class="hljs-attr">foo</span>: <span class="hljs-string">&quot;bar&quot;</span> }); <span class="hljs-comment">// true</span>
+equalToObject({ <span class="hljs-attr">bar</span>: <span class="hljs-string">&quot;baz&quot;</span> }); <span class="hljs-comment">// false</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2985,7 +3075,7 @@ addPoint1(<span class="hljs-number">0.2</span>); <span class="hljs-comment">// 0
 <span class="hljs-keyword">const</span> between0And10 = between0(<span class="hljs-number">10</span>);
 
 between0And10(<span class="hljs-number">5</span>); <span class="hljs-comment">// 5 because is inside the range (0-10).</span>
-between0And10(<span class="hljs-number">-1</span>); <span class="hljs-comment">// 0 because it was lower than the minimum (0).</span>
+between0And10(-<span class="hljs-number">1</span>); <span class="hljs-comment">// 0 because it was lower than the minimum (0).</span>
 between0And10(<span class="hljs-number">11</span>); <span class="hljs-comment">// 10 because it was higher than the maximum (10).</span></code></pre>
 									</dd>
 								</dl>
@@ -3029,7 +3119,7 @@ between0And10(<span class="hljs-number">11</span>); <span class="hljs-comment">/
 <span class="hljs-keyword">const</span> boundaryFrom0To10 = boundaryFrom0(<span class="hljs-number">10</span>);
 
 boundaryFrom0To10(<span class="hljs-number">5</span>); <span class="hljs-comment">// 5 because is inside the boundary (0-10)</span>
-boundaryFrom0To10(<span class="hljs-number">-1</span>); <span class="hljs-comment">// 0 because it was lower than the minimum (0).</span>
+boundaryFrom0To10(-<span class="hljs-number">1</span>); <span class="hljs-comment">// 0 because it was lower than the minimum (0).</span>
 boundaryFrom0To10(<span class="hljs-number">11</span>); <span class="hljs-comment">// 10 because it was higher than the maximum (10).</span></code></pre>
 									</dd>
 								</dl>
@@ -3315,8 +3405,8 @@ numberWithExponentToDecimalTuple(<span class="hljs-number">1.5e21</span>); <span
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript">objectEntries({ key: <span class="hljs-string">&quot;value&quot;</span> }); <span class="hljs-comment">// [[&quot;key&quot;, &quot;value&quot;]]</span>
-objectEntries({ foo: <span class="hljs-string">&quot;bar&quot;</span>, <span class="hljs-built_in">number</span>: <span class="hljs-number">1</span> }); <span class="hljs-comment">// [[&quot;foo&quot;, &quot;bar&quot;], [&quot;number&quot;, 1]]</span></code></pre>
+									<dd><pre><code class="language-typescript">objectEntries({ <span class="hljs-attr">key</span>: <span class="hljs-string">&quot;value&quot;</span> }); <span class="hljs-comment">// [[&quot;key&quot;, &quot;value&quot;]]</span>
+objectEntries({ <span class="hljs-attr">foo</span>: <span class="hljs-string">&quot;bar&quot;</span>, <span class="hljs-attr">number</span>: <span class="hljs-number">1</span> }); <span class="hljs-comment">// [[&quot;foo&quot;, &quot;bar&quot;], [&quot;number&quot;, 1]]</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3419,7 +3509,7 @@ objectFromEntries([
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> mapDouble = objectMap(<span class="hljs-function">(<span class="hljs-params">[key, value]</span>) =&gt;</span> [key, value * <span class="hljs-number">2</span>]);
 
-mapDouble({ a: <span class="hljs-number">0</span>, b: <span class="hljs-number">1</span>, c: <span class="hljs-number">2</span>, d: <span class="hljs-number">3</span> }); <span class="hljs-comment">// { a: 0, b: 2, c: 4, d: 6 }</span></code></pre>
+mapDouble({ <span class="hljs-attr">a</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">d</span>: <span class="hljs-number">3</span> }); <span class="hljs-comment">// { a: 0, b: 2, c: 4, d: 6 }</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3475,10 +3565,10 @@ mapDouble({ a: <span class="hljs-number">0</span>, b: <span class="hljs-number">
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> leet = stringMapReplace({
-    a: <span class="hljs-number">4</span>,
-    e: <span class="hljs-number">3</span>,
-    i: <span class="hljs-number">1</span>,
-    o: <span class="hljs-number">0</span>
+    <span class="hljs-attr">a</span>: <span class="hljs-number">4</span>,
+    <span class="hljs-attr">e</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-attr">i</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">o</span>: <span class="hljs-number">0</span>
 });
 
 leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hljs-comment">// &quot;h3ll0 th3r3!&quot;</span></code></pre>
@@ -3498,6 +3588,47 @@ leet(<span class="hljs-string">&quot;hello there!&quot;</span>); <span class="hl
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 							<p>Curried function with <code>replaceMap</code> in context.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="stringmatches" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> string<wbr>Matches</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>Matches<span class="tsd-signature-symbol">(</span>regularExpression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/string/stringMatches.ts#L13">string/stringMatches.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a regular expression and a string and returns a <code>RegExpMatchArray</code>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> matchesNumbers = stringTest(<span class="hljs-regexp">/\d/gu</span>);
+onlyHasNumbers(<span class="hljs-string">&quot;1234&quot;</span>); <span class="hljs-comment">// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;]</span>
+onlyHasNumbers(<span class="hljs-string">&quot;nope&quot;</span>); <span class="hljs-comment">// []</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>regularExpression: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regular expression to match with.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>regularExpression</code> in context.</p>
 						</li>
 					</ul>
 				</section>
@@ -3579,6 +3710,47 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>Reversed string.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+					<a name="stringtest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> string<wbr>Test</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>Test<span class="tsd-signature-symbol">(</span>regularExpression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vangware/utils/blob/main/src/string/stringTest.ts#L13">string/stringTest.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Takes a regular expression and a string and returns true if it matches.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> onlyHasNumbers = stringTest(<span class="hljs-regexp">/^\d+$/gu</span>);
+onlyHasNumbers(<span class="hljs-string">&quot;1234&quot;</span>); <span class="hljs-comment">// true</span>
+onlyHasNumbers(<span class="hljs-string">&quot;nope&quot;</span>); <span class="hljs-comment">// false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>regularExpression: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regular expression to test with.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>Curried function with <code>regularExpression</code> in context.</p>
 						</li>
 					</ul>
 				</section>
@@ -3718,6 +3890,9 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 						<a href="globals.html#arrayfiltertuple" class="tsd-kind-icon">array<wbr>Filter<wbr>Tuple</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#arrayflat" class="tsd-kind-icon">array<wbr>Flat</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#arrayfrom" class="tsd-kind-icon">array<wbr>From</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
@@ -3725,6 +3900,9 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 					</li>
 					<li class=" tsd-kind-function tsd-is-external">
 						<a href="globals.html#arrayinsert" class="tsd-kind-icon">array<wbr>Insert</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#arrayjoin" class="tsd-kind-icon">array<wbr>Join</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#arraymap" class="tsd-kind-icon">array<wbr>Map</a>
@@ -3853,10 +4031,16 @@ stringParseNumber(<span class="hljs-number">2</span>)(<span class="hljs-string">
 						<a href="globals.html#stringmapreplace" class="tsd-kind-icon">string<wbr>Map<wbr>Replace</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#stringmatches" class="tsd-kind-icon">string<wbr>Matches</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
 						<a href="globals.html#stringparsenumber" class="tsd-kind-icon">string<wbr>Parse<wbr>Number</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-external">
 						<a href="globals.html#stringreverse" class="tsd-kind-icon">string<wbr>Reverse</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#stringtest" class="tsd-kind-icon">string<wbr>Test</a>
 					</li>
 				</ul>
 			</nav>
