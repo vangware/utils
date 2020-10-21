@@ -13,6 +13,7 @@ export { arrayReduce } from "./arrayReduce";
 export { arrayReplace } from "./arrayReplace";
 export { arrayReplaceFirst } from "./arrayReplaceFirst";
 export { arrayReplaceLast } from "./arrayReplaceLast";
+export { arrayReverse } from "./arrayReverse";
 export { arraySlice } from "./arraySlice";
 export { arraySliceFrom } from "./arraySliceFrom";
 export { arraySliceTo } from "./arraySliceTo";

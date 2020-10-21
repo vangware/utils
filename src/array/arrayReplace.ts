@@ -43,5 +43,3 @@ export const arrayReplace = (index: number) =>
 						item,
 						...arraySliceFrom(index + 1)(source)
 				  ];
-
-export default arrayReplace;

@@ -8,5 +8,3 @@ import { Falsy } from "../types/Falsy";
  */
 export const isFalsy = <Actual>(entity: Actual | Falsy): entity is Falsy =>
 	!entity;
-
-export default isFalsy;

@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 5.0.0
+
+- :arrow_up: dependency upgrade.
+- :wrench: update travis config.
+- :wrench: update `package.json` to include `exports` field.
+- :sparkles: add `arrayReverse`.
+- :fire: removed default exports.
+
 ## 4.3.1
 
 - :arrow_up: dependency upgrade.

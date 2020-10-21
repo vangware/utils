@@ -25,5 +25,3 @@ export const numberBetween = (minimum: number) =>
 		 * @returns `true` if between `minimum` and `maximum`.
 		 */
 		(source: number) => source >= minimum && source <= maximum;
-
-export default numberBetween;

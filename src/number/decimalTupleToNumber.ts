@@ -32,5 +32,3 @@ export const decimalTupleToNumber = ([coefficient, exponent]: DecimalTuple) => {
 			: coefficientWithZeros
 	);
 };
-
-export default decimalTupleToNumber;

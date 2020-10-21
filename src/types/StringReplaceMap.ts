@@ -9,5 +9,3 @@ import { ReadOnlyRecord } from "./ReadOnlyRecord";
  * ```
  */
 export type StringReplaceMap = ReadOnlyRecord<string, string | number>;
-
-export default StringReplaceMap;

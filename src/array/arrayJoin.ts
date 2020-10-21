@@ -16,5 +16,3 @@ export const arrayJoin = (separator: string) =>
 	 * @param source Source array to be joined with `separator`.
 	 */
 	<Item>(source: ReadOnlyObjectArray<Item>) => source.join(separator);
-
-export default arrayJoin;

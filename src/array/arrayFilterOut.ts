@@ -31,5 +31,3 @@ export const arrayFilterOut = <Item, Filtered extends Item>(
 			(item): item is ReadOnlyObject<OptionalExclude<Item, Filtered>> =>
 				!filterer(item)
 		);
-
-export default arrayFilterOut;

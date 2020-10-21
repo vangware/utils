@@ -42,5 +42,3 @@ export const arrayInsert = (index: number) =>
 						item,
 						...arraySliceFrom(index)(source)
 				  ];
-
-export default arrayInsert;

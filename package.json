@@ -1,7 +1,7 @@
 {
   "name": "@vangware/utils",
   "description": "Vangware curried functional utils",
-  "version": "4.3.1",
+  "version": "5.0.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -13,8 +13,8 @@
     "@types/node": "^14.11.10",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
-    "@vangware/base": "^2.2.3",
-    "@vangware/test": "^3.0.5",
+    "@vangware/base": "^2.2.4",
+    "@vangware/test": "^4.0.0",
     "c8": "^7.3.4",
     "coveralls": "^3.1.0",
     "eslint": "^7.11.0",
@@ -37,9 +37,51 @@
     "typedoc": "^0.19.2",
     "typescript": "^4.0.3"
   },
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./cjs/index.js"
+    },
+    "./array": {
+      "import": "./esm/array/index.js",
+      "require": "./cjs/array/index.js"
+    },
+    "./equal": {
+      "import": "./esm/equal/index.js",
+      "require": "./cjs/equal/index.js"
+    },
+    "./function": {
+      "import": "./esm/function/index.js",
+      "require": "./cjs/function/index.js"
+    },
+    "./json": {
+      "import": "./esm/json/index.js",
+      "require": "./cjs/json/index.js"
+    },
+    "./number": {
+      "import": "./esm/number/index.js",
+      "require": "./cjs/number/index.js"
+    },
+    "./object": {
+      "import": "./esm/object/index.js",
+      "require": "./cjs/object/index.js"
+    },
+    "./string": {
+      "import": "./esm/string/index.js",
+      "require": "./cjs/string/index.js"
+    },
+    "./type": {
+      "import": "./esm/type/index.js",
+      "require": "./cjs/type/index.js"
+    },
+    "./types": {
+      "import": "./esm/types/index.js",
+      "require": "./cjs/types/index.js"
+    }
+  },
   "files": [
-    "cjs",
-    "esm"
+    "./cjs/",
+    "./esm/"
   ],
   "homepage": "https://utils.vangware.com",
   "husky": {

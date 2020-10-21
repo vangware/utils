@@ -13,5 +13,3 @@ import { arrayInsert } from "./arrayInsert";
  * @returns Curried function with `item` and `index` in context.
  */
 export const arrayInsertLast = arrayInsert(Infinity);
-
-export default arrayInsertLast;

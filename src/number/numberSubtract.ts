@@ -26,5 +26,3 @@ export const numberSubtract = (subtrahend: number) =>
 				numberToDecimalTuple(minuend)
 			)
 		);
-
-export default numberSubtract;

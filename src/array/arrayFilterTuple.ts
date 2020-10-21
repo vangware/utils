@@ -30,5 +30,3 @@ export const arrayFilterTuple = <Item, Filtered extends Item>(
 		arrayFilterIn(filterer)(source),
 		arrayFilterOut(filterer)(source)
 	];
-
-export default arrayFilterTuple;

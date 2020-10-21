@@ -8,5 +8,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
  * @returns Mapped value.
  */
 export type Sorter<Item> = (next: ReadOnlyObject<Item>) => Mapper<Item, number>;
-
-export default Sorter;

@@ -26,5 +26,3 @@ export const numberMultiply = (multiplier: number) =>
 				numberToDecimalTuple(multiplicand)
 			)
 		);
-
-export default numberMultiply;

@@ -14,5 +14,3 @@ import { arraySlice } from "./arraySlice";
  * @returns Curried function with `start` in context.
  */
 export const arraySliceFrom = (start: number) => arraySlice(start)(Infinity);
-
-export default arraySliceFrom;

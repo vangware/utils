@@ -25,5 +25,3 @@ export const numberFloatToDecimalTuple = (source: number) => {
 			: whole.length - wholeWithoutTrailingZeros.length
 	] as DecimalTuple;
 };
-
-export default numberFloatToDecimalTuple;

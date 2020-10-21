@@ -18,5 +18,3 @@ import { ReadOnlyObject } from "../types/ReadOnlyObject";
  */
 export const objectFromEntries = <Expected>(source: Entries<Expected>) =>
 	(Object.fromEntries(source) as unknown) as ReadOnlyObject<Expected>;
-
-export default objectFromEntries;

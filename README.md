@@ -35,7 +35,7 @@ Or in HTML:
 First:
 
 ```bash
-npm i -S @vangware/utils
+npm i @vangware/utils
 ```
 
 And then:

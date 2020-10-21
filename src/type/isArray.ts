@@ -10,5 +10,3 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 export const isArray = <Actual = unknown, Item = unknown>(
 	entity: Actual | ReadOnlyObjectArray<Item>
 ): entity is ReadOnlyObjectArray<Item> => Array.isArray(entity);
-
-export default isArray;

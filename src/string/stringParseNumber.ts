@@ -16,5 +16,3 @@ export const stringParseNumber = (radix: number) =>
 	 * @returns Parsed string.
 	 */
 	(source: string) => parseInt(source, radix);
-
-export default stringParseNumber;
