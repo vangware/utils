@@ -10,5 +10,3 @@ export type OptionalExclude<Type, Exclusion> = Exclude<
 > extends never
 	? Exclusion
 	: Exclude<Type, Exclusion>;
-
-export default OptionalExclude;

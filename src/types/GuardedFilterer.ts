@@ -9,5 +9,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
 export type GuardedFilterer<Item, Filtered extends Item> = (
 	item: ReadOnlyObject<Item>
 ) => item is ReadOnlyObject<Filtered>;
-
-export default GuardedFilterer;

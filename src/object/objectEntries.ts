@@ -14,5 +14,3 @@ import { Entries } from "../types/Entries";
  */
 export const objectEntries = <Source>(source: Source): Entries<Source> =>
 	Object.entries(source);
-
-export default objectEntries;

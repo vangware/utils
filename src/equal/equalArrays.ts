@@ -30,5 +30,3 @@ export const equalArrays = (
 			isArray(actual) &&
 			expected.length === actual.length &&
 			expected.every((item, index) => compare(item)(actual[index]));
-
-export default equalArrays;

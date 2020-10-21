@@ -12,5 +12,3 @@ export type FilterTuple<Item, Filtered extends Item = Item> = readonly [
 	filteredIn: ReadOnlyObjectArray<Filtered>,
 	filteredOut: ReadOnlyObjectArray<OptionalExclude<Item, Filtered>>
 ];
-
-export default FilterTuple;

@@ -31,5 +31,3 @@ export const decimalTupleAdd = (addend2: DecimalTuple) =>
 			minExponent
 		] as DecimalTuple;
 	};
-
-export default decimalTupleAdd;

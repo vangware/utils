@@ -5,5 +5,3 @@
 export type ReadOnlyObject<Source> = Source extends object
 	? Readonly<Source>
 	: Source;
-
-export default ReadOnlyObject;

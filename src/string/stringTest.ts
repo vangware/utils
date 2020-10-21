@@ -16,5 +16,3 @@ export const stringTest = ({ source: regExp, flags }: RegExp) =>
 	 * @returns Boolean with the test result.
 	 */
 	(source: string) => new RegExp(regExp, flags).test(source);
-
-export default stringTest;

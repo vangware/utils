@@ -14,5 +14,3 @@ import { arraySlice } from "./arraySlice";
  * @returns Curried function with `end` in context (start set to 0).
  */
 export const arraySliceTo = arraySlice(0);
-
-export default arraySliceTo;

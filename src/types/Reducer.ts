@@ -12,5 +12,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
 export type Reducer<Item, Output = readonly Item[]> = (
 	accumulator: ReadOnlyObject<Output>
 ) => Mapper<Item, Output>;
-
-export default Reducer;

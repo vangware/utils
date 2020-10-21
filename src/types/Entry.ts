@@ -1,4 +1,4 @@
-import ReadOnlyObject from "./ReadOnlyObject";
+import { ReadOnlyObject } from "./ReadOnlyObject";
 
 /**
  * Entity tuple `[key, object[key]]`.
@@ -9,5 +9,3 @@ export type Entry<Source> = readonly [
 	key: string,
 	value: ReadOnlyObject<Source[keyof Source]>
 ];
-
-export default Entry;

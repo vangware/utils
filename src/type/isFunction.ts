@@ -5,5 +5,3 @@ import { isType } from "./isType";
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const isFunction = isType<Function>("function");
-
-export default isFunction;

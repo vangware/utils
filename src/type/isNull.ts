@@ -8,5 +8,3 @@ export const isNull = <Actual = unknown>(
 	entity: Actual | null
 	// eslint-disable-next-line no-null/no-null
 ): entity is null => entity === null;
-
-export default isNull;

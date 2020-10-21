@@ -29,5 +29,3 @@ export const arrayFilterIn = <Item, Filtered extends Item>(
 		source.filter((item): item is ReadOnlyObject<Filtered> =>
 			filterer(item)
 		);
-
-export default arrayFilterIn;

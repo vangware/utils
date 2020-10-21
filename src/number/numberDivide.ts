@@ -26,5 +26,3 @@ export const numberDivide = (divisor: number) =>
 				numberToDecimalTuple(dividend)
 			)
 		);
-
-export default numberDivide;

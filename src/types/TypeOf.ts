@@ -10,5 +10,3 @@ export type TypeOf =
 	| "string"
 	| "symbol"
 	| "undefined";
-
-export default TypeOf;

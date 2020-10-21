@@ -21,5 +21,3 @@ export const arrayMap = <Item, Output = Item>(mapper: Mapper<Item, Output>) =>
 	 * @returns Copy of source with mapped values using `mapper`.
 	 */
 	(source: ReadOnlyObjectArray<Item>) => source.map(item => mapper(item));
-
-export default arrayMap;

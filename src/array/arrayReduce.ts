@@ -35,5 +35,3 @@ export const arrayReduce = <Item, Output = ReadOnlyObjectArray<Item>>(
 				(accumulator, item) => reducer(accumulator)(item),
 				initialValue
 			);
-
-export default arrayReduce;

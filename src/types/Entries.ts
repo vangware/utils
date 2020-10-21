@@ -7,5 +7,3 @@ import { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
  * @template Source Source object to which the entities belong to.
  */
 export type Entries<Source> = ReadOnlyObjectArray<Entry<Source>>;
-
-export default Entries;

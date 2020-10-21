@@ -23,5 +23,3 @@ export const arraySort = <Item>(sorter: Sorter<Item>) =>
 	 */
 	(source: ReadOnlyObjectArray<Item>) =>
 		[...source].sort((next, item) => sorter(next)(item));
-
-export default arraySort;

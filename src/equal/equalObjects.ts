@@ -38,5 +38,3 @@ export const equalObjects = (
 			Object.entries(expected).every(([key, value]) =>
 				compare(value)(actual[key])
 			);
-
-export default equalObjects;
