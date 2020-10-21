@@ -19,5 +19,3 @@ export const arrayFlat = <Depth extends number>(depth: Depth) =>
 		source.flat(depth) as ReadOnlyObjectArray<
 			FlatArray<ReadOnlyObjectArray<Item>, Depth>
 		>;
-
-export default arrayFlat;

@@ -11,5 +11,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
 export type Mapper<Item, Output> = (
 	item: ReadOnlyObject<Item>
 ) => ReadOnlyObject<Output>;
-
-export default Mapper;

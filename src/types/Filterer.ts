@@ -10,5 +10,3 @@ import { UnguardedFilterer } from "./UnguardedFilterer";
 export type Filterer<Item, Filtered extends Item> =
 	| GuardedFilterer<Item, Filtered>
 	| UnguardedFilterer<Item>;
-
-export default Filterer;

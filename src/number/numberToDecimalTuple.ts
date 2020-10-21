@@ -16,5 +16,3 @@ export const numberToDecimalTuple = (source: number) =>
 	`${source}`.includes("e")
 		? numberWithExponentToDecimalTuple(source)
 		: numberFloatToDecimalTuple(source);
-
-export default numberToDecimalTuple;

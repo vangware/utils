@@ -24,5 +24,3 @@ export const numberWithExponentToDecimalTuple = (source: number) => {
 		stringParseDecimal(sourceExponent) + exponent
 	] as DecimalTuple;
 };
-
-export default numberWithExponentToDecimalTuple;

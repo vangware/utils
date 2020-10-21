@@ -1,5 +1,5 @@
 import { Truthy } from "../types/Truthy";
-import isFalsy from "./isFalsy";
+import { isFalsy } from "./isFalsy";
 
 /**
  * Check if given `entity` is truthy (so not 0, NaN, "", false, or nullish).
@@ -9,5 +9,3 @@ import isFalsy from "./isFalsy";
  */
 export const isTruthy = <Actual>(entity: Actual): entity is Truthy<Actual> =>
 	!isFalsy(entity);
-
-export default isTruthy;

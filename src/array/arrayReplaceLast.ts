@@ -13,5 +13,3 @@ import { arrayReplace } from "./arrayReplace";
  * @returns Curried function with `item` and `index` in context.
  */
 export const arrayReplaceLast = arrayReplace(Infinity);
-
-export default arrayReplaceLast;

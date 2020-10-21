@@ -22,5 +22,3 @@ export const isType = <Expected = unknown>(type: TypeOf) =>
 	 */
 	<Actual = unknown>(entity: Actual | Expected): entity is Expected =>
 		typeof entity === type;
-
-export default isType;

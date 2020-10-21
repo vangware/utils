@@ -32,5 +32,3 @@ export const decimalTupleMultiply = ([
 			multiplierExponent + multiplicandExponent + exponent
 		] as DecimalTuple;
 	};
-
-export default decimalTupleMultiply;

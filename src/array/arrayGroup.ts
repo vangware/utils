@@ -25,5 +25,3 @@ export const arrayGroup = <Item>(grouper: Grouper<Item>) =>
 			[groupName]: arrayInsertLast(item)(groups[groupName] || [])
 		}))(`${grouper(item)}`)
 	)({});
-
-export default arrayGroup;

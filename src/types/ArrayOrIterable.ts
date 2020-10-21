@@ -8,5 +8,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
 export type ArrayOrIterable<Item> =
 	| ReadOnlyObject<ArrayLike<Item>>
 	| Iterable<Item>;
-
-export default ArrayOrIterable;

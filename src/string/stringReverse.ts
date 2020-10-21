@@ -10,5 +10,3 @@
  * @returns Reversed string.
  */
 export const stringReverse = (source: string) => [...source].reverse().join("");
-
-export default stringReverse;

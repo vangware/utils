@@ -17,5 +17,3 @@ export const functionNot = <Argument = unknown>(
 	source: (...argument: readonly Argument[]) => boolean
 	// eslint-disable-next-line functional/functional-parameters
 ) => (...argument: readonly Argument[]) => !source(...argument);
-
-export default functionNot;

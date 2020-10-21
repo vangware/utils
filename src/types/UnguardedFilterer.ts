@@ -6,5 +6,3 @@ import { ReadOnlyObject } from "./ReadOnlyObject";
  * @template Item Type of the items in the source array.
  */
 export type UnguardedFilterer<Item> = (item: ReadOnlyObject<Item>) => boolean;
-
-export default UnguardedFilterer;
