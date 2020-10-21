@@ -21,5 +21,3 @@ export const decimalTupleSubtract = ([coefficient, exponent]: DecimalTuple) =>
 	 */
 	(minuend: DecimalTuple) =>
 		decimalTupleAdd(minuend)([-coefficient, exponent]);
-
-export default decimalTupleSubtract;

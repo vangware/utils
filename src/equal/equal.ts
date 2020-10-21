@@ -32,5 +32,3 @@ export const equal = (expected: unknown) =>
 			equalArrays(equal),
 			equalObjects(equal)
 		].some(compare => compare(expected)(actual));
-
-export default equal;

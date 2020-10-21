@@ -14,5 +14,3 @@ import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  */
 export const arrayFrom = <Item>(source: ArrayOrIterable<Item>) =>
 	(Array.from(source) as unknown) as ReadOnlyObjectArray<Item>;
-
-export default arrayFrom;

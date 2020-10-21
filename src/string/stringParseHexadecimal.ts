@@ -12,5 +12,3 @@ import { stringParseNumber } from "./stringParseNumber";
  * @returns Parsed string.
  */
 export const stringParseHexadecimal = stringParseNumber(16);
-
-export default stringParseHexadecimal;

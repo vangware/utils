@@ -16,5 +16,3 @@ export const stringMatches = ({ source: regExp, flags }: RegExp) =>
 	 * @returns `RegExpMatchArray` (empty if no matches are found).
 	 */
 	(source: string) => source.match(new RegExp(regExp, flags)) || [];
-
-export default stringMatches;

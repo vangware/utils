@@ -16,5 +16,3 @@
  */
 export const jsonParsePromise = <Output = unknown>(text: string) =>
 	new Promise<Output>(resolve => resolve(JSON.parse(text)));
-
-export default jsonParsePromise;

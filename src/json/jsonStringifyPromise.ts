@@ -16,5 +16,3 @@
  */
 export const jsonStringifyPromise = <Source>(source: Source) =>
 	new Promise<string>(resolve => resolve(JSON.stringify(source)));
-
-export default jsonStringifyPromise;

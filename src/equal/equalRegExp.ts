@@ -25,5 +25,3 @@ export const equalRegExp =
 			isRegExp(expected) &&
 			isRegExp(actual) &&
 			`${expected}` === `${actual}`;
-
-export default equalRegExp;

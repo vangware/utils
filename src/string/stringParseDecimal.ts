@@ -12,5 +12,3 @@ import { stringParseNumber } from "./stringParseNumber";
  * @returns Parsed string.
  */
 export const stringParseDecimal = stringParseNumber(10);
-
-export default stringParseDecimal;

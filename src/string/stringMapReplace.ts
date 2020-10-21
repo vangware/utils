@@ -30,5 +30,3 @@ export const stringMapReplace = (replaceMap: StringReplaceMap) =>
 		arrayReduce<Entry<string>, string>(output => ([match, value]) =>
 			output.replace(new RegExp(match, "gu"), `${value}`)
 		)(source)(objectEntries(replaceMap));
-
-export default stringMapReplace;

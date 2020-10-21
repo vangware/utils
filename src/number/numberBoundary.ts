@@ -25,5 +25,3 @@ export const numberBoundary = (minimum: number) =>
 		 */
 		(source: number) =>
 			source < minimum ? minimum : source > maximum ? maximum : source;
-
-export default numberBoundary;

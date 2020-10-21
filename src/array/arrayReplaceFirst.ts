@@ -13,5 +13,3 @@ import { arrayReplace } from "./arrayReplace";
  * @returns Curried function with `item` and `index` in context.
  */
 export const arrayReplaceFirst = arrayReplace(0);
-
-export default arrayReplaceFirst;

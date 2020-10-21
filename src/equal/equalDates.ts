@@ -21,5 +21,3 @@ export const equalDates = (expected: unknown) =>
 		isDate(expected) &&
 		isDate(actual) &&
 		expected.getTime() === actual.getTime();
-
-export default equalDates;

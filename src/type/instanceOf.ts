@@ -21,5 +21,3 @@ export const instanceOf = <Expected = unknown>(constructor: Function) =>
 	 */
 	<Actual = unknown>(entity: Actual | Expected): entity is Expected =>
 		entity instanceof constructor;
-
-export default instanceOf;

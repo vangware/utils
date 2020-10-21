@@ -26,5 +26,3 @@ export const numberAdd = (addend2: number) =>
 				numberToDecimalTuple(addend1)
 			)
 		);
-
-export default numberAdd;

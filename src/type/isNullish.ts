@@ -11,5 +11,3 @@ import { isUndefined } from "./isUndefined";
 export const isNullish = <Actual>(
 	entity: Actual | Nullish
 ): entity is Nullish => isUndefined(entity) || isNull(entity);
-
-export default isNullish;

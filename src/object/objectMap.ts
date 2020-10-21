@@ -28,5 +28,3 @@ export const objectMap = <Input, Output = Input>(
 	 */
 	(source: Input) =>
 		objectFromEntries(arrayMap(mapper)(objectEntries(source)));
-
-export default objectMap;

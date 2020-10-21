@@ -11,5 +11,3 @@ export const isPromise = <PromiseValue = unknown, Actual = unknown>(
 	entity: Actual | Promise<PromiseValue>
 ): entity is Promise<PromiseValue> =>
 	instanceOf<Promise<PromiseValue>>(Promise)(entity);
-
-export default isPromise;
