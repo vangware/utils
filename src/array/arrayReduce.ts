@@ -1,6 +1,6 @@
-import { ReadOnlyObject } from "../types/ReadOnlyObject";
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
-import { Reducer } from "../types/Reducer";
+import type { ReadOnlyObject } from "../types/ReadOnlyObject";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { Reducer } from "../types/Reducer";
 
 /**
  * Takes a `reducer` and an `initialValue` and applies it to `source` array.

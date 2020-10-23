@@ -1,6 +1,6 @@
-import { Filterer } from "../types/Filterer";
-import { FilterTuple } from "../types/FilterTuple";
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { Filterer } from "../types/Filterer";
+import type { FilterTuple } from "../types/FilterTuple";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { arrayFilterIn } from "./arrayFilterIn";
 import { arrayFilterOut } from "./arrayFilterOut";
 

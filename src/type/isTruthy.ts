@@ -1,4 +1,4 @@
-import { Truthy } from "../types/Truthy";
+import type { Truthy } from "../types/Truthy";
 import { isFalsy } from "./isFalsy";
 
 /**

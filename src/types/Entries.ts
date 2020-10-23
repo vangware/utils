@@ -1,5 +1,5 @@
-import { Entry } from "./Entry";
-import { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
+import type { Entry } from "./Entry";
+import type { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
 
 /**
  * Array of Entries (`Entry` type).

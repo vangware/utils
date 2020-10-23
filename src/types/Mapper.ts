@@ -1,4 +1,4 @@
-import { ReadOnlyObject } from "./ReadOnlyObject";
+import type { ReadOnlyObject } from "./ReadOnlyObject";
 
 /**
  * Mapper function.

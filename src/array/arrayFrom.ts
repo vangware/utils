@@ -1,5 +1,5 @@
-import { ArrayOrIterable } from "../types/ArrayOrIterable";
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ArrayOrIterable } from "../types/ArrayOrIterable";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Given an `ArrayLike` or `Iterable`, return an array.

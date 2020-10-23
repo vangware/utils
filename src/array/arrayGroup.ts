@@ -1,5 +1,5 @@
-import { Grouped } from "../types/Grouped";
-import { Grouper } from "../types/Grouper";
+import type { Grouped } from "../types/Grouped";
+import type { Grouper } from "../types/Grouper";
 import { arrayInsertLast } from "./arrayInsertLast";
 import { arrayReduce } from "./arrayReduce";
 

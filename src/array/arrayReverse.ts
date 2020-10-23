@@ -1,4 +1,4 @@
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a `source` array and reverse the order of its items.

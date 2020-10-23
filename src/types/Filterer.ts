@@ -1,5 +1,5 @@
-import { GuardedFilterer } from "./GuardedFilterer";
-import { UnguardedFilterer } from "./UnguardedFilterer";
+import type { GuardedFilterer } from "./GuardedFilterer";
+import type { UnguardedFilterer } from "./UnguardedFilterer";
 
 /**
  * Filterer function.

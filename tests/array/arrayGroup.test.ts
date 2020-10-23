@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
 import { arrayGroup } from "../../src/array/arrayGroup";
-import { Grouped } from "../../src/types/Grouped";
+import type { Grouped } from "../../src/types/Grouped";
 
 const string1 = "string1";
 const string2 = "string2";

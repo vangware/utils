@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { ReadOnlyObjectArray } from "../../src";
+import type { ReadOnlyObjectArray } from "../../src";
 import { arrayFlat } from "../../src/array/arrayFlat";
 
 const arrayFlat1 = arrayFlat(1);
