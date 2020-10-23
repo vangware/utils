@@ -1,4 +1,4 @@
-import { Nullish } from "../types/Nullish";
+import type { Nullish } from "../types/Nullish";
 import { isNull } from "./isNull";
 import { isUndefined } from "./isUndefined";
 

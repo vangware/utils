@@ -1,5 +1,5 @@
-import { Mapper } from "./Mapper";
-import { ReadOnlyObject } from "./ReadOnlyObject";
+import type { Mapper } from "./Mapper";
+import type { ReadOnlyObject } from "./ReadOnlyObject";
 
 /**
  * Sorter function.

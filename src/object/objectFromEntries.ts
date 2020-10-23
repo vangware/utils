@@ -1,5 +1,5 @@
-import { Entries } from "../types/Entries";
-import { ReadOnlyObject } from "../types/ReadOnlyObject";
+import type { Entries } from "../types/Entries";
+import type { ReadOnlyObject } from "../types/ReadOnlyObject";
 
 /**
  * Takes a `source` entries array and returns an object.

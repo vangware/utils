@@ -1,4 +1,4 @@
-import { Entries } from "../types/Entries";
+import type { Entries } from "../types/Entries";
 
 /**
  * Takes a `source` object and returns an entries array.
