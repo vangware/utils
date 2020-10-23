@@ -1,7 +1,7 @@
 {
   "name": "@vangware/utils",
   "description": "Vangware curried functional utils",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -13,10 +13,9 @@
     "@types/node": "^14.11.10",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
-    "@vangware/base": "^3.0.1",
-    "@vangware/test": "^4.0.5",
+    "@vangware/base": "^3.0.2",
+    "@vangware/test": "^4.0.6",
     "c8": "^7.3.4",
-    "coveralls": "^3.1.0",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-import-resolver-node": "^0.3.4",
@@ -115,7 +114,6 @@
     "compile": "run-s compile:*",
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
-    "coverage": "c8 report --reporter=text-lcov | coveralls",
     "docs": "typedoc --gitRevision main --mode file --out ./docs ./src/index.ts",
     "lint": "eslint src/**/*.ts",
     "pre-compile": "run-s pre-compile:*",
@@ -123,7 +121,7 @@
     "pre-compile:esm": "tsc --noemit --project tsconfig.esm.json",
     "prepublishOnly": "run-s compile prettify",
     "prettify": "prettier --write './{cjs,esm}/**/*.{js,ts}'",
-    "test": "c8 --reporter=html --reporter=text-summary test"
+    "test": "c8 --reporter=html --reporter=text-summary --reporter=lcov test"
   },
   "source": "./src/index.ts",
   "types": "./esm/index.d.ts"
