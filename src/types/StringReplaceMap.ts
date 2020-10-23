@@ -1,4 +1,4 @@
-import { ReadOnlyRecord } from "./ReadOnlyRecord";
+import type { ReadOnlyRecord } from "./ReadOnlyRecord";
 
 /**
  * Object with the following shape:

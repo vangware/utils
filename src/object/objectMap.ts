@@ -1,6 +1,6 @@
 import { arrayMap } from "../array/arrayMap";
-import { Entry } from "../types/Entry";
-import { Mapper } from "../types/Mapper";
+import type { Entry } from "../types/Entry";
+import type { Mapper } from "../types/Mapper";
 import { objectEntries } from "./objectEntries";
 import { objectFromEntries } from "./objectFromEntries";
 

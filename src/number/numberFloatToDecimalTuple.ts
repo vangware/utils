@@ -1,5 +1,5 @@
 import { stringParseDecimal } from "../string/stringParseDecimal";
-import { DecimalTuple } from "../types/DecimalTuple";
+import type { DecimalTuple } from "../types/DecimalTuple";
 
 /**
  * Takes a `source` float number and returns a `DecimalTuple`.

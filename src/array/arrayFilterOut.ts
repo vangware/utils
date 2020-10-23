@@ -1,7 +1,7 @@
-import { Filterer } from "../types/Filterer";
-import { OptionalExclude } from "../types/OptionalExclude";
-import { ReadOnlyObject } from "../types/ReadOnlyObject";
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { Filterer } from "../types/Filterer";
+import type { OptionalExclude } from "../types/OptionalExclude";
+import type { ReadOnlyObject } from "../types/ReadOnlyObject";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a negative `filterer` and applies it to given `source` array.

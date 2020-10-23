@@ -1,4 +1,4 @@
-import { Falsy } from "./Falsy";
+import type { Falsy } from "./Falsy";
 
 /**
  * Generic type to check if value is not Falsy (evaluates to `true` in JS).
