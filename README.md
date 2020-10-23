@@ -1,6 +1,6 @@
 ![@vangware/utils](https://i.imgur.com/iYIJIZS.png)
 
-![Build Status](https://img.shields.io/travis/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://travis-ci.org/github/vangware/utils)
+![Build Status](https://img.shields.io/github/workflow/status/vangware/utils/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/actions)
 ![Coverage](https://img.shields.io/coveralls/github/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/utils)
 ![License](https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/blob/main/LICENSE)
 ![NPM Version](https://img.shields.io/npm/v/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/utils)
