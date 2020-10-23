@@ -1,4 +1,4 @@
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Curried wrapper for `Array.prototype.join`.

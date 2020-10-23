@@ -1,4 +1,4 @@
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a `start` and `end` and applies a `slice` to `source` array from given

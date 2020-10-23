@@ -1,5 +1,5 @@
-import { ReadOnlyObject } from "../types/ReadOnlyObject";
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ReadOnlyObject } from "../types/ReadOnlyObject";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { arraySliceFrom } from "./arraySliceFrom";
 import { arraySliceTo } from "./arraySliceTo";
 

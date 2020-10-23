@@ -1,7 +1,7 @@
 import { arrayReduce } from "../array/arrayReduce";
 import { objectEntries } from "../object/objectEntries";
-import { Entry } from "../types/Entry";
-import { StringReplaceMap } from "../types/StringReplaceMap";
+import type { Entry } from "../types/Entry";
+import type { StringReplaceMap } from "../types/StringReplaceMap";
 
 /**
  * Takes `StringReplaceMap` object and runs a replaceAll of given object keys

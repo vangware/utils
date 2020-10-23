@@ -1,4 +1,4 @@
-import { DecimalTuple } from "../types";
+import type { DecimalTuple } from "../types";
 
 /**
  * Takes a `source` DecimalTuple [coefficient, exponent] and returns a number.

@@ -1,4 +1,4 @@
-import { DecimalTuple } from "../types";
+import type { DecimalTuple } from "../types";
 import { decimalTupleMultiply } from "./decimalTupleMultiply";
 import { decimalTupleToNumber } from "./decimalTupleToNumber";
 import { numberToDecimalTuple } from "./numberToDecimalTuple";

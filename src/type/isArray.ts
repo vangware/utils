@@ -1,4 +1,4 @@
-import { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
+import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Check if given `entity` is an instance of `Array`.
