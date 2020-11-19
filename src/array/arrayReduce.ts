@@ -1,5 +1,3 @@
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import type { Reducer } from "../types/Reducer";
 
 /**
@@ -18,19 +16,19 @@ import type { Reducer } from "../types/Reducer";
  * @template Output Type of the output (an array of `Input` by default).
  * @returns Curried function with `reducer` in context.
  */
-export const arrayReduce = <Item, Output = ReadOnlyObjectArray<Item>>(
+export const arrayReduce = <Item, Output = readonly Item[]>(
 	reducer: Reducer<Item, Output>
 ) =>
 	/**
 	 * @param initialValue Initial value for reducer.
 	 * @returns Curried function with `reducer` and `initialValue` in context.
 	 */
-	(initialValue: ReadOnlyObject<Output>) =>
+	(initialValue: Output) =>
 		/**
 		 * @param source Source array to be reduced.
 		 * @returns Reduced value using `reducer` and `initialValue`.
 		 */
-		(source: ReadOnlyObjectArray<Item>): ReadOnlyObject<Output> =>
+		(source: readonly Item[]): Output =>
 			source.reduce(
 				(accumulator, item) => reducer(accumulator)(item),
 				initialValue

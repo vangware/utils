@@ -1,6 +1,5 @@
 import type { Filterer } from "../types/Filterer";
 import type { FilterTuple } from "../types/FilterTuple";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { arrayFilterIn } from "./arrayFilterIn";
 import { arrayFilterOut } from "./arrayFilterOut";
 
@@ -26,7 +25,7 @@ export const arrayFilterTuple = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Tuple with shape `[filteredIn, filteredOut]`.
 	 */
-	(source: ReadOnlyObjectArray<Item>): FilterTuple<Item, Filtered> => [
+	(source: readonly Item[]): FilterTuple<Item, Filtered> => [
 		arrayFilterIn(filterer)(source),
 		arrayFilterOut(filterer)(source)
 	];

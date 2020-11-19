@@ -1,9 +1,9 @@
 import { suite } from "@vangware/test";
 import { equalRegExp } from "../../src/equal/equalRegExp";
 
-const regExp = new RegExp(/./gu);
-const regExpCopy = new RegExp(/./gu);
-const otherRegExp = new RegExp(/other/gu);
+const regExp = /./gu;
+const regExpCopy = /./gu;
+const otherRegExp = /other/gu;
 
 export default suite([
 	{

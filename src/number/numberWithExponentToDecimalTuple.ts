@@ -14,7 +14,9 @@ import { numberFloatToDecimalTuple } from "./numberFloatToDecimalTuple";
  * @returns DecimalTuple [coefficient, exponent].
  */
 export const numberWithExponentToDecimalTuple = (source: number) => {
-	const [sourceCoefficient, sourceExponent] = `${source}`.split("e");
+	const [sourceCoefficient = "", sourceExponent = ""] = `${source}`.split(
+		"e"
+	);
 	const [coefficient, exponent] = numberFloatToDecimalTuple(
 		parseFloat(sourceCoefficient)
 	);

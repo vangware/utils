@@ -1,7 +1,5 @@
 import type { Filterer } from "../types/Filterer";
 import type { OptionalExclude } from "../types/OptionalExclude";
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a negative `filterer` and applies it to given `source` array.
@@ -26,8 +24,7 @@ export const arrayFilterOut = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `true` returning).
 	 */
-	(source: ReadOnlyObjectArray<Item>) =>
+	(source: readonly Item[]) =>
 		source.filter(
-			(item): item is ReadOnlyObject<OptionalExclude<Item, Filtered>> =>
-				!filterer(item)
+			(item): item is OptionalExclude<Item, Filtered> => !filterer(item)
 		);

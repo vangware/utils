@@ -1,3 +1,4 @@
+export { arrayEvery } from "./arrayEvery";
 export { arrayFilterIn } from "./arrayFilterIn";
 export { arrayFilterOut } from "./arrayFilterOut";
 export { arrayFilterTuple } from "./arrayFilterTuple";
@@ -17,4 +18,5 @@ export { arrayReverse } from "./arrayReverse";
 export { arraySlice } from "./arraySlice";
 export { arraySliceFrom } from "./arraySliceFrom";
 export { arraySliceTo } from "./arraySliceTo";
+export { arraySome } from "./arraySome";
 export { arraySort } from "./arraySort";
