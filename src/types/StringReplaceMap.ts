@@ -1,4 +1,4 @@
-import type { ReadOnlyRecord } from "./ReadOnlyRecord";
+import type { ImmutableRecord } from "./ImmutableRecord";
 
 /**
  * Object with the following shape:
@@ -8,4 +8,4 @@ import type { ReadOnlyRecord } from "./ReadOnlyRecord";
  * }
  * ```
  */
-export type StringReplaceMap = ReadOnlyRecord<string, string | number>;
+export type StringReplaceMap = ImmutableRecord<string | number, string>;

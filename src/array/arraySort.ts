@@ -1,4 +1,3 @@
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import type { Sorter } from "../types/Sorter";
 
 /**
@@ -21,5 +20,5 @@ export const arraySort = <Item>(sorter: Sorter<Item>) =>
 	 * @param source Source array to be sorted.
 	 * @returns Copy of source with values sorted using `sorter`.
 	 */
-	(source: ReadOnlyObjectArray<Item>) =>
+	(source: readonly Item[]) =>
 		[...source].sort((next, item) => sorter(next)(item));

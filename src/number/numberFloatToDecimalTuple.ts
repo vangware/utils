@@ -13,7 +13,7 @@ import type { DecimalTuple } from "../types/DecimalTuple";
  * @returns DecimalTuple [coefficient, exponent].
  */
 export const numberFloatToDecimalTuple = (source: number) => {
-	const [whole, decimal = ""] = `${source}`.split(".");
+	const [whole = "", decimal = ""] = `${source}`.split(".");
 	const wholeWithoutTrailingZeros = decimal.length
 		? whole
 		: whole.replace(/(?<nonZeros>[1-9])(?<zeros>0+)$/u, "$1");

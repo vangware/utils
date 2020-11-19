@@ -1,5 +1,4 @@
 import type { ArrayOrIterable } from "../types/ArrayOrIterable";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Given an `ArrayLike` or `Iterable`, return an array.
@@ -13,4 +12,4 @@ import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  * @returns Frozen array made with given `ArrayLike` or `Iterable`.
  */
 export const arrayFrom = <Item>(source: ArrayOrIterable<Item>) =>
-	(Array.from(source) as unknown) as ReadOnlyObjectArray<Item>;
+	(Array.from(source) as unknown) as readonly Item[];

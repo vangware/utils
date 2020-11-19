@@ -1,5 +1,3 @@
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { arraySliceFrom } from "./arraySliceFrom";
 import { arraySliceTo } from "./arraySliceTo";
 
@@ -26,13 +24,13 @@ export const arrayInsert = (index: number) =>
 	 * @param item Item to be inserted.
 	 * @returns Curried function with `index` and `item` in context.
 	 */
-	<Item>(item: ReadOnlyObject<Item>) =>
+	<Item>(item: Item) =>
 		/**
 		 * @template SourceItem Type of items in source Array.
 		 * @param source Source array to insert item in.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: ReadOnlyObjectArray<SourceItem>) =>
+		<SourceItem = Item>(source: readonly SourceItem[]) =>
 			index <= 0
 				? [item, ...source]
 				: index >= source.length

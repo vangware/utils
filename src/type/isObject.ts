@@ -1,4 +1,5 @@
 import { functionNot } from "../function/functionNot";
+import { ImmutableRecord } from "../types/ImmutableRecord";
 import { isNull } from "./isNull";
 import { isType } from "./isType";
 
@@ -8,8 +9,7 @@ import { isType } from "./isType";
  * @template Actual Actual type of the entity.
  * @param entity Entity to check.
  */
-export const isObject = <Actual, Values>(
-	entity: Actual | Record<string | number | symbol, Values>
-): entity is Record<string | number | symbol, Values> =>
-	functionNot(isNull)(entity) &&
-	isType<Record<string | number | symbol, Values>>("object")(entity);
+export const isObject = <Actual>(
+	entity: Actual | ImmutableRecord
+): entity is ImmutableRecord =>
+	functionNot(isNull)(entity) && isType<ImmutableRecord>("object")(entity);

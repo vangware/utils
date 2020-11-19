@@ -1,5 +1,3 @@
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 import { arraySliceFrom } from "./arraySliceFrom";
 import { arraySliceTo } from "./arraySliceTo";
 
@@ -27,13 +25,13 @@ export const arrayReplace = (index: number) =>
 	 * @param item Replacing item.
 	 * @returns Curried function with `index` and `item` in context.
 	 */
-	<Item>(item: ReadOnlyObject<Item>) =>
+	<Item>(item: Item) =>
 		/**
 		 * @template SourceItem Type of items in source Array.
 		 * @param source Source array to apply replace on.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: ReadOnlyObjectArray<SourceItem>) =>
+		<SourceItem = Item>(source: readonly SourceItem[]) =>
 			index <= 0
 				? [item, ...arraySliceFrom(1)(source)]
 				: index >= source.length

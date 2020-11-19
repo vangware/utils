@@ -1,5 +1,3 @@
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
-
 /**
  * Curried wrapper for `Array.prototype.join`.
  *
@@ -15,4 +13,4 @@ export const arrayJoin = (separator: string) =>
 	/**
 	 * @param source Source array to be joined with `separator`.
 	 */
-	<Item>(source: ReadOnlyObjectArray<Item>) => source.join(separator);
+	<Item>(source: readonly Item[]) => source.join(separator);

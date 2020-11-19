@@ -1,5 +1,4 @@
 import type { Entries } from "../types/Entries";
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
 
 /**
  * Takes a `source` entries array and returns an object.
@@ -17,4 +16,4 @@ import type { ReadOnlyObject } from "../types/ReadOnlyObject";
  * @returns Object resulting of given entries.
  */
 export const objectFromEntries = <Expected>(source: Entries<Expected>) =>
-	(Object.fromEntries(source) as unknown) as ReadOnlyObject<Expected>;
+	(Object.fromEntries(source) as unknown) as Expected;
