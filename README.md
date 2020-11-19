@@ -7,6 +7,8 @@
 ![Open Issues](https://img.shields.io/github/issues/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/issues)
 ![Size](https://img.shields.io/bundlephobia/minzip/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&label=size&link=https://bundlephobia.com/result?p=@vangware/utils)
 
+⚒️ [Vangware](https://vangware.com) curried functional utils.
+
 Collection of [curried](https://en.wikipedia.org/wiki/Currying) [functional](https://en.wikipedia.org/wiki/Functional_programming) utils made entirely in [TypeScript](http://typescriptlang.org/). Compatible with all modern JS environments:
 - 📦 [Node.js](https://nodejs.org/).
 - 🦕 [Deno](https://deno.land/).
