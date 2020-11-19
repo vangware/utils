@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.0.0
+
+- :arrow_up: dependency upgrade.
+- :fire: remove `ReadOnlyObject`.
+- :fire: remove `ReadOnlyObjectArray`.
+- :truck: rename `ReadOnlyRecord` to `ImmutableRecord`.
+- :building_construction: changed order of generics in `ImmutableRecord`.
+- :sparkles: add new `arrayEvery` util.
+- :sparkles: add new `arraySome` util.
+
 ## 5.0.8
 
 - :arrow_up: dependency upgrade.

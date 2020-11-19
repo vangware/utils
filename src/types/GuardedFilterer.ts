@@ -1,5 +1,3 @@
-import type { ReadOnlyObject } from "./ReadOnlyObject";
-
 /**
  * Guarded filterer function.
  *
@@ -7,5 +5,5 @@ import type { ReadOnlyObject } from "./ReadOnlyObject";
  * @template Filtered Type of filtered items.
  */
 export type GuardedFilterer<Item, Filtered extends Item> = (
-	item: ReadOnlyObject<Item>
-) => item is ReadOnlyObject<Filtered>;
+	item: Item
+) => item is Filtered;

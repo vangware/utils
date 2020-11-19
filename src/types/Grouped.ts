@@ -1,5 +1,4 @@
-import type { ReadOnlyObjectArray } from "./ReadOnlyObjectArray";
-import type { ReadOnlyRecord } from "./ReadOnlyRecord";
+import type { ImmutableRecord } from "./ImmutableRecord";
 
 /**
  * Object with the following shape:
@@ -11,4 +10,4 @@ import type { ReadOnlyRecord } from "./ReadOnlyRecord";
  *
  * @template Item Type of the items in the source array.
  */
-export type Grouped<Item> = ReadOnlyRecord<string, ReadOnlyObjectArray<Item>>;
+export type Grouped<Item> = ImmutableRecord<readonly Item[], string>;

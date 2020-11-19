@@ -1,6 +1,4 @@
 import type { Filterer } from "../types/Filterer";
-import type { ReadOnlyObject } from "../types/ReadOnlyObject";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a positive `filterer` and applies it to given `source` array.
@@ -25,7 +23,5 @@ export const arrayFilterIn = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `false` returning).
 	 */
-	(source: ReadOnlyObjectArray<Item>) =>
-		source.filter((item): item is ReadOnlyObject<Filtered> =>
-			filterer(item)
-		);
+	(source: readonly Item[]) =>
+		source.filter((item): item is Filtered => filterer(item));

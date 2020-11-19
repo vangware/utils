@@ -1,5 +1,4 @@
 import type { Mapper } from "../types/Mapper";
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
 
 /**
  * Takes a `mapper` function and applies it to given `source` array.
@@ -20,4 +19,4 @@ export const arrayMap = <Item, Output = Item>(mapper: Mapper<Item, Output>) =>
 	 * @param source Source array to be mapped.
 	 * @returns Copy of source with mapped values using `mapper`.
 	 */
-	(source: ReadOnlyObjectArray<Item>) => source.map(item => mapper(item));
+	(source: readonly Item[]) => source.map(item => mapper(item));

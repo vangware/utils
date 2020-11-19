@@ -1,5 +1,3 @@
-import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
-
 /**
  * Takes a `source` array and reverse the order of its items.
  *
@@ -11,5 +9,5 @@ import type { ReadOnlyObjectArray } from "../types/ReadOnlyObjectArray";
  * @param source Source array to be reversed.
  * @returns Copy of source with values in reversed order.
  */
-export const arrayReverse = <Item>(source: ReadOnlyObjectArray<Item>) =>
+export const arrayReverse = <Item>(source: readonly Item[]) =>
 	[...source].reverse();
