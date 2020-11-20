@@ -5,4 +5,4 @@ import type { Falsy } from "./Falsy";
  *
  * @template Actual Actual type (if not truthy).
  */
-export type Truthy<Actual> = Actual extends Falsy ? never : Actual;
+export type Truthy<Actual = unknown> = Actual extends Falsy ? never : Actual;

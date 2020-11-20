@@ -7,5 +7,6 @@ import { isFalsy } from "./isFalsy";
  * @template Actual Actual type of the given entity.
  * @param entity Entity to check.
  */
-export const isTruthy = <Actual>(entity: Actual): entity is Truthy<Actual> =>
-	!isFalsy(entity);
+export const isTruthy = <Actual = unknown>(
+	entity: Actual
+): entity is Truthy<Actual> => !isFalsy(entity);
