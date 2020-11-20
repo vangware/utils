@@ -8,6 +8,6 @@ import { isUndefined } from "./isUndefined";
  * @template Actual Actual type of the entity.
  * @param entity Entity to check.
  */
-export const isNullish = <Actual>(
+export const isNullish = <Actual = unknown>(
 	entity: Actual | Nullish
 ): entity is Nullish => isUndefined(entity) || isNull(entity);
