@@ -1,6 +1,8 @@
+import { objectGetProperty } from "../object/objectGetProperty";
 import { isDate } from "../type/isDate";
 import { isObject } from "../type/isObject";
 import { isRegExp } from "../type/isRegExp";
+import { equalValues } from "./equalValues";
 
 /**
  * Given a `compare` function, an `expected` value and an `actual` value,
@@ -34,7 +36,9 @@ export const equalObjects = (
 			!isDate(actual) &&
 			isObject(expected) &&
 			isObject(actual) &&
-			Object.keys(expected).length === Object.keys(actual).length &&
+			equalValues(Object.keys(expected).length)(
+				Object.keys(actual).length
+			) &&
 			Object.entries(expected).every(([key, value]) =>
-				compare(value)(actual[key])
+				compare(value)(objectGetProperty(key)(actual))
 			);

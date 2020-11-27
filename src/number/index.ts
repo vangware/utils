@@ -10,3 +10,6 @@ export { numberDivide } from "./numberDivide";
 export { numberMultiply } from "./numberMultiply";
 export { numberSubtract } from "./numberSubtract";
 export { numberToDecimalTuple } from "./numberToDecimalTuple";
+export { numberToString } from "./numberToString";
+export { numberToStringDecimal } from "./numberToStringDecimal";
+export { numberToStringHexadecimal } from "./numberToStringHexadecimal";

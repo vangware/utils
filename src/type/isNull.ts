@@ -1,3 +1,5 @@
+import { equalValues } from "../equal/equalValues";
+
 /**
  * Check if `entity` is `null`.
  *
@@ -7,4 +9,4 @@
 export const isNull = <Actual = unknown>(
 	entity: Actual | null
 	// eslint-disable-next-line no-null/no-null
-): entity is null => entity === null;
+): entity is null => equalValues(null)(entity);

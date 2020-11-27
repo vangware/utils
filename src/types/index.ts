@@ -12,6 +12,7 @@ export type { ImmutableRecord } from "./ImmutableRecord";
 export type { Mapper } from "./Mapper";
 export type { Nullish } from "./Nullish";
 export type { OptionalExclude } from "./OptionalExclude";
+export type { Radix } from "./Radix";
 export type { Reducer } from "./Reducer";
 export type { Sorter } from "./Sorter";
 export type { StringReplaceMap } from "./StringReplaceMap";
