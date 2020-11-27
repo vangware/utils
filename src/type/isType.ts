@@ -1,3 +1,4 @@
+import { equalValues } from "../equal/equalValues";
 import type { TypeOf } from "../types/TypeOf";
 
 /**
@@ -21,4 +22,4 @@ export const isType = <Expected = unknown>(type: TypeOf) =>
 	 * @returns `true` if `entity`'s `typeof` is equal to `type`.
 	 */
 	<Actual = unknown>(entity: Actual | Expected): entity is Expected =>
-		typeof entity === type;
+		equalValues(type)(typeof entity);

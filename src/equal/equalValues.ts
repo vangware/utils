@@ -15,4 +15,4 @@ export const equalValues = (expected: unknown) =>
 	/**
 	 * @param actual Actual value to compare.
 	 */
-	(actual: unknown) => expected === actual;
+	(actual: unknown) => Object.is(expected, actual);

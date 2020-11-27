@@ -1,3 +1,5 @@
+import { objectGetProperty } from "../object/objectGetProperty";
+import { objectSetProperty } from "../object/objectSetProperty";
 import type { Grouped } from "../types/Grouped";
 import type { Grouper } from "../types/Grouper";
 import { arrayInsertLast } from "./arrayInsertLast";
@@ -20,8 +22,10 @@ import { arrayReduce } from "./arrayReduce";
  */
 export const arrayGroup = <Item>(grouper: Grouper<Item>) =>
 	arrayReduce<Item, Grouped<Item>>(groups => item =>
-		(groupName => ({
-			...groups,
-			[groupName]: arrayInsertLast(item)(groups[groupName] || [])
-		}))(`${grouper(item)}`)
+		(groupName =>
+			objectSetProperty(groupName)(
+				arrayInsertLast(item)(
+					objectGetProperty(groupName)(groups) || []
+				)
+			)(groups))(`${grouper(item)}`)
 	)({});

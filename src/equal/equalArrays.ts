@@ -1,4 +1,5 @@
 import { isArray } from "../type/isArray";
+import { equalValues } from "./equalValues";
 
 /**
  * Given a `compare` function, an `expected` value and an `actual` value,
@@ -28,5 +29,5 @@ export const equalArrays = (
 		(actual: unknown) =>
 			isArray(expected) &&
 			isArray(actual) &&
-			expected.length === actual.length &&
+			equalValues(expected.length)(actual.length) &&
 			expected.every((item, index) => compare(item)(actual[index]));
