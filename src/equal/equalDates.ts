@@ -1,4 +1,5 @@
 import { isDate } from "../type/isDate";
+import { equalValues } from "./equalValues";
 
 /**
  * Given and `expected` value and an `actual` value, returns `true` if those
@@ -20,4 +21,4 @@ export const equalDates = (expected: unknown) =>
 	(actual: unknown) =>
 		isDate(expected) &&
 		isDate(actual) &&
-		expected.getTime() === actual.getTime();
+		equalValues(expected.getTime())(actual.getTime());

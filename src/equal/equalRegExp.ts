@@ -1,4 +1,5 @@
 import { isRegExp } from "../type/isRegExp";
+import { equalValues } from "./equalValues";
 
 /**
  * Given and `expected` value and an `actual` value, returns `true` if those
@@ -24,4 +25,4 @@ export const equalRegExp =
 		(actual: unknown) =>
 			isRegExp(expected) &&
 			isRegExp(actual) &&
-			`${expected}` === `${actual}`;
+			equalValues(`${expected}`)(`${actual}`);

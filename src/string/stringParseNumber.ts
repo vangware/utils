@@ -1,3 +1,5 @@
+import type { Radix } from "../types/Radix";
+
 /**
  * Wrapper of `parseInt` with mandatory radix.
  *
@@ -10,7 +12,7 @@
  * @param radix A value between 2 and 36 that specifies the base of the number.
  * @returns Curried function with `radix` in context.
  */
-export const stringParseNumber = (radix: number) =>
+export const stringParseNumber = (radix: Radix) =>
 	/**
 	 * @param source Source string to be parsed.
 	 * @returns Parsed string.

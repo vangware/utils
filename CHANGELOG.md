@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 6.1.0
+
+- :arrow_up: dependency upgrade.
+- :building_construction: update `equalValues` to use `Object.is`.
+- :building_construction: update `equal` utils to use `equalValues` when comparing values directly.
+- :building_construction: update `numberToDecimalTuple` internal code.
+- :sparkles: add new `numberToString` util.
+- :sparkles: add new `numberToStringDecimal` util.
+- :sparkles: add new `numberToStringHexadecimal` util.
+- :sparkles: add new `objectGetProperty` util.
+- :sparkles: add new `objectSetProperty` util.
+- :sparkles: add new `Radix` type.
+- :bug: fix some root imports.
+- :white_check_mark: add tests for new utils.
+
 ## 6.0.2
 
 - :arrow_up: dependency upgrade.
