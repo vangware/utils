@@ -23,7 +23,7 @@ This package can be installed as a dependency or used directly.
 In JS or [deno](https://deno.land/):
 
 ```js
-import { isObject } from "https://cdn.skypack.dev/@vangware/utils";
+import { isObject } from "https://cdn.skypack.dev/@vangware/utils?dts";
 ```
 
 Or in HTML:
