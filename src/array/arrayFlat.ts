@@ -14,4 +14,4 @@ export const arrayFlat = <Depth extends number>(depth: Depth) =>
 	/**
 	 * @param source Source array to be flatten.
 	 */
-	<Item>(source: readonly Item[]) => source.flat(depth);
+	<Item>(source: ReadonlyArray<Item>) => source.flat(depth);

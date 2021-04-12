@@ -6,5 +6,5 @@
  */
 export type ImmutableRecord<
 	Value = unknown,
-	Key extends string | number | symbol = string | number | symbol
+	Key extends number | string | symbol = number | string | symbol
 > = Readonly<Record<Key, Value>>;

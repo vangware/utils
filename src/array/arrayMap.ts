@@ -19,4 +19,4 @@ export const arrayMap = <Item, Output = Item>(mapper: Mapper<Item, Output>) =>
 	 * @param source Source array to be mapped.
 	 * @returns Copy of source with mapped values using `mapper`.
 	 */
-	(source: readonly Item[]) => source.map(item => mapper(item));
+	(source: ReadonlyArray<Item>) => source.map(item => mapper(item));

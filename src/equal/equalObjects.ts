@@ -36,7 +36,9 @@ export const equalObjects = (
 			!isDate(actual) &&
 			isObject(expected) &&
 			isObject(actual) &&
+			// eslint-disable-next-line ban/ban
 			equalValues(Object.keys(expected).length)(
+				// eslint-disable-next-line ban/ban
 				Object.keys(actual).length
 			) &&
 			Object.entries(expected).every(([key, value]) =>

@@ -1,5 +1,5 @@
 import { functionNot } from "../function/functionNot";
-import { ImmutableRecord } from "../types/ImmutableRecord";
+import type { ImmutableRecord } from "../types/ImmutableRecord";
 import { isNull } from "./isNull";
 import { isType } from "./isType";
 

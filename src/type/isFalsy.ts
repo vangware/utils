@@ -8,4 +8,4 @@ import type { Falsy } from "../types/Falsy";
  */
 export const isFalsy = <Actual = unknown>(
 	entity: Actual | Falsy
-): entity is Falsy => !entity;
+): entity is Falsy => !(entity as boolean);

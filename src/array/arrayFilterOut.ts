@@ -24,7 +24,7 @@ export const arrayFilterOut = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `true` returning).
 	 */
-	(source: readonly Item[]) =>
+	(source: ReadonlyArray<Item>) =>
 		source.filter(
 			(item): item is OptionalExclude<Item, Filtered> => !filterer(item)
 		);
