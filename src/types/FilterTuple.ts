@@ -8,6 +8,6 @@ import type { OptionalExclude } from "./OptionalExclude";
  * @template Filtered Type of the matching items.
  */
 export type FilterTuple<Item, Filtered extends Item = Item> = readonly [
-	filteredIn: readonly Filtered[],
-	filteredOut: readonly OptionalExclude<Item, Filtered>[]
+	filteredIn: ReadonlyArray<Filtered>,
+	filteredOut: ReadonlyArray<OptionalExclude<Item, Filtered>>
 ];

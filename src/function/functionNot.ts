@@ -14,6 +14,6 @@
  * @returns Source function with negated output.
  */
 export const functionNot = <Argument = unknown>(
-	source: (...argument: readonly Argument[]) => boolean
+	source: (...argument: ReadonlyArray<Argument>) => boolean
 	// eslint-disable-next-line functional/functional-parameters
-) => (...argument: readonly Argument[]) => !source(...argument);
+) => (...argument: ReadonlyArray<Argument>) => !source(...argument);

@@ -30,4 +30,5 @@ export const equalArrays = (
 			isArray(expected) &&
 			isArray(actual) &&
 			equalValues(expected.length)(actual.length) &&
+			// eslint-disable-next-line max-params
 			expected.every((item, index) => compare(item)(actual[index]));

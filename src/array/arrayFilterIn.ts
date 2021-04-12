@@ -23,5 +23,5 @@ export const arrayFilterIn = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `false` returning).
 	 */
-	(source: readonly Item[]) =>
+	(source: ReadonlyArray<Item>) =>
 		source.filter((item): item is Filtered => filterer(item));

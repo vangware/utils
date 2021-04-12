@@ -8,7 +8,7 @@ const stringSorter = (next: string) => (item: string) => (next > item ? 1 : -1);
 const numberArraySort = arraySort(numberSorter);
 const stringArraySort = arraySort(stringSorter);
 
-export default suite<readonly (number | string)[]>([
+export default suite<ReadonlyArray<number | string>>([
 	{
 		given: "an array of unsorted numbers",
 		must: "get an array with sorted numbers",

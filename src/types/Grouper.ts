@@ -5,4 +5,4 @@
  * @param item Item of the source array.
  * @returns Group name.
  */
-export type Grouper<Item> = (item: Item) => string | number;
+export type Grouper<Item> = (item: Item) => number | string;

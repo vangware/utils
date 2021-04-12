@@ -25,4 +25,4 @@ export const equalRegExp =
 		(actual: unknown) =>
 			isRegExp(expected) &&
 			isRegExp(actual) &&
-			equalValues(`${expected}`)(`${actual}`);
+			equalValues(expected.toString())(actual.toString());

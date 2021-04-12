@@ -16,7 +16,7 @@ import type { Reducer } from "../types/Reducer";
  * @template Output Type of the output (an array of `Input` by default).
  * @returns Curried function with `reducer` in context.
  */
-export const arrayReduce = <Item, Output = readonly Item[]>(
+export const arrayReduce = <Item, Output = ReadonlyArray<Item>>(
 	reducer: Reducer<Item, Output>
 ) =>
 	/**
@@ -28,8 +28,9 @@ export const arrayReduce = <Item, Output = readonly Item[]>(
 		 * @param source Source array to be reduced.
 		 * @returns Reduced value using `reducer` and `initialValue`.
 		 */
-		(source: readonly Item[]): Output =>
+		(source: ReadonlyArray<Item>): Output =>
 			source.reduce(
+				// eslint-disable-next-line max-params
 				(accumulator, item) => reducer(accumulator)(item),
 				initialValue
 			);

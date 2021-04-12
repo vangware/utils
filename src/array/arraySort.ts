@@ -20,5 +20,6 @@ export const arraySort = <Item>(sorter: Sorter<Item>) =>
 	 * @param source Source array to be sorted.
 	 * @returns Copy of source with values sorted using `sorter`.
 	 */
-	(source: readonly Item[]) =>
+	(source: ReadonlyArray<Item>) =>
+		// eslint-disable-next-line max-params
 		[...source].sort((next, item) => sorter(next)(item));
