@@ -23,4 +23,4 @@ export const arraySlice = (start: number) =>
 		 * @param source Source array to slice.
 		 * @returns Sliced copy of `source` array using `start` and `end`.
 		 */
-		<Item>(source: readonly Item[]) => source.slice(start, end);
+		<Item>(source: ReadonlyArray<Item>) => source.slice(start, end);

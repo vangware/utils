@@ -10,4 +10,4 @@ import type { ImmutableRecord } from "./ImmutableRecord";
  *
  * @template Item Type of the items in the source array.
  */
-export type Grouped<Item> = ImmutableRecord<readonly Item[], string>;
+export type Grouped<Item> = ImmutableRecord<ReadonlyArray<Item>, string>;

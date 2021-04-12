@@ -31,7 +31,7 @@ export const arrayReplace = (index: number) =>
 		 * @param source Source array to apply replace on.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: readonly SourceItem[]) =>
+		<SourceItem = Item>(source: ReadonlyArray<SourceItem>) =>
 			index <= 0
 				? [item, ...arraySliceFrom(1)(source)]
 				: index >= source.length

@@ -28,5 +28,5 @@ export const stringMapReplace = (replaceMap: StringReplaceMap) =>
 	 */
 	(source: string) =>
 		arrayReduce<Entry<string>, string>(output => ([match, value]) =>
-			output.replace(new RegExp(match, "gu"), `${value}`)
+			output.replace(new RegExp(match, "gu"), `${value as string}`)
 		)(source)(objectEntries(replaceMap));

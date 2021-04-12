@@ -30,7 +30,7 @@ export const arrayInsert = (index: number) =>
 		 * @param source Source array to insert item in.
 		 * @returns Copy of array with added item in it.
 		 */
-		<SourceItem = Item>(source: readonly SourceItem[]) =>
+		<SourceItem = Item>(source: ReadonlyArray<SourceItem>) =>
 			index <= 0
 				? [item, ...source]
 				: index >= source.length

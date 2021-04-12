@@ -21,5 +21,5 @@ export const arraySome = <Item, Predicated extends Item>(
 	/**
 	 * @param source Source array to be tested.
 	 */
-	(source: readonly Item[]): source is readonly (Item | Predicated)[] =>
+	(source: ReadonlyArray<Item>): source is ReadonlyArray<Item | Predicated> =>
 		source.some(predicate);
