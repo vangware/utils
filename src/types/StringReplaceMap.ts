@@ -8,4 +8,4 @@ import type { ImmutableRecord } from "./ImmutableRecord";
  * }
  * ```
  */
-export type StringReplaceMap = ImmutableRecord<string | number, string>;
+export type StringReplaceMap = ImmutableRecord<number | string, string>;

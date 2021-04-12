@@ -12,8 +12,9 @@
  * @param constructor Constructor used to check.
  * @returns Curried function with `constructor` in context.
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
-export const instanceOf = <Expected = unknown>(constructor: Function) =>
+export const instanceOf = <Expected = unknown>(
+	constructor: new (..._arguments: ReadonlyArray<never>) => unknown
+) =>
 	/**
 	 * @template Actual Actual type of the entity.
 	 * @param entity Entity to check.

@@ -6,5 +6,5 @@
  * @param entity Entity to check.
  */
 export const isArray = <Actual = unknown, Item = unknown>(
-	entity: Actual | readonly Item[]
-): entity is readonly Item[] => Array.isArray(entity);
+	entity: Actual | ReadonlyArray<Item>
+): entity is ReadonlyArray<Item> => Array.isArray(entity);

@@ -10,7 +10,7 @@
  * @param regularExpression Regular expression to test with.
  * @returns Curried function with `regularExpression` in context.
  */
-export const stringTest = ({ source: regExp, flags }: RegExp) =>
+export const stringTest = ({ source: regExp, flags }: Readonly<RegExp>) =>
 	/**
 	 * @param source Source string to test.
 	 * @returns Boolean with the test result.

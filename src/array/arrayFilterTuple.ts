@@ -25,7 +25,7 @@ export const arrayFilterTuple = <Item, Filtered extends Item>(
 	 * @param source Source array to filter.
 	 * @returns Tuple with shape `[filteredIn, filteredOut]`.
 	 */
-	(source: readonly Item[]): FilterTuple<Item, Filtered> => [
+	(source: ReadonlyArray<Item>): FilterTuple<Item, Filtered> => [
 		arrayFilterIn(filterer)(source),
 		arrayFilterOut(filterer)(source)
 	];

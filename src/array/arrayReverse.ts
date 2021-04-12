@@ -9,5 +9,5 @@
  * @param source Source array to be reversed.
  * @returns Copy of source with values in reversed order.
  */
-export const arrayReverse = <Item>(source: readonly Item[]) =>
+export const arrayReverse = <Item>(source: ReadonlyArray<Item>) =>
 	[...source].reverse();
