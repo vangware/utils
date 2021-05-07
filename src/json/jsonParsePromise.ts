@@ -15,4 +15,4 @@
  * @returns Promise which resolves to an object of type `Output`.
  */
 export const jsonParsePromise = <Output = unknown>(text: string) =>
-	new Promise<Output>(resolve => resolve(JSON.parse(text)));
+	new Promise<Output>(resolve => resolve(JSON.parse(text) as Output));
