@@ -20,7 +20,8 @@ import { equalValues } from "./equalValues";
  * ```
  * @param expected Expected value to compare.
  */
-export const equal = (expected: unknown) =>
+export const equal =
+	(expected: unknown) =>
 	/**
 	 * @param actual Actual value to compare.
 	 */

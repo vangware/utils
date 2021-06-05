@@ -14,14 +14,16 @@
  * @param minimum Minimum boundary.
  * @returns Curried function with `minimum` set in context.
  */
-export const numberBetween = (minimum: number) =>
+export const numberBetween =
+	(minimum: number) =>
 	/**
 	 * @param maximum Maximum boundary.
 	 * @returns Curried function with `minimum` and `maximum` set in context.
 	 */
 	(maximum: number) =>
-		/**
-		 * @param source Number to check boundaries on.
-		 * @returns `true` if between `minimum` and `maximum`.
-		 */
-		(source: number) => source >= minimum && source <= maximum;
+	/**
+	 * @param source Number to check boundaries on.
+	 * @returns `true` if between `minimum` and `maximum`.
+	 */
+	(source: number) =>
+		source >= minimum && source <= maximum;

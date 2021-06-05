@@ -21,12 +21,18 @@ import type { StringReplaceMap } from "../types/StringReplaceMap";
  * @param replaceMap Replace map for the string.
  * @returns Curried function with `replaceMap` in context.
  */
-export const stringMapReplace = (replaceMap: StringReplaceMap) =>
+export const stringMapReplace =
+	(replaceMap: StringReplaceMap) =>
 	/**
 	 * @param source Source string.
 	 * @returns New string with replacements done to `source`.
 	 */
 	(source: string) =>
-		arrayReduce<Entry<string>, string>(output => ([match, value]) =>
-			output.replace(new RegExp(match, "gu"), `${value as string}`)
+		arrayReduce<Entry<string>, string>(
+			output =>
+				([match, value]) =>
+					output.replace(
+						new RegExp(match, "gu"),
+						`${value as string}`
+					)
 		)(source)(objectEntries(replaceMap));

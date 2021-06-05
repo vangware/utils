@@ -11,8 +11,10 @@
  * ```
  * @param expected Expected value to compare.
  */
-export const equalValues = (expected: unknown) =>
+export const equalValues =
+	(expected: unknown) =>
 	/**
 	 * @param actual Actual value to compare.
 	 */
-	(actual: unknown) => Object.is(expected, actual);
+	(actual: unknown) =>
+		Object.is(expected, actual);

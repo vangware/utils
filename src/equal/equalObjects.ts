@@ -19,28 +19,27 @@ import { equalValues } from "./equalValues";
  * ```
  * @param compare Comparison function.
  */
-export const equalObjects = (
-	compare: (expected: unknown) => (actual: unknown) => boolean
-) =>
+export const equalObjects =
+	(compare: (expected: unknown) => (actual: unknown) => boolean) =>
 	/**
 	 * @param expected Expected value to compare.
 	 */
 	(expected: unknown) =>
-		/**
-		 * @param actual Actual value to compare.
-		 */
-		(actual: unknown) =>
-			!isRegExp(expected) &&
-			!isRegExp(actual) &&
-			!isDate(expected) &&
-			!isDate(actual) &&
-			isObject(expected) &&
-			isObject(actual) &&
+	/**
+	 * @param actual Actual value to compare.
+	 */
+	(actual: unknown) =>
+		!isRegExp(expected) &&
+		!isRegExp(actual) &&
+		!isDate(expected) &&
+		!isDate(actual) &&
+		isObject(expected) &&
+		isObject(actual) &&
+		// eslint-disable-next-line ban/ban
+		equalValues(Object.keys(expected).length)(
 			// eslint-disable-next-line ban/ban
-			equalValues(Object.keys(expected).length)(
-				// eslint-disable-next-line ban/ban
-				Object.keys(actual).length
-			) &&
-			Object.entries(expected).every(([key, value]) =>
-				compare(value)(objectGetProperty(key)(actual))
-			);
+			Object.keys(actual).length
+		) &&
+		Object.entries(expected).every(([key, value]) =>
+			compare(value)(objectGetProperty(key)(actual))
+		);

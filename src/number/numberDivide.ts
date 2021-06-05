@@ -15,7 +15,8 @@ import { numberToDecimalTuple } from "./numberToDecimalTuple";
  * @param divisor Divisor of the division.
  * @returns Curried function with `divisor` set in context.
  */
-export const numberDivide = (divisor: number) =>
+export const numberDivide =
+	(divisor: number) =>
 	/**
 	 * @param dividend Dividend of the division.
 	 * @returns The result of `dividend` / `divisor`.

@@ -15,7 +15,8 @@ import { numberToDecimalTuple } from "./numberToDecimalTuple";
  * @param subtrahend Subtrahend of the subtraction.
  * @returns Curried function with `subtrahend` set in context.
  */
-export const numberSubtract = (subtrahend: number) =>
+export const numberSubtract =
+	(subtrahend: number) =>
 	/**
 	 * @param minuend Minuend of the subtraction.
 	 * @returnsThe result of `minuend` - `subtrahend`.

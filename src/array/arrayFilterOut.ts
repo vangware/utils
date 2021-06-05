@@ -17,9 +17,8 @@ import type { OptionalExclude } from "../types/OptionalExclude";
  * @param filterer Filterer out function.
  * @returns Curried function with `filter` set in context.
  */
-export const arrayFilterOut = <Item, Filtered extends Item>(
-	filterer: Filterer<Item, Filtered>
-) =>
+export const arrayFilterOut =
+	<Item, Filtered extends Item>(filterer: Filterer<Item, Filtered>) =>
 	/**
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `true` returning).

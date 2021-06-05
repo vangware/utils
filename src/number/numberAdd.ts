@@ -15,7 +15,8 @@ import { numberToDecimalTuple } from "./numberToDecimalTuple";
  * @param addend2 Second addend of the addition.
  * @returns Curried function with `addend1` set in context.
  */
-export const numberAdd = (addend2: number) =>
+export const numberAdd =
+	(addend2: number) =>
 	/**
 	 * @param addend1 First addend of the addition.
 	 * @returns The result of `addend1` + `addend2`.
