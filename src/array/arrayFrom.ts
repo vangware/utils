@@ -12,4 +12,4 @@ import type { ArrayOrIterable } from "../types/ArrayOrIterable";
  * @returns Frozen array made with given `ArrayLike` or `Iterable`.
  */
 export const arrayFrom = <Item>(source: ArrayOrIterable<Item>) =>
-	(Array.from(source) as unknown) as ReadonlyArray<Item>;
+	Array.from(source) as unknown as ReadonlyArray<Item>;

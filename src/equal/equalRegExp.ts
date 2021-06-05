@@ -18,7 +18,9 @@ export const equalRegExp =
 	/**
 	 * @param expected Expected value to compare.
 	 */
-	(expected: unknown) =>
+
+
+		(expected: unknown) =>
 		/**
 		 * @param actual Actual value to compare.
 		 */

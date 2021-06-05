@@ -11,9 +11,9 @@
  * @param property Name of property.
  * @returns Curried function with `property` in context.
  */
-export const objectSetProperty = <Property extends number | string | symbol>(
-	property: Property
-) => <Value>(value: Value) =>
+export const objectSetProperty =
+	<Property extends number | string | symbol>(property: Property) =>
+	<Value>(value: Value) =>
 	/**
 	 * @template Source Type of the source object (must contain property).
 	 * @param source Source object to get the property from.

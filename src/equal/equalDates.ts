@@ -14,7 +14,8 @@ import { equalValues } from "./equalValues";
  * ```
  * @param expected Expected value to compare.
  */
-export const equalDates = (expected: unknown) =>
+export const equalDates =
+	(expected: unknown) =>
 	/**
 	 * @param actual Actual value to compare.
 	 */

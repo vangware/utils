@@ -16,4 +16,4 @@ import type { Entries } from "../types/Entries";
  * @returns Object resulting of given entries.
  */
 export const objectFromEntries = <Expected>(source: Entries<Expected>) =>
-	(Object.fromEntries(source) as unknown) as Expected;
+	Object.fromEntries(source) as unknown as Expected;

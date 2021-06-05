@@ -19,9 +19,8 @@ import { objectFromEntries } from "./objectFromEntries";
  * @param mapper Mapper function.
  * @returns Curried function with `mapper` in context.
  */
-export const objectMap = <Input, Output = Input>(
-	mapper: Mapper<Entry<Input>, Entry<Output>>
-) =>
+export const objectMap =
+	<Input, Output = Input>(mapper: Mapper<Entry<Input>, Entry<Output>>) =>
 	/**
 	 * @param source Source object to be mapped.
 	 * @returns Copy of source with mapped values using `mapper`.

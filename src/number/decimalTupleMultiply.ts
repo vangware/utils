@@ -14,10 +14,8 @@ import { numberToDecimalTuple } from "./numberToDecimalTuple";
  * @param multiplier Multiplier `DecimalTuple` of the multiplication.
  * @returns Curried function with `multiplier` set in context.
  */
-export const decimalTupleMultiply = ([
-	multiplierCoefficient,
-	multiplierExponent
-]: DecimalTuple) =>
+export const decimalTupleMultiply =
+	([multiplierCoefficient, multiplierExponent]: DecimalTuple) =>
 	/**
 	 * @param multiplicand Multiplicand `DecimalTuple` of the multiplication.
 	 * @returns DecimalTuple with the result of `multiplicand` * `multiplier`.

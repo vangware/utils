@@ -15,9 +15,8 @@ import type { Filterer } from "../types/Filterer";
  * @param predicate Function predicate to test until some item of the type.
  * @returns Curried function with `predicate` in context.
  */
-export const arraySome = <Item, Predicated extends Item>(
-	predicate: Filterer<Item, Predicated>
-) =>
+export const arraySome =
+	<Item, Predicated extends Item>(predicate: Filterer<Item, Predicated>) =>
 	/**
 	 * @param source Source array to be tested.
 	 */

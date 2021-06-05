@@ -18,14 +18,11 @@ import { arrayFilterOut } from "./arrayFilterOut";
  * @param filterer Filterer function.
  * @returns Curried function with `filter` in context.
  */
-export const arrayFilterTuple = <Item, Filtered extends Item>(
-	filterer: Filterer<Item, Filtered>
-) =>
+export const arrayFilterTuple =
+	<Item, Filtered extends Item>(filterer: Filterer<Item, Filtered>) =>
 	/**
 	 * @param source Source array to filter.
 	 * @returns Tuple with shape `[filteredIn, filteredOut]`.
 	 */
-	(source: ReadonlyArray<Item>): FilterTuple<Item, Filtered> => [
-		arrayFilterIn(filterer)(source),
-		arrayFilterOut(filterer)(source)
-	];
+	(source: ReadonlyArray<Item>): FilterTuple<Item, Filtered> =>
+		[arrayFilterIn(filterer)(source), arrayFilterOut(filterer)(source)];
