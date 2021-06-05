@@ -10,9 +10,11 @@
  * @param regularExpression Regular expression to match with.
  * @returns Curried function with `regularExpression` in context.
  */
-export const stringMatches = ({ source: regExp, flags }: Readonly<RegExp>) =>
+export const stringMatches =
+	({ source: regExp, flags }: Readonly<RegExp>) =>
 	/**
 	 * @param source Source string to match.
 	 * @returns `RegExpMatchArray` (empty if no matches are found).
 	 */
-	(source: string) => source.match(new RegExp(regExp, flags)) ?? [];
+	(source: string) =>
+		source.match(new RegExp(regExp, flags)) ?? [];

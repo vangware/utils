@@ -16,9 +16,8 @@ import type { Filterer } from "../types/Filterer";
  * @param filterer Filterer function.
  * @returns Curried function with `filter` set in context.
  */
-export const arrayFilterIn = <Item, Filtered extends Item>(
-	filterer: Filterer<Item, Filtered>
-) =>
+export const arrayFilterIn =
+	<Item, Filtered extends Item>(filterer: Filterer<Item, Filtered>) =>
 	/**
 	 * @param source Source array to filter.
 	 * @returns Source array with filter applied (excluding `false` returning).

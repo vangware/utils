@@ -4,7 +4,7 @@ import { arraySort } from "../../src/array/arraySort";
 const numberArray = [3, 0, 2, 1];
 const stringArray = ["b", "a", "c"];
 const numberSorter = (next: number) => (item: number) => next - item;
-const stringSorter = (next: string) => (item: string) => (next > item ? 1 : -1);
+const stringSorter = (next: string) => (item: string) => next > item ? 1 : -1;
 const numberArraySort = arraySort(numberSorter);
 const stringArraySort = arraySort(stringSorter);
 

@@ -15,7 +15,8 @@ import type { Sorter } from "../types/Sorter";
  * @param sorter Sorter function function.
  * @returns Curried function with `sorter` in context.
  */
-export const arraySort = <Item>(sorter: Sorter<Item>) =>
+export const arraySort =
+	<Item>(sorter: Sorter<Item>) =>
 	/**
 	 * @param source Source array to be sorted.
 	 * @returns Copy of source with values sorted using `sorter`.

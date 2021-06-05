@@ -14,7 +14,8 @@ import { decimalTupleAdd } from "./decimalTupleAdd";
  * @param subtrahend Subtrahend of the subtraction.
  * @returns Curried function with `subtrahend` set in context.
  */
-export const decimalTupleSubtract = ([coefficient, exponent]: DecimalTuple) =>
+export const decimalTupleSubtract =
+	([coefficient, exponent]: DecimalTuple) =>
 	/**
 	 * @param minuend Minuend of the subtraction.
 	 * @returns DecimalTuple with the result of `minuend` - `subtrahend`.

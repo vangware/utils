@@ -13,15 +13,16 @@
  * @param minimum Minimum boundary.
  * @returns Curried function with `minimum` set in context.
  */
-export const numberBoundary = (minimum: number) =>
+export const numberBoundary =
+	(minimum: number) =>
 	/**
 	 * @param maximum Maximum boundary.
 	 * @returns Curried function with `minimum` and `maximum` set in context.
 	 */
 	(maximum: number) =>
-		/**
-		 * @param source Number to apply boundaries on.
-		 * @returns Given source, or `minimum`/`maximum` when out of boundaries.
-		 */
-		(source: number) =>
-			source < minimum ? minimum : source > maximum ? maximum : source;
+	/**
+	 * @param source Number to apply boundaries on.
+	 * @returns Given source, or `minimum`/`maximum` when out of boundaries.
+	 */
+	(source: number) =>
+		source < minimum ? minimum : source > maximum ? maximum : source;

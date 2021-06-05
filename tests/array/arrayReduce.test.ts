@@ -7,8 +7,8 @@ export default suite([
 	{
 		given: "an array of numbers and a sum reducer",
 		must: "return the total sum",
-		received: arrayReduce((output: number) => (value: number) =>
-			output + value
+		received: arrayReduce(
+			(output: number) => (value: number) => output + value
 		)(0)(array),
 		wanted: 6
 	}

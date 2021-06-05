@@ -21,11 +21,12 @@ import { arrayReduce } from "./arrayReduce";
  * @returns Curried function with `grouper` in context.
  */
 export const arrayGroup = <Item>(grouper: Grouper<Item>) =>
-	arrayReduce<Item, Grouped<Item>>(groups => item =>
-		(groupName =>
-			objectSetProperty(groupName)(
-				arrayInsertLast(item)(
-					objectGetProperty(groupName)(groups) ?? []
-				)
-			)(groups))(`${grouper(item)}`)
+	arrayReduce<Item, Grouped<Item>>(
+		groups => item =>
+			(groupName =>
+				objectSetProperty(groupName)(
+					arrayInsertLast(item)(
+						objectGetProperty(groupName)(groups) ?? []
+					)
+				)(groups))(`${grouper(item)}`)
 	)({});

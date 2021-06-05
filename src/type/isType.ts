@@ -15,7 +15,8 @@ import type { TypeOf } from "../types/TypeOf";
  * @param type Type to check (from `typeof`).
  * @returns Curried function with `type` in context.
  */
-export const isType = <Expected = unknown>(type: TypeOf) =>
+export const isType =
+	<Expected = unknown>(type: TypeOf) =>
 	/**
 	 * @template Actual Actual type of the entity.
 	 * @param entity Entity to check.

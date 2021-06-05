@@ -16,19 +16,18 @@ import { equalValues } from "./equalValues";
  * ```
  * @param compare Comparison function.
  */
-export const equalArrays = (
-	compare: (expected: unknown) => (actual: unknown) => boolean
-) =>
+export const equalArrays =
+	(compare: (expected: unknown) => (actual: unknown) => boolean) =>
 	/**
 	 * @param expected Expected value to compare.
 	 */
 	(expected: unknown) =>
-		/**
-		 * @param actual Actual value to compare.
-		 */
-		(actual: unknown) =>
-			isArray(expected) &&
-			isArray(actual) &&
-			equalValues(expected.length)(actual.length) &&
-			// eslint-disable-next-line max-params
-			expected.every((item, index) => compare(item)(actual[index]));
+	/**
+	 * @param actual Actual value to compare.
+	 */
+	(actual: unknown) =>
+		isArray(expected) &&
+		isArray(actual) &&
+		equalValues(expected.length)(actual.length) &&
+		// eslint-disable-next-line max-params
+		expected.every((item, index) => compare(item)(actual[index]));
