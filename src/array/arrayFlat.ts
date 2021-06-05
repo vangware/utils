@@ -10,8 +10,10 @@
  * @param depth The maximum recursion depth.
  * @returns Curried function with `depth` in context.
  */
-export const arrayFlat = <Depth extends number>(depth: Depth) =>
+export const arrayFlat =
+	<Depth extends number>(depth: Depth) =>
 	/**
 	 * @param source Source array to be flatten.
 	 */
-	<Item>(source: ReadonlyArray<Item>) => source.flat(depth);
+	<Item>(source: ReadonlyArray<Item>) =>
+		source.flat(depth);

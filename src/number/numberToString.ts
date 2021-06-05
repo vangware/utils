@@ -12,9 +12,11 @@ import type { Radix } from "../types/Radix";
  * @param radix A value between 2 and 36 that specifies the base of the number.
  * @returns Curried function with `radix` in context.
  */
-export const numberToString = (radix: Radix) =>
+export const numberToString =
+	(radix: Radix) =>
 	/**
 	 * @param source Source string to be parsed.
 	 * @returns Stringified number.
 	 */
-	(source: number) => source.toString(radix);
+	(source: number) =>
+		source.toString(radix);

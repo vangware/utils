@@ -9,8 +9,10 @@
  * @param separator Value separator.
  * @returns Curried function with `separator` in context.
  */
-export const arrayJoin = (separator: string) =>
+export const arrayJoin =
+	(separator: string) =>
 	/**
 	 * @param source Source array to be joined with `separator`.
 	 */
-	<Item>(source: ReadonlyArray<Item>) => source.join(separator);
+	<Item>(source: ReadonlyArray<Item>) =>
+		source.join(separator);

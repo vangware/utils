@@ -12,9 +12,10 @@
  * @param constructor Constructor used to check.
  * @returns Curried function with `constructor` in context.
  */
-export const instanceOf = <Expected = unknown>(
-	constructor: new (..._arguments: ReadonlyArray<never>) => unknown
-) =>
+export const instanceOf =
+	<Expected = unknown>(
+		constructor: new (..._arguments: ReadonlyArray<never>) => unknown
+	) =>
 	/**
 	 * @template Actual Actual type of the entity.
 	 * @param entity Entity to check.

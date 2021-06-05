@@ -14,9 +14,8 @@ import type { Filterer } from "../types/Filterer";
  * @param predicate Function predicate to test every item.
  * @returns Curried function with `predicate` in context.
  */
-export const arrayEvery = <Item, Predicated extends Item>(
-	predicate: Filterer<Item, Predicated>
-) =>
+export const arrayEvery =
+	<Item, Predicated extends Item>(predicate: Filterer<Item, Predicated>) =>
 	/**
 	 * @param source Source array to be tested.
 	 */
