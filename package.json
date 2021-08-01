@@ -1,35 +1,34 @@
 {
 	"name": "@vangware/utils",
 	"description": "⚒️ Vangware curried functional utils",
-	"version": "6.3.5",
+	"version": "7.0.0",
 	"author": {
+		"email": "hello@vangware.com",
 		"name": "Vangware",
 		"url": "https://vangware.com"
 	},
-	"bugs": {
-		"url": "https://github.com/vangware/utils/issues"
-	},
+	"bugs": "https://github.com/vangware/utils/issues",
 	"devDependencies": {
+		"@arkweid/lefthook": "^0.7.6",
 		"@types/eslint": "7.28.0",
-		"@types/node": "16.3.3",
+		"@types/node": "16.4.9",
 		"@types/prettier": "^2.3.2",
-		"@typescript-eslint/eslint-plugin": "4.28.3",
-		"@typescript-eslint/parser": "4.28.3",
-		"@vangware/base": "4.7.12",
-		"@vangware/test": "^6.0.5",
-		"c8": "^7.7.3",
-		"eslint": "7.31.0",
+		"@typescript-eslint/eslint-plugin": "4.28.5",
+		"@typescript-eslint/parser": "4.28.5",
+		"@vangware/base": "5.0.2",
+		"@vangware/test": "^7.1.0",
+		"c8": "^7.8.0",
+		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-import-resolver-node": "^0.3.4",
 		"eslint-plugin-ban": "^1.5.2",
-		"eslint-plugin-functional": "^3.2.1",
+		"eslint-plugin-functional": "^3.4.1",
 		"eslint-plugin-import": "2.23.4",
 		"eslint-plugin-no-null": "^1.0.2",
 		"eslint-plugin-prefer-arrow": "^1.2.3",
 		"eslint-plugin-prettier": "^3.4.0",
 		"eslint-plugin-react": "^7.24.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
-		"husky": "4.3.8",
 		"npm-run-all": "^4.1.5",
 		"prettier": "2.3.2",
 		"rimraf": "^3.0.2",
@@ -38,59 +37,20 @@
 		"stylelint-order": "^4.1.0",
 		"stylelint-prettier": "^1.2.0",
 		"ts-node": "10.1.0",
-		"typedoc": "^0.21.4",
+		"typedoc": "^0.21.5",
 		"typescript": "4.3.5"
 	},
 	"exports": {
-		".": {
-			"import": "./esm/index.js",
-			"require": "./cjs/index.js"
-		},
-		"./array": {
-			"import": "./esm/array/index.js",
-			"require": "./cjs/array/index.js"
-		},
-		"./equal": {
-			"import": "./esm/equal/index.js",
-			"require": "./cjs/equal/index.js"
-		},
-		"./function": {
-			"import": "./esm/function/index.js",
-			"require": "./cjs/function/index.js"
-		},
-		"./json": {
-			"import": "./esm/json/index.js",
-			"require": "./cjs/json/index.js"
-		},
-		"./number": {
-			"import": "./esm/number/index.js",
-			"require": "./cjs/number/index.js"
-		},
-		"./object": {
-			"import": "./esm/object/index.js",
-			"require": "./cjs/object/index.js"
-		},
-		"./string": {
-			"import": "./esm/string/index.js",
-			"require": "./cjs/string/index.js"
-		},
-		"./type": {
-			"import": "./esm/type/index.js",
-			"require": "./cjs/type/index.js"
-		},
-		"./types": {
-			"import": "./esm/types/index.js",
-			"require": "./cjs/types/index.js"
-		}
+		"import": "./dist/import/index.js",
+		"require": "./dist/require/index.js"
 	},
 	"files": [
-		"cjs",
-		"esm"
+		"dist"
 	],
 	"homepage": "https://utils.vangware.com",
 	"husky": {
 		"hooks": {
-			"pre-commit": "run-s clean pre-compile lint test docs"
+			"pre-commit": "run-s clean pre-compile lint test document"
 		}
 	},
 	"keywords": [
@@ -108,28 +68,22 @@
 		"vangware"
 	],
 	"license": "MIT",
-	"main": "./cjs/index.js",
-	"module": "./esm/index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/vangware/utils.git"
-	},
+	"repository": "vangware/utils",
 	"scripts": {
-		"clean": "rimraf ./{cjs,esm}",
+		"clean": "rimraf ./dist",
 		"compile": "run-s compile:*",
-		"compile:cjs": "tsc --project tsconfig.cjs.json",
-		"compile:esm": "tsc --project tsconfig.esm.json",
-		"docs": "typedoc --disableOutputCheck --gitRevision main --theme minimal ./src/index.ts",
+		"compile:import": "tsc --project tsconfig.import.json",
+		"compile:require": "tsc --project tsconfig.require.json",
+		"document": "typedoc --disableOutputCheck --gitRevision main --theme minimal ./src/index.ts",
 		"lint": "eslint {src,tests}/**/*.ts",
 		"lint:fix": "eslint {src,tests}/**/*.ts --fix",
 		"postpublish": "run-s clean",
 		"pre-compile": "run-s pre-compile:*",
-		"pre-compile:cjs": "tsc --noemit --project tsconfig.cjs.json",
-		"pre-compile:esm": "tsc --noemit --project tsconfig.esm.json",
+		"pre-compile:import": "tsc --noEmit --project tsconfig.import.json",
+		"pre-compile:require": "tsc --noEmit --project tsconfig.require.json",
 		"prepublishOnly": "run-s compile prettify",
-		"prettify": "prettier --write --loglevel warn './{cjs,esm}/**/*.{js,ts}'",
+		"prettify": "prettier --write --loglevel warn './dist/**/*.{js,ts}'",
 		"test": "c8 --reporter=html --reporter=text-summary --reporter=lcov test"
 	},
-	"source": "./src/index.ts",
-	"types": "./esm/index.d.ts"
+	"types": "./dist/import/index.d.ts"
 }
