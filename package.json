@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/utils",
 	"description": "⚒️ Vangware curried functional utils",
-	"version": "7.0.4",
+	"version": "7.0.5",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -15,8 +15,8 @@
 		"@types/prettier": "^2.3.2",
 		"@typescript-eslint/eslint-plugin": "4.29.2",
 		"@typescript-eslint/parser": "4.29.2",
-		"@vangware/base": "5.2.1",
-		"@vangware/test": "^7.1.4",
+		"@vangware/base": "5.2.2",
+		"@vangware/test": "^7.1.5",
 		"c8": "^7.8.0",
 		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
