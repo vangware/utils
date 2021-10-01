@@ -9,6 +9,6 @@ export default suite([
 		given: "an array of numbers",
 		must: "return those numbers separated by spaces",
 		received: spaceJoin(array),
-		wanted: "0 1 2 3"
-	}
+		wanted: "0 1 2 3",
+	},
 ]);

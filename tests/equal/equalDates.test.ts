@@ -10,30 +10,30 @@ export default suite([
 		given: "two equal dates",
 		must: "return true",
 		received: equalDates(date)(dateCopy),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "two different dates",
 		must: "return false",
 		received: equalDates(date)(otherDate),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a date and a number",
 		must: "return false",
 		received: equalDates(date)(0),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a number and a date",
 		must: "return false",
 		received: equalDates(0)(date),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two numbers",
 		must: "return false",
 		received: equalDates(0)(0),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);

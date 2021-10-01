@@ -8,33 +8,33 @@ export default suite([
 	{
 		given: "a BigInt",
 		received: isNullish(BigInt(1)) && isNullish(BigInt("1")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a boolean",
 		received: isNullish(true) && isNullish(false),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a date",
 		received: isNullish(new Date()),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a function",
 		// eslint-disable-next-line functional/functional-parameters
 		received: isNullish(() => undefined),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a number",
 		received: isNullish(1),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a promise",
 		received: isNullish(Promise.resolve()),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a regular expression",
@@ -42,37 +42,37 @@ export default suite([
 			isNullish(/expression/u) &&
 			// eslint-disable-next-line prefer-regex-literals
 			isNullish(new RegExp("expression", "u")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a string",
 		received: isNullish("string"),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a symbol",
 		received: isNullish(Symbol("description")) && isNullish(Symbol(1)),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an array",
 		received: isNullish([]),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an object",
 		received: isNullish({}),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "null",
 		// eslint-disable-next-line no-null/no-null
 		received: isNullish(null),
-		...wantedTrue
+		...wantedTrue,
 	},
 	{
 		given: "undefined",
 		received: isNullish(undefined),
-		...wantedTrue
-	}
+		...wantedTrue,
+	},
 ]);

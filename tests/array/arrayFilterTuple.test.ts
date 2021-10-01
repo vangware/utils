@@ -13,7 +13,7 @@ export default suite([
 		given: "an array of numbers and a filter for the number 1",
 		must: "return [1, nonMatching]",
 		received: filterOne(array),
-		wanted: [[1], [0, 2, 3]] as FilterTuple<number | string>
+		wanted: [[1], [0, 2, 3]] as FilterTuple<number | string>,
 	},
 	{
 		given: "an array of numbers and a filter for even numbers",
@@ -21,7 +21,7 @@ export default suite([
 		received: filterOddsAndEvens(array),
 		wanted: [
 			[0, 2],
-			[1, 3]
-		] as FilterTuple<number>
-	}
+			[1, 3],
+		] as FilterTuple<number>,
+	},
 ]);

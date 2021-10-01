@@ -8,5 +8,5 @@ import { isFalsy } from "./isFalsy";
  * @param entity Entity to check.
  */
 export const isTruthy = <Actual = unknown>(
-	entity: Actual
+	entity: Actual,
 ): entity is Truthy<Actual> => !isFalsy(entity);

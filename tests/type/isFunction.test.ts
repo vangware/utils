@@ -8,33 +8,33 @@ export default suite([
 	{
 		given: "a BigInt",
 		received: isFunction(BigInt(1)) && isFunction(BigInt("1")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a boolean",
 		received: isFunction(true) && isFunction(false),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a date",
 		received: isFunction(new Date()),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a function",
 		// eslint-disable-next-line functional/functional-parameters
 		received: isFunction(() => undefined),
-		...wantedTrue
+		...wantedTrue,
 	},
 	{
 		given: "a number",
 		received: isFunction(1),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a promise",
 		received: isFunction(Promise.resolve()),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a regular expression",
@@ -42,37 +42,37 @@ export default suite([
 			isFunction(/expression/u) &&
 			// eslint-disable-next-line prefer-regex-literals
 			isFunction(new RegExp("expression", "u")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a string",
 		received: isFunction("string"),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a symbol",
 		received: isFunction(Symbol("description")) && isFunction(Symbol(1)),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an array",
 		received: isFunction([]),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an object",
 		received: isFunction({}),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "null",
 		// eslint-disable-next-line no-null/no-null
 		received: isFunction(null),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "undefined",
 		received: isFunction(undefined),
-		...wantedFalse
-	}
+		...wantedFalse,
+	},
 ]);

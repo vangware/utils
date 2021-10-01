@@ -13,18 +13,18 @@ export default suite<ReadonlyArray<number | string>>([
 		given: "an array of unsorted numbers",
 		must: "get an array with sorted numbers",
 		received: numberArraySort(numberArray),
-		wanted: [0, 1, 2, 3]
+		wanted: [0, 1, 2, 3],
 	},
 	{
 		given: "an array of unsorted strings",
 		must: "get an array with sorted strings",
 		received: stringArraySort(stringArray),
-		wanted: ["a", "b", "c"]
+		wanted: ["a", "b", "c"],
 	},
 	{
 		given: "an array of unsorted numbers",
 		must: "not change the original array",
 		received: numberArray,
-		wanted: [3, 0, 2, 1]
-	}
+		wanted: [3, 0, 2, 1],
+	},
 ]);

@@ -9,6 +9,6 @@ export default suite([
 		given: "a function that returns true when receiving even numbers",
 		must: "return true when calling it with odds",
 		received: isOdd(1),
-		wanted: true
-	}
+		wanted: true,
+	},
 ]);

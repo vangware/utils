@@ -24,6 +24,6 @@ export const numberAdd =
 	(addend1: number) =>
 		decimalTupleToNumber(
 			decimalTupleAdd(numberToDecimalTuple(addend2))(
-				numberToDecimalTuple(addend1)
-			)
+				numberToDecimalTuple(addend1),
+			),
 		);

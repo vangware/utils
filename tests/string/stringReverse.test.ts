@@ -8,6 +8,6 @@ export default suite([
 		given: "a simple string",
 		must: "return the string reversed",
 		received: stringReverse(string),
-		wanted: "gnirts"
-	}
+		wanted: "gnirts",
+	},
 ]);

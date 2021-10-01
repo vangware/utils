@@ -31,5 +31,5 @@ export const arrayReduce =
 		source.reduce(
 			// eslint-disable-next-line max-params
 			(accumulator, item) => reducer(accumulator)(item),
-			initialValue
+			initialValue,
 		);

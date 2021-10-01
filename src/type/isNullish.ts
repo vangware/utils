@@ -9,5 +9,5 @@ import { isUndefined } from "./isUndefined";
  * @param entity Entity to check.
  */
 export const isNullish = <Actual = unknown>(
-	entity: Actual | Nullish
+	entity: Actual | Nullish,
 ): entity is Nullish => isUndefined(entity) || isNull(entity);

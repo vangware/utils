@@ -7,6 +7,6 @@ import { equalValues } from "../equal/equalValues";
  * @param entity Entity to check.
  */
 export const isNull = <Actual = unknown>(
-	entity: Actual | null
+	entity: Actual | null,
 	// eslint-disable-next-line no-null/no-null
 ): entity is null => equalValues(null)(entity);

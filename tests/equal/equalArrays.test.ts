@@ -12,36 +12,36 @@ export default suite([
 		given: "two arrays with the same items",
 		must: "return true",
 		received: equalArrays(equal)(array)(arrayCopy),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "two arrays with different items",
 		must: "return false",
 		received: equalArrays(equal)(array)(otherArray),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two arrays almost equal",
 		must: "return false",
 		received: equalArrays(equal)(array)(arrayCopyWithExtras),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "an array and a number",
 		must: "return false",
 		received: equalArrays(equal)(array)(0),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a number and an array",
 		must: "return false",
 		received: equalArrays(equal)(0)(array),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two numbers",
 		must: "return false",
 		received: equalArrays(equal)(0)(0),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);
