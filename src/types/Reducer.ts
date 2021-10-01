@@ -9,5 +9,5 @@ import type { Mapper } from "./Mapper";
  * @returns Mapper with accumulator context.
  */
 export type Reducer<Item, Output = ReadonlyArray<Item>> = (
-	accumulator: Output
+	accumulator: Output,
 ) => Mapper<Item, Output>;

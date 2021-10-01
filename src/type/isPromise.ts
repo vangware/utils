@@ -8,6 +8,6 @@ import { instanceOf } from "./instanceOf";
  * @param entity Entity to check.
  */
 export const isPromise = <PromiseValue = unknown, Actual = unknown>(
-	entity: Actual | Promise<PromiseValue>
+	entity: Actual | Promise<PromiseValue>,
 ): entity is Promise<PromiseValue> =>
 	instanceOf<Promise<PromiseValue>>(Promise)(entity);

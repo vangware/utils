@@ -10,6 +10,6 @@ import { isType } from "./isType";
  * @param entity Entity to check.
  */
 export const isObject = <Actual = unknown>(
-	entity: Actual | ImmutableRecord
+	entity: Actual | ImmutableRecord,
 ): entity is ImmutableRecord =>
 	functionNot(isNull)(entity) && isType<ImmutableRecord>("object")(entity);

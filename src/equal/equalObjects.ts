@@ -38,8 +38,8 @@ export const equalObjects =
 		// eslint-disable-next-line ban/ban
 		equalValues(Object.keys(expected).length)(
 			// eslint-disable-next-line ban/ban
-			Object.keys(actual).length
+			Object.keys(actual).length,
 		) &&
 		Object.entries(expected).every(([key, value]) =>
-			compare(value)(objectGetProperty(key)(actual))
+			compare(value)(objectGetProperty(key)(actual)),
 		);

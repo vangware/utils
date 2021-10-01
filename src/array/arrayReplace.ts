@@ -40,5 +40,5 @@ export const arrayReplace =
 			: [
 					...arraySliceTo(index)(source),
 					item,
-					...arraySliceFrom(index + 1)(source)
+					...arraySliceFrom(index + 1)(source),
 			  ];

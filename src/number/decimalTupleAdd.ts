@@ -22,13 +22,13 @@ export const decimalTupleAdd =
 	(addend1: DecimalTuple) => {
 		const [
 			[minCoefficient, minExponent],
-			[maxCoefficient, maxExponent]
+			[maxCoefficient, maxExponent],
 		]: readonly [min: DecimalTuple, max: DecimalTuple] =
 			addend1[1] < addend2[1] ? [addend1, addend2] : [addend2, addend1];
 
 		return [
 			decimalTupleToNumber([maxCoefficient, maxExponent - minExponent]) +
 				minCoefficient,
-			minExponent
+			minExponent,
 		] as DecimalTuple;
 	};

@@ -9,6 +9,6 @@ export default suite([
 		given: "an array of numbers and a string to insert",
 		must: "insert that string at the end",
 		received: arrayReplaceLast(string)(array),
-		wanted: [0, 1, 2, string]
-	}
+		wanted: [0, 1, 2, string],
+	},
 ]);

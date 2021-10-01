@@ -22,6 +22,6 @@ export const numberFloatToDecimalTuple = (source: number) => {
 		stringParseDecimal(`${wholeWithoutTrailingZeros}${decimal}`),
 		decimal.length
 			? -decimal.length
-			: whole.length - wholeWithoutTrailingZeros.length
+			: whole.length - wholeWithoutTrailingZeros.length,
 	] as DecimalTuple;
 };

@@ -14,7 +14,7 @@
  */
 export const instanceOf =
 	<Expected = unknown>(
-		constructor: new (..._arguments: ReadonlyArray<never>) => unknown
+		constructor: new (..._arguments: ReadonlyArray<never>) => unknown,
 	) =>
 	/**
 	 * @template Actual Actual type of the entity.

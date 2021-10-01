@@ -39,5 +39,5 @@ export const arrayInsert =
 			: [
 					...arraySliceTo(index)(source),
 					item,
-					...arraySliceFrom(index)(source)
+					...arraySliceFrom(index)(source),
 			  ];

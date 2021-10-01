@@ -24,16 +24,16 @@ export const decimalTupleDivide =
 	([dividendCoefficient, dividendExponent]: DecimalTuple) => {
 		const multiply = decimalTupleMultiply(
 			numberToDecimalTuple(
-				10 ** Math.abs(Math.min(divisorExponent, dividendExponent))
-			)
+				10 ** Math.abs(Math.min(divisorExponent, dividendExponent)),
+			),
 		);
 
 		return numberToDecimalTuple(
 			decimalTupleToNumber(
-				multiply([dividendCoefficient, dividendExponent])
+				multiply([dividendCoefficient, dividendExponent]),
 			) /
 				decimalTupleToNumber(
-					multiply([divisorCoefficient, divisorExponent])
-				)
+					multiply([divisorCoefficient, divisorExponent]),
+				),
 		);
 	};

@@ -31,5 +31,5 @@ export const equal =
 			equalDates,
 			equalRegExp,
 			equalArrays(equal),
-			equalObjects(equal)
+			equalObjects(equal),
 		].some(compare => compare(expected)(actual));

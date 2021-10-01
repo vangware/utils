@@ -33,6 +33,6 @@ export const stringMapReplace =
 				([match, value]) =>
 					output.replace(
 						new RegExp(match, "gu"),
-						`${value as string}`
-					)
+						`${value as string}`,
+					),
 		)(source)(objectEntries(replaceMap));

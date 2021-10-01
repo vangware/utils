@@ -18,11 +18,11 @@ export const numberToDecimalTuple = (source: number) => {
 		.toExponential()
 		.split("e");
 	const [coefficient, exponent] = numberFloatToDecimalTuple(
-		parseFloat(sourceCoefficient)
+		parseFloat(sourceCoefficient),
 	);
 
 	return [
 		coefficient,
-		stringParseDecimal(sourceExponent) + exponent
+		stringParseDecimal(sourceExponent) + exponent,
 	] as DecimalTuple;
 };

@@ -25,5 +25,5 @@ export const arrayFilterOut =
 	 */
 	(source: ReadonlyArray<Item>) =>
 		source.filter(
-			(item): item is OptionalExclude<Item, Filtered> => !filterer(item)
+			(item): item is OptionalExclude<Item, Filtered> => !filterer(item),
 		);

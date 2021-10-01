@@ -24,6 +24,6 @@ export const numberMultiply =
 	(multiplicand: number) =>
 		decimalTupleToNumber(
 			decimalTupleMultiply(numberToDecimalTuple(multiplier))(
-				numberToDecimalTuple(multiplicand)
-			)
+				numberToDecimalTuple(multiplicand),
+			),
 		);

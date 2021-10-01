@@ -19,6 +19,6 @@ export const objectGetProperty =
 	 * @returns Value of the given property.
 	 */
 	<Source extends Record<number | string | symbol, unknown>>(
-		source: Source
+		source: Source,
 	) =>
 		source[property];
