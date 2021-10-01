@@ -5,5 +5,5 @@
  * @template Filtered Type of filtered items.
  */
 export type GuardedFilterer<Item, Filtered extends Item> = (
-	item: Item
+	item: Item,
 ) => item is Filtered;

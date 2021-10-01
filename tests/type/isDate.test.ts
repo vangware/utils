@@ -8,70 +8,70 @@ export default suite([
 	{
 		given: "a BigInt",
 		received: isDate(BigInt(1)) && isDate(BigInt("1")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a boolean",
 		received: isDate(true) && isDate(false),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a date",
 		received: isDate(new Date()),
-		...wantedTrue
+		...wantedTrue,
 	},
 	{
 		given: "a function",
 		// eslint-disable-next-line functional/functional-parameters
 		received: isDate(() => undefined),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a number",
 		received: isDate(1),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a promise",
 		received: isDate(Promise.resolve()),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a regular expression",
 		received:
 			// eslint-disable-next-line prefer-regex-literals
 			isDate(/expression/u) && isDate(new RegExp("expression", "u")),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a string",
 		received: isDate("string"),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a symbol",
 		received: isDate(Symbol("description")) && isDate(Symbol(1)),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an array",
 		received: isDate([]),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an object",
 		received: isDate({}),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "null",
 		// eslint-disable-next-line no-null/no-null
 		received: isDate(null),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "undefined",
 		received: isDate(undefined),
-		...wantedFalse
-	}
+		...wantedFalse,
+	},
 ]);

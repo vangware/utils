@@ -20,15 +20,15 @@ export const decimalTupleToNumber = ([coefficient, exponent]: DecimalTuple) => {
 		negativeExponent
 			? Math.abs(exponent) + 1
 			: coefficientString.length + exponent,
-		"0"
+		"0",
 	);
 
 	return parseFloat(
 		negativeExponent
 			? coefficientWithZeros.replace(
 					new RegExp(`\\d{${Math.abs(exponent)}}$`, "u"),
-					zeros => `.${zeros}`
+					zeros => `.${zeros}`,
 			  )
-			: coefficientWithZeros
+			: coefficientWithZeros,
 	);
 };

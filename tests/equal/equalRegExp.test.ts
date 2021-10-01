@@ -10,30 +10,30 @@ export default suite([
 		given: "two equal regular expressions",
 		must: "return true",
 		received: equalRegExp(regExp)(regExpCopy),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "two different regular expressions",
 		must: "return false",
 		received: equalRegExp(regExp)(otherRegExp),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a regular expression and a number",
 		must: "return false",
 		received: equalRegExp(regExp)(0),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a number and a regular expression",
 		must: "return false",
 		received: equalRegExp(0)(regExp),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two numbers",
 		must: "return false",
 		received: equalRegExp(0)(0),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);

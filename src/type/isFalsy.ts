@@ -7,5 +7,5 @@ import type { Falsy } from "../types/Falsy";
  * @param entity Entity to check.
  */
 export const isFalsy = <Actual = unknown>(
-	entity: Actual | Falsy
+	entity: Actual | Falsy,
 ): entity is Falsy => !(entity as boolean);

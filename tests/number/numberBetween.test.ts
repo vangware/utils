@@ -13,18 +13,18 @@ export default suite([
 		given: "a number inside the boundaries",
 		must: "get true",
 		received: boundary(inside),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "a number bigger than the boundaries",
 		must: "get false",
 		received: boundary(bigger),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "a number lower than the boundaries",
 		must: "get false",
 		received: boundary(lower),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);
