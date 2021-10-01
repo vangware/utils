@@ -9,12 +9,12 @@ export default suite([
 		given: "an array of numbers",
 		must: "return true",
 		received: everyNumber([0, 1, 2, 3]),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "an array of numbers with a string on it",
 		must: "return false",
 		received: everyNumber([0, 1, 2, "foo", 3]),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);

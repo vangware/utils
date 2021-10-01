@@ -26,7 +26,7 @@ export const arrayGroup = <Item>(grouper: Grouper<Item>) =>
 			(groupName =>
 				objectSetProperty(groupName)(
 					arrayInsertLast(item)(
-						objectGetProperty(groupName)(groups) ?? []
-					)
-				)(groups))(`${grouper(item)}`)
+						objectGetProperty(groupName)(groups) ?? [],
+					),
+				)(groups))(`${grouper(item)}`),
 	)({});

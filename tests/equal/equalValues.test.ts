@@ -10,24 +10,24 @@ export default suite([
 		given: "two equal values",
 		must: "return true",
 		received: equalValues(value)(valueCopy),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "two different dates",
 		must: "return false",
 		received: equalValues(value)(otherValue),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two equal objects",
 		must: "return false",
 		received: equalValues({})({}),
-		wanted: false
+		wanted: false,
 	},
 	{
 		given: "two equal arrays",
 		must: "return false",
 		received: equalValues([])([]),
-		wanted: false
-	}
+		wanted: false,
+	},
 ]);

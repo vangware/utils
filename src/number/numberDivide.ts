@@ -24,6 +24,6 @@ export const numberDivide =
 	(dividend: number) =>
 		decimalTupleToNumber(
 			decimalTupleDivide(numberToDecimalTuple(divisor))(
-				numberToDecimalTuple(dividend)
-			)
+				numberToDecimalTuple(dividend),
+			),
 		);

@@ -8,37 +8,37 @@ export default suite([
 	{
 		given: "a falsy number",
 		received: isTruthy(0) && isTruthy(NaN),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "an empty string",
 		received: isTruthy(""),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a false boolean",
 		received: isTruthy(false),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a nullish value",
 		// eslint-disable-next-line no-null/no-null
 		received: isTruthy(null) && isTruthy(undefined),
-		...wantedFalse
+		...wantedFalse,
 	},
 	{
 		given: "a truthy number",
 		received: isTruthy(1),
-		...wantedTrue
+		...wantedTrue,
 	},
 	{
 		given: "a non-empty string",
 		received: isTruthy("string"),
-		...wantedTrue
+		...wantedTrue,
 	},
 	{
 		given: "a true boolean",
 		received: isTruthy(true),
-		...wantedTrue
-	}
+		...wantedTrue,
+	},
 ]);

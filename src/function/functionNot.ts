@@ -15,7 +15,7 @@
  */
 export const functionNot =
 	<Argument = unknown>(
-		source: (...argument: ReadonlyArray<Argument>) => boolean
+		source: (...argument: ReadonlyArray<Argument>) => boolean,
 	) =>
 	// eslint-disable-next-line functional/functional-parameters
 	(...argument: ReadonlyArray<Argument>) =>

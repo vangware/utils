@@ -9,12 +9,12 @@ export default suite([
 		given: "an object",
 		must: "return true for instanceOf(Object)",
 		received: instanceOf(Object)(object),
-		wanted: true
+		wanted: true,
 	},
 	{
 		given: "an array",
 		must: "return true for inscanceOf(Array)",
 		received: instanceOf(Array)(array),
-		wanted: true
-	}
+		wanted: true,
+	},
 ]);

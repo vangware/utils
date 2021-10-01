@@ -9,6 +9,6 @@ export default suite([
 		given: "an object { key: value }",
 		must: "return an array of tuples [key, value]",
 		received: objectEntries({ [key]: value }),
-		wanted: [[key, value]]
-	}
+		wanted: [[key, value]],
+	},
 ]);

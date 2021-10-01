@@ -20,9 +20,9 @@ export const objectSetProperty =
 	 * @returns Value of the given property.
 	 */
 	<Source extends Record<number | string | symbol, unknown>>(
-		source: Source
+		source: Source,
 	) =>
 		({
 			...source,
-			[property]: value
+			[property]: value,
 		} as Omit<Source, Property> & { readonly [P in Property]: Value });

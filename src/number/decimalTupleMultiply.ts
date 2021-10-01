@@ -22,11 +22,11 @@ export const decimalTupleMultiply =
 	 */
 	([multiplicandCoefficient, multiplicandExponent]: DecimalTuple) => {
 		const [coefficient, exponent] = numberToDecimalTuple(
-			multiplierCoefficient * multiplicandCoefficient
+			multiplierCoefficient * multiplicandCoefficient,
 		);
 
 		return [
 			coefficient,
-			multiplierExponent + multiplicandExponent + exponent
+			multiplierExponent + multiplicandExponent + exponent,
 		] as DecimalTuple;
 	};

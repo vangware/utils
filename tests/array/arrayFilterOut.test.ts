@@ -12,12 +12,12 @@ export default suite([
 		given: "an array of numbers and an always false filter",
 		must: "return all elements",
 		received: filterNothing(array),
-		wanted: array
+		wanted: array,
 	},
 	{
 		given: "an array of numbers and an even number filter",
 		must: "return only odd numbers",
 		received: filterEvensOut(array),
-		wanted: [1, 3]
-	}
+		wanted: [1, 3],
+	},
 ]);
