@@ -15,4 +15,5 @@
  * @returns Promise which resolves to an object of type `Output`.
  */
 export const jsonParsePromise = <Output = unknown>(text: string) =>
+	// eslint-disable-next-line functional/no-return-void
 	new Promise<Output>(resolve => resolve(JSON.parse(text) as Output));
