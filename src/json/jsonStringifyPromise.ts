@@ -15,4 +15,5 @@
  * @returns Promise which resolves to a string or rejects with errors.
  */
 export const jsonStringifyPromise = <Source>(source: Source) =>
+	// eslint-disable-next-line functional/no-return-void
 	new Promise<string>(resolve => resolve(JSON.stringify(source)));
