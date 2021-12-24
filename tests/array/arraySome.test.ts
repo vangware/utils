@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { arraySome } from "../../src/array/arraySome";
-import { isNumber } from "../../src/type/isNumber";
+import { arraySome } from "../../src/array/arraySome.js";
+import { isNumber } from "../../src/type/isNumber.js";
 
 const someNumber = arraySome(isNumber);
 

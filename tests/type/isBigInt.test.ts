@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isBigInt } from "../../src/type/isBigInt";
+import { isBigInt } from "../../src/type/isBigInt.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

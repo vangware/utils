@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { equal } from "../../src/equal/equal";
-import { equalArrays } from "../../src/equal/equalArrays";
+import { equal } from "../../src/equal/equal.js";
+import { equalArrays } from "../../src/equal/equalArrays.js";
 
 const array = [0, 1, 2, 3];
 const arrayCopy = [...array];

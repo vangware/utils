@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberToString } from "../../src/number/numberToString";
+import { numberToString } from "../../src/number/numberToString.js";
 
 export default suite([
 	{

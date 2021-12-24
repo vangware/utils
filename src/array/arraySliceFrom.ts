@@ -1,4 +1,4 @@
-import { arraySlice } from "./arraySlice";
+import { arraySlice } from "./arraySlice.js";
 
 /**
  * Takes a `start` and applies a `slice` to `source` array from given `start`

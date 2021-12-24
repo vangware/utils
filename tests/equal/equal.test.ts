@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { equal } from "../../src/equal/equal";
+import { equal } from "../../src/equal/equal.js";
 
 export default suite([
 	{

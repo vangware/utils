@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { objectSetProperty } from "../../src/object/objectSetProperty";
+import { objectSetProperty } from "../../src/object/objectSetProperty.js";
 
 const setFoo = objectSetProperty("foo")("bar");
 

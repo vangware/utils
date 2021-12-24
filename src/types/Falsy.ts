@@ -1,4 +1,4 @@
-import type { Nullish } from "./Nullish";
+import type { Nullish } from "./Nullish.js";
 
 /**
  * Types that evaluates to `false` in JS.

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringTest } from "../../src/string/stringTest";
+import { stringTest } from "../../src/string/stringTest.js";
 
 const onlyHasNumbers = stringTest(/^\d+$/gu);
 

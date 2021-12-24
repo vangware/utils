@@ -1,4 +1,4 @@
-import type { DecimalTuple } from "../types/DecimalTuple";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
 
 /**
  * Takes a `source` DecimalTuple [coefficient, exponent] and returns a number.

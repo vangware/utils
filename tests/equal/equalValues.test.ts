@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { equalValues } from "../../src/equal/equalValues";
+import { equalValues } from "../../src/equal/equalValues.js";
 
 const value = "foo";
 const valueCopy = value;

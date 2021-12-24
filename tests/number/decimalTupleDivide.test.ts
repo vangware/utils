@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { decimalTupleDivide } from "../../src/number/decimalTupleDivide";
+import { decimalTupleDivide } from "../../src/number/decimalTupleDivide.js";
 
 export default suite([
 	{

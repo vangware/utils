@@ -1,7 +1,7 @@
-import { arrayReduce } from "../array/arrayReduce";
-import { objectEntries } from "../object/objectEntries";
-import type { Entry } from "../types/Entry";
-import type { StringReplaceMap } from "../types/StringReplaceMap";
+import { arrayReduce } from "../array/arrayReduce.js";
+import { objectEntries } from "../object/objectEntries.js";
+import type { Entry } from "../types/Entry.js";
+import type { StringReplaceMap } from "../types/StringReplaceMap.js";
 
 /**
  * Takes `StringReplaceMap` object and runs a replaceAll of given object keys

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { instanceOf } from "../../src/type/instanceOf";
+import { instanceOf } from "../../src/type/instanceOf.js";
 
 const object = { key: "value" };
 const array = [0, 1, 2, 3];

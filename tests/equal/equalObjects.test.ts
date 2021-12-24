@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { equal } from "../../src/equal/equal";
-import { equalObjects } from "../../src/equal/equalObjects";
+import { equal } from "../../src/equal/equal.js";
+import { equalObjects } from "../../src/equal/equalObjects.js";
 
 const object = { foo: "foo" };
 const objectCopy = { ...object };

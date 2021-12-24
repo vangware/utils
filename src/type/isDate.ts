@@ -1,4 +1,4 @@
-import { instanceOf } from "./instanceOf";
+import { instanceOf } from "./instanceOf.js";
 
 /**
  * Check if given `entity` is an instance of `Date`.

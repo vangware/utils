@@ -1,4 +1,4 @@
-import type { Mapper } from "../types/Mapper";
+import type { Mapper } from "../types/Mapper.js";
 
 /**
  * Takes a `mapper` function and applies it to given `source` array.

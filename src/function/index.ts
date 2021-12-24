@@ -1,1 +1,1 @@
-export { functionNot } from "./functionNot";
+export { functionNot } from "./functionNot.js";

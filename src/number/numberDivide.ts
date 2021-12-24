@@ -1,6 +1,6 @@
-import { decimalTupleDivide } from "./decimalTupleDivide";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import { decimalTupleDivide } from "./decimalTupleDivide.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `divisor` and `dividend` and returns the precise division of those

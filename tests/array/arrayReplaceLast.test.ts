@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayReplaceLast } from "../../src/array/arrayReplaceLast";
+import { arrayReplaceLast } from "../../src/array/arrayReplaceLast.js";
 
 const array = [0, 1, 2, 3];
 const string = "string";

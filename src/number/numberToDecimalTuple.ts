@@ -1,6 +1,6 @@
-import { stringParseDecimal } from "../string/stringParseDecimal";
-import type { DecimalTuple } from "../types/DecimalTuple";
-import { numberFloatToDecimalTuple } from "./numberFloatToDecimalTuple";
+import { stringParseDecimal } from "../string/stringParseDecimal.js";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
+import { numberFloatToDecimalTuple } from "./numberFloatToDecimalTuple.js";
 
 /**
  * Takes a `source` number and returns a DecimalTuple [coefficient, exponent].

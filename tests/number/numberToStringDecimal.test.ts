@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberToStringDecimal } from "../../src/number/numberToStringDecimal";
+import { numberToStringDecimal } from "../../src/number/numberToStringDecimal.js";
 
 export default suite([
 	{
