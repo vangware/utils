@@ -1,5 +1,5 @@
-import { equalValues } from "../equal/equalValues";
-import type { TypeOf } from "../types/TypeOf";
+import { equalValues } from "../equal/equalValues.js";
+import type { TypeOf } from "../types/TypeOf.js";
 
 /**
  * Takes a `type` string and checks if given `entity` is of that `typeof`.

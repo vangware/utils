@@ -1,4 +1,4 @@
-import { isType } from "./isType";
+import { isType } from "./isType.js";
 
 /**
  * Check if `entity` is an instance of `Symbol`.

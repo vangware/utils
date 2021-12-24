@@ -1,4 +1,4 @@
-import { instanceOf } from "./instanceOf";
+import { instanceOf } from "./instanceOf.js";
 
 /**
  * Check if `entity` is an instance of `RegExp`.

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { functionNot } from "../../src/function/functionNot";
+import { functionNot } from "../../src/function/functionNot.js";
 
 const isEven = (value: number) => value % 2 === 0;
 const isOdd = functionNot(isEven);

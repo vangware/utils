@@ -1,6 +1,6 @@
-import { decimalTupleMultiply } from "./decimalTupleMultiply";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import { decimalTupleMultiply } from "./decimalTupleMultiply.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `multiplier` and `multiplicand` and returns the precise

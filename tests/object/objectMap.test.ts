@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { objectMap } from "../../src/object/objectMap";
+import { objectMap } from "../../src/object/objectMap.js";
 
 const source = { bar: 0, baz: 1, foo: 2, foobar: 3 };
 

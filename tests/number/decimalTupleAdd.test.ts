@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { decimalTupleAdd } from "../../src/number/decimalTupleAdd";
+import { decimalTupleAdd } from "../../src/number/decimalTupleAdd.js";
 
 export default suite([
 	{

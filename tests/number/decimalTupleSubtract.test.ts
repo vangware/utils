@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { decimalTupleSubtract } from "../../src/number/decimalTupleSubtract";
+import { decimalTupleSubtract } from "../../src/number/decimalTupleSubtract.js";
 
 export default suite([
 	{

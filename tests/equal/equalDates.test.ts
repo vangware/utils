@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { equalDates } from "../../src/equal/equalDates";
+import { equalDates } from "../../src/equal/equalDates.js";
 
 const date = new Date(624286800000);
 const dateCopy = new Date(date.getTime());

@@ -1,8 +1,8 @@
-import { objectGetProperty } from "../object/objectGetProperty";
-import { isDate } from "../type/isDate";
-import { isObject } from "../type/isObject";
-import { isRegExp } from "../type/isRegExp";
-import { equalValues } from "./equalValues";
+import { objectGetProperty } from "../object/objectGetProperty.js";
+import { isDate } from "../type/isDate.js";
+import { isObject } from "../type/isObject.js";
+import { isRegExp } from "../type/isRegExp.js";
+import { equalValues } from "./equalValues.js";
 
 /**
  * Given a `compare` function, an `expected` value and an `actual` value,

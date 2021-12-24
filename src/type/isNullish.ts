@@ -1,6 +1,6 @@
-import type { Nullish } from "../types/Nullish";
-import { isNull } from "./isNull";
-import { isUndefined } from "./isUndefined";
+import type { Nullish } from "../types/Nullish.js";
+import { isNull } from "./isNull.js";
+import { isUndefined } from "./isUndefined.js";
 
 /**
  * Check if `entity` is `undefined` or `null`.

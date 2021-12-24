@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isArray } from "../../src/type/isArray";
+import { isArray } from "../../src/type/isArray.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

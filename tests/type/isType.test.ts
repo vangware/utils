@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isType } from "../../src/type/isType";
+import { isType } from "../../src/type/isType.js";
 
 const string = "string";
 const isString = isType<string>("string");

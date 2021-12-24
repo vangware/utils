@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { decimalTupleMultiply } from "../../src/number/decimalTupleMultiply";
+import { decimalTupleMultiply } from "../../src/number/decimalTupleMultiply.js";
 
 export default suite([
 	{

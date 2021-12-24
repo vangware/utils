@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { jsonStringifyPromise } from "../../src/json/jsonStringifyPromise";
+import { jsonStringifyPromise } from "../../src/json/jsonStringifyPromise.js";
 
 const circularObject = {
 	// eslint-disable-next-line functional/functional-parameters

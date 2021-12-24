@@ -1,5 +1,5 @@
-import type { DecimalTuple } from "../types/DecimalTuple";
-import { decimalTupleAdd } from "./decimalTupleAdd";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
+import { decimalTupleAdd } from "./decimalTupleAdd.js";
 
 /**
  * Takes a `subtrahend` and `minuend` and returns the subtraction of those

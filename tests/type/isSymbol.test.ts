@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isSymbol } from "../../src/type/isSymbol";
+import { isSymbol } from "../../src/type/isSymbol.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

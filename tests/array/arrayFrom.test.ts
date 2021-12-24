@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayFrom } from "../../src/array/arrayFrom";
+import { arrayFrom } from "../../src/array/arrayFrom.js";
 
 const string = "string";
 

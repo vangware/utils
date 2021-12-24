@@ -1,4 +1,4 @@
-import { instanceOf } from "./instanceOf";
+import { instanceOf } from "./instanceOf.js";
 
 /**
  * Check if `entity` value is an instance of `Promise`.

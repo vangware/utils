@@ -1,4 +1,4 @@
-import type { Reducer } from "../types/Reducer";
+import type { Reducer } from "../types/Reducer.js";
 
 /**
  * Takes a `reducer` and an `initialValue` and applies it to `source` array.

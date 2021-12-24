@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isRegExp } from "../../src/type/isRegExp";
+import { isRegExp } from "../../src/type/isRegExp.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

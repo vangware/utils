@@ -1,5 +1,5 @@
-import type { DecimalTuple } from "../types/DecimalTuple";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `multiplier` and `multiplicand` and returns the multiplication result

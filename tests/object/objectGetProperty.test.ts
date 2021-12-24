@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { objectGetProperty } from "../../src/object/objectGetProperty";
+import { objectGetProperty } from "../../src/object/objectGetProperty.js";
 
 const getFoo = objectGetProperty("foo");
 

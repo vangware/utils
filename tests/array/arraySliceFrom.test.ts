@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arraySliceFrom } from "../../src/array/arraySliceFrom";
+import { arraySliceFrom } from "../../src/array/arraySliceFrom.js";
 
 const array = [0, 1, 2, 3];
 
