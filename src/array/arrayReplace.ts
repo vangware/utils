@@ -1,5 +1,5 @@
-import { arraySliceFrom } from "./arraySliceFrom";
-import { arraySliceTo } from "./arraySliceTo";
+import { arraySliceFrom } from "./arraySliceFrom.js";
+import { arraySliceTo } from "./arraySliceTo.js";
 
 /**
  * Takes an `index` and an `item` and replaces the `source` array item in that

@@ -1,4 +1,4 @@
-import type { Entries } from "../types/Entries";
+import type { Entries } from "../types/Entries.js";
 
 /**
  * Takes a `source` object and returns an entries array.

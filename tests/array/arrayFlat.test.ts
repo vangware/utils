@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayFlat } from "../../src/array/arrayFlat";
+import { arrayFlat } from "../../src/array/arrayFlat.js";
 
 const arrayFlat1 = arrayFlat(1);
 const arrayFlat2 = arrayFlat(2);

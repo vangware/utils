@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isUndefined } from "../../src/type/isUndefined";
+import { isUndefined } from "../../src/type/isUndefined.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

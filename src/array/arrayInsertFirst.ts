@@ -1,4 +1,4 @@
-import { arrayInsert } from "./arrayInsert";
+import { arrayInsert } from "./arrayInsert.js";
 
 /**
  * Takes an `item` and inserts it at the beginning of given source array.

@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { arrayEvery } from "../../src/array/arrayEvery";
-import { isNumber } from "../../src/type/isNumber";
+import { arrayEvery } from "../../src/array/arrayEvery.js";
+import { isNumber } from "../../src/type/isNumber.js";
 
 const everyNumber = arrayEvery(isNumber);
 

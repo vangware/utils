@@ -1,5 +1,5 @@
-import { isDate } from "../type/isDate";
-import { equalValues } from "./equalValues";
+import { isDate } from "../type/isDate.js";
+import { equalValues } from "./equalValues.js";
 
 /**
  * Given and `expected` value and an `actual` value, returns `true` if those

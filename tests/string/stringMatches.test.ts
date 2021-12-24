@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringMatches } from "../../src/string/stringMatches";
+import { stringMatches } from "../../src/string/stringMatches.js";
 
 const onlyHasNumbers = stringMatches(/\d/gu);
 

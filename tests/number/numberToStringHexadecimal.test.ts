@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberToStringHexadecimal } from "../../src/number/numberToStringHexadecimal";
+import { numberToStringHexadecimal } from "../../src/number/numberToStringHexadecimal.js";
 
 export default suite([
 	{

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isFunction } from "../../src/type/isFunction";
+import { isFunction } from "../../src/type/isFunction.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

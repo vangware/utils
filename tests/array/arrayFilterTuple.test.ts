@@ -1,6 +1,6 @@
 import { suite } from "@vangware/test";
-import { arrayFilterTuple } from "../../src/array/arrayFilterTuple";
-import type { FilterTuple } from "../../src/types/FilterTuple";
+import { arrayFilterTuple } from "../../src/array/arrayFilterTuple.js";
+import type { FilterTuple } from "../../src/types/FilterTuple.js";
 
 const array = [0, 1, 2, 3];
 const isOne = (item: number) => item === 1;

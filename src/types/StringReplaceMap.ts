@@ -1,4 +1,4 @@
-import type { ImmutableRecord } from "./ImmutableRecord";
+import type { ImmutableRecord } from "./ImmutableRecord.js";
 
 /**
  * Object with the following shape:

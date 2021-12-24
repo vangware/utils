@@ -1,5 +1,5 @@
-import type { Truthy } from "../types/Truthy";
-import { isFalsy } from "./isFalsy";
+import type { Truthy } from "../types/Truthy.js";
+import { isFalsy } from "./isFalsy.js";
 
 /**
  * Check if given `entity` is truthy (so not 0, NaN, "", false, or nullish).

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberBoundary } from "../../src/number/numberBoundary";
+import { numberBoundary } from "../../src/number/numberBoundary.js";
 
 const maximum = 10;
 const minimum = 0;

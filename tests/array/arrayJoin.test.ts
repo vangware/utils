@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayJoin } from "../../src/array/arrayJoin";
+import { arrayJoin } from "../../src/array/arrayJoin.js";
 
 const spaceJoin = arrayJoin(" ");
 const array = [0, 1, 2, 3];

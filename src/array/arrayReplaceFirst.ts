@@ -1,4 +1,4 @@
-import { arrayReplace } from "./arrayReplace";
+import { arrayReplace } from "./arrayReplace.js";
 
 /**
  * Takes an `item` and replaces the first one with it in the given source array.

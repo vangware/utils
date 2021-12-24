@@ -1,4 +1,4 @@
-import { equalValues } from "../equal/equalValues";
+import { equalValues } from "../equal/equalValues.js";
 
 /**
  * Check if `entity` is `null`.

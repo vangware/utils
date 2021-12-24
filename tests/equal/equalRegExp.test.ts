@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { equalRegExp } from "../../src/equal/equalRegExp";
+import { equalRegExp } from "../../src/equal/equalRegExp.js";
 
 const regExp = /./gu;
 const regExpCopy = /./gu;

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberMultiply } from "../../src/number/numberMultiply";
+import { numberMultiply } from "../../src/number/numberMultiply.js";
 
 export default suite([
 	{

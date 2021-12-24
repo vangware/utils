@@ -1,8 +1,8 @@
-import { arrayMap } from "../array/arrayMap";
-import type { Entry } from "../types/Entry";
-import type { Mapper } from "../types/Mapper";
-import { objectEntries } from "./objectEntries";
-import { objectFromEntries } from "./objectFromEntries";
+import { arrayMap } from "../array/arrayMap.js";
+import type { Entry } from "../types/Entry.js";
+import type { Mapper } from "../types/Mapper.js";
+import { objectEntries } from "./objectEntries.js";
+import { objectFromEntries } from "./objectFromEntries.js";
 
 /**
  * Takes a `mapper` function and applies it to given `source` object using

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayMap } from "../../src/array/arrayMap";
+import { arrayMap } from "../../src/array/arrayMap.js";
 
 const array = [0, 1, 2, 3];
 

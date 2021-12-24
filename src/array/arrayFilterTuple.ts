@@ -1,7 +1,7 @@
-import type { Filterer } from "../types/Filterer";
-import type { FilterTuple } from "../types/FilterTuple";
-import { arrayFilterIn } from "./arrayFilterIn";
-import { arrayFilterOut } from "./arrayFilterOut";
+import type { Filterer } from "../types/Filterer.js";
+import type { FilterTuple } from "../types/FilterTuple.js";
+import { arrayFilterIn } from "./arrayFilterIn.js";
+import { arrayFilterOut } from "./arrayFilterOut.js";
 
 /**
  * Takes a `filterer` and applies it to a `source` array returning a

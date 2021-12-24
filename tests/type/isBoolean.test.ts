@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isBoolean } from "../../src/type/isBoolean";
+import { isBoolean } from "../../src/type/isBoolean.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

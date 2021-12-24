@@ -1,4 +1,4 @@
-import type { ArrayOrIterable } from "../types/ArrayOrIterable";
+import type { ArrayOrIterable } from "../types/ArrayOrIterable.js";
 
 /**
  * Given an `ArrayLike` or `Iterable`, return an array.

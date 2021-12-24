@@ -1,6 +1,6 @@
-import { decimalTupleSubtract } from "./decimalTupleSubtract";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import { decimalTupleSubtract } from "./decimalTupleSubtract.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `subtrahend` and `minuend` and returns the precise subtraction of

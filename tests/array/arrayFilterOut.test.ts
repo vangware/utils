@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayFilterOut } from "../../src/array/arrayFilterOut";
+import { arrayFilterOut } from "../../src/array/arrayFilterOut.js";
 
 const array = [0, 1, 2, 3];
 const nothing = (_: unknown) => false;

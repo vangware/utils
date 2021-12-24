@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayReduce } from "../../src/array/arrayReduce";
+import { arrayReduce } from "../../src/array/arrayReduce.js";
 
 const array = [0, 1, 2, 3];
 

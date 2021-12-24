@@ -1,7 +1,7 @@
-import type { DecimalTuple } from "../types/DecimalTuple";
-import { decimalTupleMultiply } from "./decimalTupleMultiply";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
+import { decimalTupleMultiply } from "./decimalTupleMultiply.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `divisor` and `dividend` and returns the division of those values.

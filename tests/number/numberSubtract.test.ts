@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberSubtract } from "../../src/number/numberSubtract";
+import { numberSubtract } from "../../src/number/numberSubtract.js";
 
 export default suite([
 	{

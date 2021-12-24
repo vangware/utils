@@ -1,4 +1,4 @@
-import type { Filterer } from "../types/Filterer";
+import type { Filterer } from "../types/Filterer.js";
 
 /**
  * Takes a positive `filterer` and applies it to given `source` array.

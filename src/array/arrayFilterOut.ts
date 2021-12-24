@@ -1,5 +1,5 @@
-import type { Filterer } from "../types/Filterer";
-import type { OptionalExclude } from "../types/OptionalExclude";
+import type { Filterer } from "../types/Filterer.js";
+import type { OptionalExclude } from "../types/OptionalExclude.js";
 
 /**
  * Takes a negative `filterer` and applies it to given `source` array.
