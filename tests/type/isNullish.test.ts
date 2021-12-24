@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { isNullish } from "../../src/type/isNullish";
+import { isNullish } from "../../src/type/isNullish.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };

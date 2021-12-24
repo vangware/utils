@@ -1,4 +1,4 @@
-import type { Sorter } from "../types/Sorter";
+import type { Sorter } from "../types/Sorter.js";
 
 /**
  * Takes a `sorter` function and applies it to given `source` array.

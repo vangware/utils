@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayReverse } from "../../src/array/arrayReverse";
+import { arrayReverse } from "../../src/array/arrayReverse.js";
 
 const array = [0, 1, 2, 3];
 

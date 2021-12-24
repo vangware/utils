@@ -1,4 +1,4 @@
-import type { Radix } from "../types/Radix";
+import type { Radix } from "../types/Radix.js";
 
 /**
  * Wrapper of `parseInt` with mandatory radix.

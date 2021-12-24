@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringParseNumber } from "../../src/string/stringParseNumber";
+import { stringParseNumber } from "../../src/string/stringParseNumber.js";
 
 export default suite([
 	{

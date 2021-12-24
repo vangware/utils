@@ -1,5 +1,5 @@
-import type { DecimalTuple } from "../types/DecimalTuple";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
 
 /**
  * Takes a `addend1` and `addend2` and returns the addition of those values.

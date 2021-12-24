@@ -1,5 +1,5 @@
-import { stringParseDecimal } from "../string/stringParseDecimal";
-import type { DecimalTuple } from "../types/DecimalTuple";
+import { stringParseDecimal } from "../string/stringParseDecimal.js";
+import type { DecimalTuple } from "../types/DecimalTuple.js";
 
 /**
  * Takes a `source` float number and returns a `DecimalTuple`.

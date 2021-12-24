@@ -1,9 +1,9 @@
-import { objectGetProperty } from "../object/objectGetProperty";
-import { objectSetProperty } from "../object/objectSetProperty";
-import type { Grouped } from "../types/Grouped";
-import type { Grouper } from "../types/Grouper";
-import { arrayInsertLast } from "./arrayInsertLast";
-import { arrayReduce } from "./arrayReduce";
+import { objectGetProperty } from "../object/objectGetProperty.js";
+import { objectSetProperty } from "../object/objectSetProperty.js";
+import type { Grouped } from "../types/Grouped.js";
+import type { Grouper } from "../types/Grouper.js";
+import { arrayInsertLast } from "./arrayInsertLast.js";
+import { arrayReduce } from "./arrayReduce.js";
 
 /**
  * Takes `grouper` and applies it to given `source` array.

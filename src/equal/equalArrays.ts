@@ -1,5 +1,5 @@
-import { isArray } from "../type/isArray";
-import { equalValues } from "./equalValues";
+import { isArray } from "../type/isArray.js";
+import { equalValues } from "./equalValues.js";
 
 /**
  * Given a `compare` function, an `expected` value and an `actual` value,

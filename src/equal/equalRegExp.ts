@@ -1,5 +1,5 @@
-import { isRegExp } from "../type/isRegExp";
-import { equalValues } from "./equalValues";
+import { isRegExp } from "../type/isRegExp.js";
+import { equalValues } from "./equalValues.js";
 
 /**
  * Given and `expected` value and an `actual` value, returns `true` if those
@@ -15,16 +15,11 @@ import { equalValues } from "./equalValues";
  * @param expected Expected value to compare.
  */
 export const equalRegExp =
+	(expected: unknown) =>
 	/**
-	 * @param expected Expected value to compare.
+	 * @param actual Actual value to compare.
 	 */
-
-
-		(expected: unknown) =>
-		/**
-		 * @param actual Actual value to compare.
-		 */
-		(actual: unknown) =>
-			isRegExp(expected) &&
-			isRegExp(actual) &&
-			equalValues(expected.toString())(actual.toString());
+	(actual: unknown) =>
+		isRegExp(expected) &&
+		isRegExp(actual) &&
+		equalValues(expected.toString())(actual.toString());

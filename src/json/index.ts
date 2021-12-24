@@ -1,2 +1,2 @@
-export { jsonParsePromise } from "./jsonParsePromise";
-export { jsonStringifyPromise } from "./jsonStringifyPromise";
+export { jsonParsePromise } from "./jsonParsePromise.js";
+export { jsonStringifyPromise } from "./jsonStringifyPromise.js";

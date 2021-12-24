@@ -1,4 +1,4 @@
-import { stringParseNumber } from "./stringParseNumber";
+import { stringParseNumber } from "./stringParseNumber.js";
 
 /**
  * Parses a string to a hexadecimal value.

@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringParseDecimal } from "../../src/string/stringParseDecimal";
+import { stringParseDecimal } from "../../src/string/stringParseDecimal.js";
 
 export default suite([
 	{

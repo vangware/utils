@@ -1,7 +1,7 @@
-export { stringMapReplace } from "./stringMapReplace";
-export { stringMatches } from "./stringMatches";
-export { stringParseDecimal } from "./stringParseDecimal";
-export { stringParseHexadecimal } from "./stringParseHexadecimal";
-export { stringParseNumber } from "./stringParseNumber";
-export { stringReverse } from "./stringReverse";
-export { stringTest } from "./stringTest";
+export { stringMapReplace } from "./stringMapReplace.js";
+export { stringMatches } from "./stringMatches.js";
+export { stringParseDecimal } from "./stringParseDecimal.js";
+export { stringParseHexadecimal } from "./stringParseHexadecimal.js";
+export { stringParseNumber } from "./stringParseNumber.js";
+export { stringReverse } from "./stringReverse.js";
+export { stringTest } from "./stringTest.js";

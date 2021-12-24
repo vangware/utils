@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayFilterIn } from "../../src/array/arrayFilterIn";
+import { arrayFilterIn } from "../../src/array/arrayFilterIn.js";
 
 const array = [0, 1, 2, 3];
 const nothing = (_: unknown) => false;

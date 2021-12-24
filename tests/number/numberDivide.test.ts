@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { numberDivide } from "../../src/number/numberDivide";
+import { numberDivide } from "../../src/number/numberDivide.js";
 
 export default suite([
 	{

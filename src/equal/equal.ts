@@ -1,8 +1,8 @@
-import { equalArrays } from "./equalArrays";
-import { equalDates } from "./equalDates";
-import { equalObjects } from "./equalObjects";
-import { equalRegExp } from "./equalRegExp";
-import { equalValues } from "./equalValues";
+import { equalArrays } from "./equalArrays.js";
+import { equalDates } from "./equalDates.js";
+import { equalObjects } from "./equalObjects.js";
+import { equalRegExp } from "./equalRegExp.js";
+import { equalValues } from "./equalValues.js";
 
 /**
  * Given and `expected` value and an `actual` value, returns `true` if those

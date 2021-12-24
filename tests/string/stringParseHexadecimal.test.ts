@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringParseHexadecimal } from "../../src/string/stringParseHexadecimal";
+import { stringParseHexadecimal } from "../../src/string/stringParseHexadecimal.js";
 
 export default suite([
 	{

@@ -1,4 +1,4 @@
-import { numberToString } from "./numberToString";
+import { numberToString } from "./numberToString.js";
 
 /**
  * Parses a number to a hexadecimal string.

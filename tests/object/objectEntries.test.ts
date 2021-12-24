@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { objectEntries } from "../../src/object/objectEntries";
+import { objectEntries } from "../../src/object/objectEntries.js";
 
 const key = "key";
 const value = "value";

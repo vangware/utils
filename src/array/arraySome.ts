@@ -1,4 +1,4 @@
-import type { Filterer } from "../types/Filterer";
+import type { Filterer } from "../types/Filterer.js";
 
 /**
  * Curried wrapper for `Array.prototype.some`.

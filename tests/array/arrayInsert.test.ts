@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { arrayInsert } from "../../src/array/arrayInsert";
+import { arrayInsert } from "../../src/array/arrayInsert.js";
 
 const array = [0, 1, 2, 3];
 const string = "string";

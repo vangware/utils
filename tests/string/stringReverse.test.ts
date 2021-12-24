@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { stringReverse } from "../../src/string/stringReverse";
+import { stringReverse } from "../../src/string/stringReverse.js";
 
 const string = "string";
 

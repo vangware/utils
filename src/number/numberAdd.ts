@@ -1,6 +1,6 @@
-import { decimalTupleAdd } from "./decimalTupleAdd";
-import { decimalTupleToNumber } from "./decimalTupleToNumber";
-import { numberToDecimalTuple } from "./numberToDecimalTuple";
+import { decimalTupleAdd } from "./decimalTupleAdd.js";
+import { decimalTupleToNumber } from "./decimalTupleToNumber.js";
+import { numberToDecimalTuple } from "./numberToDecimalTuple.js";
 
 /**
  * Takes a `addend1` and `addend2` and returns the precise addition of those

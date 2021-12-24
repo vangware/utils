@@ -1,4 +1,4 @@
-import type { Mapper } from "./Mapper";
+import type { Mapper } from "./Mapper.js";
 
 /**
  * Sorter function.

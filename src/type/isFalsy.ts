@@ -1,4 +1,4 @@
-import type { Falsy } from "../types/Falsy";
+import type { Falsy } from "../types/Falsy.js";
 
 /**
  * Check if given `entity` is falsy (0, NaN, "", false, or nullish).
