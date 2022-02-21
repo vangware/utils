@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberAdd } from "../../src/number/numberAdd.js";
 
-export default suite([
+export default [
 	{
 		given: "0.1 and 0.2",
 		must: "get 0.3",
@@ -20,4 +20,4 @@ export default suite([
 		received: numberAdd(1000)(100000),
 		wanted: 101000,
 	},
-]);
+] as Tests<number>;

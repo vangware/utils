@@ -8,7 +8,7 @@ import { numberToString } from "./numberToString.js";
  * numberToStringDecimal(10); // "10"
  * numberToStringDecimal(0x10); // "16"
  * ```
- * @param source Source number to be stringified
+ * @param source Source number to be stringified.
  * @returns Stringified number.
  */
 export const numberToStringDecimal = numberToString(10);

@@ -1,4 +1,5 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyArray } from "@vangware/types";
 import { arraySort } from "../../src/array/arraySort.js";
 
 const numberArray = [3, 0, 2, 1];
@@ -8,7 +9,7 @@ const stringSorter = (next: string) => (item: string) => next > item ? 1 : -1;
 const numberArraySort = arraySort(numberSorter);
 const stringArraySort = arraySort(stringSorter);
 
-export default suite<ReadonlyArray<number | string>>([
+export default [
 	{
 		given: "an array of unsorted numbers",
 		must: "get an array with sorted numbers",
@@ -27,4 +28,4 @@ export default suite<ReadonlyArray<number | string>>([
 		received: numberArray,
 		wanted: [3, 0, 2, 1],
 	},
-]);
+] as Tests<ReadOnlyArray<number | string>>;

@@ -15,11 +15,25 @@
 export const arraySlice =
 	(start: number) =>
 	/**
+	 * Curried function with `start` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const sliceFrom1To3 = sliceFrom1(3);
+	 *
+	 * sliceFrom1To3([0, 1, 2, 3]); // [1, 2]
+	 * ```
 	 * @param end Slice end.
 	 * @returns Curried function with `start` in context.
 	 */
 	(end: number) =>
 	/**
+	 * Curried function with `start` and `end` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * sliceFrom1To3([0, 1, 2, 3]); // [1, 2]
+	 * ```
 	 * @template Item Type of items in source array.
 	 * @param source Source array to slice.
 	 * @returns Sliced copy of `source` array using `start` and `end`.

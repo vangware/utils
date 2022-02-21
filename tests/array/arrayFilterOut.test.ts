@@ -1,4 +1,5 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyArray } from "@vangware/types";
 import { arrayFilterOut } from "../../src/array/arrayFilterOut.js";
 
 const array = [0, 1, 2, 3];
@@ -7,7 +8,7 @@ const filterNothing = arrayFilterOut(nothing);
 const isEven = (item: number) => item % 2 === 0;
 const filterEvensOut = arrayFilterOut(isEven);
 
-export default suite([
+export default [
 	{
 		given: "an array of numbers and an always false filter",
 		must: "return all elements",
@@ -20,4 +21,4 @@ export default suite([
 		received: filterEvensOut(array),
 		wanted: [1, 3],
 	},
-]);
+] as Tests<ReadOnlyArray<number>>;

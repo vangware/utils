@@ -16,11 +16,29 @@
 export const numberBoundary =
 	(minimum: number) =>
 	/**
+	 * Curried function with `minimum` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const boundaryFrom0To10 = boundaryFrom0(10);
+	 *
+	 * boundaryFrom0To10(5); // 5 because is inside the boundary (0-10)
+	 * boundaryFrom0To10(-1); // 0 because it was lower than the minimum (0).
+	 * boundaryFrom0To10(11); // 10 because it was higher than the maximum (10).
+	 * ```
 	 * @param maximum Maximum boundary.
 	 * @returns Curried function with `minimum` and `maximum` set in context.
 	 */
 	(maximum: number) =>
 	/**
+	 * Curried function with `minimum` and `maximum` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * boundaryFrom0To10(5); // 5 because is inside the boundary (0-10)
+	 * boundaryFrom0To10(-1); // 0 because it was lower than the minimum (0).
+	 * boundaryFrom0To10(11); // 10 because it was higher than the maximum (10).
+	 * ```
 	 * @param source Number to apply boundaries on.
 	 * @returns Given source, or `minimum`/`maximum` when out of boundaries.
 	 */

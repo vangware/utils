@@ -1,11 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equalRegExp } from "../../src/equal/equalRegExp.js";
 
 const regExp = /./gu;
 const regExpCopy = /./gu;
 const otherRegExp = /other/gu;
 
-export default suite([
+export default [
 	{
 		given: "two equal regular expressions",
 		must: "return true",
@@ -36,4 +36,4 @@ export default suite([
 		received: equalRegExp(0)(0),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

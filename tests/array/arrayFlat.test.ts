@@ -1,4 +1,5 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyArray } from "@vangware/types";
 import { arrayFlat } from "../../src/array/arrayFlat.js";
 
 const arrayFlat1 = arrayFlat(1);
@@ -9,7 +10,7 @@ const array = [
 ];
 const arrayDeeper = [array, array];
 
-export default suite<ReadonlyArray<ReadonlyArray<number> | number>>([
+export default [
 	{
 		given: "an array of arrays and a depth of 1",
 		must: "return a flattened array",
@@ -33,4 +34,4 @@ export default suite<ReadonlyArray<ReadonlyArray<number> | number>>([
 		received: arrayFlat2(arrayDeeper),
 		wanted: [0, 1, 2, 3, 0, 1, 2, 3],
 	},
-]);
+] as Tests<ReadOnlyArray<ReadOnlyArray<number> | number>>;

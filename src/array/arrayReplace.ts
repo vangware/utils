@@ -15,19 +15,32 @@ import { arraySliceTo } from "./arraySliceTo.js";
  * replaceItemLast([0, 1, 2, 3]); // [0, 1, 2, "replacement"]
  * replaceItemFirst([0, 1, 2, 3]); // ["replacement", 1, 2, 3]
  * ```
- *
  * @param index Index to start replace item.
- * @returns Curried function with `item` in context.
+ * @returns Curried function with `index` in context.
  */
 export const arrayReplace =
 	(index: number) =>
 	/**
+	 * Curried function with `index` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const replaceItemLast = replaceLast("replacement");
+	 *
+	 * replaceItemLast([0, 1, 2, 3]); // [0, 1, 2, "replacement"]
+	 * ```
 	 * @template Item Type of the item to be inserted.
 	 * @param item Replacing item.
 	 * @returns Curried function with `index` and `item` in context.
 	 */
 	<Item>(item: Item) =>
 	/**
+	 * Curried function with `index` and `item` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * replaceItemLast([0, 1, 2, 3]); // [0, 1, 2, "replacement"]
+	 * ```
 	 * @template SourceItem Type of items in source Array.
 	 * @param source Source array to apply replace on.
 	 * @returns Copy of array with added item in it.

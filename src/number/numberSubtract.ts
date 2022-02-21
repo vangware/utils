@@ -19,7 +19,7 @@ export const numberSubtract =
 	(subtrahend: number) =>
 	/**
 	 * @param minuend Minuend of the subtraction.
-	 * @returnsThe result of `minuend` - `subtrahend`.
+	 * @returns The result of `minuend` - `subtrahend`.
 	 */
 	(minuend: number) =>
 		decimalTupleToNumber(

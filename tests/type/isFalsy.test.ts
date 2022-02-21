@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isFalsy } from "../../src/type/isFalsy.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-export default suite([
+export default [
 	{
 		given: "a falsy number",
 		received: isFalsy(0) && isFalsy(NaN),
@@ -41,4 +41,4 @@ export default suite([
 		received: isFalsy(true),
 		...wantedFalse,
 	},
-]);
+] as Tests<boolean>;

@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { jsonStringifyPromise } from "../../src/json/jsonStringifyPromise.js";
 
 const circularObject = {
@@ -11,7 +11,7 @@ const circularObject = {
 const key = "key";
 const value = "value";
 
-export default suite([
+export default [
 	{
 		given: "an object with a circular reference",
 		must: "catch without throwing",
@@ -24,4 +24,4 @@ export default suite([
 		received: jsonStringifyPromise({ [key]: value }),
 		wanted: `{"${key}":"${value}"}`,
 	},
-]);
+] as Tests<string>;

@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberToString } from "../../src/number/numberToString.js";
 
-export default suite([
+export default [
 	{
 		given: "a number with value 16 and a radix of 16",
 		must: "return the string '10'",
@@ -20,4 +20,4 @@ export default suite([
 		received: numberToString(2)(2),
 		wanted: "10",
 	},
-]);
+] as Tests<`${number}`>;

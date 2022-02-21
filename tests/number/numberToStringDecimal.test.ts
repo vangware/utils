@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberToStringDecimal } from "../../src/number/numberToStringDecimal.js";
 
-export default suite([
+export default [
 	{
 		given: "a number with value 10",
 		must: "return the string '10'",
@@ -14,4 +14,4 @@ export default suite([
 		received: numberToStringDecimal(0x10),
 		wanted: "16",
 	},
-]);
+] as Tests<`${number}`>;

@@ -1,11 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equalValues } from "../../src/equal/equalValues.js";
 
 const value = "foo";
 const valueCopy = value;
 const otherValue = "bar";
 
-export default suite([
+export default [
 	{
 		given: "two equal values",
 		must: "return true",
@@ -30,4 +30,4 @@ export default suite([
 		received: equalValues([])([]),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

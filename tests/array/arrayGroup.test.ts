@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { arrayGroup } from "../../src/array/arrayGroup.js";
 import type { Grouped } from "../../src/types/Grouped.js";
 
@@ -7,7 +7,7 @@ const string2 = "string2";
 const stringArray = [string1, string2, string1, string2];
 const numberArray = [0, 1, 2, 3];
 
-export default suite<Grouped<number | string>>([
+export default [
 	{
 		given: "an array of strings and a grouper by string",
 		must: "group by the string in the array",
@@ -25,4 +25,4 @@ export default suite<Grouped<number | string>>([
 		)(numberArray),
 		wanted: { even: [0, 2], odd: [1, 3] },
 	},
-]);
+] as Tests<Grouped<number | string>>;
