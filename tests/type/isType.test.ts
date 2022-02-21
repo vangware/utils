@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isType } from "../../src/type/isType.js";
 
 const string = "string";
 const isString = isType<string>("string");
 
-export default suite([
+export default [
 	{
 		given: "a string",
 		must: "return true",
@@ -17,4 +17,4 @@ export default suite([
 		received: isString(1),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

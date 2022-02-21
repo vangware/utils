@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equal } from "../../src/equal/equal.js";
 
-export default suite([
+export default [
 	{
 		given: "two equal strings",
 		must: "return true",
@@ -44,4 +44,4 @@ export default suite([
 		received: equal([1, 2, 3])([1, 2, 3, 4]),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

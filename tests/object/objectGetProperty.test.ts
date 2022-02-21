@@ -1,9 +1,9 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { objectGetProperty } from "../../src/object/objectGetProperty.js";
 
 const getFoo = objectGetProperty("foo");
 
-export default suite([
+export default [
 	{
 		given: "a getter for a property foo and a object containing that",
 		must: "get the value of foo",
@@ -16,4 +16,4 @@ export default suite([
 		received: getFoo({ bar: "foo" }),
 		wanted: undefined,
 	},
-]);
+] as Tests<string | undefined>;

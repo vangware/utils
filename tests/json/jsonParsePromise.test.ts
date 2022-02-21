@@ -1,10 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyRecord } from "@vangware/types";
 import { jsonParsePromise } from "../../src/json/jsonParsePromise.js";
 
 const key = "key";
 const value = "value";
 
-export default suite([
+export default [
 	{
 		given: "an invalid JSON string",
 		must: "catch without throwing",
@@ -17,4 +18,4 @@ export default suite([
 		received: jsonParsePromise(`{"${key}":"${value}"}`),
 		wanted: { [key]: value },
 	},
-]);
+] as Tests<ReadOnlyRecord<string> | string>;

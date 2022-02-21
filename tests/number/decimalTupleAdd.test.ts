@@ -1,7 +1,8 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { DecimalTuple } from "../../src/index.js";
 import { decimalTupleAdd } from "../../src/number/decimalTupleAdd.js";
 
-export default suite([
+export default [
 	{
 		given: "a DecimalTuple representing 0.1 and 0.2",
 		must: "get a DecimalTuple representing 0.3",
@@ -20,4 +21,4 @@ export default suite([
 		received: decimalTupleAdd([1, 3])([1, 5]),
 		wanted: [101, 3],
 	},
-]);
+] as Tests<DecimalTuple>;

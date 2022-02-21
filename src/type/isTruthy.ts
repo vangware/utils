@@ -4,8 +4,14 @@ import { isFalsy } from "./isFalsy.js";
 /**
  * Check if given `entity` is truthy (so not 0, NaN, "", false, or nullish).
  *
+ * @example
+ * ```typescript
+ * isTruthy(1); // true
+ * isTruthy(0); // false
+ * ```
  * @template Actual Actual type of the given entity.
  * @param entity Entity to check.
+ * @returns `true` if is truthy, `false` if not.
  */
 export const isTruthy = <Actual = unknown>(
 	entity: Actual,

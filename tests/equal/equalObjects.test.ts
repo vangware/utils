@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equal } from "../../src/equal/equal.js";
 import { equalObjects } from "../../src/equal/equalObjects.js";
 
@@ -7,7 +7,7 @@ const objectCopy = { ...object };
 const otherObject = { bar: "bar" };
 const objectCopyWithExtras = { ...object, ...otherObject };
 
-export default suite([
+export default [
 	{
 		given: "two equal objects",
 		must: "return true",
@@ -44,4 +44,4 @@ export default suite([
 		received: equalObjects(equal)(0)(0),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

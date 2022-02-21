@@ -19,10 +19,18 @@ import { equalValues } from "./equalValues.js";
  * equalToObject({ bar: "baz" }); // false
  * ```
  * @param expected Expected value to compare.
+ * @returns `true` if equal and `false` if not.
  */
 export const equal =
 	(expected: unknown) =>
 	/**
+	 * Curried function with `expected` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * equalTo2(2); // true
+	 * equalTo2(5); // false
+	 * ```
 	 * @param actual Actual value to compare.
 	 */
 	(actual: unknown) =>

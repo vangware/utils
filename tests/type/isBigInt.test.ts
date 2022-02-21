@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isBigInt } from "../../src/type/isBigInt.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-export default suite([
+export default [
 	{
 		given: "a BigInt",
 		received: isBigInt(BigInt(1)) && isBigInt(BigInt("1")),
@@ -74,4 +74,4 @@ export default suite([
 		received: isBigInt(undefined),
 		...wantedFalse,
 	},
-]);
+] as Tests<boolean>;

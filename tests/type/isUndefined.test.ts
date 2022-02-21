@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isUndefined } from "../../src/type/isUndefined.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-export default suite([
+export default [
 	{
 		given: "a BigInt",
 		received: isUndefined(BigInt(1)) && isUndefined(BigInt("1")),
@@ -75,4 +75,4 @@ export default suite([
 		received: isUndefined(undefined),
 		...wantedTrue,
 	},
-]);
+] as Tests<boolean>;

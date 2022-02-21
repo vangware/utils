@@ -1,10 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyArray } from "@vangware/types";
 import { arrayInsert } from "../../src/array/arrayInsert.js";
 
 const array = [0, 1, 2, 3];
 const string = "string";
 
-export default suite([
+export default [
 	{
 		given: "an array of numbers, a string and a valid index",
 		must: "add it to the array of numbers",
@@ -23,4 +24,4 @@ export default suite([
 		received: arrayInsert(-1)(string)(array),
 		wanted: [string, 0, 1, 2, 3],
 	},
-]);
+] as Tests<ReadOnlyArray<number | string>>;

@@ -1,7 +1,8 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { DecimalTuple } from "../../src/index.js";
 import { numberFloatToDecimalTuple } from "../../src/number/numberFloatToDecimalTuple.js";
 
-export default suite([
+export default [
 	{
 		given: "PI",
 		must: "get a tuple with the correct coefficient and exponent",
@@ -26,4 +27,4 @@ export default suite([
 		received: numberFloatToDecimalTuple(0),
 		wanted: [0, 0],
 	},
-]);
+] as Tests<DecimalTuple>;

@@ -1,9 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { ReadOnlyArray } from "@vangware/types";
 import { stringMatches } from "../../src/string/stringMatches.js";
 
 const onlyHasNumbers = stringMatches(/\d/gu);
 
-export default suite([
+export default [
 	{
 		given: "a string with numbers and a number validation",
 		must: "return array with all numbers matching",
@@ -16,4 +17,4 @@ export default suite([
 		received: onlyHasNumbers("nope"),
 		wanted: [],
 	},
-]);
+] as Tests<ReadOnlyArray<string>>;

@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberMultiply } from "../../src/number/numberMultiply.js";
 
-export default suite([
+export default [
 	{
 		given: "2 and 0.5",
 		must: "get 1",
@@ -20,4 +20,4 @@ export default suite([
 		received: numberMultiply(10)(3.5),
 		wanted: 35,
 	},
-]);
+] as Tests<number>;

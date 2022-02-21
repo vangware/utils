@@ -9,7 +9,7 @@
  * isPositive(1); // true
  * isNegative(1); // false
  * ```
- * @template Argument Argument type of the given function
+ * @template Argument Argument type of the given function.
  * @param source Source function which output will be negated.
  * @returns Source function with negated output.
  */
