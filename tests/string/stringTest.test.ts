@@ -1,9 +1,9 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { stringTest } from "../../src/string/stringTest.js";
 
 const onlyHasNumbers = stringTest(/^\d+$/gu);
 
-export default suite([
+export default [
 	{
 		given: "a string with numbers and a number validation",
 		must: "return true",
@@ -16,4 +16,4 @@ export default suite([
 		received: onlyHasNumbers("nope"),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

@@ -19,11 +19,25 @@ import type { Reducer } from "../types/Reducer.js";
 export const arrayReduce =
 	<Item, Output = ReadonlyArray<Item>>(reducer: Reducer<Item, Output>) =>
 	/**
+	 * Curried function with `reducer` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const sumStartingInZero = sum(0);
+	 *
+	 * sumStartingInZero([1, 2, 3]);
+	 * ```
 	 * @param initialValue Initial value for reducer.
 	 * @returns Curried function with `reducer` and `initialValue` in context.
 	 */
 	(initialValue: Output) =>
 	/**
+	 * Curried function with `reducer` and `initialValue` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * sumStartingInZero([1, 2, 3]);
+	 * ```
 	 * @param source Source array to be reduced.
 	 * @returns Reduced value using `reducer` and `initialValue`.
 	 */

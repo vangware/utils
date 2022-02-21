@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { arrayFilterTuple } from "../../src/array/arrayFilterTuple.js";
 import type { FilterTuple } from "../../src/types/FilterTuple.js";
 
@@ -8,12 +8,12 @@ const filterOne = arrayFilterTuple(isOne);
 const isEven = (item: number) => item % 2 === 0;
 const filterOddsAndEvens = arrayFilterTuple(isEven);
 
-export default suite([
+export default [
 	{
 		given: "an array of numbers and a filter for the number 1",
 		must: "return [1, nonMatching]",
 		received: filterOne(array),
-		wanted: [[1], [0, 2, 3]] as FilterTuple<number | string>,
+		wanted: [[1], [0, 2, 3]],
 	},
 	{
 		given: "an array of numbers and a filter for even numbers",
@@ -22,6 +22,6 @@ export default suite([
 		wanted: [
 			[0, 2],
 			[1, 3],
-		] as FilterTuple<number>,
+		],
 	},
-]);
+] as Tests<FilterTuple<number | string>>;

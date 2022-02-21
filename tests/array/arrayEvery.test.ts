@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { arrayEvery } from "../../src/array/arrayEvery.js";
 import { isNumber } from "../../src/type/isNumber.js";
 
 const everyNumber = arrayEvery(isNumber);
 
-export default suite([
+export default [
 	{
 		given: "an array of numbers",
 		must: "return true",
@@ -17,4 +17,4 @@ export default suite([
 		received: everyNumber([0, 1, 2, "foo", 3]),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

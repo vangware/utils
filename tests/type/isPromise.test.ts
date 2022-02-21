@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isPromise } from "../../src/type/isPromise.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-export default suite([
+export default [
 	{
 		given: "a BigInt",
 		received: isPromise(BigInt(1)) && isPromise(BigInt("1")),
@@ -75,4 +75,4 @@ export default suite([
 		received: isPromise(undefined),
 		...wantedFalse,
 	},
-]);
+] as Tests<boolean>;

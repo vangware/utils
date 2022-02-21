@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { stringMapReplace } from "../../src/string/stringMapReplace.js";
 
 const string1 = "string1";
 const string2 = "string2";
 
-export default suite([
+export default [
 	{
 		given: "a simple string and a replace map",
 		must: "replace the string parts based on that map",
@@ -19,4 +19,4 @@ export default suite([
 		received: stringMapReplace({})(string1),
 		wanted: string1,
 	},
-]);
+] as Tests<string>;

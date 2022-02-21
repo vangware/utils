@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { decimalTupleToNumber } from "../../src/number/decimalTupleToNumber.js";
 
-export default suite([
+export default [
 	{
 		given: "a DecimalTuple representing PI",
 		must: "get PI",
@@ -20,4 +20,4 @@ export default suite([
 		received: decimalTupleToNumber([7, 3]),
 		wanted: 7000,
 	},
-]);
+] as Tests<number>;

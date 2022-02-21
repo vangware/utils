@@ -1,7 +1,8 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { DecimalTuple } from "../../src/index.js";
 import { decimalTupleMultiply } from "../../src/number/decimalTupleMultiply.js";
 
-export default suite([
+export default [
 	{
 		given: "a DecimalTuple representing 2 and 0.5",
 		must: "get a DecimalTuple representing 1",
@@ -20,4 +21,4 @@ export default suite([
 		received: decimalTupleMultiply([1, 1])([35, -1]),
 		wanted: [35, 0],
 	},
-]);
+] as Tests<DecimalTuple>;

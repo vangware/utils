@@ -16,17 +16,31 @@ import { arraySliceTo } from "./arraySliceTo.js";
  * insertValueFirst([0, 1, 2, 3]); // ["value", 0, 1, 2, 3]
  * ```
  * @param index Index to insert item.
- * @returns Curried function with `item` in context.
+ * @returns Curried function with `index` in context.
  */
 export const arrayInsert =
 	(index: number) =>
 	/**
+	 * Curried function with `index` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const insertValueLast = insertLast("value");
+	 *
+	 * insertValueLast([0, 1, 2, 3]); // [0, 1, 2, 3, "value"]
+	 * ```
 	 * @template Item Type of items to insert in source array.
 	 * @param item Item to be inserted.
 	 * @returns Curried function with `index` and `item` in context.
 	 */
 	<Item>(item: Item) =>
 	/**
+	 * Curried function with `index` and `item` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * insertValueLast([0, 1, 2, 3]); // [0, 1, 2, 3, "value"]
+	 * ```
 	 * @template SourceItem Type of items in source Array.
 	 * @param source Source array to insert item in.
 	 * @returns Copy of array with added item in it.

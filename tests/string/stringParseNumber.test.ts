@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { stringParseNumber } from "../../src/string/stringParseNumber.js";
 
-export default suite([
+export default [
 	{
 		given: "a string with value '10' and a radix of 16",
 		must: "return the number 16 (0x10)",
@@ -20,4 +20,4 @@ export default suite([
 		received: stringParseNumber(2)("10"),
 		wanted: 2,
 	},
-]);
+] as Tests<number>;

@@ -18,15 +18,32 @@ import { equalValues } from "./equalValues.js";
  * equalToObject({ bar: "baz" }); // false
  * ```
  * @param compare Comparison function.
+ * @returns Curried function with `compare` function in context.
  */
 export const equalObjects =
 	(compare: (expected: unknown) => (actual: unknown) => boolean) =>
 	/**
+	 * Curried function with `compare` function set.
+	 *
+	 * @example
+	 * ```typescript
+	 * const equalToObject = equalObjects(compare)({ foo: "bar" });
+	 *
+	 * equalToObject({ foo: "bar" }); // true
+	 * ```
 	 * @param expected Expected value to compare.
+	 * @returns Curried function with `compare` and `expected` in context.
 	 */
 	(expected: unknown) =>
 	/**
+	 * Curried function with `compare` and `expected` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * equalToObject({ foo: "bar" }); // true
+	 * ```
 	 * @param actual Actual value to compare.
+	 * @returns `true` if equal and `false` if not.
 	 */
 	(actual: unknown) =>
 		!isRegExp(expected) &&
