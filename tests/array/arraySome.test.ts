@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { arraySome } from "../../src/array/arraySome.js";
 import { isNumber } from "../../src/type/isNumber.js";
 
 const someNumber = arraySome(isNumber);
 
-export default suite([
+export default [
 	{
 		given: "an array of numbers",
 		must: "return true",
@@ -23,4 +23,4 @@ export default suite([
 		received: someNumber(["foo", "bar"]),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

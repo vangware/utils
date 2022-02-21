@@ -7,17 +7,25 @@ import { equalValues } from "./equalValues.js";
  *
  * @example
  * ```typescript
- * const equalToDate = equalDates(new Date(0));
+ * const equalToDate0 = equalDates(new Date(0));
  *
- * equalToDate(new Date(0)); // true
- * equalToDate(new Date(1)); // false
+ * equalToDate0(new Date(0)); // true
+ * equalToDate0(new Date(1)); // false
  * ```
  * @param expected Expected value to compare.
+ * @returns Curried function with `expected` in context.
  */
 export const equalDates =
 	(expected: unknown) =>
 	/**
+	 * Curried function with `expected` set.
+	 *
+	 * @example
+	 * ```typescript
+	 * equalToDate0(new Date(0)); // true
+	 * ```
 	 * @param actual Actual value to compare.
+	 * @returns `true` if equal and `false` if not.
 	 */
 	(actual: unknown) =>
 		isDate(expected) &&

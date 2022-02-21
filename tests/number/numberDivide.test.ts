@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberDivide } from "../../src/number/numberDivide.js";
 
-export default suite([
+export default [
 	{
 		given: "5 and 2",
 		must: "get 2.5",
@@ -20,4 +20,4 @@ export default suite([
 		received: numberDivide(16)(1000),
 		wanted: 62.5,
 	},
-]);
+] as Tests<number>;

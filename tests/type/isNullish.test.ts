@@ -1,10 +1,10 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { isNullish } from "../../src/type/isNullish.js";
 
 const wantedFalse = { must: "return false", wanted: false };
 const wantedTrue = { must: "return true", wanted: true };
 
-export default suite([
+export default [
 	{
 		given: "a BigInt",
 		received: isNullish(BigInt(1)) && isNullish(BigInt("1")),
@@ -75,4 +75,4 @@ export default suite([
 		received: isNullish(undefined),
 		...wantedTrue,
 	},
-]);
+] as Tests<boolean>;

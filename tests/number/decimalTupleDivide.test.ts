@@ -1,7 +1,8 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
+import type { DecimalTuple } from "../../src/index.js";
 import { decimalTupleDivide } from "../../src/number/decimalTupleDivide.js";
 
-export default suite([
+export default [
 	{
 		given: "a DecimalTuple representing 5 and 2",
 		must: "get a DecimalTuple representing 2.5",
@@ -20,4 +21,4 @@ export default suite([
 		received: decimalTupleDivide([16, 0])([1, 3]),
 		wanted: [625, -1],
 	},
-]);
+] as Tests<DecimalTuple>;

@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equal } from "../../src/equal/equal.js";
 import { equalArrays } from "../../src/equal/equalArrays.js";
 
@@ -7,7 +7,7 @@ const arrayCopy = [...array];
 const otherArray = [4, 5, 6, 7];
 const arrayCopyWithExtras = [...array, ...otherArray];
 
-export default suite([
+export default [
 	{
 		given: "two arrays with the same items",
 		must: "return true",
@@ -44,4 +44,4 @@ export default suite([
 		received: equalArrays(equal)(0)(0),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

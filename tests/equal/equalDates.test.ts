@@ -1,11 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { equalDates } from "../../src/equal/equalDates.js";
 
 const date = new Date(624286800000);
 const dateCopy = new Date(date.getTime());
 const otherDate = new Date(0);
 
-export default suite([
+export default [
 	{
 		given: "two equal dates",
 		must: "return true",
@@ -36,4 +36,4 @@ export default suite([
 		received: equalDates(0)(0),
 		wanted: false,
 	},
-]);
+] as Tests<boolean>;

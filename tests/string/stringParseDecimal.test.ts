@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { stringParseDecimal } from "../../src/string/stringParseDecimal.js";
 
-export default suite([
+export default [
 	{
 		given: "a string with value '10'",
 		must: "return the number 10",
@@ -14,4 +14,4 @@ export default suite([
 		received: stringParseDecimal("0x10"),
 		wanted: 0,
 	},
-]);
+] as Tests<number>;

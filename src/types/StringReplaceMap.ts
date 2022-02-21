@@ -1,8 +1,10 @@
 import type { ImmutableRecord } from "./ImmutableRecord.js";
 
 /**
- * Object with the following shape:
- * ```
+ * String replace dictionary.
+ *
+ * @example
+ * ```typescript
  * {
  * 	[searchString]: "replacingString"
  * }

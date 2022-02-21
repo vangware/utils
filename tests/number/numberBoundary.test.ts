@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { numberBoundary } from "../../src/number/numberBoundary.js";
 
 const maximum = 10;
@@ -8,7 +8,7 @@ const inside = 5;
 const bigger = maximum + 1;
 const lower = minimum - 1;
 
-export default suite([
+export default [
 	{
 		given: "a number inside the boundaries",
 		must: "get the same number",
@@ -27,4 +27,4 @@ export default suite([
 		received: testBoundary(lower),
 		wanted: minimum,
 	},
-]);
+] as Tests<number>;
