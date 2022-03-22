@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/utils",
 	"description": "⚒️ Vangware curried functional utils",
-	"version": "8.0.6",
+	"version": "8.0.7",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
