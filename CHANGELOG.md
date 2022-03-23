@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 8.0.8
+
+-   :arrow_up: dependency upgrade.
+
 ## 8.0.7
 
 -   :arrow_up: dependency upgrade.
@@ -145,7 +149,8 @@ All notable changes to this project will be documented in this file.
 
 -   :arrow_up: dependency upgrade.
 -   :building_construction: update `equalValues` to use `Object.is`.
--   :building_construction: update `equal` utils to use `equalValues` when comparing values directly.
+-   :building_construction: update `equal` utils to use `equalValues` when
+    comparing values directly.
 -   :building_construction: update `numberToDecimalTuple` internal code.
 -   :sparkles: add new `numberToString` util.
 -   :sparkles: add new `numberToStringDecimal` util.
@@ -227,7 +232,8 @@ All notable changes to this project will be documented in this file.
 -   :arrow_up: dependency upgrade.
 -   :heavy_minus_sign: remove uvu.
 -   :wrench: update package.json scripts.
--   :truck: rename tests to .test.ts to match new `@vangware/test` implementation.
+-   :truck: rename tests to .test.ts to match new `@vangware/test`
+    implementation.
 -   :sparkles: add `arrayFlat`.
 -   :sparkles: add `arrayJoin`.
 -   :sparkles: add `stringTest`.
@@ -302,7 +308,8 @@ All notable changes to this project will be documented in this file.
 -   :sparkles: add new `isFalsy` util.
 -   :sparkles: add new `isTruthy` util.
 -   :sparkles: add new `numberFloatToDecimalTuple` util (internal usage mainly).
--   :sparkles: add new `numberWithExponentToDecimalTuple` util (internal usage mainly).
+-   :sparkles: add new `numberWithExponentToDecimalTuple` util (internal usage
+    mainly).
 -   :sparkles: add new `stringParseDecimal` util.
 -   :sparkles: add new `stringParseHexadecimal` util.
 -   :sparkles: add new `stringParseNumber` util.
@@ -316,7 +323,8 @@ All notable changes to this project will be documented in this file.
 ## 2.1.4
 
 -   :arrow_up: dependency upgrade.
--   :bug: fix order of `decimalTupleAdd` and `numberAdd` (minor because is an addition).
+-   :bug: fix order of `decimalTupleAdd` and `numberAdd` (minor because is an
+    addition).
 
 ## 2.1.3
 
@@ -325,7 +333,8 @@ All notable changes to this project will be documented in this file.
 
 ## 2.1.2
 
--   :bug: fix `numberToDecimalTuple` parsing error with numbers that had exponent.
+-   :bug: fix `numberToDecimalTuple` parsing error with numbers that had
+    exponent.
 -   :white_check_mark: add tests for those scenarios.
 
 ## 2.1.1
@@ -334,7 +343,8 @@ All notable changes to this project will be documented in this file.
 
 ## 2.1.0
 
--   :sparkles: add new `DecimalTuple` type to represent decimal numbers with two integers.
+-   :sparkles: add new `DecimalTuple` type to represent decimal numbers with two
+    integers.
 -   :sparkles: add new `decimalTupleAdd` util.
 -   :sparkles: add new `decimalTupleDivide` util.
 -   :sparkles: add new `decimalTupleMultiply` util.
@@ -354,7 +364,8 @@ All notable changes to this project will be documented in this file.
 -   :building_construction: change `nyc` with `c8`.
 -   :heavy_minus_sign: remove `ava`.
 -   :heavy_minus_sign: remove `nyc`.
--   :fire: removed `test:watch` because it doesn't make any sense with the speed of `uvu`.
+-   :fire: removed `test:watch` because it doesn't make any sense with the speed
+    of `uvu`.
 -   :wrench: update travis config.
 
 ## 2.0.0
@@ -404,11 +415,14 @@ All notable changes to this project will be documented in this file.
 
 ## 8.0.0 (deprecated @vangware/micro)
 
--   :truck: rename all utils to avoid reserved words clashing (now the internal API resembles the external)
+-   :truck: rename all utils to avoid reserved words clashing (now the internal
+    API resembles the external)
 -   :bookmark: major version bump.
--   :building_construction: removed typed imports/exports until bundlers work better.
+-   :building_construction: removed typed imports/exports until bundlers work
+    better.
 -   :building_construction: better `package.json` exports.
--   :building_construction: imports/exports now include `.js` extension (more ESM friendly).
+-   :building_construction: imports/exports now include `.js` extension (more
+    ESM friendly).
 
 ## 7.2.0 (deprecated @vangware/micro)
 
@@ -431,7 +445,8 @@ All notable changes to this project will be documented in this file.
 -   :pencil2: fix wrong docs in instanceOf.
 -   :arrow_up: dependency upgrade.
 -   :bookmark: version bump.
--   :memo: update docs (they still suck because they are using internal names instead of exported and they don't handle curried functions that well...).
+-   :memo: update docs (they still suck because they are using internal names
+    instead of exported and they don't handle curried functions that well...).
 
 ## 7.1.0 (deprecated @vangware/micro)
 
@@ -448,7 +463,8 @@ All notable changes to this project will be documented in this file.
 -   :sparkles: add `array/from`.
 -   :sparkles: add `json/stringifyPromise`.
 -   :sparkles: add `object/fromEntries`.
--   :fire: remove object freezing (types will keep being readonly, but not in runtime).
+-   :fire: remove object freezing (types will keep being readonly, but not in
+    runtime).
 -   :arrow_up: dependency upgrade.
 
 ## 6.0.6 (deprecated @vangware/micro)
@@ -494,7 +510,8 @@ All notable changes to this project will be documented in this file.
 -   :building_construction: change to named exports only.
 -   :bulb: new documentation with examples for everything.
 -   :memo: updated README.md.
--   :fire: remove arrayFilter (separated int `arrayFilterIn` and `arrayFilterOut`).
+-   :fire: remove arrayFilter (separated int `arrayFilterIn` and
+    `arrayFilterOut`).
 -   :fire: remove constants.
 -   :fire: remove tap (use function in place).
 -   :fire: remove when (use ternaries instead).
@@ -512,7 +529,8 @@ All notable changes to this project will be documented in this file.
 ## 5.1.0 (deprecated @vangware/micro)
 
 -   :bookmark: version bump.
--   :building_construction: change exports/imports to use import type/export type when needed.
+-   :building_construction: change exports/imports to use import type/export
+    type when needed.
 
 ## 5.0.6 (deprecated @vangware/micro)
 
@@ -552,17 +570,24 @@ All notable changes to this project will be documented in this file.
 
 -   :arrow_up: dependency upgrade.
 -   :bookmark: version bump.
--   :building_construction: update `arrayFilter` to avoid mutations even further.
--   :building_construction: update `arrayFilterTuple` to avoid mutations even further.
+-   :building_construction: update `arrayFilter` to avoid mutations even
+    further.
+-   :building_construction: update `arrayFilterTuple` to avoid mutations even
+    further.
 -   :building_construction: update `arrayGroup` to avoid mutations even further.
--   :building_construction: update `arrayInsert` to avoid mutations even further.
+-   :building_construction: update `arrayInsert` to avoid mutations even
+    further.
 -   :building_construction: update `arrayMap` to avoid mutations even further.
--   :building_construction: update `arrayReduce` to avoid mutations even further.
--   :building_construction: update `arrayReplace` to avoid mutations even further.
+-   :building_construction: update `arrayReduce` to avoid mutations even
+    further.
+-   :building_construction: update `arrayReplace` to avoid mutations even
+    further.
 -   :building_construction: update `arraySlice` to avoid mutations even further.
 -   :building_construction: update `arraySplit` to avoid mutations even further.
--   :building_construction: update `objectCreate` to be use a base besides the prototype.
--   :building_construction: update `objectEntries` to avoid mutations even further.
+-   :building_construction: update `objectCreate` to be use a base besides the
+    prototype.
+-   :building_construction: update `objectEntries` to avoid mutations even
+    further.
 -   :sparkles: add `objectFreeze` to be used by everything.
 
 ## 4.0.5 (deprecated @vangware/micro)
@@ -589,7 +614,8 @@ All notable changes to this project will be documented in this file.
 -   :arrow_up: dependency upgrade.
 -   :wrench: update settings.json.
 -   :bookmark: version bump.
--   :twisted_rightwards_arrows: Merge branch 'master' of github.com:vangware/micro
+-   :twisted_rightwards_arrows: Merge branch 'master' of
+    github.com:vangware/micro
 -   :truck: move docs and url to https://micro.vangware.com.
 -   :sparkles: Create CNAME
 -   :truck: move docs to html in docs directory (for GH Pages)
@@ -731,7 +757,8 @@ All notable changes to this project will be documented in this file.
 ## 1.1.0 (deprecated @vangware/micro)
 
 -   :art: improve types.
--   :building_construction: removed defaults and some optionals that didn't made any sense.
+-   :building_construction: removed defaults and some optionals that didn't made
+    any sense.
 -   :bookmark: version bump.
 
 ## 1.0.1 (deprecated @vangware/micro)
