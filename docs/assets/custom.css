@@ -1,59 +1,64 @@
+/* Get Inter font from Inter's site */
+@import url("https://rsms.me/inter/inter.css");
+/* Get Fira Code from Bunny fonts (better privacy than Google Fonts) */
+@import url("https://fonts.bunny.net/css?family=fira-code:400,700&display=swap");
+
+/* Custom fonts */
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+	body {
+		font-family: "Inter var", sans-serif;
+	}
+}
+
+code,
+pre {
+	font-family: "Fira Code", monospace;
+	font-variant-ligatures: common-ligatures;
+}
+
+/* Color customizations. */
+
 :root {
-	--vangware-blue-light: #5ac;
-	--vangware-blue: #27b;
-	--vangware-gray: #666;
-	--vangware-green: #2b7;
-	--vangware-orange-light: #ca5;
-	--vangware-orange: #b72;
-	--vangware-purple-light: #a5c;
-	--vangware-purple: #72b;
+	--color-link: #0a8 !important;
+	--light-color-background-secondary: #ddd !important;
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		--color-link: var(--vangware-green);
-		--color-ts-class: var(--vangware-blue-light);
-		--color-ts-enum: var(--vangware-orange-light);
-		--color-ts-interface: var(--vangware-green);
-		--color-ts-private: var(--vangware-gray);
-		--color-ts: var(--vangware-purple-light);
-	}
-}
+/* Hidden elements */
 
-body.dark {
-	--color-link: var(--vangware-green);
-	--color-ts-class: var(--vangware-blue-light);
-	--color-ts-enum: var(--vangware-orange-light);
-	--color-ts-interface: var(--vangware-green);
-	--color-ts-private: var(--vangware-gray);
-	--color-ts: var(--vangware-purple-light);
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		--color-link: var(--vangware-green);
-		--color-ts-class: var(--vangware-blue);
-		--color-ts-enum: var(--vangware-orange);
-		--color-ts-interface: var(--vangware-green);
-		--color-ts-private: var(--vangware-gray);
-		--color-ts: var(--vangware-purple);
-	}
-}
-
-body.light {
-	--color-link: var(--vangware-green);
-	--color-ts-class: var(--vangware-blue);
-	--color-ts-enum: var(--vangware-orange);
-	--color-ts-interface: var(--vangware-green);
-	--color-ts-private: var(--vangware-gray);
-	--color-ts: var(--vangware-purple);
-}
-
-.tsd-filter-group,
-.tsd-page-title {
+.tsd-filter-visibility {
 	display: none !important;
 }
 
-.container-main {
-	padding-top: 80px;
+/* Other custom styles */
+
+.tsd-page-toolbar {
+	align-items: center;
+	border-bottom: 0;
+	box-sizing: border-box;
+	display: flex;
+	height: 4rem;
+	justify-content: center;
+}
+
+.tsd-toolbar-contents {
+	width: 100%;
+}
+
+#tsd-search {
+	border-radius: 0.5rem;
+}
+
+.col-content {
+	padding-top: 3rem !important;
+}
+
+@media (max-width: 1024px) {
+	.col-content {
+		padding-top: 5rem !important;
+	}
 }
