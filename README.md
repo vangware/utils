@@ -23,14 +23,14 @@ This package can be installed as a dependency or used directly.
 In JS or [Deno][deno]:
 
 ```js
-import { isObject } from "https://esm.sh/@vangware/utils";
+import { tap } from "https://esm.sh/@vangware/utils";
 ```
 
 Or in HTML:
 
 ```html
 <script type="module">
-	import { isObject } from "https://esm.sh/@vangware/utils";
+	import { tap } from "https://esm.sh/@vangware/utils";
 </script>
 ```
 
@@ -45,14 +45,14 @@ npm i @vangware/utils
 And then:
 
 ```js
-import { isObject } from "@vangware/utils";
+import { tap } from "@vangware/utils";
 ```
 
 ## Documentation
 
 Documentation can be found [HERE][documentation]. It is auto-generated with
 [typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be
-necessary to read this, code editors like [VSCode][vscode] integrate the
+necessary to read this, code editors like [VS Code][vscode] integrate the
 documentation in the UI.
 
 ## Changelog
@@ -66,22 +66,22 @@ Test coverage can be found [HERE][coverage].
 <!-- Reference -->
 
 [build-status-badge]:
-	https://img.shields.io/github/workflow/status/vangware/utils/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/actions
+	https://img.shields.io/github/workflow/status/vangware/utils/Test.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/utils/actions
 [changelog]: https://github.com/vangware/utils/blob/main/CHANGELOG.md
 [coverage-badge]:
-	https://img.shields.io/coveralls/github/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/utils
+	https://img.shields.io/coveralls/github/vangware/utils.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/vangware/utils
 [coverage]: https://coveralls.io/github/vangware/utils
 [currying]: https://en.wikipedia.org/wiki/Currying
 [deno]: https://deno.land/
 [documentation]: https://utils.vangware.com
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
 [license-badge]:
-	https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/blob/main/LICENSE
+	https://img.shields.io/npm/l/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/utils/blob/main/LICENSE
 [nodejs]: https://nodejs.org/
 [npm-version-badge]:
-	https://img.shields.io/npm/v/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/utils
+	https://img.shields.io/npm/v/@vangware/utils.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/utils
 [open-issues-badge]:
-	https://img.shields.io/github/issues/vangware/utils.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/utils/issues
+	https://img.shields.io/github/issues/vangware/utils.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/utils/issues
 [typedoc]: https://typedoc.org/
 [typescript]: https://typescriptlang.org/
 [vangware]: https://vangware.com
