@@ -5,6 +5,7 @@ import { when } from "./when.js";
 /**
  * Like `when`, but when is falsy the value is returned as is.
  *
+ * @category Conditions
  * @example
  * ```typescript
  * const isEven = (value: number) => value % 2 === 0;

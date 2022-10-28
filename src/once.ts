@@ -1,9 +1,18 @@
 import type { Unary, UnaryInput, UnaryOutput } from "@vangware/types";
+import { get } from "./get.js";
+import { mutate } from "./mutate.js";
+import { thunk } from "./thunk.js";
 import { when } from "./when.js";
+
+const CALLED = Symbol("called");
+const RESULT = Symbol("result");
+const getCalled = thunk(get(CALLED));
+const getResult = thunk(get(RESULT));
 
 /**
  * Runs a function once, and after that returns always the same value.
  *
+ * @category Functions
  * @example
  * ```typescript
  * const expensiveOperation = (value: number) => value * 2;
@@ -17,16 +26,19 @@ import { when } from "./when.js";
  */
 export const once = <OnceFunction extends Unary<never, unknown>>(
 	unary: OnceFunction,
-) => {
-	// eslint-disable-next-line functional/no-let, prefer-const
-	let called = false;
-	// eslint-disable-next-line functional/no-let, prefer-const
-	let result = undefined as UnaryOutput<OnceFunction>;
-
-	return when<UnaryInput<OnceFunction>>(() => called)(() => result)(
-		(input: UnaryInput<OnceFunction>) => (
-			(called = true),
-			(result = unary(input as never) as UnaryOutput<OnceFunction>)
-		),
-	);
-};
+) =>
+	(state =>
+		when<UnaryInput<OnceFunction>>(getCalled(state))(getResult(state))(
+			input =>
+				mutate({
+					[CALLED]: true,
+					[RESULT]: unary(
+						input as never,
+					) as UnaryOutput<OnceFunction>,
+				})(state)[RESULT],
+		))({
+		/** When the function was called. */
+		[CALLED]: false,
+		/** Result of the first call. */
+		[RESULT]: undefined as UnaryOutput<OnceFunction>,
+	});
