@@ -5,779 +5,767 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 9.0.0
+
+-   ⬆️ dependency upgrade.
+-   🏗 reduced library to just a bunch of functional utils.
+
 ## 8.0.10
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.9
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.5
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove unneeded dependencies.
+-   ⬆️ dependency upgrade.
+-   ➖ remove unneeded dependencies.
 
 ## 8.0.4
 
--   :arrow_up: dependency upgrade.
--   :white_check_mark: update tests for new `@vangware/test`.
--   :wrench: add new `.npmrc`.
+-   ⬆️ dependency upgrade.
+-   ✅ update tests for new `@vangware/test`.
+-   🔧 add new `.npmrc`.
 
 ## 8.0.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.0.0
 
--   :arrow_up: dependency upgrade.
--   :truck: moved to ESM only.
+-   ⬆️ dependency upgrade.
+-   🚚 moved to ESM only.
 
 ## 7.0.9
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.8
 
--   :arrow_up: dependency upgrade.
--   :art: typedoc update.
--   :rotating_light: update code based on new linting rules.
+-   ⬆️ dependency upgrade.
+-   🎨 typedoc update.
+-   🚨 update code based on new linting rules.
 
 ## 7.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.5
 
--   :bug: fix but with light theme in docs.
+-   🐛 fix but with light theme in docs.
 
 ## 7.0.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 7.0.0
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove `husky` :tada:
--   :heavy_plus_sign: add `@arkweid/lefthook`.
--   :building_construction: change markdown files to use references.
--   :bento: update logo in `README.md`
--   :building_construction: update imports to have extension.
--   :building_construction: update outDir to single `dist` directory.
+-   ⬆️ dependency upgrade.
+-   ➖ remove `husky` :tada:
+-   ➕ add `@arkweid/lefthook`.
+-   🏗 change markdown files to use references.
+-   🍱 update logo in `README.md`
+-   🏗 update imports to have extension.
+-   🏗 update outDir to single `dist` directory.
 
 ## 6.3.5
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.3.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.3.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.3.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.3.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.3.0
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.2.2
 
--   :arrow_up: dependency upgrade.
--   :rotating_light: fix linter issue in `jsonParsePromise`.
+-   ⬆️ dependency upgrade.
+-   🚨 fix linter issue in `jsonParsePromise`.
 
 ## 6.2.1
 
--   :arrow_up: dependency upgrade.
--   :art: new prettier config.
+-   ⬆️ dependency upgrade.
+-   🎨 new prettier config🚨
 
 ## 6.2.0
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `package.json` adding `lint:fix` script.
--   :wrench: update `package.json` `docs` script.
--   :building_construction: update code with new linting rules.
--   :memo: update docs.
+-   ⬆️ dependency upgrade.
+-   🔧 update `package.json` adding `lint:fix` script.
+-   🔧 update `package.json` `docs` script.
+-   🏗 update code with new linting rules.
+-   📝 update docs.
 
 ## 6.1.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.1.1
 
--   :arrow_up: dependency upgrade.
--   :wrench: update package.json adding `postpublish`.
--   :memo: update docs theme.
+-   ⬆️ dependency upgrade.
+-   🔧 update package.json adding `postpublish`.
+-   📝 update docs theme.
 
 ## 6.1.0
 
--   :arrow_up: dependency upgrade.
--   :building_construction: update `equalValues` to use `Object.is`.
--   :building_construction: update `equal` utils to use `equalValues` when
-    comparing values directly.
--   :building_construction: update `numberToDecimalTuple` internal code.
--   :sparkles: add new `numberToString` util.
--   :sparkles: add new `numberToStringDecimal` util.
--   :sparkles: add new `numberToStringHexadecimal` util.
--   :sparkles: add new `objectGetProperty` util.
--   :sparkles: add new `objectSetProperty` util.
--   :sparkles: add new `Radix` type.
--   :bug: fix some root imports.
--   :white_check_mark: add tests for new utils.
+-   ⬆️ dependency upgrade.
+-   🏗 update `equalValues` to use `Object.is`.
+-   🏗 update `equal` utils to use `equalValues` when comparing values directly.
+-   🏗 update `numberToDecimalTuple` internal code.
+-   ✨ add new `numberToString` util.
+-   ✨ add new `numberToStringDecimal` util.
+-   ✨ add new `numberToStringHexadecimal` util.
+-   ✨ add new `objectGetProperty` util.
+-   ✨ add new `objectSetProperty` util.
+-   ✨ add new `Radix` type.
+-   🐛 fix some root imports.
+-   ✅ add tests for new utils.
 
 ## 6.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.0
 
--   :arrow_up: dependency upgrade.
--   :fire: remove `ReadOnlyObject`.
--   :fire: remove `ReadOnlyObjectArray`.
--   :truck: rename `ReadOnlyRecord` to `ImmutableRecord`.
--   :building_construction: changed order of generics in `ImmutableRecord`.
--   :sparkles: add new `arrayEvery` util.
--   :sparkles: add new `arraySome` util.
+-   ⬆️ dependency upgrade.
+-   🔥 remove `ReadOnlyObject`.
+-   🔥 remove `ReadOnlyObjectArray`.
+-   🚚 rename `ReadOnlyRecord` to `ImmutableRecord`.
+-   🏗 changed order of generics in `ImmutableRecord`.
+-   ✨ add new `arrayEvery` util.
+-   ✨ add new `arraySome` util.
 
 ## 5.0.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.6
 
--   :arrow_up: dependency upgrade.
--   :construction_worker: changed Travis with GitHub Actions.
+-   ⬆️ dependency upgrade.
+-   👷 changed Travis with GitHub Actions.
 
 ## 5.0.5
 
--   :arrow_up: dependency upgrade.
--   :label: update typed imports/exports to be `import type { ...`.
+-   ⬆️ dependency upgrade.
+-   🏷 update typed imports/exports to be `import type { ...`.
 
 ## 5.0.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.2
 
--   :arrow_up: dependency upgrade.
--   :bug: add missing array utils export.
+-   ⬆️ dependency upgrade.
+-   🐛 add missing array utils export.
 
 ## 5.0.1
 
--   :bug: fix bug with `files` field in `package.json`.
+-   🐛 fix bug with `files` field in `package.json`.
 
 ## 5.0.0
 
--   :arrow_up: dependency upgrade.
--   :wrench: update travis config.
--   :wrench: update `package.json` to include `exports` field.
--   :sparkles: add `arrayReverse`.
--   :fire: removed default exports.
+-   ⬆️ dependency upgrade.
+-   🔧 update travis config.
+-   🔧 update `package.json` to include `exports` field.
+-   ✨ add `arrayReverse`.
+-   🔥 removed default exports.
 
 ## 4.3.1
 
--   :arrow_up: dependency upgrade.
--   :bug: fix bug with RegExp (I forgot that thing mutates every time you test).
+-   ⬆️ dependency upgrade.
+-   🐛 fix bug with RegExp (I forgot that thing mutates every time you test).
 
 ## 4.3.0
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove uvu.
--   :wrench: update package.json scripts.
--   :truck: rename tests to .test.ts to match new `@vangware/test`
-    implementation.
--   :sparkles: add `arrayFlat`.
--   :sparkles: add `arrayJoin`.
--   :sparkles: add `stringTest`.
--   :sparkles: add `stringMatches`.
+-   ⬆️ dependency upgrade.
+-   ➖ remove uvu.
+-   🔧 update package.json scripts.
+-   🚚 rename tests to .test.ts to match new `@vangware/test` implementation.
+-   ✨ add `arrayFlat`.
+-   ✨ add `arrayJoin`.
+-   ✨ add `stringTest`.
+-   ✨ add `stringMatches`.
 
 ## 4.2.6
 
--   :arrow_up: dependency upgrade.
--   :bug: fix bug with equal when working with Date or RegExp.
+-   ⬆️ dependency upgrade.
+-   🐛 fix bug with equal when working with Date or RegExp.
 
 ## 4.2.3
 
--   :arrow_up: dependency upgrade.
--   :building_construction: improve types for `arrayFilterIn`.
--   :building_construction: improve types for `arrayFilterOut`.
--   :building_construction: improve types for `arrayFilterTuple`.
+-   ⬆️ dependency upgrade.
+-   🏗 improve types for `arrayFilterIn`.
+-   🏗 improve types for `arrayFilterOut`.
+-   🏗 improve types for `arrayFilterTuple`.
 
 ## 4.2.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.2.1
 
--   :pencil2: fix remaining master references.
+-   ✏️ fix remaining master references.
 
 ## 4.2.0
 
--   :sparkles: add `equal` utils.
+-   ✨ add `equal` utils.
 
 ## 4.1.0
 
--   :building_construction: improve types `isObject`.
--   :arrow_up: dependency upgrade.
+-   🏗 improve types `isObject`.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.0
 
--   :arrow_up: major dependency upgrade (new TS version!).
--   :building_construction: improve tuples making use of the new TS feature.
--   :fire: remove `Tuple` type.
--   :art: logo update.
+-   ⬆️ major dependency upgrade (new TS version!).
+-   🏗 improve tuples making use of the new TS feature.
+-   🔥 remove `Tuple` type.
+-   🎨 logo update🚨
 
 ## 3.1.1
 
--   :arrow_up: dependency upgrade.
--   :memo: update README.md.
+-   ⬆️ dependency upgrade.
+-   📝 update README.md.
 
 ## 3.1.0
 
--   :arrow_up: dependency upgrade.
--   :sparkles: add new `objectMap` util.
+-   ⬆️ dependency upgrade.
+-   ✨ add new `objectMap` util.
 
 ## 3.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 3.0.0
 
--   :arrow_up: dependency upgrade
--   :boom: change types of filter functions to use `is`.
--   :boom: change order of params for `arrayInsert` util.
--   :boom: change order of params for `arrayReplace` util.
--   :sparkles: add new `arrayReplaceFirst` util.
--   :sparkles: add new `arrayReplaceLast` util.
--   :sparkles: add new `isFalsy` util.
--   :sparkles: add new `isTruthy` util.
--   :sparkles: add new `numberFloatToDecimalTuple` util (internal usage mainly).
--   :sparkles: add new `numberWithExponentToDecimalTuple` util (internal usage
-    mainly).
--   :sparkles: add new `stringParseDecimal` util.
--   :sparkles: add new `stringParseHexadecimal` util.
--   :sparkles: add new `stringParseNumber` util.
--   :building_construction: improve internals of `numberToDecimalTuple`.
+-   ⬆️ dependency upgrade
+-   💥 change types of filter functions to use `is`.
+-   💥 change order of params for `arrayInsert` util.
+-   💥 change order of params for `arrayReplace` util.
+-   ✨ add new `arrayReplaceFirst` util.
+-   ✨ add new `arrayReplaceLast` util.
+-   ✨ add new `isFalsy` util.
+-   ✨ add new `isTruthy` util.
+-   ✨ add new `numberFloatToDecimalTuple` util (internal usage mainly).
+-   ✨ add new `numberWithExponentToDecimalTuple` util (internal usage mainly).
+-   ✨ add new `stringParseDecimal` util.
+-   ✨ add new `stringParseHexadecimal` util.
+-   ✨ add new `stringParseNumber` util.
+-   🏗 improve internals of `numberToDecimalTuple`.
 
 ## 2.1.5
 
--   :arrow_up: dependency upgrade.
--   :white_check_mark: update tests to use `@vangware/test`.
+-   ⬆️ dependency upgrade.
+-   ✅ update tests to use `@vangware/test`.
 
 ## 2.1.4
 
--   :arrow_up: dependency upgrade.
--   :bug: fix order of `decimalTupleAdd` and `numberAdd` (minor because is an
+-   ⬆️ dependency upgrade.
+-   🐛 fix order of `decimalTupleAdd` and `numberAdd` (minor because is an
     addition).
 
 ## 2.1.3
 
--   :bug: fix `numberToDecimalTuple` parsing error with 0.
--   :white_check_mark: add tests for those scenarios.
+-   🐛 fix `numberToDecimalTuple` parsing error with 0.
+-   ✅ add tests for those scenarios.
 
 ## 2.1.2
 
--   :bug: fix `numberToDecimalTuple` parsing error with numbers that had
-    exponent.
--   :white_check_mark: add tests for those scenarios.
+-   🐛 fix `numberToDecimalTuple` parsing error with numbers that had exponent.
+-   ✅ add tests for those scenarios.
 
 ## 2.1.1
 
--   :bug: fix `numberToDecimalTuple` parsing error.
+-   🐛 fix `numberToDecimalTuple` parsing error.
 
 ## 2.1.0
 
--   :sparkles: add new `DecimalTuple` type to represent decimal numbers with two
+-   ✨ add new `DecimalTuple` type to represent decimal numbers with two
     integers.
--   :sparkles: add new `decimalTupleAdd` util.
--   :sparkles: add new `decimalTupleDivide` util.
--   :sparkles: add new `decimalTupleMultiply` util.
--   :sparkles: add new `decimalTupleSubtract` util.
--   :sparkles: add new `decimalTupleToNumber` util.
--   :sparkles: add new `numberToDecimalTuple` util.
--   :sparkles: add new `numberAdd` util (0.1 + 0.2 returns 0.3 :mage:).
--   :sparkles: add new `numberDivide` util.
--   :sparkles: add new `numberMultiply` util.
--   :sparkles: add new `numberSubtract` util.
--   :arrow_up: dependency upgrade.
+-   ✨ add new `decimalTupleAdd` util.
+-   ✨ add new `decimalTupleDivide` util.
+-   ✨ add new `decimalTupleMultiply` util.
+-   ✨ add new `decimalTupleSubtract` util.
+-   ✨ add new `decimalTupleToNumber` util.
+-   ✨ add new `numberToDecimalTuple` util.
+-   ✨ add new `numberAdd` util (0.1 + 0.2 returns 0.3 :mage:).
+-   ✨ add new `numberDivide` util.
+-   ✨ add new `numberMultiply` util.
+-   ✨ add new `numberSubtract` util.
+-   ⬆️ dependency upgrade.
 
 ## 2.0.1
 
--   :truck: moved all tests to tests directory.
--   :building_construction: change `ava` with `uvu`.
--   :building_construction: change `nyc` with `c8`.
--   :heavy_minus_sign: remove `ava`.
--   :heavy_minus_sign: remove `nyc`.
--   :fire: removed `test:watch` because it doesn't make any sense with the speed
-    of `uvu`.
--   :wrench: update travis config.
+-   🚚 moved all tests to tests directory.
+-   🏗 change `ava` with `uvu`.
+-   🏗 change `nyc` with `c8`.
+-   ➖ remove `ava`.
+-   ➖ remove `nyc`.
+-   🔥 removed `test:watch` because it doesn't make any sense with the speed of
+    `uvu`.
+-   🔧 update travis config.
 
 ## 2.0.0
 
--   :truck: rename `arrayPush` to `arrayInsertLast`.
--   :truck: rename `arrayUnshift` to `arrayInsertFirst`.
--   :sparkles: add new `arraySliceFrom` util.
--   :sparkles: add new `arraySliceTo` util.
--   :sparkles: add new `Falsy` type.
--   :sparkles: add new `Truthy` type.
--   :pencil2: fix some docs examples.
--   :bookmark: major change because of the above mentioned renames.
--   :building_construction: better imports.
--   :arrow_up: dependency upgrade.
+-   🚚 rename `arrayPush` to `arrayInsertLast`.
+-   🚚 rename `arrayUnshift` to `arrayInsertFirst`.
+-   ✨ add new `arraySliceFrom` util.
+-   ✨ add new `arraySliceTo` util.
+-   ✨ add new `Falsy` type.
+-   ✨ add new `Truthy` type.
+-   ✏️ fix some docs examples.
+-   🔖 major change because of the above mentioned renames.
+-   🏗 better imports.
+-   ⬆️ dependency upgrade.
 
 ## 1.1.0
 
--   :sparkles: add new `Sorter` type.
--   :sparkles: add new `arraySort` util.
--   :bug: fix bad diff output of tests.
--   :arrow_up: dependency upgrade.
+-   ✨ add new `Sorter` type.
+-   ✨ add new `arraySort` util.
+-   🐛 fix bad diff output of tests.
+-   ⬆️ dependency upgrade.
 
 ## 1.0.1
 
--   :arrow_up: dependency upgrade.
--   :memo: update README.md badges.
+-   ⬆️ dependency upgrade.
+-   📝 update README.md badges.
 
 ## 1.0.0
 
--   :truck: rename package from `@vangware/micro` to `@vangware/utils`.
--   :bookmark: version reset due to name change.
--   :arrow_up: dependency upgrade.
--   :memo: updated `README.md`.
--   :building_construction: better type inference.
+-   🚚 rename package from `@vangware/micro` to `@vangware/utils`.
+-   🔖 version reset due to name change.
+-   ⬆️ dependency upgrade.
+-   📝 updated `README.md`.
+-   🏗 better type inference.
 
 ## 8.1.2 (deprecated @vangware/micro)
 
--   :arrow_up: yet another dependency upgrade.
+-   ⬆️ yet another dependency upgrade.
 
 ## 8.1.1 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 8.1.0 (deprecated @vangware/micro)
 
--   :fire: remove `exports` from `package.json`.
+-   🔥 remove `exports` from `package.json`.
 
 ## 8.0.0 (deprecated @vangware/micro)
 
--   :truck: rename all utils to avoid reserved words clashing (now the internal
-    API resembles the external)
--   :bookmark: major version bump.
--   :building_construction: removed typed imports/exports until bundlers work
-    better.
--   :building_construction: better `package.json` exports.
--   :building_construction: imports/exports now include `.js` extension (more
-    ESM friendly).
+-   🚚 rename all utils to avoid reserved words clashing (now the internal API
+    resembles the external)
+-   🔖 major version bump.
+-   🏗 removed typed imports/exports until bundlers work better.
+-   🏗 better `package.json` exports.
+-   🏗 imports/exports now include `.js` extension (more ESM friendly).
 
 ## 7.2.0 (deprecated @vangware/micro)
 
--   :bug: broken `from` util. Renamed it to `toArray`.
--   :bookmark: version bump.
+-   🐛 broken `from` util. Renamed it to `toArray`.
+-   🔖 version bump.
 
 ## 7.1.3 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :wrench: update tsconfig.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   🔧 update tsconfig.
 
 ## 7.1.2 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
 
 ## 7.1.1 (deprecated @vangware/micro)
 
--   :pencil2: fix wrong docs in instanceOf.
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :memo: update docs (they still suck because they are using internal names
+-   ✏️ fix wrong docs in instanceOf.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   📝 update docs (they still suck because they are using internal names
     instead of exported and they don't handle curried functions that well...).
 
 ## 7.1.0 (deprecated @vangware/micro)
 
--   :sparkles: add stringReverse util.
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
+-   ✨ add stringReverse util.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
 
 ## 7.0.0 (deprecated @vangware/micro)
 
--   :bookmark: major version bump.
--   :building_construction: change architecture to have utils in directories.
--   :truck: rename all utils to avoid redundance based on directories.
--   :building_construction: add defaults back.
--   :sparkles: add `array/from`.
--   :sparkles: add `json/stringifyPromise`.
--   :sparkles: add `object/fromEntries`.
--   :fire: remove object freezing (types will keep being readonly, but not in
+-   🔖 major version bump.
+-   🏗 change architecture to have utils in directories.
+-   🚚 rename all utils to avoid redundance based on directories.
+-   🏗 add defaults back.
+-   ✨ add `array/from`.
+-   ✨ add `json/stringifyPromise`.
+-   ✨ add `object/fromEntries`.
+-   🔥 remove object freezing (types will keep being readonly, but not in
     runtime).
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.6 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :lock: fix small security concern in `arrayFilterIn` and `arrayMap`.
+-   ⬆️ dependency upgrade.
+-   🔒 fix small security concern in `arrayFilterIn` and `arrayMap`.
 
 ## 6.0.5 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.4 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.3 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 6.0.2 (deprecated @vangware/micro)
 
--   :sparkles: add Entity type.
--   :building_construction: change exports to include types.
+-   ✨ add Entity type.
+-   🏗 change exports to include types.
 
 ## 6.0.1 (deprecated @vangware/micro)
 
--   :bug: fix mixing exports in index.
+-   🐛 fix mixing exports in index.
 
 ## 6.0.0 (deprecated @vangware/micro)
 
--   :bookmark: major version bump.
--   :arrow_up: dependency upgrade.
--   :sparkles: add arrayFilterIn.
--   :sparkles: add arrayFilterOut.
--   :sparkles: add arrayUnshift.
--   :sparkles: add functionNot.
--   :sparkles: add isType.
--   :sparkles: add numberBetween
--   :sparkles: add numberBoundary
--   :building_construction: change everything to curried.
--   :building_construction: change folder structure.
--   :building_construction: change the way tests are done (inspired by RITEway).
--   :building_construction: change to named exports only.
--   :bulb: new documentation with examples for everything.
--   :memo: updated README.md.
--   :fire: remove arrayFilter (separated int `arrayFilterIn` and
-    `arrayFilterOut`).
--   :fire: remove constants.
--   :fire: remove tap (use function in place).
--   :fire: remove when (use ternaries instead).
+-   🔖 major version bump.
+-   ⬆️ dependency upgrade.
+-   ✨ add arrayFilterIn.
+-   ✨ add arrayFilterOut.
+-   ✨ add arrayUnshift.
+-   ✨ add functionNot.
+-   ✨ add isType.
+-   ✨ add numberBetween
+-   ✨ add numberBoundary
+-   🏗 change everything to curried.
+-   🏗 change folder structure.
+-   🏗 change the way tests are done (inspired by RITEway).
+-   🏗 change to named exports only.
+-   📝 new documentation with examples for everything.
+-   📝 updated README.md.
+-   🔥 remove arrayFilter (separated int `arrayFilterIn` and `arrayFilterOut`).
+-   🔥 remove constants.
+-   🔥 remove tap (use function in place).
+-   🔥 remove when (use ternaries instead).
 
 ## 5.2.1 (deprecated @vangware/micro)
 
--   :bento: Update logo.
--   :sparkles: Added favicon.
+-   🍱 Update logo.
+-   ✨ Added favicon.
 
 ## 5.2.0 (deprecated @vangware/micro)
 
--   :bookmark: version bump.
--   :arrow_up: dependency upgrade.
+-   🔖 version bump.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.0 (deprecated @vangware/micro)
 
--   :bookmark: version bump.
--   :building_construction: change exports/imports to use import type/export
-    type when needed.
+-   🔖 version bump.
+-   🏗 change exports/imports to use import type/export type when needed.
 
 ## 5.0.6 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :building_construction: change code matching new linting settings.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   🏗 change code matching new linting settings.
 
 ## 5.0.5 (deprecated @vangware/micro)
 
--   :arrow_up: version bump.
--   :sparkles: export time constants.
+-   ⬆️ version bump.
+-   ✨ export time constants.
 
 ## 5.0.4 (deprecated @vangware/micro)
 
--   :wrench: update travis config.
--   :arrow_up: version bump.
--   :sparkles: add time constants.
+-   🔧 update travis config.
+-   ⬆️ version bump.
+-   ✨ add time constants.
 
 ## 5.0.3 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :wrench: update ava config.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   🔧 update ava config.
 
 ## 5.0.2 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :memo: update docs.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   📝 update docs.
 
 ## 5.0.1 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
 
 ## 5.0.0 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :building_construction: update `arrayFilter` to avoid mutations even
-    further.
--   :building_construction: update `arrayFilterTuple` to avoid mutations even
-    further.
--   :building_construction: update `arrayGroup` to avoid mutations even further.
--   :building_construction: update `arrayInsert` to avoid mutations even
-    further.
--   :building_construction: update `arrayMap` to avoid mutations even further.
--   :building_construction: update `arrayReduce` to avoid mutations even
-    further.
--   :building_construction: update `arrayReplace` to avoid mutations even
-    further.
--   :building_construction: update `arraySlice` to avoid mutations even further.
--   :building_construction: update `arraySplit` to avoid mutations even further.
--   :building_construction: update `objectCreate` to be use a base besides the
-    prototype.
--   :building_construction: update `objectEntries` to avoid mutations even
-    further.
--   :sparkles: add `objectFreeze` to be used by everything.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   🏗 update `arrayFilter` to avoid mutations even further.
+-   🏗 update `arrayFilterTuple` to avoid mutations even further.
+-   🏗 update `arrayGroup` to avoid mutations even further.
+-   🏗 update `arrayInsert` to avoid mutations even further.
+-   🏗 update `arrayMap` to avoid mutations even further.
+-   🏗 update `arrayReduce` to avoid mutations even further.
+-   🏗 update `arrayReplace` to avoid mutations even further.
+-   🏗 update `arraySlice` to avoid mutations even further.
+-   🏗 update `arraySplit` to avoid mutations even further.
+-   🏗 update `objectCreate` to be use a base besides the prototype.
+-   🏗 update `objectEntries` to avoid mutations even further.
+-   ✨ add `objectFreeze` to be used by everything.
 
 ## 4.0.5 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :building_construction: arrayFilterTuple doesn't use `arrayReduce` anymore.
--   :building_construction: objectMap now uses `objectEntries`.
--   :memo: update docs.
--   :page_facing_up: update license year.
--   :sparkles: add arrayFilter.
--   :sparkles: add arraySlice.
--   :sparkles: add objectCreate.
--   :sparkles: add objectEntries.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   🏗 arrayFilterTuple doesn't use `arrayReduce` anymore.
+-   🏗 objectMap now uses `objectEntries`.
+-   📝 update docs.
+-   📄 update license year.
+-   ✨ add arrayFilter.
+-   ✨ add arraySlice.
+-   ✨ add objectCreate.
+-   ✨ add objectEntries.
 
 ## 4.0.4 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
--   :memo: add CHANGELOG.md.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
+-   📝 add CHANGELOG.md.
 
 ## 4.0.3 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :wrench: update settings.json.
--   :bookmark: version bump.
--   :twisted_rightwards_arrows: Merge branch 'master' of
-    github.com:vangware/micro
--   :truck: move docs and url to https://micro.vangware.com.
--   :sparkles: Create CNAME
--   :truck: move docs to html in docs directory (for GH Pages)
+-   ⬆️ dependency upgrade.
+-   🔧 update settings.json.
+-   🔖 version bump.
+-   🔀 Merge branch 'master' of github.com:vangware/micro
+-   🚚 move docs and url to https://micro.vangware.com.
+-   ✨ Create CNAME
+-   🚚 move docs to html in docs directory (for GH Pages)
 
 ## 4.0.2 (deprecated @vangware/micro)
 
--   :white_check_mark: update tests.
--   :memo: update README.md.
--   :bookmark: version bump.
+-   ✅ update tests.
+-   📝 update README.md.
+-   🔖 version bump.
 
 ## 4.0.1 (deprecated @vangware/micro)
 
--   :ambulance: isNullish should check undefined first.
--   :white_check_mark: minor test tweaks related to linter.
+-   🚑 isNullish should check undefined first.
+-   ✅ minor test tweaks related to linter.
 
 ## 4.0.0 (deprecated @vangware/micro)
 
--   :building_construction: functional rework.
--   :fire: remove isMap (use immutable structures).
--   :fire: remove isSet (use immutable structures).
--   :fire: remove isWeakMap (use immutable structures).
--   :fire: remove isWeakSet (use immutable structures).
--   :fire: remove jsonParse (use JSON.parse).
--   :fire: remove primitive class wrappers.
--   :fire: remove tryCatch (avoid try/catch).
--   :truck: rename arraySplitFilter -> arrayFilterTuple
--   :white_check_mark: update test to not use random.
--   :building_construction: change arrayInsert to insert only one element.
--   :building_construction: change arrayPush to insert only one element.
--   :building_construction: change arrayReplace to replace only one element.
--   :building_construction: noop to return the given value.
--   :building_construction: tapObserver to return the given value.
+-   🏗 functional rework.
+-   🔥 remove isMap (use immutable structures).
+-   🔥 remove isSet (use immutable structures).
+-   🔥 remove isWeakMap (use immutable structures).
+-   🔥 remove isWeakSet (use immutable structures).
+-   🔥 remove jsonParse (use JSON.parse).
+-   🔥 remove primitive class wrappers.
+-   🔥 remove tryCatch (avoid try/catch).
+-   🚚 rename arraySplitFilter -> arrayFilterTuple
+-   ✅ update test to not use random.
+-   🏗 change arrayInsert to insert only one element.
+-   🏗 change arrayPush to insert only one element.
+-   🏗 change arrayReplace to replace only one element.
+-   🏗 noop to return the given value.
+-   🏗 tapObserver to return the given value.
 
 ## 3.0.1 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :art: improve code to match new linter rules.
--   :memo: update documentation based on line length changes.
--   :bookmark: version bump.
+-   ⬆️ dependency upgrade.
+-   🎨 improve code to match new linter rules.
+-   🚨 update documentation based on line length changes.
+-   🔖 version bump.
 
 ## 3.0.0 (deprecated @vangware/micro)
 
--   :bookmark: version 3.0.0
--   :building_construction: change when to work with nullish instead of falsy.
--   :building_construction: simplified stringMapReplace.
--   :building_construction: change tslint with eslint.
--   :sparkles: add isNullish util.
--   :sparkles: add arrayPush util.
--   :truck: rename config files (Prettier, linter, etc)
--   :memo: update documentation.
+-   🔖 version 3.0.0
+-   🏗 change when to work with nullish instead of falsy.
+-   🏗 simplified stringMapReplace.
+-   🏗 change tslint with eslint.
+-   ✨ add isNullish util.
+-   ✨ add arrayPush util.
+-   🚚 rename config files (Prettier, linter, etc)
+-   📝 update documentation.
 
 ## 2.1.1 (deprecated @vangware/micro)
 
--   :bulb: document with typedoc.
--   :bookmark: version bump.
+-   📝 document with typedoc.
+-   🔖 version bump.
 
 ## 2.1.0 (deprecated @vangware/micro)
 
--   :art: improve objectMap to work with no object.
+-   🎨 improve objectMap to work with no object🚨
 
 ## 2.0.0 (deprecated @vangware/micro)
 
--   :fire: remove typeOf (goodbye good fella).
+-   🔥 remove typeOf (goodbye good fella).
 
 ## 1.5.0 (deprecated @vangware/micro)
 
--   :sparkles: add constants.
--   :memo: update README.md.
--   :bookmark: version bump.
+-   ✨ add constants.
+-   📝 update README.md.
+-   🔖 version bump.
 
 ## 1.4.2 (deprecated @vangware/micro)
 
--   :bug: fix mixing exports in index.
--   :bookmark: version bump.
+-   🐛 fix mixing exports in index.
+-   🔖 version bump.
 
 ## 1.4.1 (deprecated @vangware/micro)
 
--   :truck: rename isMapFunction to IsMapFunction (casing issue).
--   :bookmark: version bump.
+-   🚚 rename isMapFunction to IsMapFunction (casing issue).
+-   🔖 version bump.
 
 ## 1.4.0 (deprecated @vangware/micro)
 
--   :sparkles: add `isArray` util.
--   :sparkles: add `isBigInt` util.
--   :sparkles: add `isBoolean` util.
--   :sparkles: add `isDate` util.
--   :sparkles: add `isFunction` util.
--   :sparkles: add `isInstanceOf` util.
--   :sparkles: add `isMap` util.
--   :sparkles: add `isNull` util.
--   :sparkles: add `isNumber` util.
--   :sparkles: add `isObject` util.
--   :sparkles: add `isPromise` util.
--   :sparkles: add `isRegExp` util.
--   :sparkles: add `isSet` util.
--   :sparkles: add `isString` util.
--   :sparkles: add `isSymbol` util.
--   :sparkles: add `isUndefined` util.
--   :sparkles: add `isWeakMap` util.
--   :sparkles: add `isWeakSet` util.
--   :memo: update README.md.
--   :fire: deprecated `typeOf` util.
--   :wrench: update test configs.
--   :truck: move testsUtils to test directory.
--   :white_check_mark: update tests.
--   :memo: update README.md to include more badges.
--   :green_heart: add CI comments.
+-   ✨ add `isArray` util.
+-   ✨ add `isBigInt` util.
+-   ✨ add `isBoolean` util.
+-   ✨ add `isDate` util.
+-   ✨ add `isFunction` util.
+-   ✨ add `isInstanceOf` util.
+-   ✨ add `isMap` util.
+-   ✨ add `isNull` util.
+-   ✨ add `isNumber` util.
+-   ✨ add `isObject` util.
+-   ✨ add `isPromise` util.
+-   ✨ add `isRegExp` util.
+-   ✨ add `isSet` util.
+-   ✨ add `isString` util.
+-   ✨ add `isSymbol` util.
+-   ✨ add `isUndefined` util.
+-   ✨ add `isWeakMap` util.
+-   ✨ add `isWeakSet` util.
+-   📝 update README.md.
+-   🔥 deprecated `typeOf` util.
+-   🔧 update test configs.
+-   🚚 move testsUtils to test directory.
+-   ✅ update tests.
+-   📝 update README.md to include more badges.
+-   💚 add CI comments.
 
 ## 1.3.1 (deprecated @vangware/micro)
 
--   :white_check_mark: Improved tests.
--   :white_check_mark: Add test coverage.
--   :wrench: update TS configurations.
--   :bookmark: version bump.
+-   ✅ Improved tests.
+-   ✅ Add test coverage.
+-   🔧 update TS configurations.
+-   🔖 version bump.
 
 ## 1.3.0 (deprecated @vangware/micro)
 
--   :sparkles: add arrayReduce.
--   :sparkles: add arraySplit.
--   :building_construction: change utils to use arrayReduce.
--   :building_construction: change utils to use typeOf.
--   :memo: update README.md with new utils.
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
+-   ✨ add arrayReduce.
+-   ✨ add arraySplit.
+-   🏗 change utils to use arrayReduce.
+-   🏗 change utils to use typeOf.
+-   📝 update README.md with new utils.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
 
 ## 1.2.1 (deprecated @vangware/micro)
 
--   :arrow_up: dependency upgrade.
--   :bookmark: version bump.
+-   ⬆️ dependency upgrade.
+-   🔖 version bump.
 
 ## 1.2.0 (deprecated @vangware/micro)
 
--   :construction_worker: add Travis config.
--   :sparkles: add when util.
--   :white_check_mark: add test for when.
--   :bookmark: version bump.
--   :memo: update README-md.
+-   👷 add Travis config.
+-   ✨ add when util.
+-   ✅ add test for when.
+-   🔖 version bump.
+-   📝 update README-md.
 
 ## 1.1.0 (deprecated @vangware/micro)
 
--   :art: improve types.
--   :building_construction: removed defaults and some optionals that didn't made
-    any sense.
--   :bookmark: version bump.
+-   🎨 improve types.
+-   🚨removed defaults and some optionals that didn't made any sense.
+-   🔖 version bump.
 
 ## 1.0.1 (deprecated @vangware/micro)
 
--   :art: improve noop types.
--   :bookmark: version bump.
--   :page_facing_up: add MIT license file.
+-   🎨 improve noop types.
+-   🚨 version bump.
+-   📄 add MIT license file.
 
 ## 1.0.0 (deprecated @vangware/micro)
 
--   :tada: initial commit
+-   🎉 initial commit
 
 <!-- References -->
 
