@@ -3,6 +3,7 @@ import type { Predicate, Unary } from "@vangware/types";
 /**
  * Curried conditional (like a functional ternary).
  *
+ * @category Conditions
  * @example
  * ```typescript
  * const isEven = (value: number) => value % 2 === 0;

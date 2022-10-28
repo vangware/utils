@@ -30,6 +30,7 @@ export { get } from "./get.js";
 export { identity } from "./identity.js";
 export { maybePromiseHandler } from "./maybePromiseHandler.js";
 export { memoize } from "./memoize.js";
+export { mutate } from "./mutate.js";
 export { negate } from "./negate.js";
 export { omit } from "./omit.js";
 export { once } from "./once.js";

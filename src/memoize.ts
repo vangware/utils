@@ -4,6 +4,7 @@ import { constructMap } from "./constructMap.js";
 /**
  * Memoize function return values for expensive operations.
  *
+ * @category Functions
  * @example
  * ```typescript
  * const expensiveOperation = (value: number) => value * 2;
@@ -17,16 +18,18 @@ import { constructMap } from "./constructMap.js";
  */
 export const memoize = <MemoizedFunction extends Unary<never, unknown>>(
 	unary: MemoizedFunction,
-) => {
-	/** Map of inputs to returned values. */
-	const cache = constructMap<
-		UnaryInput<MemoizedFunction>,
-		UnaryOutput<MemoizedFunction>
-	>();
-
-	return ((input: UnaryInput<MemoizedFunction>) =>
-		cache.get(input) ??
-		cache
-			.set(input, unary(input as never) as UnaryOutput<MemoizedFunction>)
-			.get(input)) as unknown as MemoizedFunction;
-};
+) =>
+	(cache =>
+		((input: UnaryInput<MemoizedFunction>) =>
+			cache.get(input) ??
+			cache
+				.set(
+					input,
+					unary(input as never) as UnaryOutput<MemoizedFunction>,
+				)
+				.get(input)) as unknown as MemoizedFunction)(
+		constructMap<
+			UnaryInput<MemoizedFunction>,
+			UnaryOutput<MemoizedFunction>
+		>(),
+	);

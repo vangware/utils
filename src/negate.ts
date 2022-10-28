@@ -3,6 +3,7 @@ import type { Predicate, Single, Unary } from "@vangware/types";
 /**
  * Takes a function and returns a copy with negated output.
  *
+ * @category Functions
  * @example
  * ```typescript
  * const isPositive = (value: number) => value >= 0;
