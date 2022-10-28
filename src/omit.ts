@@ -4,6 +4,7 @@ import { entryKey } from "./entryKey.js";
 /**
  * Omits given properties from an object.
  *
+ * @category Objects
  * @example
  * ```typescript
  * const object = { a: 1, b: 2, c: 3 };

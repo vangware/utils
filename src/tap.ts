@@ -3,6 +3,7 @@ import type { Unary } from "@vangware/types";
 /**
  * Tap into a value before calling a function.
  *
+ * @category Functions
  * @example
  * ```typescript
  * const log = tap(console.log);

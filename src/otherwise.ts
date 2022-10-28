@@ -3,7 +3,7 @@ import type { Unary } from "@vangware/types";
 /**
  * Sets a promise `catch` handler.
  *
- * @category Promise
+ * @category Promises
  * @example
  * ```typescript
  * const otherwiseLog = otherwise(console.error);

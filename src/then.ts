@@ -3,7 +3,7 @@ import type { Unary } from "@vangware/types";
 /**
  * Sets a promise `then` handler.
  *
- * @category Promise
+ * @category Promises
  * @example
  * ```typescript
  * const thenJson = then((response: Response) => response.json());
