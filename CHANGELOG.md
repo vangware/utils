@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 
 ## 9.1.5
 
+-   ⬆️ dependency upgrade.
+
+## 9.1.5
+
 -   📝 update README badges.
 -   ⬆️ dependency upgrade.
 
