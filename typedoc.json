@@ -1,8 +1,7 @@
 {
-	"cleanOutputDir": false,
-	"customCss": "./node_modules/@vangware/configs/typedoc.css",
-	"entryPoints": ["./src/index.ts"],
-	"gitRevision": "main",
-	"hideGenerator": true,
-	"logLevel": "Warn"
+	"$schema": "https://typedoc.org/schema.json",
+	"cname": "utils.vangware.com",
+	"entryPoints": ["./src"],
+	"extends": ["@vangware/configs/typedoc.json"],
+	"name": "@vangware/utils"
 }
