@@ -4,7 +4,7 @@ import { memoize } from "../src/memoize.js";
 // eslint-disable-next-line functional/no-let, prefer-const
 let times = 0;
 const double = (value: number) => {
-	// eslint-disable-next-line functional/no-expression-statement
+	// eslint-disable-next-line functional/no-expression-statements
 	times += 1;
 
 	return value * 2;
