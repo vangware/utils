@@ -57,6 +57,7 @@
 		"clean": "rimraf ./dist",
 		"compile": "tsc --project tsconfig.dist.json",
 		"document": "typedoc",
+		"git:pre-push": "run-s --print-label clean pre-compile lint test document",
 		"lint": "eslint {src,tests}",
 		"lint:fix": "eslint {src,tests} --fix",
 		"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
