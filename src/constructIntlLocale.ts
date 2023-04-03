@@ -1,4 +1,4 @@
-import type { LocaleIdentifier, ReadOnlyDeep } from "@vangware/types";
+import type { LocaleIdentifier, ReadOnly } from "@vangware/types";
 import { construct } from "./construct.js";
 
 /**
@@ -9,6 +9,6 @@ import { construct } from "./construct.js";
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale
  */
 export const constructIntlLocale = construct(Intl.Locale) as (
-	tag: ReadOnlyDeep<Intl.Locale | LocaleIdentifier>,
-	options?: ReadOnlyDeep<Intl.LocaleOptions>,
+	tag: ReadOnly<Intl.Locale | LocaleIdentifier>,
+	options?: ReadOnly<Intl.LocaleOptions>,
 ) => Intl.Locale;

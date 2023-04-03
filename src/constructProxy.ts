@@ -1,4 +1,3 @@
-import type { NonPrimitive } from "@vangware/types";
 import { construct } from "./construct.js";
 
 /**
@@ -6,7 +5,7 @@ import { construct } from "./construct.js";
  *
  * @category Classes
  */
-export const constructProxy = construct(Proxy) as <Target extends NonPrimitive>(
+export const constructProxy = construct(Proxy) as <Target extends object>(
 	target: Target,
 	handler: ProxyHandler<Target>,
 ) => Target;

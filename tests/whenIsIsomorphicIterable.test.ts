@@ -1,9 +1,9 @@
 import type { Tests } from "@vangware/test";
-import { whenIsAsynchronousIterable } from "../src/whenIsAsynchronousIterable.js";
+import { whenIsIsomorphicIterable } from "../src/whenIsIsomorphicIterable.js";
 
-const whenIsAsynchronousIterableTest = whenIsAsynchronousIterable(
-	() => "truthy",
-)(() => "falsy");
+const whenIsAsynchronousIterableTest = whenIsIsomorphicIterable(() => "truthy")(
+	() => "falsy",
+);
 
 export default [
 	{

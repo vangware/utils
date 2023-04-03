@@ -1,4 +1,4 @@
-import type { Stringable } from "@vangware/types";
+import type { Strigifiable } from "@vangware/types";
 
 /**
  * Parses given value to string, if number is given, then that's used as a radix
@@ -18,11 +18,11 @@ import type { Stringable } from "@vangware/types";
  * @returns string or function expecting a value.
  */
 export const toString = <
-	Input extends Stringable | { readonly toString: () => string },
+	const Input extends Strigifiable | { readonly toString: () => string },
 >(
 	input: Input,
 ) =>
-	`${input as string}` as Input extends Stringable
+	(input?.toString() ?? `${input as string}`) as Input extends Strigifiable
 		? `${Input}`
 		: Input extends { readonly toString: () => string }
 		? ReturnType<Input["toString"]>

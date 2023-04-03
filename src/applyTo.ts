@@ -14,6 +14,6 @@ import type { Unary } from "@vangware/types";
  * @returns Function that expects a function that will receive the `input`.
  */
 export const applyTo =
-	<Input>(input: Input) =>
-	<Output>(unary: Unary<Input, Output>) =>
+	<const Input>(input: Input) =>
+	<const Output>(unary: Unary<Input, Output>) =>
 		unary(input);

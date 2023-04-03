@@ -1,8 +1,8 @@
 import type { Tests } from "@vangware/test";
-import { maybePromiseHandler } from "../src/maybePromiseHandler.js";
+import { awaitableHandler } from "../src/awaitableHandler.js";
 
 const double = (value: number) => value * 2;
-const maybePromiseNumber = maybePromiseHandler(double);
+const maybePromiseNumber = awaitableHandler(double);
 
 export default [
 	{

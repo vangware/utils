@@ -1,5 +1,3 @@
-import type { NonPrimitive } from "@vangware/types";
-
 /**
  * Function to encapsulate object mutations.
  *
@@ -14,7 +12,7 @@ import type { NonPrimitive } from "@vangware/types";
  * @returns Curried function with `update` in context.
  */
 export const mutate =
-	<Update extends NonPrimitive>(update: Update) =>
-	<Target extends NonPrimitive>(target: Target) =>
+	<const Update extends object>(update: Update) =>
+	<const Target extends object>(target: Target) =>
 		// eslint-disable-next-line functional/immutable-data
 		Object.assign(target, update);
