@@ -1,5 +1,4 @@
 import type { Tests } from "@vangware/test";
-import type { NonPrimitive } from "@vangware/types";
 import { omit } from "../src/omit.js";
 
 const omitFoo = omit("foo");
@@ -23,4 +22,4 @@ export default [
 		received: () => omitFoo({}),
 		wanted: () => ({}),
 	},
-] as Tests<NonPrimitive>;
+] as Tests<object>;

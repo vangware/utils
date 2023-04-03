@@ -1,4 +1,4 @@
-import type { GenericFunction } from "@vangware/types";
+import type { Function } from "@vangware/types";
 
 /**
  * Bounds the given context to the given method.
@@ -15,5 +15,5 @@ import type { GenericFunction } from "@vangware/types";
  */
 export const bind =
 	<Context>(context: Context) =>
-	<Method extends GenericFunction>(method: Method) =>
+	<Method extends Function>(method: Method) =>
 		method.bind(context) as Method;

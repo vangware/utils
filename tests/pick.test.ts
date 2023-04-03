@@ -1,5 +1,4 @@
 import type { Tests } from "@vangware/test";
-import type { NonPrimitive } from "@vangware/types";
 import { pick } from "../src/pick.js";
 
 const pickFoo = pick("foo");
@@ -23,4 +22,4 @@ export default [
 		received: () => pickFoo({}),
 		wanted: () => ({}),
 	},
-] as Tests<NonPrimitive>;
+] as Tests<object>;

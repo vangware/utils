@@ -1,4 +1,4 @@
-import type { ReadOnlyDeep } from "@vangware/types";
+import type { ReadOnly } from "@vangware/types";
 import { construct } from "./construct.js";
 
 /**
@@ -7,5 +7,5 @@ import { construct } from "./construct.js";
  * @category Classes
  */
 export const constructDate = construct(Date) as (
-	date?: ReadOnlyDeep<Date> | number | string,
+	date?: ReadOnly<Date> | number | string,
 ) => Date;

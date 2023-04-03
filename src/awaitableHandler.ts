@@ -1,4 +1,4 @@
-import type { MaybePromise } from "@vangware/types";
+import type { Awaitable } from "@vangware/types";
 import { then } from "./then.js";
 import { whenIsPromise } from "./whenIsPromise.js";
 
@@ -17,13 +17,11 @@ import { whenIsPromise } from "./whenIsPromise.js";
  * @param handler Handler function to be called with the value.
  * @returns Curried function with `handler` in context.
  */
-export const maybePromiseHandler = <Value, Output>(
-	handler: (maybePromise: Value) => Output,
+export const awaitableHandler = <Value, Output>(
+	handler: (awaitable: Value) => Output,
 ) =>
 	whenIsPromise<Promise<Output>>(
-		then(handler as (maybePromise: unknown) => Output),
-	)<Value, Output>(handler) as <
-		MaybePromiseValue extends MaybePromise<Value>,
-	>(
-		maybePromise: MaybePromiseValue,
-	) => MaybePromiseValue extends Promise<Value> ? Promise<Output> : Output;
+		then(handler as (awaitable: unknown) => Output),
+	)<Value, Output>(handler) as <AwaitableValue extends Awaitable<Value>>(
+		awaitable: AwaitableValue,
+	) => AwaitableValue extends Promise<Value> ? Promise<Output> : Output;

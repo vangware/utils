@@ -31,6 +31,6 @@ export const when =
 		falsyHandler: Unary<FalseInput, FalseOutput>,
 	) =>
 	(value: Value) =>
-		(predicate(value) ? truthyHandler : falsyHandler)(
-			value as FalseInput & Predicated & Value,
-		);
+		predicate(value)
+			? truthyHandler(value)
+			: falsyHandler(value as FalseInput & Value);

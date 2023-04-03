@@ -1,4 +1,4 @@
-import type { GenericConstructor, ReadOnlyArray } from "@vangware/types";
+import type { Class, ReadOnlyArray } from "@vangware/types";
 
 /**
  * Creates a new instance of the given constructor with the given arguments.
@@ -13,7 +13,7 @@ import type { GenericConstructor, ReadOnlyArray } from "@vangware/types";
  * @returns Curried function with `constructor` in context.
  */
 export const construct =
-	<Constructor extends GenericConstructor>(constructor: Constructor) =>
+	<Constructor extends Class<never>>(constructor: Constructor) =>
 	(...constructorArguments: ConstructorParameters<Constructor>) =>
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		new constructor(

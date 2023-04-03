@@ -8,4 +8,4 @@
  * ```
  * @returns Same value given.
  */
-export const identity = <Input>(input: Input) => input;
+export const identity = <const Input>(input: Input) => input;
