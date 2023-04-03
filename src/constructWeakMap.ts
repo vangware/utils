@@ -1,4 +1,3 @@
-import type { NonPrimitive } from "@vangware/types";
 import { construct } from "./construct.js";
 
 /**
@@ -7,7 +6,7 @@ import { construct } from "./construct.js";
  * @category Classes
  */
 export const constructWeakMap = construct(WeakMap) as <
-	Key extends NonPrimitive,
+	Key extends object,
 	Value,
 >(
 	iterable?: Iterable<readonly [Key, Value]>,

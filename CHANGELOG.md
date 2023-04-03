@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 10.0.0
+
+-   ⬆️ dependency upgrade.
+-   🚚 rename `maybePromiseHandler` to `awaitableHandler`.
+-   🚚 rename `whenIsAsynchronousIterable` to `whenIsIsomorphicIterable`.
+-   🏗 add some `const` generics, might add more in the future.
+
 ## 9.1.11
 
 -   ⬆️ dependency upgrade.

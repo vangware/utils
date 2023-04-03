@@ -15,12 +15,12 @@ import type { ReadOnlyRecord } from "@vangware/types";
  * @returns Curried function with `key` in context.
  */
 export const set =
-	<Key extends PropertyKey>(key: Key) =>
-	<Value>(value: Value) =>
-	<Source extends ReadOnlyRecord>(object: Source) =>
+	<const Key extends PropertyKey>(key: Key) =>
+	<const Value>(value: Value) =>
+	<const Source extends ReadOnlyRecord>(object: Source) =>
 		Object.defineProperty({ ...object }, key, {
 			configurable: false,
 			enumerable: true,
 			value,
 			writable: false,
-		}) as Omit<Source, Key> & ReadOnlyRecord<Value, Key>;
+		}) as unknown as Omit<Source, Key> & ReadOnlyRecord<Key, Value>;

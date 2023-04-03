@@ -14,6 +14,6 @@ import type { ReadOnlyRecord } from "@vangware/types";
  * @returns Curried function with `key` in context.
  */
 export const get =
-	<Key extends PropertyKey>(key: Key) =>
-	<Source extends ReadOnlyRecord<unknown, Key>>(object: Source) =>
-		object[key];
+	<const Key extends PropertyKey>(key: Key) =>
+	<const Source extends ReadOnlyRecord<Key>>(object: Source) =>
+		object[key as keyof Source] as Source[Key & keyof Source];

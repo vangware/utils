@@ -1,4 +1,4 @@
-import { isAsynchronousIterable } from "@vangware/predicates";
+import { isIsomorphicIterable } from "@vangware/predicates";
 import { when } from "./when.js";
 
 /**
@@ -6,4 +6,4 @@ import { when } from "./when.js";
  *
  * @category Conditions
  */
-export const whenIsAsynchronousIterable = when(isAsynchronousIterable);
+export const whenIsIsomorphicIterable = when(isIsomorphicIterable);
