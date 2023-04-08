@@ -1,4 +1,4 @@
-<img alt="Vangware's Utils" src="./logo.svg" height="192" />
+<img id="logo" alt="Utils by Vangware" src="./logo.svg" height="192" />
 
 ![Coverage][coverage-badge] ![License][license-badge]
 ![NPM Version][npm-version-badge] ![Open Issues][open-issues-badge]
