@@ -3,5 +3,5 @@
 	"cname": "utils.vangware.com",
 	"entryPoints": ["./src"],
 	"extends": ["@vangware/configs/typedoc.json"],
-	"name": "@vangware/utils"
+	"name": "Utils by Vangware"
 }
