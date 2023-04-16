@@ -45,7 +45,6 @@ export { when } from "./when.js";
 export { whenFalsy } from "./whenFalsy.js";
 export { whenIsArray } from "./whenIsArray.js";
 export { whenIsAsyncIterable } from "./whenIsAsyncIterable.js";
-export { whenIsAsynchronousIterable } from "./whenIsAsynchronousIterable.js";
 export { whenIsBigInt } from "./whenIsBigInt.js";
 export { whenIsBoolean } from "./whenIsBoolean.js";
 export { whenIsDate } from "./whenIsDate.js";
@@ -67,4 +66,3 @@ export { whenIsSymbol } from "./whenIsSymbol.js";
 export { whenIsTruthy } from "./whenIsTruthy.js";
 export { whenIsUndefined } from "./whenIsUndefined.js";
 export { whenTruthy } from "./whenTruthy.js";
-
