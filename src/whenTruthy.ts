@@ -1,4 +1,4 @@
-import type { Predicate } from "@vangware/types";
+import type { Predicate, Unary } from "@vangware/types";
 import { flip } from "./flip.js";
 import { identity } from "./identity.js";
 import { when } from "./when.js";
@@ -22,4 +22,7 @@ import { when } from "./when.js";
  */
 export const whenTruthy = <Value, Predicated extends Value = Value>(
 	predicate: Predicate<Value, Predicated>,
-) => flip(when(predicate))(identity);
+) =>
+	flip(when(predicate))(identity) as <Output>(
+		truthyHandler: Unary<Predicated & Value, Output>,
+	) => (value: Value) => Output | Value;

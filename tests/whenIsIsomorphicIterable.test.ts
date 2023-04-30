@@ -18,4 +18,4 @@ export default [
 		received: () => whenIsAsynchronousIterableTest(false),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

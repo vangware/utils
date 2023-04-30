@@ -1,4 +1,5 @@
 import type { Tests } from "@vangware/test";
+import type { Maybe } from "@vangware/types";
 import { get } from "../src/get.js";
 
 const getFoo = get("foo");
@@ -16,4 +17,4 @@ export default [
 		received: () => getFoo({} as { readonly foo: boolean }),
 		wanted: () => undefined,
 	},
-] satisfies Tests<boolean>;
+] satisfies Tests<Maybe<boolean>>;

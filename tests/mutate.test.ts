@@ -18,4 +18,4 @@ export default [
 		received: () => (mutateFoo(fooObject), fooObject),
 		wanted: () => ({ foo: "bar" }),
 	},
-] satisfies Tests<boolean>;
+] satisfies Tests<object>;

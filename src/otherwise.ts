@@ -14,5 +14,5 @@ import type { Unary } from "@vangware/types";
  */
 export const otherwise =
 	<Output>(handler: Unary<unknown, Output | PromiseLike<Output>>) =>
-	(promise: Promise<unknown>) =>
+	<PromisedValue>(promise: Promise<PromisedValue>) =>
 		promise.catch(handler);

@@ -17,4 +17,4 @@ export default [
 		received: () => whenIsPromiseTest("nope"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

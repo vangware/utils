@@ -17,4 +17,4 @@ export default [
 		received: () => whenIsNullTest("nope"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;
