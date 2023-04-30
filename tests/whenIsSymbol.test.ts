@@ -16,4 +16,4 @@ export default [
 		received: () => whenIsSymbolTest("test"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

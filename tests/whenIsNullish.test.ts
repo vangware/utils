@@ -23,4 +23,4 @@ export default [
 		received: () => whenIsNullishTest("nope"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

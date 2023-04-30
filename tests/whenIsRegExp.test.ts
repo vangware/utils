@@ -17,4 +17,4 @@ export default [
 		received: () => whenIsRegExpTest("nope"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

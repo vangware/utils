@@ -16,4 +16,4 @@ export default [
 		received: () => whenIsArrayTest("nope"),
 		wanted: () => "falsy",
 	},
-] satisfies Tests<() => string>;
+] satisfies Tests<string>;

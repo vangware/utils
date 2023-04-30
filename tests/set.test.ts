@@ -16,4 +16,4 @@ export default [
 		received: () => setFoo({}),
 		wanted: () => ({ foo: true }),
 	},
-] satisfies Tests<boolean>;
+] satisfies Tests<object>;
