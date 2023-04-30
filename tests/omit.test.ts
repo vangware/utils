@@ -22,4 +22,4 @@ export default [
 		received: () => omitFoo({}),
 		wanted: () => ({}),
 	},
-] as Tests<object>;
+] satisfies Tests<object>;

@@ -15,4 +15,4 @@ export default [
 		received: () => [0, 1, 2, 3].map(always("foo")),
 		wanted: () => ["foo", "foo", "foo", "foo"],
 	},
-] as Tests<ReadOnlyArray<string> | string>;
+] satisfies Tests<ReadOnlyArray<string> | string>;

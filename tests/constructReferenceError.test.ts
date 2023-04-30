@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of ReferenceError",
 	received: () => constructReferenceError().constructor.name,
 	wanted: () => "ReferenceError",
-} as Test<string>;
+} satisfies Test<string>;

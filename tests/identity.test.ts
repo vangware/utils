@@ -6,4 +6,4 @@ export default {
 	must: "return said string immediately",
 	received: () => identity("foo"),
 	wanted: () => "foo",
-} as Test<string>;
+} satisfies Test<string>;

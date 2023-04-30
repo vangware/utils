@@ -9,4 +9,4 @@ export default {
 	must: "receive a delayed double function",
 	received: () => thunkTest(2)(),
 	wanted: () => 4,
-} as Test<number>;
+} satisfies Test<number>;

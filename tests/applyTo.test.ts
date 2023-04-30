@@ -9,4 +9,4 @@ export default {
 	must: "return double of number",
 	received: () => applyTo2(double),
 	wanted: () => 4,
-} as Test<number>;
+} satisfies Test<number>;

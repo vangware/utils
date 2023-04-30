@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of RegExp",
 	received: () => constructRegExp("").constructor.name,
 	wanted: () => "RegExp",
-} as Test<string>;
+} satisfies Test<string>;

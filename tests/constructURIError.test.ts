@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of URIError",
 	received: () => constructURIError().constructor.name,
 	wanted: () => "URIError",
-} as Test<string>;
+} satisfies Test<string>;

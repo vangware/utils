@@ -16,4 +16,4 @@ export default {
 	must: "run once per value",
 	received: () => ([2, 2, 2, 3, 3, 3, 2, 2, 2].map(memoizedDouble), times),
 	wanted: () => 2,
-} as Test<number>;
+} satisfies Test<number>;

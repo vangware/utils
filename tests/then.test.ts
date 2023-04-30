@@ -17,4 +17,4 @@ export default [
 		received: () => thenTest(Promise.resolve("success")),
 		wanted: () => "then",
 	},
-] as Tests<string>;
+] satisfies Tests<string>;

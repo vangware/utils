@@ -17,4 +17,4 @@ export default [
 		received: () => maybePromiseNumber(Promise.resolve(2)),
 		wanted: () => 4,
 	},
-] as Tests<number>;
+] satisfies Tests<number>;

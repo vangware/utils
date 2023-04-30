@@ -9,4 +9,4 @@ export default {
 	must: "return true when calling it with odds",
 	received: () => isOdd(1),
 	wanted: () => true,
-} as Test<boolean>;
+} satisfies Test<boolean>;

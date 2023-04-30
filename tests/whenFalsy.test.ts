@@ -18,4 +18,4 @@ export default [
 		received: () => whenFalsyIsEven(3),
 		wanted: () => 1.5,
 	},
-] as Tests<number>;
+] satisfies Tests<number>;

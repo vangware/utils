@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Promise",
 	received: () => constructPromise(() => undefined).constructor.name,
 	wanted: () => "Promise",
-} as Test<string>;
+} satisfies Test<string>;

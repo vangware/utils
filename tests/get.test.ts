@@ -16,4 +16,4 @@ export default [
 		received: () => getFoo({} as { readonly foo: boolean }),
 		wanted: () => undefined,
 	},
-] as Tests<boolean>;
+] satisfies Tests<boolean>;

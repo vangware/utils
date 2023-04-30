@@ -9,4 +9,4 @@ export default {
 	must: "run once and then return the same result",
 	received: () => [2, 3, 4, 5, 6, 7].map(onceDouble),
 	wanted: () => [4, 4, 4, 4, 4, 4],
-} as Test<ReadonlyArray<number>>;
+} satisfies Test<ReadonlyArray<number>>;

@@ -16,4 +16,4 @@ export default [
 		received: () => whenIsSafeIntegerTest(13.13),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.PluralRules",
 	received: () => constructIntlPluralRules().constructor.name,
 	wanted: () => "PluralRules",
-} as Test<string>;
+} satisfies Test<string>;

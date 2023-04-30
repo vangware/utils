@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Error",
 	received: () => constructError().constructor.name,
 	wanted: () => "Error",
-} as Test<string>;
+} satisfies Test<string>;

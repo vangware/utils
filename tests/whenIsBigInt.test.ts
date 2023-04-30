@@ -16,4 +16,4 @@ export default [
 		received: () => whenIsBigIntTest("nope"),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

@@ -28,4 +28,4 @@ export default [
 		received: () => whenIsPropertyKeyTest([]),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

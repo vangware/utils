@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of WeakSet",
 	received: () => constructWeakSet().constructor.name,
 	wanted: () => "WeakSet",
-} as Test<string>;
+} satisfies Test<string>;
