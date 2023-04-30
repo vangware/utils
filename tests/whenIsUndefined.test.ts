@@ -16,4 +16,4 @@ export default [
 		received: () => whenIsUndefinedTest(""),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

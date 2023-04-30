@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of SyntaxError",
 	received: () => constructSyntaxError().constructor.name,
 	wanted: () => "SyntaxError",
-} as Test<string>;
+} satisfies Test<string>;

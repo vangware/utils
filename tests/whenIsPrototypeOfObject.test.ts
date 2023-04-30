@@ -25,4 +25,4 @@ export default [
 		received: () => whenIsPrototypeOfObjectTest(constructRegExp("")),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

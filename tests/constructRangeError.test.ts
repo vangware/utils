@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of RangeError",
 	received: () => constructRangeError().constructor.name,
 	wanted: () => "RangeError",
-} as Test<string>;
+} satisfies Test<string>;

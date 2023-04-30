@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Map",
 	received: () => constructMap().constructor.name,
 	wanted: () => "Map",
-} as Test<string>;
+} satisfies Test<string>;

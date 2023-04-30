@@ -51,4 +51,4 @@ export default [
 		received: () => toString({}),
 		wanted: () => "[object Object]",
 	},
-] as Tests<string>;
+] satisfies Tests<string>;

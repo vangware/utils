@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.Locale",
 	received: () => constructIntlLocale("en-US").constructor.name,
 	wanted: () => "Locale",
-} as Test<string>;
+} satisfies Test<string>;

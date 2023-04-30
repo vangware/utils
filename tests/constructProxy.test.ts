@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Proxy",
 	received: () => constructProxy({}, {}).constructor.name,
 	wanted: () => "Object", // We can't actually know if a Proxy is a Proxy.
-} as Test<string>;
+} satisfies Test<string>;

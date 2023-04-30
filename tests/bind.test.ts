@@ -17,4 +17,4 @@ export default {
 	must: "return scoped value",
 	received: bind(instance)(instance.test),
 	wanted: () => true,
-} as Test<boolean>;
+} satisfies Test<boolean>;

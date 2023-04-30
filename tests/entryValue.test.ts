@@ -9,4 +9,4 @@ export default {
 	must: "return entry value",
 	received: () => entryValue(entry),
 	wanted: () => entry[1],
-} as Test<string>;
+} satisfies Test<string>;

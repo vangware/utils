@@ -9,4 +9,4 @@ export default {
 	must: "return the result of the function with the flipped arguments",
 	received: () => flippedConcat("3")("1"),
 	wanted: () => "13",
-} as Test<string>;
+} satisfies Test<string>;

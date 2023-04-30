@@ -28,4 +28,4 @@ export default [
 		received: () => whenIsFalsyTest("nope"),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.NumberFormat",
 	received: () => constructIntlNumberFormat().constructor.name,
 	wanted: () => "NumberFormat",
-} as Test<string>;
+} satisfies Test<string>;

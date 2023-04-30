@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Set",
 	received: () => constructSet().constructor.name,
 	wanted: () => "Set",
-} as Test<string>;
+} satisfies Test<string>;

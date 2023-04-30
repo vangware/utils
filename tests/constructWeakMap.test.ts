@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of WeakMap",
 	received: () => constructWeakMap().constructor.name,
 	wanted: () => "WeakMap",
-} as Test<string>;
+} satisfies Test<string>;

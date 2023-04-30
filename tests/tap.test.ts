@@ -12,4 +12,4 @@ export default {
 	must: "return expected value but run tapper first",
 	received: () => [tappedTest(true), tapped],
 	wanted: () => ["foo", true],
-} as Test<readonly [string, boolean]>;
+} satisfies Test<readonly [string, boolean]>;

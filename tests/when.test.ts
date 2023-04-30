@@ -19,4 +19,4 @@ export default [
 		received: () => whenIsEven(3),
 		wanted: () => 6,
 	},
-] as Tests<number>;
+] satisfies Tests<number>;

@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.Collator",
 	received: () => constructIntlCollator().constructor.name,
 	wanted: () => "Collator",
-} as Test<string>;
+} satisfies Test<string>;

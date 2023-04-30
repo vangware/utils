@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Date",
 	received: () => constructDate().constructor.name,
 	wanted: () => "Date",
-} as Test<string>;
+} satisfies Test<string>;

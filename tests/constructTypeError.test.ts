@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of TypeError",
 	received: () => constructTypeError().constructor.name,
 	wanted: () => "TypeError",
-} as Test<string>;
+} satisfies Test<string>;

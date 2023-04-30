@@ -24,4 +24,4 @@ export default [
 		received: () => whenIsAsyncIterableTest(false),
 		wanted: () => "falsy",
 	},
-] as Tests<() => string>;
+] satisfies Tests<() => string>;

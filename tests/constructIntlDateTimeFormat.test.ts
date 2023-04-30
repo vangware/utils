@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.DateTimeFormat",
 	received: () => constructIntlDateTimeFormat().constructor.name,
 	wanted: () => "DateTimeFormat",
-} as Test<string>;
+} satisfies Test<string>;

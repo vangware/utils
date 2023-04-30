@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Array",
 	received: () => constructArray().constructor.name,
 	wanted: () => "Array",
-} as Test<string>;
+} satisfies Test<string>;

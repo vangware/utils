@@ -6,4 +6,4 @@ export default {
 	must: "return new instance of Intl.RelativeTimeFormat",
 	received: () => constructIntlRelativeTimeFormat().constructor.name,
 	wanted: () => "RelativeTimeFormat",
-} as Test<string>;
+} satisfies Test<string>;
