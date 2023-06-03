@@ -1,4 +1,4 @@
-import type { Class, ReadOnlyArray } from "@vangware/types";
+import type { Class } from "@vangware/types";
 
 /**
  * Creates a new instance of the given constructor with the given arguments.
@@ -17,5 +17,5 @@ export const construct =
 	(...constructorArguments: ConstructorParameters<Constructor>) =>
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		new constructor(
-			...(constructorArguments as unknown as ReadOnlyArray<never>),
+			...(constructorArguments as unknown as never),
 		) as InstanceType<Constructor>;

@@ -32,5 +32,5 @@ export const when =
 	) =>
 	(value: Value) =>
 		predicate(value)
-			? truthyHandler(value)
+			? truthyHandler(value as Predicated)
 			: falsyHandler(value as FalseInput & Value);
