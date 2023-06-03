@@ -17,5 +17,5 @@ export const construct =
 	(...constructorArguments: ConstructorParameters<Constructor>) =>
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		new constructor(
-			...(constructorArguments as unknown as never),
+			...(constructorArguments as never),
 		) as InstanceType<Constructor>;

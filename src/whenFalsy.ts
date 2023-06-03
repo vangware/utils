@@ -1,4 +1,4 @@
-import type { Predicate } from "@vangware/types";
+import type { Filter, Predicate, Single } from "@vangware/types";
 import { identity } from "./identity.js";
 import { when } from "./when.js";
 
@@ -19,6 +19,8 @@ import { when } from "./when.js";
  * @param predicate Predicate to check value against.
  * @returns Curried function with `predicate` in context.
  */
-export const whenFalsy = <Value, Predicated extends Value = Value>(
-	predicate: Predicate<Value, Predicated>,
+export const whenFalsy = <Value, Predicated extends Value = never>(
+	predicate: Single<Predicated> extends Single<never>
+		? Filter<Value>
+		: Predicate<Value, Predicated>,
 ) => when(predicate)(identity);
