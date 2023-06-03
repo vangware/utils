@@ -1,4 +1,4 @@
-import type { Predicate, Unary } from "@vangware/types";
+import type { Filter, Predicate, Single, Unary } from "@vangware/types";
 
 /**
  * Curried conditional (like a functional ternary).
@@ -20,8 +20,10 @@ import type { Predicate, Unary } from "@vangware/types";
  * @returns Curried function with `predicate` in context.
  */
 export const when =
-	<Value, Predicated extends Value = Value>(
-		predicate: Predicate<Value, Predicated>,
+	<Value, Predicated extends Value = never>(
+		predicate: Single<Predicated> extends Single<never>
+			? Filter<Value>
+			: Predicate<Value, Predicated>,
 	) =>
 	<TrueOutput>(truthyHandler: Unary<Predicated & Value, TrueOutput>) =>
 	<
