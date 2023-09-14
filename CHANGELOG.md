@@ -1,110 +1,162 @@
 # Change log
 
-All notable changes to this project will be documented in this file.
+## 10.1.17
 
--   This project adheres to [Semantic Versioning][semver].
--   This project uses [Gitmoji][gitmoji]
+### Patch Changes
+
+-   ⬆️ dependency upgrade.
+-   📝 update `CHANGELOG.md`.
 
 ## 10.1.16
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.15
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.14
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.13
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.12
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.11
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.10
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.9
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.8
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.7
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.6
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.5
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.4
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.1.3
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.1.1
+
+### Patch Changes
 
 -   🐛 fix some type bugs.
 -   📄 typedoc is still broken -\_-
 
 ## 10.1.0
 
+### Minor Changes
+
 -   ⬆️ dependency upgrade.
 -   🏗️ update `when` to use new types.
 
 ## 10.0.15
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.14
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.0.13
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.12
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.0.11
 
+### Patch Changes
+
 -   🔧 back to `node@>=20` babyyyy!
 
 ## 10.0.10
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.0.9
 
+### Patch Changes
+
 -   🔧 update `engines` to suggest `node@>=19` (something isn't right with
     `node@20` at the moment).
 
 ## 10.0.8
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 update `engines` to suggest `node@>=20` and `pnpm@>=8`.
@@ -112,35 +164,51 @@ All notable changes to this project will be documented in this file.
 
 ## 10.0.7
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   📝 update `README.md`.
 
 ## 10.0.6
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.5
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 10.0.4
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.3
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 docs are now generated in CI.
 
 ## 10.0.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 10.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   🚚 rename `maybePromiseHandler` to `awaitableHandler`.
@@ -149,17 +217,25 @@ All notable changes to this project will be documented in this file.
 
 ## 9.1.11
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.10
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 9.1.9
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.8
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔥 remove `.editorconfig`.
@@ -167,71 +243,103 @@ All notable changes to this project will be documented in this file.
 
 ## 9.1.7
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🚨 lint fixes.
 -   🔧 update CI configs.
 
 ## 9.1.6
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.5
+
+### Patch Changes
 
 -   📝 update README badges.
 -   ⬆️ dependency upgrade.
 
 ## 9.1.4
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.3
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 9.1.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 9.1.0
+
+### Minor Changes
 
 -   📝 better docs.
 -   ✨ add new `mutate` util.
 
 ## 9.0.0
 
+### Major Changes
+
 -   ⬆️ dependency upgrade.
 -   🏗 reduced library to just a bunch of functional utils.
 
 ## 8.0.10
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 8.0.9
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 8.0.8
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 8.0.7
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 8.0.6
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 8.0.5
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   ➖ remove unneeded dependencies.
 
 ## 8.0.4
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   ✅ update tests for new `@vangware/test`.
@@ -239,26 +347,38 @@ All notable changes to this project will be documented in this file.
 
 ## 8.0.3
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 8.0.2
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 8.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 8.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   🚚 moved to ESM only.
 
 ## 7.0.9
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 7.0.8
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🎨 typedoc update.
@@ -266,33 +386,49 @@ All notable changes to this project will be documented in this file.
 
 ## 7.0.7
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 7.0.6
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 7.0.5
 
+### Patch Changes
+
 -   🐛 fix but with light theme in docs.
 
 ## 7.0.4
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 7.0.3
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 7.0.2
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 7.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 7.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   ➖ remove `husky` :tada:
@@ -304,39 +440,57 @@ All notable changes to this project will be documented in this file.
 
 ## 6.3.5
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.3.4
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 6.3.3
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.3.2
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 6.3.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.3.0
 
+### Minor Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.2.2
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🚨 fix linter issue in `jsonParsePromise`.
 
 ## 6.2.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🎨 new prettier config🚨
 
 ## 6.2.0
+
+### Minor Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 update `package.json` adding `lint:fix` script.
@@ -346,15 +500,21 @@ All notable changes to this project will be documented in this file.
 
 ## 6.1.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.1.1
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 update package.json adding `postpublish`.
 -   📝 update docs theme.
 
 ## 6.1.0
+
+### Minor Changes
 
 -   ⬆️ dependency upgrade.
 -   🏗 update `equalValues` to use `Object.is`.
@@ -371,13 +531,19 @@ All notable changes to this project will be documented in this file.
 
 ## 6.0.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   🔥 remove `ReadOnlyObject`.
@@ -389,40 +555,58 @@ All notable changes to this project will be documented in this file.
 
 ## 5.0.8
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 5.0.7
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 5.0.6
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   👷 changed Travis with GitHub Actions.
 
 ## 5.0.5
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🏷 update typed imports/exports to be `import type { ...`.
 
 ## 5.0.4
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 5.0.3
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 5.0.2
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🐛 add missing array utils export.
 
 ## 5.0.1
 
+### Patch Changes
+
 -   🐛 fix bug with `files` field in `package.json`.
 
 ## 5.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 update travis config.
@@ -432,10 +616,14 @@ All notable changes to this project will be documented in this file.
 
 ## 4.3.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🐛 fix bug with RegExp (I forgot that thing mutates every time you test).
 
 ## 4.3.0
+
+### Minor Changes
 
 -   ⬆️ dependency upgrade.
 -   ➖ remove uvu.
@@ -448,10 +636,14 @@ All notable changes to this project will be documented in this file.
 
 ## 4.2.6
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🐛 fix bug with equal when working with Date or RegExp.
 
 ## 4.2.3
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🏗 improve types for `arrayFilterIn`.
@@ -460,26 +652,38 @@ All notable changes to this project will be documented in this file.
 
 ## 4.2.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 4.2.1
+
+### Patch Changes
 
 -   ✏️ fix remaining master references.
 
 ## 4.2.0
 
+### Minor Changes
+
 -   ✨ add `equal` utils.
 
 ## 4.1.0
+
+### Minor Changes
 
 -   🏗 improve types `isObject`.
 -   ⬆️ dependency upgrade.
 
 ## 4.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 4.0.0
+
+### Major Changes
 
 -   ⬆️ major dependency upgrade (new TS version!).
 -   🏗 improve tuples making use of the new TS feature.
@@ -488,23 +692,33 @@ All notable changes to this project will be documented in this file.
 
 ## 3.1.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   📝 update README.md.
 
 ## 3.1.0
+
+### Minor Changes
 
 -   ⬆️ dependency upgrade.
 -   ✨ add new `objectMap` util.
 
 ## 3.0.2
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 3.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 3.0.0
+
+### Major Changes
 
 -   ⬆️ dependency upgrade
 -   💥 change types of filter functions to use `is`.
@@ -523,10 +737,14 @@ All notable changes to this project will be documented in this file.
 
 ## 2.1.5
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   ✅ update tests to use `@vangware/test`.
 
 ## 2.1.4
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🐛 fix order of `decimalTupleAdd` and `numberAdd` (minor because is an
@@ -534,19 +752,27 @@ All notable changes to this project will be documented in this file.
 
 ## 2.1.3
 
+### Patch Changes
+
 -   🐛 fix `numberToDecimalTuple` parsing error with 0.
 -   ✅ add tests for those scenarios.
 
 ## 2.1.2
+
+### Patch Changes
 
 -   🐛 fix `numberToDecimalTuple` parsing error with numbers that had exponent.
 -   ✅ add tests for those scenarios.
 
 ## 2.1.1
 
+### Patch Changes
+
 -   🐛 fix `numberToDecimalTuple` parsing error.
 
 ## 2.1.0
+
+### Minor Changes
 
 -   ✨ add new `DecimalTuple` type to represent decimal numbers with two
     integers.
@@ -564,6 +790,8 @@ All notable changes to this project will be documented in this file.
 
 ## 2.0.1
 
+### Patch Changes
+
 -   🚚 moved all tests to tests directory.
 -   🏗 change `ava` with `uvu`.
 -   🏗 change `nyc` with `c8`.
@@ -574,6 +802,8 @@ All notable changes to this project will be documented in this file.
 -   🔧 update travis config.
 
 ## 2.0.0
+
+### Major Changes
 
 -   🚚 rename `arrayPush` to `arrayInsertLast`.
 -   🚚 rename `arrayUnshift` to `arrayInsertFirst`.
@@ -588,6 +818,8 @@ All notable changes to this project will be documented in this file.
 
 ## 1.1.0
 
+### Minor Changes
+
 -   ✨ add new `Sorter` type.
 -   ✨ add new `arraySort` util.
 -   🐛 fix bad diff output of tests.
@@ -595,10 +827,14 @@ All notable changes to this project will be documented in this file.
 
 ## 1.0.1
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   📝 update README.md badges.
 
 ## 1.0.0
+
+### Major Changes
 
 -   🚚 rename package from `@vangware/micro` to `@vangware/utils`.
 -   🔖 version reset due to name change.
@@ -608,17 +844,25 @@ All notable changes to this project will be documented in this file.
 
 ## 8.1.2 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ yet another dependency upgrade.
 
 ## 8.1.1 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 8.1.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   🔥 remove `exports` from `package.json`.
 
 ## 8.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   🚚 rename all utils to avoid reserved words clashing (now the internal API
     resembles the external)
@@ -629,10 +873,14 @@ All notable changes to this project will be documented in this file.
 
 ## 7.2.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   🐛 broken `from` util. Renamed it to `toArray`.
 -   🔖 version bump.
 
 ## 7.1.3 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
@@ -640,10 +888,14 @@ All notable changes to this project will be documented in this file.
 
 ## 7.1.2 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 
 ## 7.1.1 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ✏️ fix wrong docs in instanceOf.
 -   ⬆️ dependency upgrade.
@@ -653,11 +905,15 @@ All notable changes to this project will be documented in this file.
 
 ## 7.1.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   ✨ add stringReverse util.
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 
 ## 7.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   🔖 major version bump.
 -   🏗 change architecture to have utils in directories.
@@ -672,31 +928,45 @@ All notable changes to this project will be documented in this file.
 
 ## 6.0.6 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔒 fix small security concern in `arrayFilterIn` and `arrayMap`.
 
 ## 6.0.5 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.0.4 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 
 ## 6.0.3 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 
 ## 6.0.2 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ✨ add Entity type.
 -   🏗 change exports to include types.
 
 ## 6.0.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🐛 fix mixing exports in index.
 
 ## 6.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   🔖 major version bump.
 -   ⬆️ dependency upgrade.
@@ -720,20 +990,28 @@ All notable changes to this project will be documented in this file.
 
 ## 5.2.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🍱 Update logo.
 -   ✨ Added favicon.
 
 ## 5.2.0 (deprecated @vangware/micro)
+
+### Minor Changes
 
 -   🔖 version bump.
 -   ⬆️ dependency upgrade.
 
 ## 5.1.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   🔖 version bump.
 -   🏗 change exports/imports to use import type/export type when needed.
 
 ## 5.0.6 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
@@ -741,10 +1019,14 @@ All notable changes to this project will be documented in this file.
 
 ## 5.0.5 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ version bump.
 -   ✨ export time constants.
 
 ## 5.0.4 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   🔧 update travis config.
 -   ⬆️ version bump.
@@ -752,11 +1034,15 @@ All notable changes to this project will be documented in this file.
 
 ## 5.0.3 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 -   🔧 update ava config.
 
 ## 5.0.2 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
@@ -764,10 +1050,14 @@ All notable changes to this project will be documented in this file.
 
 ## 5.0.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 
 ## 5.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
@@ -786,6 +1076,8 @@ All notable changes to this project will be documented in this file.
 
 ## 4.0.5 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 -   🏗 arrayFilterTuple doesn't use `arrayReduce` anymore.
@@ -799,11 +1091,15 @@ All notable changes to this project will be documented in this file.
 
 ## 4.0.4 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 -   📝 add CHANGELOG.md.
 
 ## 4.0.3 (deprecated @vangware/micro)
+
+### Patch Changes
 
 -   ⬆️ dependency upgrade.
 -   🔧 update settings.json.
@@ -815,16 +1111,22 @@ All notable changes to this project will be documented in this file.
 
 ## 4.0.2 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ✅ update tests.
 -   📝 update README.md.
 -   🔖 version bump.
 
 ## 4.0.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🚑 isNullish should check undefined first.
 -   ✅ minor test tweaks related to linter.
 
 ## 4.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   🏗 functional rework.
 -   🔥 remove isMap (use immutable structures).
@@ -844,12 +1146,16 @@ All notable changes to this project will be documented in this file.
 
 ## 3.0.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🎨 improve code to match new linter rules.
 -   🚨 update documentation based on line length changes.
 -   🔖 version bump.
 
 ## 3.0.0 (deprecated @vangware/micro)
+
+### Major Changes
 
 -   🔖 version 3.0.0
 -   🏗 change when to work with nullish instead of falsy.
@@ -862,18 +1168,26 @@ All notable changes to this project will be documented in this file.
 
 ## 2.1.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   📝 document with typedoc.
 -   🔖 version bump.
 
 ## 2.1.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   🎨 improve objectMap to work with no object🚨
 
 ## 2.0.0 (deprecated @vangware/micro)
 
+### Major Changes
+
 -   🔥 remove typeOf (goodbye good fella).
 
 ## 1.5.0 (deprecated @vangware/micro)
+
+### Minor Changes
 
 -   ✨ add constants.
 -   📝 update README.md.
@@ -881,15 +1195,21 @@ All notable changes to this project will be documented in this file.
 
 ## 1.4.2 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🐛 fix mixing exports in index.
 -   🔖 version bump.
 
 ## 1.4.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🚚 rename isMapFunction to IsMapFunction (casing issue).
 -   🔖 version bump.
 
 ## 1.4.0 (deprecated @vangware/micro)
+
+### Minor Changes
 
 -   ✨ add `isArray` util.
 -   ✨ add `isBigInt` util.
@@ -919,12 +1239,16 @@ All notable changes to this project will be documented in this file.
 
 ## 1.3.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ✅ Improved tests.
 -   ✅ Add test coverage.
 -   🔧 update TS configurations.
 -   🔖 version bump.
 
 ## 1.3.0 (deprecated @vangware/micro)
+
+### Minor Changes
 
 -   ✨ add arrayReduce.
 -   ✨ add arraySplit.
@@ -936,10 +1260,14 @@ All notable changes to this project will be documented in this file.
 
 ## 1.2.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   ⬆️ dependency upgrade.
 -   🔖 version bump.
 
 ## 1.2.0 (deprecated @vangware/micro)
+
+### Minor Changes
 
 -   👷 add Travis config.
 -   ✨ add when util.
@@ -949,21 +1277,16 @@ All notable changes to this project will be documented in this file.
 
 ## 1.1.0 (deprecated @vangware/micro)
 
+### Minor Changes
+
 -   🎨 improve types.
 -   🚨removed defaults and some optionals that didn't made any sense.
 -   🔖 version bump.
 
 ## 1.0.1 (deprecated @vangware/micro)
 
+### Patch Changes
+
 -   🎨 improve noop types.
 -   🚨 version bump.
 -   📄 add MIT license file.
-
-## 1.0.0 (deprecated @vangware/micro)
-
--   🎉 initial commit
-
-<!-- References -->
-
-[gitmoji]: https://gitmoji.dev/
-[semver]: https://semver.org/
